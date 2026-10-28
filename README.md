@@ -4,7 +4,7 @@
 
 已迁移 Canvas/Context、Path2D 与扩展、DOM 几何/矩阵/CSS 变换、渐变、字体与文本排版/测量/装饰、图像/像素/pattern/texture、滤镜/混色、多页、同步/异步导出和 App/Window。公共名称与默认值沿用 Node；语言宿主采用已确认的 [Python 对应方案](docs/PYTHON_HOST_PROFILE.md)。
 
-当前版本 **0.1.0a18**，候选目标为 **CPython 3.13 / Windows AMD64 / Linux glibc 2.28+ x86_64**。Windows Vulkan 与 Linux Vulkan 分别验收；macOS Metal 保留源代码和 feature，尚无验收过的发行物。尚未发布到 PyPI。实际 wheel SHA 和检查范围见 [本批交付报告](docs/COMPLETION_REPORT.md)，后续发行进度见 [发布状态](docs/RELEASE_STATUS.md)。
+当前版本 **0.1.0a18**，首批支持 **CPython 3.13 / Windows AMD64 / Linux glibc 2.28+ x86_64**。[GitHub alpha Release](https://github.com/xuanhun/py-skia-canvas/releases/tag/v0.1.0a18) 已公开，尚未发布到 PyPI。Windows Vulkan 与 Linux Vulkan 分别验收；macOS Metal 保留源代码和 feature，尚无验收过的发行物。实际 wheel SHA 和检查范围见 [本批交付报告](docs/COMPLETION_REPORT.md)，后续发行进度见 [发布状态](docs/RELEASE_STATUS.md)。
 
 ```python
 from py_skia_canvas import Canvas
@@ -37,6 +37,8 @@ python -m pip install /path/to/py_skia_canvas-0.1.0a18-cp313-cp313-win_amd64.whl
 ```
 
 Linux 使用对应 `manylinux_2_28_x86_64.whl`。发布必须上传同一批验收过的字节；GitHub Actions 构建、GitHub Release、TestPyPI 和 PyPI 安装各自记录状态。
+
+可从上方 GitHub Release 下载对应 wheel。Windows 未启用系统长路径支持时，请使用较短的虚拟环境目录，避免许可证文件路径触及 `MAX_PATH`。
 
 Rust 固定 1.90.0，Skia/rust-skia 固定 0.88.0。Windows 构建需要 CPython 3.13、MSVC x64 工具链：
 
