@@ -1,0 +1,796 @@
+{
+  "schema": "py-skia-canvas-scoped-api-status/v1",
+  "baseline": "3.0.8",
+  "batch": "G5-text-state-3",
+  "notFullLedgerPromotion": true,
+  "entries": [
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "textAlign",
+      "access": "get",
+      "default": "start",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "none",
+      "units": "Unitless alignment",
+      "return": "Owned native string/bool snapshot",
+      "exceptions": "Owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:textAlign",
+        "src/context/api.rs:get_textAlign",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:get_textAlign",
+      "python": "python/py_skia_canvas/_text_state.py:_property/textAlign",
+      "cases": [
+        "textstate-defaults",
+        "textstate-align-ltr",
+        "textstate-align-rtl",
+        "textstate-case-modes",
+        "textstate-direction-bidi",
+        "textstate-spacing-font-change",
+        "textstate-wrapped-align",
+        "textstate-wrap-stroke-outline",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-gradient-transform",
+        "textstate-invalid-mode-names",
+        "textstate-mode-type-errors",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "textAlign",
+      "access": "set",
+      "default": "start",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "String -> original enum or unchanged",
+      "units": "Unitless alignment",
+      "return": "None; original state update/ignore/error",
+      "exceptions": "Non-string TypeError; owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:textAlign",
+        "src/context/api.rs:set_textAlign",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:set_textAlign",
+      "python": "python/py_skia_canvas/_text_state.py:_property/textAlign",
+      "cases": [
+        "textstate-defaults",
+        "textstate-align-ltr",
+        "textstate-align-rtl",
+        "textstate-case-modes",
+        "textstate-direction-bidi",
+        "textstate-spacing-font-change",
+        "textstate-wrapped-align",
+        "textstate-wrap-stroke-outline",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-gradient-transform",
+        "textstate-invalid-mode-names",
+        "textstate-mode-type-errors",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "textBaseline",
+      "access": "get",
+      "default": "alphabetic",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "none",
+      "units": "Unitless label; metrics remain canvas units",
+      "return": "Owned native string/bool snapshot",
+      "exceptions": "Owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:textBaseline",
+        "src/context/api.rs:get_textBaseline",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:get_textBaseline",
+      "python": "python/py_skia_canvas/_text_state.py:_property/textBaseline",
+      "cases": [
+        "textstate-defaults",
+        "textstate-baselines",
+        "textstate-case-modes",
+        "textstate-spacing-font-change",
+        "textstate-wrap-stroke-outline",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-gradient-transform",
+        "textstate-invalid-mode-names",
+        "textstate-mode-type-errors",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "textBaseline",
+      "access": "set",
+      "default": "alphabetic",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "String -> original enum or unchanged",
+      "units": "Unitless label; metrics remain canvas units",
+      "return": "None; original state update/ignore/error",
+      "exceptions": "Non-string TypeError; owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:textBaseline",
+        "src/context/api.rs:set_textBaseline",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:set_textBaseline",
+      "python": "python/py_skia_canvas/_text_state.py:_property/textBaseline",
+      "cases": [
+        "textstate-defaults",
+        "textstate-baselines",
+        "textstate-case-modes",
+        "textstate-spacing-font-change",
+        "textstate-wrap-stroke-outline",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-gradient-transform",
+        "textstate-invalid-mode-names",
+        "textstate-mode-type-errors",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "direction",
+      "access": "get",
+      "default": "ltr",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "none",
+      "units": "Unitless direction",
+      "return": "Owned native string/bool snapshot",
+      "exceptions": "Owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:direction",
+        "src/context/api.rs:get_direction",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:get_direction",
+      "python": "python/py_skia_canvas/_text_state.py:_property/direction",
+      "cases": [
+        "textstate-defaults",
+        "textstate-align-ltr",
+        "textstate-align-rtl",
+        "textstate-case-modes",
+        "textstate-direction-bidi",
+        "textstate-spacing-font-change",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-invalid-mode-names",
+        "textstate-mode-type-errors",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "direction",
+      "access": "set",
+      "default": "ltr",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "String -> ltr/rtl or unchanged",
+      "units": "Unitless direction",
+      "return": "None; original state update/ignore/error",
+      "exceptions": "Non-string TypeError; owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:direction",
+        "src/context/api.rs:set_direction",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:set_direction",
+      "python": "python/py_skia_canvas/_text_state.py:_property/direction",
+      "cases": [
+        "textstate-defaults",
+        "textstate-align-ltr",
+        "textstate-align-rtl",
+        "textstate-case-modes",
+        "textstate-direction-bidi",
+        "textstate-spacing-font-change",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-invalid-mode-names",
+        "textstate-mode-type-errors",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "letterSpacing",
+      "access": "get",
+      "default": "0px",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "none",
+      "units": "Original raw/px f64 -> f32 at native boundary",
+      "return": "Owned native string/bool snapshot",
+      "exceptions": "Owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:letterSpacing",
+        "src/context/api.rs:get_letterSpacing",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:get_letterSpacing",
+      "python": "python/py_skia_canvas/_text_state.py:_property/letterSpacing",
+      "cases": [
+        "textstate-defaults",
+        "textstate-case-modes",
+        "textstate-letter-spacing",
+        "textstate-spacing-absolute",
+        "textstate-spacing-font-change",
+        "textstate-spacing-wrapped",
+        "textstate-wrap-stroke-outline",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-gradient-transform",
+        "textstate-spacing-relative-errors",
+        "textstate-spacing-invalid-inputs",
+        "textstate-spacing-prefix-f32",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "letterSpacing",
+      "access": "set",
+      "default": "0px",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "Original CSS flexible-size string/coerced primitive -> Spacing",
+      "units": "Original raw/px f64 -> f32 at native boundary",
+      "return": "None; original state update/ignore/error",
+      "exceptions": "Original size/px TypeError, invalid parse ignored; owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:letterSpacing",
+        "src/context/api.rs:set_letterSpacing",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:set_letterSpacing",
+      "python": "python/py_skia_canvas/_text_state.py:_property/letterSpacing",
+      "cases": [
+        "textstate-defaults",
+        "textstate-case-modes",
+        "textstate-letter-spacing",
+        "textstate-spacing-absolute",
+        "textstate-spacing-font-change",
+        "textstate-spacing-wrapped",
+        "textstate-wrap-stroke-outline",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-gradient-transform",
+        "textstate-spacing-relative-errors",
+        "textstate-spacing-invalid-inputs",
+        "textstate-spacing-prefix-f32",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "wordSpacing",
+      "access": "get",
+      "default": "0px",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "none",
+      "units": "Original raw/px f64 -> f32 at native boundary",
+      "return": "Owned native string/bool snapshot",
+      "exceptions": "Owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:wordSpacing",
+        "src/context/api.rs:get_wordSpacing",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:get_wordSpacing",
+      "python": "python/py_skia_canvas/_text_state.py:_property/wordSpacing",
+      "cases": [
+        "textstate-defaults",
+        "textstate-case-modes",
+        "textstate-word-spacing",
+        "textstate-spacing-font-change",
+        "textstate-spacing-wrapped",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-gradient-transform",
+        "textstate-spacing-relative-errors",
+        "textstate-spacing-invalid-inputs",
+        "textstate-spacing-prefix-f32",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "wordSpacing",
+      "access": "set",
+      "default": "0px",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "Original CSS flexible-size string/coerced primitive -> Spacing",
+      "units": "Original raw/px f64 -> f32 at native boundary",
+      "return": "None; original state update/ignore/error",
+      "exceptions": "Original size/px TypeError, invalid parse ignored; owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:wordSpacing",
+        "src/context/api.rs:set_wordSpacing",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:set_wordSpacing",
+      "python": "python/py_skia_canvas/_text_state.py:_property/wordSpacing",
+      "cases": [
+        "textstate-defaults",
+        "textstate-case-modes",
+        "textstate-word-spacing",
+        "textstate-spacing-font-change",
+        "textstate-spacing-wrapped",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-gradient-transform",
+        "textstate-spacing-relative-errors",
+        "textstate-spacing-invalid-inputs",
+        "textstate-spacing-prefix-f32",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "fontStretch",
+      "access": "get",
+      "default": "normal",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "none",
+      "units": "Unitless stretch label",
+      "return": "Owned native string/bool snapshot",
+      "exceptions": "Owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:fontStretch",
+        "src/context/api.rs:get_fontStretch",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:get_fontStretch",
+      "python": "python/py_skia_canvas/_text_state.py:_property/fontStretch",
+      "cases": [
+        "textstate-defaults",
+        "textstate-case-modes",
+        "textstate-spacing-font-change",
+        "textstate-stretch-widths",
+        "textstate-stretch-font-reset",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-stretch-invalid-coercion",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "fontStretch",
+      "access": "set",
+      "default": "normal",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "Original case-sensitive regex string/coercion -> enum or unchanged",
+      "units": "Unitless stretch label",
+      "return": "None; original state update/ignore/error",
+      "exceptions": "Invalid parse ignored; owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:fontStretch",
+        "src/context/api.rs:set_fontStretch",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:set_fontStretch",
+      "python": "python/py_skia_canvas/_text_state.py:_property/fontStretch",
+      "cases": [
+        "textstate-defaults",
+        "textstate-case-modes",
+        "textstate-spacing-font-change",
+        "textstate-stretch-widths",
+        "textstate-stretch-font-reset",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-stretch-invalid-coercion",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "fontVariant",
+      "access": "get",
+      "default": "normal",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "none",
+      "units": "Unitless feature tags/numeric values; original f32->i32 boundary",
+      "return": "Owned native string/bool snapshot",
+      "exceptions": "Owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:fontVariant",
+        "src/context/api.rs:get_fontVariant",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:get_fontVariant",
+      "python": "python/py_skia_canvas/_text_state.py:_property/fontVariant",
+      "cases": [
+        "textstate-defaults",
+        "textstate-case-modes",
+        "textstate-spacing-font-change",
+        "textstate-variant-caps",
+        "textstate-variant-ligatures",
+        "textstate-variant-numeric",
+        "textstate-variant-alternates",
+        "textstate-variant-feature-order",
+        "textstate-variant-font-reset",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-gradient-transform",
+        "textstate-variant-normal-error",
+        "textstate-variant-token-errors",
+        "textstate-variant-parameterized-errors",
+        "textstate-variant-type-errors",
+        "textstate-variant-cached-array",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "fontVariant",
+      "access": "set",
+      "default": "normal",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "Original feature/alternate CSS string and scoped cache inputs",
+      "units": "Unitless feature tags/numeric values; original f32->i32 boundary",
+      "return": "None; original state update/ignore/error",
+      "exceptions": "Original Error/TypeError; normal setter missing variant field retained; owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:fontVariant",
+        "src/context/api.rs:set_fontVariant",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:set_fontVariant",
+      "python": "python/py_skia_canvas/_text_state.py:_property/fontVariant",
+      "cases": [
+        "textstate-defaults",
+        "textstate-case-modes",
+        "textstate-spacing-font-change",
+        "textstate-variant-caps",
+        "textstate-variant-ligatures",
+        "textstate-variant-numeric",
+        "textstate-variant-alternates",
+        "textstate-variant-feature-order",
+        "textstate-variant-font-reset",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-gradient-transform",
+        "textstate-variant-normal-error",
+        "textstate-variant-token-errors",
+        "textstate-variant-parameterized-errors",
+        "textstate-variant-type-errors",
+        "textstate-variant-cached-array",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "fontHinting",
+      "access": "get",
+      "default": false,
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "none",
+      "units": "Unitless bool",
+      "return": "Owned native string/bool snapshot",
+      "exceptions": "Owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:fontHinting",
+        "src/context/api.rs:get_fontHinting",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:get_fontHinting",
+      "python": "python/py_skia_canvas/_text_state.py:_property/fontHinting",
+      "cases": [
+        "textstate-defaults",
+        "textstate-case-modes",
+        "textstate-spacing-font-change",
+        "textstate-hinting",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "fontHinting",
+      "access": "set",
+      "default": false,
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "Original JS !!value",
+      "units": "Unitless bool",
+      "return": "None; original state update/ignore/error",
+      "exceptions": "Owner RuntimeError; owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:fontHinting",
+        "src/context/api.rs:set_fontHinting",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:set_fontHinting",
+      "python": "python/py_skia_canvas/_text_state.py:_property/fontHinting",
+      "cases": [
+        "textstate-defaults",
+        "textstate-case-modes",
+        "textstate-spacing-font-change",
+        "textstate-hinting",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "textWrap",
+      "access": "get",
+      "default": false,
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "none",
+      "units": "Unitless bool, maxWidth canvas units",
+      "return": "Owned native string/bool snapshot",
+      "exceptions": "Owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:textWrap",
+        "src/context/api.rs:get_textWrap",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:get_textWrap",
+      "python": "python/py_skia_canvas/_text_state.py:_property/textWrap",
+      "cases": [
+        "textstate-defaults",
+        "textstate-case-modes",
+        "textstate-spacing-font-change",
+        "textstate-spacing-wrapped",
+        "textstate-wrap",
+        "textstate-wrapped-align",
+        "textstate-wrap-stroke-outline",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "textWrap",
+      "access": "set",
+      "default": false,
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "Original JS !!value",
+      "units": "Unitless bool, maxWidth canvas units",
+      "return": "None; original state update/ignore/error",
+      "exceptions": "Owner RuntimeError; owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; Python parsing before borrow, no callbacks/native transfer; metadata values owned",
+      "upstream": [
+        "lib/classes/context.js:textWrap",
+        "src/context/api.rs:set_textWrap",
+        "lib/classes/css.js:parseFlexibleSize/parseStretch/parseVariant",
+        "src/typography.rs:Spacing/enum mappings"
+      ],
+      "core": "crates/canvas-core/src/context/text_state.rs:set_textWrap",
+      "python": "python/py_skia_canvas/_text_state.py:_property/textWrap",
+      "cases": [
+        "textstate-defaults",
+        "textstate-case-modes",
+        "textstate-spacing-font-change",
+        "textstate-spacing-wrapped",
+        "textstate-wrap",
+        "textstate-wrapped-align",
+        "textstate-wrap-stroke-outline",
+        "textstate-save-restore",
+        "textstate-resize-reset",
+        "textstate-cross-canvas",
+        "textstate-flag-truthiness"
+      ],
+      "evidence": [
+        "test-runs/20261028-textstate-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/prototype/custom coercion and Python subclasses/cycles",
+        "All extreme/nonfinite numeric, font/glyph/fallback/emoji and full layout contracts",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    }
+  ]
+}

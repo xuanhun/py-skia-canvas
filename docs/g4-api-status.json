@@ -1,0 +1,1493 @@
+{
+  "schema": "py-skia-canvas-scoped-api-status/v1",
+  "baseline": "3.0.8",
+  "batch": "G4-current-paths-1",
+  "notFullLedgerPromotion": true,
+  "entries": [
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "beginPath",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 55,
+          "symbol": "beginPath"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 206,
+          "symbol": "beginPath"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 315,
+        "symbol": "CanvasRenderingContext2D.beginPath"
+      },
+      "cases": [
+        "g4-lines-cubic-quad",
+        "g4-implicit-conic",
+        "g4-arc-sweeps",
+        "g4-ellipse-rotated",
+        "g4-arc-to-radius-errors",
+        "g4-evenodd-hits",
+        "g4-nested-clip-restore",
+        "g4-transforms-mid-path",
+        "g4-matrix-compose",
+        "g4-singular-transform",
+        "g4-stroke-line-styles",
+        "g4-dash-invalid-and-save",
+        "g4-transform-ellipse-negative-scale",
+        "g4-path-survives-save",
+        "g4-ccw-numeric",
+        "g4-ccw-string"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "closePath",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 65,
+          "symbol": "closePath"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 366,
+          "symbol": "closePath"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 319,
+        "symbol": "CanvasRenderingContext2D.closePath"
+      },
+      "cases": [
+        "g4-lines-cubic-quad",
+        "g4-transforms-mid-path",
+        "g4-path-survives-save",
+        "g4-ccw-numeric",
+        "g4-ccw-string"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "moveTo",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 59,
+          "symbol": "moveTo"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 289,
+          "symbol": "moveTo"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 323,
+        "symbol": "CanvasRenderingContext2D.moveTo"
+      },
+      "cases": [
+        "g4-lines-cubic-quad",
+        "g4-arc-to-radius-errors",
+        "g4-transforms-mid-path",
+        "g4-stroke-line-styles",
+        "g4-dash-invalid-and-save",
+        "g4-path-survives-save"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "lineTo",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 60,
+          "symbol": "lineTo"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 300,
+          "symbol": "lineTo"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 327,
+        "symbol": "CanvasRenderingContext2D.lineTo"
+      },
+      "cases": [
+        "g4-lines-cubic-quad",
+        "g4-implicit-conic",
+        "g4-transforms-mid-path",
+        "g4-stroke-line-styles",
+        "g4-dash-invalid-and-save",
+        "g4-path-survives-save"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "rect",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 56,
+          "symbol": "rect"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 216,
+          "symbol": "rect"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 334,
+        "symbol": "CanvasRenderingContext2D.rect"
+      },
+      "cases": [
+        "g4-evenodd-hits",
+        "g4-nested-clip-restore",
+        "g4-matrix-compose",
+        "g4-singular-transform",
+        "g4-transform-ellipse-negative-scale",
+        "g4-path-survives-save"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "arc",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 57,
+          "symbol": "arc"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 254,
+          "symbol": "arc"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 341,
+        "symbol": "CanvasRenderingContext2D.arc"
+      },
+      "cases": [
+        "g4-arc-sweeps",
+        "g4-arc-to-radius-errors",
+        "g4-nested-clip-restore",
+        "g4-ccw-numeric",
+        "g4-ccw-string"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "ellipse",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 58,
+          "symbol": "ellipse"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 269,
+          "symbol": "ellipse"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 349,
+        "symbol": "CanvasRenderingContext2D.ellipse"
+      },
+      "cases": [
+        "g4-ellipse-rotated",
+        "g4-arc-to-radius-errors",
+        "g4-transform-ellipse-negative-scale",
+        "g4-ccw-numeric",
+        "g4-ccw-string"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "arcTo",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 61,
+          "symbol": "arcTo"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 312,
+          "symbol": "arcTo"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 357,
+        "symbol": "CanvasRenderingContext2D.arcTo"
+      },
+      "cases": [
+        "g4-arc-to-radius-errors"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "bezierCurveTo",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 62,
+          "symbol": "bezierCurveTo"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 329,
+          "symbol": "bezierCurveTo"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 364,
+        "symbol": "CanvasRenderingContext2D.bezierCurveTo"
+      },
+      "cases": [
+        "g4-lines-cubic-quad",
+        "g4-implicit-conic"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "quadraticCurveTo",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 63,
+          "symbol": "quadraticCurveTo"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 341,
+          "symbol": "quadraticCurveTo"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 371,
+        "symbol": "CanvasRenderingContext2D.quadraticCurveTo"
+      },
+      "cases": [
+        "g4-lines-cubic-quad",
+        "g4-implicit-conic",
+        "g4-transforms-mid-path"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "conicCurveTo",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 64,
+          "symbol": "conicCurveTo"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 354,
+          "symbol": "conicCurveTo"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 378,
+        "symbol": "CanvasRenderingContext2D.conicCurveTo"
+      },
+      "cases": [
+        "g4-implicit-conic"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "fill",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 78,
+          "symbol": "fill"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 434,
+          "symbol": "fill"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 395,
+        "symbol": "CanvasRenderingContext2D.fill"
+      },
+      "cases": [
+        "g4-lines-cubic-quad",
+        "g4-ellipse-rotated",
+        "g4-evenodd-hits",
+        "g4-transforms-mid-path",
+        "g4-matrix-compose",
+        "g4-singular-transform",
+        "g4-transform-ellipse-negative-scale",
+        "g4-path-survives-save",
+        "g4-ccw-numeric",
+        "g4-ccw-string"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "stroke",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 83,
+          "symbol": "stroke"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 450,
+          "symbol": "stroke"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 402,
+        "symbol": "CanvasRenderingContext2D.stroke"
+      },
+      "cases": [
+        "g4-lines-cubic-quad",
+        "g4-implicit-conic",
+        "g4-arc-sweeps",
+        "g4-ellipse-rotated",
+        "g4-arc-to-radius-errors",
+        "g4-transforms-mid-path",
+        "g4-matrix-compose",
+        "g4-singular-transform",
+        "g4-stroke-line-styles",
+        "g4-dash-invalid-and-save",
+        "g4-transform-ellipse-negative-scale"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "clip",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 88,
+          "symbol": "clip"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 413,
+          "symbol": "clip"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 409,
+        "symbol": "CanvasRenderingContext2D.clip"
+      },
+      "cases": [
+        "g4-evenodd-hits",
+        "g4-nested-clip-restore",
+        "g4-path-survives-save"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "isPointInPath",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 93,
+          "symbol": "isPointInPath"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 376,
+          "symbol": "isPointInPath"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 416,
+        "symbol": "CanvasRenderingContext2D.isPointInPath"
+      },
+      "cases": [
+        "g4-evenodd-hits",
+        "g4-singular-transform"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "isPointInStroke",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 97,
+          "symbol": "isPointInStroke"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 380,
+          "symbol": "isPointInStroke"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 423,
+        "symbol": "CanvasRenderingContext2D.isPointInStroke"
+      },
+      "cases": [
+        "g4-evenodd-hits"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "setTransform",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 43,
+          "symbol": "setTransform"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 191,
+          "symbol": "set_currentTransform"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 443,
+        "symbol": "CanvasRenderingContext2D.setTransform"
+      },
+      "cases": [
+        "g4-matrix-compose"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "transform",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 45,
+          "symbol": "transform"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 92,
+          "symbol": "transform"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 451,
+        "symbol": "CanvasRenderingContext2D.transform"
+      },
+      "cases": [
+        "g4-matrix-compose"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "translate",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 46,
+          "symbol": "translate"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 102,
+          "symbol": "translate"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 462,
+        "symbol": "CanvasRenderingContext2D.translate"
+      },
+      "cases": [
+        "g4-nested-clip-restore",
+        "g4-transforms-mid-path",
+        "g4-transform-ellipse-negative-scale",
+        "g4-path-survives-save"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "scale",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 47,
+          "symbol": "scale"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 113,
+          "symbol": "scale"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 466,
+        "symbol": "CanvasRenderingContext2D.scale"
+      },
+      "cases": [
+        "g4-transforms-mid-path",
+        "g4-singular-transform",
+        "g4-transform-ellipse-negative-scale"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "rotate",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 48,
+          "symbol": "rotate"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 124,
+          "symbol": "rotate"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 470,
+        "symbol": "CanvasRenderingContext2D.rotate"
+      },
+      "cases": [
+        "g4-transforms-mid-path",
+        "g4-transform-ellipse-negative-scale"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "resetTransform",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 41,
+          "symbol": "resetTransform"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 134,
+          "symbol": "resetTransform"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 458,
+        "symbol": "CanvasRenderingContext2D.resetTransform"
+      },
+      "cases": [
+        "g4-transforms-mid-path",
+        "g4-matrix-compose",
+        "g4-singular-transform"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "getLineDash",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 149,
+          "symbol": "getLineDash"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 583,
+          "symbol": "getLineDash"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 474,
+        "symbol": "CanvasRenderingContext2D.getLineDash"
+      },
+      "cases": [
+        "g4-stroke-line-styles",
+        "g4-dash-invalid-and-save"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "setLineDash",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 150,
+          "symbol": "setLineDash"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 590,
+          "symbol": "setLineDash"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 478,
+        "symbol": "CanvasRenderingContext2D.setLineDash"
+      },
+      "cases": [
+        "g4-stroke-line-styles",
+        "g4-dash-invalid-and-save"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "call"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "lineWidth",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 161,
+          "symbol": "lineWidth"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 674,
+          "symbol": "get_lineWidth"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 489,
+        "symbol": "CanvasRenderingContext2D.lineWidth"
+      },
+      "cases": [
+        "g4-stroke-line-styles"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "get"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "lineWidth",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 162,
+          "symbol": "lineWidth"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 682,
+          "symbol": "set_lineWidth"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 494,
+        "symbol": "CanvasRenderingContext2D.lineWidth"
+      },
+      "cases": [
+        "g4-lines-cubic-quad",
+        "g4-implicit-conic",
+        "g4-arc-sweeps",
+        "g4-ellipse-rotated",
+        "g4-arc-to-radius-errors",
+        "g4-evenodd-hits",
+        "g4-transforms-mid-path",
+        "g4-matrix-compose",
+        "g4-stroke-line-styles",
+        "g4-dash-invalid-and-save",
+        "g4-transform-ellipse-negative-scale"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "set"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "miterLimit",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 163,
+          "symbol": "miterLimit"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 694,
+          "symbol": "get_miterLimit"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 499,
+        "symbol": "CanvasRenderingContext2D.miterLimit"
+      },
+      "cases": [
+        "g4-stroke-line-styles"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "get"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "miterLimit",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 164,
+          "symbol": "miterLimit"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 702,
+          "symbol": "set_miterLimit"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 504,
+        "symbol": "CanvasRenderingContext2D.miterLimit"
+      },
+      "cases": [
+        "g4-stroke-line-styles"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "set"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "lineDashOffset",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 157,
+          "symbol": "lineDashOffset"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 638,
+          "symbol": "get_lineDashOffset"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 509,
+        "symbol": "CanvasRenderingContext2D.lineDashOffset"
+      },
+      "cases": [
+        "g4-ccw-numeric",
+        "g4-ccw-string"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "get"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "lineDashOffset",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 158,
+          "symbol": "lineDashOffset"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 646,
+          "symbol": "set_lineDashOffset"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 514,
+        "symbol": "CanvasRenderingContext2D.lineDashOffset"
+      },
+      "cases": [
+        "g4-stroke-line-styles",
+        "g4-dash-invalid-and-save",
+        "g4-ccw-numeric",
+        "g4-ccw-string"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "set"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "lineCap",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 151,
+          "symbol": "lineCap"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 618,
+          "symbol": "get_lineCap"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 519,
+        "symbol": "CanvasRenderingContext2D.lineCap"
+      },
+      "cases": [
+        "g4-stroke-line-styles"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "get"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "lineCap",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 152,
+          "symbol": "lineCap"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 627,
+          "symbol": "set_lineCap"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 524,
+        "symbol": "CanvasRenderingContext2D.lineCap"
+      },
+      "cases": [
+        "g4-stroke-line-styles"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "set"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "lineJoin",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 159,
+          "symbol": "lineJoin"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 654,
+          "symbol": "get_lineJoin"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 531,
+        "symbol": "CanvasRenderingContext2D.lineJoin"
+      },
+      "cases": [
+        "g4-stroke-line-styles"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "get"
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "lineJoin",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry / original rule/style strings / numeric dash arrays; current path and six-scalar matrix only",
+      "units": "Canvas units for geometry/width/dash, radians for angles, unitless scale/miter/style/rule",
+      "return": "Original bool/list/getter or None for mutating methods",
+      "exceptions": "Original radius message via RangeError(ValueError), original rule TypeError; full coercion/missing/invalid setter/STRICT mapping pending",
+      "ownership": "Owner-thread NativeCanvas handle; core objects remain in TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 160,
+          "symbol": "lineJoin"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 663,
+          "symbol": "set_lineJoin"
+        }
+      ],
+      "core": "context/operations.rs or original Context2D draw_path/clip_path/hit_test_path; style parsers in utils.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 536,
+        "symbol": "CanvasRenderingContext2D.lineJoin"
+      },
+      "cases": [
+        "g4-stroke-line-styles"
+      ],
+      "evidence": [
+        "test-runs/20261027-g4-final/run.json"
+      ],
+      "unverified": [
+        "Standalone Path2D/DOM overloads",
+        "Full JS coercion/null/undefined/non-finite/STRICT contract",
+        "Windows/Metal/release acceptance"
+      ],
+      "access": "set"
+    }
+  ]
+}

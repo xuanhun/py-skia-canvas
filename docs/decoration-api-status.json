@@ -1,0 +1,154 @@
+{
+  "schema": "py-skia-canvas-scoped-api-status/v1",
+  "baseline": "3.0.8",
+  "batch": "G5-decoration-4",
+  "notFullLedgerPromotion": true,
+  "entries": [
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "textDecoration",
+      "access": "get",
+      "default": "none",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "none",
+      "units": "Style/line/color/inherit/string unitless; raw/px thickness f64 -> original native f32 CSS/canvas units, for_layout uses original font metric ratio",
+      "return": "Owned original saved CSS string",
+      "exceptions": "Owner RuntimeError; original size/unit/px TypeError when fields are read",
+      "ownership": "All Context/fonts/GPU owner TLS; owned descriptor/field read before borrow, no Python callbacks or GPU transfer",
+      "upstream": [
+        "lib/classes/context.js:textDecoration",
+        "lib/classes/css.js:182 parseTextDecoration",
+        "src/typography.rs:509 decoration_arg",
+        "src/typography.rs:DecorationStyle::for_layout",
+        "src/context/api.rs:1131 get_textDecoration /1137 set_textDecoration"
+      ],
+      "core": [
+        "crates/canvas-core/src/typography/decoration.rs:decoration_style/DecorationArgs",
+        "crates/canvas-core/src/context/text_state.rs:get/set_textDecoration",
+        "crates/canvas-core/src/typography.rs:Spacing/DecorationStyle::for_layout"
+      ],
+      "python": [
+        "python/py_skia_canvas/_text_css.py:decoration",
+        "python/py_skia_canvas/_text_state.py:_property",
+        "crates/python/src/decoration.rs:decode/Fields",
+        "crates/python/src/lib.rs:NativeCanvas.text_decoration"
+      ],
+      "cases": [
+        "decoration-default-lines",
+        "decoration-line-styles",
+        "decoration-overline-styles",
+        "decoration-strike-styles",
+        "decoration-absolute-thickness",
+        "decoration-default-from-font",
+        "decoration-colors",
+        "decoration-order",
+        "decoration-whitespace",
+        "decoration-font-sizes",
+        "decoration-font-change-retention",
+        "decoration-wrap",
+        "decoration-align-direction",
+        "decoration-baselines",
+        "decoration-save-restore",
+        "decoration-resize",
+        "decoration-cross-canvas",
+        "decoration-stroke",
+        "decoration-outline",
+        "decoration-gradient-transform",
+        "decoration-clip-maxwidth",
+        "decoration-alias-reset",
+        "decoration-other-text-state",
+        "decoration-current-color-ignore",
+        "decoration-invalid-colors",
+        "decoration-none-resets",
+        "decoration-relative-thickness",
+        "decoration-numeric-prefix",
+        "decoration-substring-matching",
+        "decoration-nonstring-resets",
+        "decoration-token-whitespace",
+        "decoration-field-order"
+      ],
+      "evidence": [
+        "test-runs/20261028-decoration-final/run.json"
+      ],
+      "unverified": [
+        "Full host/subclass/coercion/extreme numeric contracts",
+        "Complete glyph/fallback/emoji/layout acceptance",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "textDecoration",
+      "access": "set",
+      "default": "none",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "Original CSS decoration string; non-string becomes empty descriptor/reset",
+      "units": "Style/line/color/inherit/string unitless; raw/px thickness f64 -> original native f32 CSS/canvas units, for_layout uses original font metric ratio",
+      "return": "None; original apply/ignore/default/error behavior",
+      "exceptions": "Owner RuntimeError; original size/unit/px TypeError when fields are read",
+      "ownership": "All Context/fonts/GPU owner TLS; owned descriptor/field read before borrow, no Python callbacks or GPU transfer",
+      "upstream": [
+        "lib/classes/context.js:textDecoration",
+        "lib/classes/css.js:182 parseTextDecoration",
+        "src/typography.rs:509 decoration_arg",
+        "src/typography.rs:DecorationStyle::for_layout",
+        "src/context/api.rs:1131 get_textDecoration /1137 set_textDecoration"
+      ],
+      "core": [
+        "crates/canvas-core/src/typography/decoration.rs:decoration_style/DecorationArgs",
+        "crates/canvas-core/src/context/text_state.rs:get/set_textDecoration",
+        "crates/canvas-core/src/typography.rs:Spacing/DecorationStyle::for_layout"
+      ],
+      "python": [
+        "python/py_skia_canvas/_text_css.py:decoration",
+        "python/py_skia_canvas/_text_state.py:_property",
+        "crates/python/src/decoration.rs:decode/Fields",
+        "crates/python/src/lib.rs:NativeCanvas.text_decoration"
+      ],
+      "cases": [
+        "decoration-default-lines",
+        "decoration-line-styles",
+        "decoration-overline-styles",
+        "decoration-strike-styles",
+        "decoration-absolute-thickness",
+        "decoration-default-from-font",
+        "decoration-colors",
+        "decoration-order",
+        "decoration-whitespace",
+        "decoration-font-sizes",
+        "decoration-font-change-retention",
+        "decoration-wrap",
+        "decoration-align-direction",
+        "decoration-baselines",
+        "decoration-save-restore",
+        "decoration-resize",
+        "decoration-cross-canvas",
+        "decoration-stroke",
+        "decoration-outline",
+        "decoration-gradient-transform",
+        "decoration-clip-maxwidth",
+        "decoration-alias-reset",
+        "decoration-other-text-state",
+        "decoration-current-color-ignore",
+        "decoration-invalid-colors",
+        "decoration-none-resets",
+        "decoration-relative-thickness",
+        "decoration-numeric-prefix",
+        "decoration-substring-matching",
+        "decoration-nonstring-resets",
+        "decoration-token-whitespace",
+        "decoration-field-order"
+      ],
+      "evidence": [
+        "test-runs/20261028-decoration-final/run.json"
+      ],
+      "unverified": [
+        "Full host/subclass/coercion/extreme numeric contracts",
+        "Complete glyph/fallback/emoji/layout acceptance",
+        "Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    }
+  ]
+}

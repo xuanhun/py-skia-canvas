@@ -1,0 +1,1662 @@
+{
+  "schema": "py-skia-canvas-gui-cases/v1",
+  "cases": [
+    {
+      "id": "gui-000",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": []
+    },
+    {
+      "id": "gui-001",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "visible",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gui-002",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "visible",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "gui-003",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "visible",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "gui-004",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "visible",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "gui-005",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "visible",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "gui-006",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "visible",
+          "value": []
+        }
+      ]
+    },
+    {
+      "id": "gui-007",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "visible",
+          "value": {}
+        }
+      ]
+    },
+    {
+      "id": "gui-008",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "resizable",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gui-009",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "resizable",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "gui-010",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "resizable",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "gui-011",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "resizable",
+          "value": []
+        }
+      ]
+    },
+    {
+      "id": "gui-012",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "borderless",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gui-013",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "borderless",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "gui-014",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "borderless",
+          "value": {}
+        }
+      ]
+    },
+    {
+      "id": "gui-015",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "borderless",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "gui-016",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "fullscreen",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gui-017",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "fullscreen",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "gui-018",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "fullscreen",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "gui-019",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "title",
+          "value": "hello"
+        }
+      ]
+    },
+    {
+      "id": "gui-020",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "title",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "gui-021",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "title",
+          "value": 42
+        }
+      ]
+    },
+    {
+      "id": "gui-022",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "title",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "gui-023",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "title",
+          "value": []
+        }
+      ]
+    },
+    {
+      "id": "gui-024",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "title",
+          "value": {}
+        }
+      ]
+    },
+    {
+      "id": "gui-025",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "background",
+          "value": "#abcdef"
+        }
+      ]
+    },
+    {
+      "id": "gui-026",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "background",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "gui-027",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "background",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "gui-028",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "background",
+          "value": 42
+        }
+      ]
+    },
+    {
+      "id": "gui-029",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "background",
+          "value": []
+        }
+      ]
+    },
+    {
+      "id": "gui-030",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "background",
+          "value": {}
+        }
+      ]
+    },
+    {
+      "id": "gui-031",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "cursor",
+          "value": "default"
+        }
+      ]
+    },
+    {
+      "id": "gui-032",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "cursor",
+          "value": "pointer"
+        }
+      ]
+    },
+    {
+      "id": "gui-033",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "cursor",
+          "value": "none"
+        }
+      ]
+    },
+    {
+      "id": "gui-034",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "cursor",
+          "value": "hand"
+        }
+      ]
+    },
+    {
+      "id": "gui-035",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "cursor",
+          "value": "wrong"
+        }
+      ]
+    },
+    {
+      "id": "gui-036",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "cursor",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "gui-037",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "cursor",
+          "value": {}
+        }
+      ]
+    },
+    {
+      "id": "gui-038",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "cursor",
+          "value": []
+        }
+      ]
+    },
+    {
+      "id": "gui-039",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "fit",
+          "value": "none"
+        }
+      ]
+    },
+    {
+      "id": "gui-040",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "fit",
+          "value": "contain-x"
+        }
+      ]
+    },
+    {
+      "id": "gui-041",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "fit",
+          "value": "contain-y"
+        }
+      ]
+    },
+    {
+      "id": "gui-042",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "fit",
+          "value": "contain"
+        }
+      ]
+    },
+    {
+      "id": "gui-043",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "fit",
+          "value": "cover"
+        }
+      ]
+    },
+    {
+      "id": "gui-044",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "fit",
+          "value": "fill"
+        }
+      ]
+    },
+    {
+      "id": "gui-045",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "fit",
+          "value": "scale-down"
+        }
+      ]
+    },
+    {
+      "id": "gui-046",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "fit",
+          "value": "resize"
+        }
+      ]
+    },
+    {
+      "id": "gui-047",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "fit",
+          "value": "wrong"
+        }
+      ]
+    },
+    {
+      "id": "gui-048",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "fit",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "gui-049",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "left",
+          "value": 32.5
+        }
+      ]
+    },
+    {
+      "id": "gui-050",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "left",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "gui-051",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "left",
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "id": "gui-052",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "left",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gui-053",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "top",
+          "value": 20.25
+        }
+      ]
+    },
+    {
+      "id": "gui-054",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "top",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "gui-055",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "top",
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "id": "gui-056",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "top",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "gui-057",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "width",
+          "value": 200
+        }
+      ]
+    },
+    {
+      "id": "gui-058",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "width",
+          "value": 164.25
+        }
+      ]
+    },
+    {
+      "id": "gui-059",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "width",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "gui-060",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "width",
+          "value": "200"
+        }
+      ]
+    },
+    {
+      "id": "gui-061",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "width",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "gui-062",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "height",
+          "value": 120
+        }
+      ]
+    },
+    {
+      "id": "gui-063",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "height",
+          "value": 108.5
+        }
+      ]
+    },
+    {
+      "id": "gui-064",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "height",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "gui-065",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "height",
+          "value": "100"
+        }
+      ]
+    },
+    {
+      "id": "gui-066",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "height",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gui-067",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "page",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "gui-068",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "page",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "gui-069",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "page",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "gui-070",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "page",
+          "value": -1
+        }
+      ]
+    },
+    {
+      "id": "gui-071",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "page",
+          "value": -2
+        }
+      ]
+    },
+    {
+      "id": "gui-072",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "page",
+          "value": 3.5
+        }
+      ]
+    },
+    {
+      "id": "gui-073",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "id",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "gui-074",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "id",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "gui-075",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "id",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "id": "gui-076",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "closed",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gui-077",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "setApp",
+          "name": "fps",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "gui-078",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "setApp",
+          "name": "fps",
+          "value": 30.5
+        }
+      ]
+    },
+    {
+      "id": "gui-079",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "setApp",
+          "name": "fps",
+          "value": "24"
+        }
+      ]
+    },
+    {
+      "id": "gui-080",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "setApp",
+          "name": "fps",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "gui-081",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "setApp",
+          "name": "fps",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "gui-082",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "setApp",
+          "name": "fps",
+          "value": -1
+        }
+      ]
+    },
+    {
+      "id": "gui-083",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "setApp",
+          "name": "fps",
+          "value": "bad"
+        }
+      ]
+    },
+    {
+      "id": "gui-084",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "setApp",
+          "name": "eventLoop",
+          "value": "node"
+        }
+      ]
+    },
+    {
+      "id": "gui-085",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "setApp",
+          "name": "eventLoop",
+          "value": "wrong"
+        }
+      ]
+    },
+    {
+      "id": "gui-086",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [],
+      "constructor": []
+    },
+    {
+      "id": "gui-087",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [],
+      "constructor": [
+        128
+      ]
+    },
+    {
+      "id": "gui-088",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [],
+      "constructor": [
+        {
+          "width": 140,
+          "height": 80,
+          "visible": false,
+          "left": 10,
+          "top": 10
+        }
+      ]
+    },
+    {
+      "id": "gui-089",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [],
+      "constructor": [
+        {
+          "width": 0,
+          "height": 0,
+          "visible": false,
+          "left": 10,
+          "top": 10
+        }
+      ],
+      "unsafeProfile": "non-positive window: official Wayland native panic"
+    },
+    {
+      "id": "gui-090",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [],
+      "constructor": [
+        null
+      ]
+    },
+    {
+      "id": "gui-091",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [],
+      "constructor": [
+        128,
+        72,
+        {
+          "title": "options",
+          "visible": false,
+          "left": 10,
+          "top": 10
+        }
+      ]
+    },
+    {
+      "id": "gui-092",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "page",
+          "value": 1
+        }
+      ],
+      "multipage": true
+    },
+    {
+      "id": "gui-093",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "page",
+          "value": -1
+        }
+      ],
+      "multipage": true
+    },
+    {
+      "id": "gui-094",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "set",
+          "name": "page",
+          "value": -2
+        }
+      ],
+      "multipage": true
+    },
+    {
+      "id": "gui-095",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "replaceCanvas"
+        }
+      ]
+    },
+    {
+      "id": "gui-096",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "events"
+        }
+      ]
+    },
+    {
+      "id": "gui-097",
+      "width": 160,
+      "height": 100,
+      "options": {
+        "visible": false,
+        "left": 10,
+        "top": 10
+      },
+      "ops": [
+        {
+          "op": "closeOpen"
+        }
+      ]
+    }
+  ]
+}

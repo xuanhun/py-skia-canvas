@@ -1,0 +1,1252 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "cases": [
+    {
+      "id": "imaging-pattern-0",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createPattern",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            "repeat"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            5,
+            10,
+            220,
+            145
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-pattern-1",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createPattern",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            "repeat-x"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            5,
+            10,
+            220,
+            145
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-pattern-2",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createPattern",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            "repeat-y"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            5,
+            10,
+            220,
+            145
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-pattern-3",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createPattern",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            "no-repeat"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            5,
+            10,
+            220,
+            145
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-pattern-4",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createPattern",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            ""
+          ],
+          "id": "p"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            5,
+            10,
+            220,
+            145
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-pattern-5",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createPattern",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            null
+          ],
+          "id": "p"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            5,
+            10,
+            220,
+            145
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-pattern-transform",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "checker.svg"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createPattern",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            "repeat"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "setTransform",
+          "args": [
+            1.5,
+            0.2,
+            0.15,
+            1.25,
+            10,
+            5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "setTransform",
+          "args": [
+            2,
+            0,
+            0,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeRect",
+          "args": [
+            10,
+            10,
+            180,
+            130
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-pattern-data",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            {
+              "$bytes": [
+                15,
+                17,
+                255,
+                0,
+                47,
+                17,
+                235,
+                64,
+                79,
+                17,
+                215,
+                128,
+                111,
+                17,
+                195,
+                255,
+                143,
+                17,
+                175,
+                0,
+                175,
+                17,
+                155,
+                64,
+                207,
+                17,
+                135,
+                128,
+                239,
+                17,
+                115,
+                255,
+                15,
+                47,
+                255,
+                64,
+                47,
+                47,
+                235,
+                128,
+                79,
+                47,
+                215,
+                255,
+                111,
+                47,
+                195,
+                0,
+                143,
+                47,
+                175,
+                64,
+                175,
+                47,
+                155,
+                128,
+                207,
+                47,
+                135,
+                255,
+                239,
+                47,
+                115,
+                0,
+                15,
+                77,
+                255,
+                128,
+                47,
+                77,
+                235,
+                255,
+                79,
+                77,
+                215,
+                0,
+                111,
+                77,
+                195,
+                64,
+                143,
+                77,
+                175,
+                128,
+                175,
+                77,
+                155,
+                255,
+                207,
+                77,
+                135,
+                0,
+                239,
+                77,
+                115,
+                64,
+                15,
+                107,
+                255,
+                255,
+                47,
+                107,
+                235,
+                0,
+                79,
+                107,
+                215,
+                64,
+                111,
+                107,
+                195,
+                128,
+                143,
+                107,
+                175,
+                255,
+                175,
+                107,
+                155,
+                0,
+                207,
+                107,
+                135,
+                64,
+                239,
+                107,
+                115,
+                128,
+                15,
+                137,
+                255,
+                0,
+                47,
+                137,
+                235,
+                64,
+                79,
+                137,
+                215,
+                128,
+                111,
+                137,
+                195,
+                255,
+                143,
+                137,
+                175,
+                0,
+                175,
+                137,
+                155,
+                64,
+                207,
+                137,
+                135,
+                128,
+                239,
+                137,
+                115,
+                255,
+                15,
+                167,
+                255,
+                64,
+                47,
+                167,
+                235,
+                128,
+                79,
+                167,
+                215,
+                255,
+                111,
+                167,
+                195,
+                0,
+                143,
+                167,
+                175,
+                64,
+                175,
+                167,
+                155,
+                128,
+                207,
+                167,
+                135,
+                255,
+                239,
+                167,
+                115,
+                0,
+                15,
+                197,
+                255,
+                128,
+                47,
+                197,
+                235,
+                255,
+                79,
+                197,
+                215,
+                0,
+                111,
+                197,
+                195,
+                64,
+                143,
+                197,
+                175,
+                128,
+                175,
+                197,
+                155,
+                255,
+                207,
+                197,
+                135,
+                0,
+                239,
+                197,
+                115,
+                64,
+                15,
+                227,
+                255,
+                255,
+                47,
+                227,
+                235,
+                0,
+                79,
+                227,
+                215,
+                64,
+                111,
+                227,
+                195,
+                128,
+                143,
+                227,
+                175,
+                255,
+                175,
+                227,
+                155,
+                0,
+                207,
+                227,
+                135,
+                64,
+                239,
+                227,
+                115,
+                128
+              ]
+            },
+            8,
+            8
+          ],
+          "id": "d"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createPattern",
+          "args": [
+            {
+              "$ref": "d"
+            },
+            "repeat"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            200,
+            150
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-pattern-canvas",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Canvas",
+          "args": [
+            20,
+            20
+          ],
+          "id": "src"
+        },
+        {
+          "op": "call",
+          "target": "src",
+          "name": "getContext",
+          "args": [
+            "2d"
+          ],
+          "id": "sc"
+        },
+        {
+          "op": "set",
+          "target": "sc",
+          "name": "fillStyle",
+          "value": "#e03070"
+        },
+        {
+          "op": "call",
+          "target": "sc",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            12,
+            12
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createPattern",
+          "args": [
+            {
+              "$ref": "src"
+            },
+            "repeat"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            200,
+            150
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-pattern-autosize",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "checker-autosize.svg"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createPattern",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            "repeat"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-pattern-errors",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createPattern",
+          "args": [
+            {
+              "$ref": "img"
+            }
+          ],
+          "observeError": "missing"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createPattern",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            "bogus"
+          ],
+          "observeError": "bogus"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createPattern",
+          "args": [
+            null,
+            "repeat"
+          ],
+          "observeError": "source"
+        }
+      ]
+    }
+  ]
+}

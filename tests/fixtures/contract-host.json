@@ -1,0 +1,142 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "cases": [
+    {
+      "id": "sharp-00",
+      "group": "python-host-profile",
+      "width": 32,
+      "height": 24,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "toSharp",
+          "args": [
+            {
+              "$undefined": true
+            }
+          ],
+          "observeError": "host"
+        }
+      ]
+    },
+    {
+      "id": "sharp-01",
+      "group": "python-host-profile",
+      "width": 32,
+      "height": 24,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "toSharp",
+          "args": [
+            null
+          ],
+          "observeError": "host"
+        }
+      ]
+    },
+    {
+      "id": "sharp-02",
+      "group": "python-host-profile",
+      "width": 32,
+      "height": 24,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "toSharp",
+          "args": [
+            false
+          ],
+          "observeError": "host"
+        }
+      ]
+    },
+    {
+      "id": "sharp-03",
+      "group": "python-host-profile",
+      "width": 32,
+      "height": 24,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "toSharp",
+          "args": [
+            {}
+          ],
+          "observeError": "host"
+        }
+      ]
+    },
+    {
+      "id": "sharp-04",
+      "group": "python-host-profile",
+      "width": 32,
+      "height": 24,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "toSharp",
+          "args": [
+            []
+          ],
+          "observeError": "host"
+        }
+      ]
+    },
+    {
+      "id": "sharp-05",
+      "group": "python-host-profile",
+      "width": 32,
+      "height": 24,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "toSharp",
+          "args": [
+            {
+              "density": 2
+            }
+          ],
+          "observeError": "host"
+        }
+      ]
+    },
+    {
+      "id": "sharp-image-data",
+      "group": "python-host-profile",
+      "width": 32,
+      "height": 24,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            1,
+            1
+          ],
+          "id": "data"
+        },
+        {
+          "op": "call",
+          "target": "data",
+          "name": "toSharp",
+          "args": [],
+          "observeError": "host"
+        }
+      ]
+    }
+  ]
+}

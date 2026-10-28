@@ -1,0 +1,51 @@
+{
+  "schema": "py-skia-canvas-css-tokenizer-source/v1",
+  "scope": "Original default splitter/flat parenthesis algorithms adapted as Python value boundary only; no Node runtime",
+  "packages": [
+    {
+      "name": "string-split-by",
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/string-split-by/-/string-split-by-1.0.0.tgz",
+      "integrity": "sha512-KaJKY+hfpzNyet/emP81PJA9hTVSfxNLS9SFTWxdCnnW1/zOOwiV248+EfoX7IQFcBaOp4G5YE6xTJMF+pLg6A==",
+      "license": "MIT",
+      "dependencies": {
+        "parenthesis": "^3.1.5"
+      }
+    },
+    {
+      "name": "parenthesis",
+      "version": "3.1.8",
+      "resolved": "https://registry.npmjs.org/parenthesis/-/parenthesis-3.1.8.tgz",
+      "integrity": "sha512-KF/U8tk54BgQewkJPvB4s/US3VQY68BRDpH638+7O/n58TpnwiwnOtGIOsT2/i+M78s61BBpeC83STB88d8sqw==",
+      "license": "MIT"
+    }
+  ],
+  "files": [
+    {
+      "path": "references/css/string-split-by/index.js",
+      "sha256": "39846ac9b141adc761f4c8264d11b35bdf486c93a004d39eb364823b03aa337d"
+    },
+    {
+      "path": "references/css/string-split-by/package.json",
+      "sha256": "6b4e7626d2526a56240497de670dc3f236eecc0e991d3621ccaac5606f66a95b"
+    },
+    {
+      "path": "references/css/string-split-by/readme.md",
+      "sha256": "cfb9fa8129e7e5b1b545fc5d6360c1be6e42ec01c61e29ae25c12e72344421d1"
+    },
+    {
+      "path": "references/css/parenthesis/index.js",
+      "sha256": "1ef13311eaace0b0707c18f8bbb1ba1646fcadea2e373aaa85c72f729f9e7f0a"
+    },
+    {
+      "path": "references/css/parenthesis/package.json",
+      "sha256": "a524e1ab08dca8bd262772bc6c39171a14d3656a5abc8fb81e3bbebaa8907f6b"
+    },
+    {
+      "path": "references/css/parenthesis/LICENSE",
+      "sha256": "80dd594f7950d51ed7d4315248a9866f80507f02e92ee4eabdc12b89b476a539"
+    }
+  ],
+  "splitterLicenseEvidence": "string-split-by/readme.md:License (MIT, copyright2018 Dmitry Yv)",
+  "workingPort": "python/py_skia_canvas/_font_css.py"
+}

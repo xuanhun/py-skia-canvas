@@ -1,0 +1,1004 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Original DOMMatrix math/parser/defaults/flags/sharing/errors and real draw via original core.",
+  "cases": [
+    {
+      "id": "matrix-css-identity-keywords",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            ""
+          ],
+          "id": "m0"
+        },
+        {
+          "op": "call",
+          "target": "m0",
+          "name": "toJSON",
+          "args": [],
+          "save": "identity0"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "  "
+          ],
+          "id": "m1"
+        },
+        {
+          "op": "call",
+          "target": "m1",
+          "name": "toJSON",
+          "args": [],
+          "save": "identity1"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "none"
+          ],
+          "id": "m2"
+        },
+        {
+          "op": "call",
+          "target": "m2",
+          "name": "toJSON",
+          "args": [],
+          "save": "identity2"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "inherit"
+          ],
+          "id": "m3"
+        },
+        {
+          "op": "call",
+          "target": "m3",
+          "name": "toJSON",
+          "args": [],
+          "save": "identity3"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "initial"
+          ],
+          "id": "m4"
+        },
+        {
+          "op": "call",
+          "target": "m4",
+          "name": "toJSON",
+          "args": [],
+          "save": "identity4"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "revert"
+          ],
+          "id": "m5"
+        },
+        {
+          "op": "call",
+          "target": "m5",
+          "name": "toJSON",
+          "args": [],
+          "save": "identity5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "revert-layer"
+          ],
+          "id": "m6"
+        },
+        {
+          "op": "call",
+          "target": "m6",
+          "name": "toJSON",
+          "args": [],
+          "save": "identity6"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "unset"
+          ],
+          "id": "m7"
+        },
+        {
+          "op": "call",
+          "target": "m7",
+          "name": "toJSON",
+          "args": [],
+          "save": "identity7"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "none()"
+          ],
+          "id": "m8"
+        },
+        {
+          "op": "call",
+          "target": "m8",
+          "name": "toJSON",
+          "args": [],
+          "save": "identity8"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "inherit("
+          ],
+          "id": "m9"
+        },
+        {
+          "op": "call",
+          "target": "m9",
+          "name": "toJSON",
+          "args": [],
+          "save": "identity9"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-css-translate-axes",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "translate(10.25px, 8.75) translateX(12.5px) translateY(-3.25px) translateZ(2.5px) translate3d(1, 2, 3)"
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "parsed"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toString",
+          "args": [],
+          "save": "text"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "m"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-css-scale-axes",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "scale(125%, 75%) scaleX(110%) scaleY(80%) scaleZ(90%) scale3d(120%, 80%, 110%)"
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "parsed"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toString",
+          "args": [],
+          "save": "text"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "m"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-css-rotate-units",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "translate(40px, 20px) rotate(33.3333333333333deg) rotate(-0.23rad) rotate(0.07turn)"
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "parsed"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toString",
+          "args": [],
+          "save": "text"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "m"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-css-rotate-axes",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "translate(20px,10px) rotateX(17.25deg) rotateY(-13.125deg) rotateZ(7.75deg) rotate3d(1.25,-0.75,2.5,33.125deg)"
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "parsed"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toString",
+          "args": [],
+          "save": "text"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "m"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-css-skew",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "translate(20,10) skew(17.125deg,-0.23rad) skewX(0.03turn) skewY(-12.25deg)"
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "parsed"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toString",
+          "args": [],
+          "save": "text"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "m"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-css-matrix-string",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "matrix(1.25, 0.125, 0.25, 0.875, 10.25, 8.75) scale(125%)"
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "parsed"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toString",
+          "args": [],
+          "save": "text"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "m"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-css-matrix-three-d",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "matrix3d(1.25,0.125,0.5,0.001,0.25,0.875,0,-0.0005,0,0,1,0,10.25,8.75,0,1) translate(10px, 5px)"
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "parsed"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toString",
+          "args": [],
+          "save": "text"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "m"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-css-composition",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "translate(30.25px, 20.75px) rotate(-17.125deg) scale(140%, 90%) skewX(13.125deg)"
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "parsed"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toString",
+          "args": [],
+          "save": "text"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "m"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-css-syntax-errors",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "translate(1px"
+          ],
+          "id": "bad0",
+          "observeError": "error0"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "unknown(2)"
+          ],
+          "id": "bad1",
+          "observeError": "error1"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "Rotate(3deg)"
+          ],
+          "id": "bad2",
+          "observeError": "error2"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "scale()"
+          ],
+          "id": "bad3",
+          "observeError": "error3"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "wrong"
+          ],
+          "id": "bad4",
+          "observeError": "error4"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "scale((1))"
+          ],
+          "id": "bad5",
+          "observeError": "error5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-css-unit-errors",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "rotate(12)"
+          ],
+          "id": "bad0",
+          "observeError": "error0"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "translate(2em,3px)"
+          ],
+          "id": "bad1",
+          "observeError": "error1"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "scale(2px)"
+          ],
+          "id": "bad2",
+          "observeError": "error2"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "matrix(1px,0,0,1,0,0)"
+          ],
+          "id": "bad3",
+          "observeError": "error3"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "matrix(1,2)"
+          ],
+          "id": "bad4",
+          "observeError": "error4"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "matrix3d(1,2)"
+          ],
+          "id": "bad5",
+          "observeError": "error5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-css-permissive-prefixes",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "translate(12junkpx, -3.5px) scale(150junk%, 0x20) matrix(1,0,0,1,0b11,0o12)"
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "parsed"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toString",
+          "args": [],
+          "save": "text"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "m"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-css-nan-suffix",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            "translate(boguspx, 2px) scale(bogus%) rotate(bogusdeg)"
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "suffixNaNs"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toString",
+          "args": [],
+          "save": "nanText"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-css-context-path-errors",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            "unknown(2)"
+          ],
+          "observeError": "ctxSyntaxWrapped"
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0L30 0L15 20Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "transform",
+          "args": [
+            "scale(2px)"
+          ],
+          "observeError": "pathTypeWrapped"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "addPath",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            "unknown(2)"
+          ],
+          "observeError": "addSyntaxWrapped"
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "edges",
+          "save": "retained"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            "translate(20.25px,10.75px) rotate(-17.125deg)"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    }
+  ]
+}

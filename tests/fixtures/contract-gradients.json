@@ -1,0 +1,3739 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "cases": [
+    {
+      "id": "contract-gradients-000",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear"
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-001",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-002",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48,
+            123
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-003",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            null,
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-004",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            false,
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-005",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            true,
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-006",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-007",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            -1,
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-008",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            1.5,
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-009",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            "6.25",
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-010",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            " 0x10 ",
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-011",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            "0X10",
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-012",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            "0b11",
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-013",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            "0o10",
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-014",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            "",
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-015",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            "bad",
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-016",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            [],
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-017",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            [
+              5
+            ],
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-018",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            [
+              null
+            ],
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-019",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            [
+              {
+                "$undefined": true
+              }
+            ],
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-020",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            [
+              [
+                "7.5"
+              ]
+            ],
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-021",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            [
+              1,
+              2
+            ],
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-022",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            {},
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-023",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            {
+              "$undefined": true
+            },
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-024",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            {
+              "$number": "NaN"
+            },
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-025",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            {
+              "$number": "Infinity"
+            },
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-026",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            {
+              "$number": "-Infinity"
+            },
+            0,
+            64,
+            48
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-027",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial"
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-028",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            10,
+            10,
+            0,
+            20,
+            20
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-029",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            10,
+            10,
+            0,
+            20,
+            20,
+            25,
+            123
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-030",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            null,
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-031",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            false,
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-032",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            true,
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-033",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            0,
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-034",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            -1,
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-035",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            1.5,
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-036",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            "6.25",
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-037",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            " 0x10 ",
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-038",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            "0X10",
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-039",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            "0b11",
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-040",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            "0o10",
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-041",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            "",
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-042",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            "bad",
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-043",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            [],
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-044",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            [
+              5
+            ],
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-045",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            [
+              null
+            ],
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-046",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            [
+              {
+                "$undefined": true
+              }
+            ],
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-047",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            [
+              [
+                "7.5"
+              ]
+            ],
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-048",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            [
+              1,
+              2
+            ],
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-049",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            {},
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-050",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            {
+              "$undefined": true
+            },
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-051",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            {
+              "$number": "NaN"
+            },
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-052",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            {
+              "$number": "Infinity"
+            },
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-053",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "radial",
+            {
+              "$number": "-Infinity"
+            },
+            10,
+            0,
+            20,
+            20,
+            25
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-054",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic"
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-055",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            0.5,
+            32
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-056",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            0.5,
+            32,
+            24,
+            123
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-057",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            null,
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-058",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            false,
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-059",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            true,
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-060",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            0,
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-061",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            -1,
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-062",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            1.5,
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-063",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            "6.25",
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-064",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            " 0x10 ",
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-065",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            "0X10",
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-066",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            "0b11",
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-067",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            "0o10",
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-068",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            "",
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-069",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            "bad",
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-070",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            [],
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-071",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            [
+              5
+            ],
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-072",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            [
+              null
+            ],
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-073",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            [
+              {
+                "$undefined": true
+              }
+            ],
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-074",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            [
+              [
+                "7.5"
+              ]
+            ],
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-075",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            [
+              1,
+              2
+            ],
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-076",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            {},
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-077",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            {
+              "$undefined": true
+            },
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-078",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            {
+              "$number": "NaN"
+            },
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-079",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            {
+              "$number": "Infinity"
+            },
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-080",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "conic",
+            {
+              "$number": "-Infinity"
+            },
+            32,
+            24
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-081",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            null,
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-082",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            false,
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-083",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            true,
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-084",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0,
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-085",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            -1,
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-086",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            1.5,
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-087",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            "6.25",
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-088",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            " 0x10 ",
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-089",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            "0X10",
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-090",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            "0b11",
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-091",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            "0o10",
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-092",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            "",
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-093",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            "bad",
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-094",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            [],
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-095",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            [
+              5
+            ],
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-096",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            [
+              null
+            ],
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-097",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            [
+              {
+                "$undefined": true
+              }
+            ],
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-098",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            [
+              [
+                "7.5"
+              ]
+            ],
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-099",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            [
+              1,
+              2
+            ],
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-100",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            {},
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-101",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            {
+              "$undefined": true
+            },
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-102",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            {
+              "$number": "NaN"
+            },
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-103",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            {
+              "$number": "Infinity"
+            },
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-104",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            {
+              "$number": "-Infinity"
+            },
+            "red"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-105",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-106",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.5
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-107",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.5,
+            null
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-108",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.5,
+            [
+              "red"
+            ]
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-109",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.5,
+            {}
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-110",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.5,
+            "bad",
+            123
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-111",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.5,
+            "red",
+            123
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-112",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            2,
+            "bad"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-113",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            "0x1",
+            "blue"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-114",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "linear",
+            0,
+            0,
+            64,
+            48
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            {
+              "$undefined": true
+            },
+            "blue"
+          ],
+          "observeError": "stop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            64,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-115",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            1
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-116",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            true
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-117",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            []
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-118",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            {}
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-119",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            null
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-120",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            false
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-121",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            ""
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    },
+    {
+      "id": "contract-gradients-122",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "wrong"
+          ],
+          "id": "g",
+          "observeError": "constructor"
+        }
+      ]
+    }
+  ]
+}

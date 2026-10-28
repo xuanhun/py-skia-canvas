@@ -1,0 +1,318 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Actual bold/italic, wrapping, combining/RTL and emoji graphemes on original Paragraph",
+  "cases": [
+    {
+      "id": "draw-bold-italic",
+      "group": "actual-draw-fonts",
+      "width": 620,
+      "height": 240,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            240
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#285839"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "italic bold 28px sans-serif"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textWrap",
+          "value": true
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV ffi fj cafe\u0301",
+            360
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV ffi fj cafe\u0301",
+            10.25,
+            60,
+            360
+          ]
+        }
+      ]
+    },
+    {
+      "id": "draw-rtl-wrap",
+      "group": "actual-draw-fonts",
+      "width": 620,
+      "height": 240,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            240
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#285839"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "26px sans-serif"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textWrap",
+          "value": true
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "\u0645\u0631\u062d\u0628\u0627 \u0628\u0627\u0644\u0639\u0627\u0644\u0645 \u05e9\u05dc\u05d5\u05dd words words words",
+            180
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "\u0645\u0631\u062d\u0628\u0627 \u0628\u0627\u0644\u0639\u0627\u0644\u0645 \u05e9\u05dc\u05d5\u05dd words words words",
+            10.25,
+            60,
+            180
+          ]
+        }
+      ]
+    },
+    {
+      "id": "draw-emoji-clusters",
+      "group": "actual-draw-fonts",
+      "width": 620,
+      "height": 240,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            240
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#285839"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "30px sans-serif"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textWrap",
+          "value": true
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "\ud83d\ude00 \u2764\ufe0f \ud83d\udc69\u200d\ud83d\udcbb",
+            360
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "\ud83d\ude00 \u2764\ufe0f \ud83d\udc69\u200d\ud83d\udcbb",
+            10.25,
+            60,
+            360
+          ]
+        }
+      ]
+    },
+    {
+      "id": "draw-stroke-combining",
+      "group": "actual-draw-fonts",
+      "width": 620,
+      "height": 240,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            240
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#285839"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "italic 28px sans-serif"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textWrap",
+          "value": true
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "A\u0301 V\u0327 ffi \u03a9",
+            360
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "A\u0301 V\u0327 ffi \u03a9",
+            10.25,
+            60,
+            360
+          ]
+        }
+      ]
+    }
+  ]
+}

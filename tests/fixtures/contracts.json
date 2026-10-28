@@ -1,0 +1,78 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Initial G0 public-value contracts; run in separate normal/STRICT processes. No Python implementation claim.",
+  "cases": [
+    {
+      "id": "canvas-defaults", "group": "contract", "width": 8, "height": 8, "mode": "default",
+      "ops": [
+        {"op": "construct", "class": "Canvas", "id": "fresh", "args": []},
+        {"op": "get", "target": "fresh", "name": "width", "save": "defaultWidth"},
+        {"op": "get", "target": "fresh", "name": "height", "save": "defaultHeight"},
+        {"op": "call", "target": "fresh", "name": "getContext", "args": [], "save": "missingContextType"},
+        {"op": "call", "target": "fresh", "name": "getContext", "args": [null], "save": "nullContextType"},
+        {"op": "call", "target": "fresh", "name": "getContext", "args": ["webgl"], "save": "otherContextType"},
+        {"op": "set", "target": "fresh", "name": "width", "value": "12.75"},
+        {"op": "get", "target": "fresh", "name": "width", "save": "numericStringWidth"},
+        {"op": "set", "target": "fresh", "name": "width", "value": -1},
+        {"op": "get", "target": "fresh", "name": "width", "save": "negativeWidth"},
+        {"op": "set", "target": "fresh", "name": "width", "value": null},
+        {"op": "get", "target": "fresh", "name": "width", "save": "nullWidth"},
+        {"op": "set", "target": "fresh", "name": "width", "value": {"$undefined": true}},
+        {"op": "get", "target": "fresh", "name": "width", "save": "undefinedWidth"}
+      ]
+    },
+    {
+      "id": "context-defaults", "group": "contract", "width": 8, "height": 8, "mode": "default",
+      "ops": [
+        {"op": "get", "target": "ctx", "name": "fillStyle", "save": "fillStyle"},
+        {"op": "get", "target": "ctx", "name": "strokeStyle", "save": "strokeStyle"},
+        {"op": "get", "target": "ctx", "name": "lineWidth", "save": "lineWidth"},
+        {"op": "get", "target": "ctx", "name": "lineCap", "save": "lineCap"},
+        {"op": "get", "target": "ctx", "name": "lineJoin", "save": "lineJoin"},
+        {"op": "get", "target": "ctx", "name": "miterLimit", "save": "miterLimit"},
+        {"op": "get", "target": "ctx", "name": "globalAlpha", "save": "globalAlpha"},
+        {"op": "get", "target": "ctx", "name": "globalCompositeOperation", "save": "globalCompositeOperation"},
+        {"op": "get", "target": "ctx", "name": "font", "save": "font"},
+        {"op": "get", "target": "ctx", "name": "textAlign", "save": "textAlign"},
+        {"op": "get", "target": "ctx", "name": "textBaseline", "save": "textBaseline"},
+        {"op": "get", "target": "ctx", "name": "imageSmoothingEnabled", "save": "imageSmoothingEnabled"},
+        {"op": "get", "target": "ctx", "name": "imageSmoothingQuality", "save": "imageSmoothingQuality"},
+        {"op": "get", "target": "ctx", "name": "filter", "save": "filter"},
+        {"op": "call", "target": "ctx", "name": "getTransform", "save": "transform"},
+        {"op": "call", "target": "ctx", "name": "getLineDash", "save": "dash"}
+      ]
+    },
+    {
+      "id": "strict-boundary", "group": "contract", "width": 8, "height": 8, "mode": "default",
+      "ops": [
+        {"op": "call", "target": "ctx", "name": "fillRect", "args": [], "observeError": "missingRectArguments"},
+        {"op": "call", "target": "ctx", "name": "fillRect", "args": [0, 0, {"$number": "NaN"}, 2], "observeError": "nanRect"},
+        {"op": "set", "target": "ctx", "name": "lineWidth", "value": -2, "observeError": "negativeLineWidth"},
+        {"op": "get", "target": "ctx", "name": "lineWidth", "save": "afterNegativeWidth"},
+        {"op": "set", "target": "ctx", "name": "lineWidth", "value": {"$number": "Infinity"}, "observeError": "infiniteLineWidth"},
+        {"op": "get", "target": "ctx", "name": "lineWidth", "save": "afterInfiniteWidth"},
+        {"op": "set", "target": "ctx", "name": "fillStyle", "value": "not-a-color", "observeError": "invalidColor"},
+        {"op": "get", "target": "ctx", "name": "fillStyle", "save": "afterInvalidColor"},
+        {"op": "call", "target": "ctx", "name": "roundRect", "args": [0, 0, 4, 4, -1], "observeError": "negativeRadius"},
+        {"op": "call", "target": "canvas", "name": "toBufferSync", "args": ["not-a-format"], "observeError": "invalidExportFormat"}
+      ]
+    },
+    {
+      "id": "constructor-false-state", "group": "diagnostic", "width": 8, "height": 8, "mode": "constructor-false",
+      "ops": [
+        {"op": "get", "target": "canvas", "name": "gpu", "save": "constructorGpuGetter"},
+        {"op": "get", "target": "canvas", "name": "engine", "save": "constructorEngineStatus"},
+        {"op": "set", "target": "ctx", "name": "fillStyle", "value": "#2878d9"},
+        {"op": "call", "target": "ctx", "name": "fillRect", "args": [0.25, 0.25, 4.5, 4.5]}
+      ]
+    },
+    {
+      "id": "cpu-setter-state", "group": "diagnostic", "width": 8, "height": 8, "mode": "cpu-setter",
+      "ops": [
+        {"op": "get", "target": "canvas", "name": "gpu", "save": "setterGpuGetter"},
+        {"op": "get", "target": "canvas", "name": "engine", "save": "setterEngineStatus"},
+        {"op": "call", "target": "ctx", "name": "fillRect", "args": [0.25, 0.25, 4.5, 4.5]}
+      ]
+    }
+  ]
+}

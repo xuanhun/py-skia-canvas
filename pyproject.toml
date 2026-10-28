@@ -1,0 +1,22 @@
+[build-system]
+requires = ["maturin==1.9.6"]
+build-backend = "maturin"
+
+[project]
+name = "py-skia-canvas"
+version = "0.1.0a18"
+description = "Python bindings for the shared skia-canvas 3.0.8 Rust core"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md", "crates/canvas-core/LICENSE", "crates/python/vendor/v8/LICENSE", "crates/python/vendor/v8/SUN-NOTICE.txt", "crates/python/vendor/v8-numbers/LICENSE", "crates/python/vendor/css/LICENSE-parenthesis.txt", "crates/python/vendor/css/LICENSE-string-split-by.txt", "third_party/licenses/**/*", "third_party/license-inventory.json"]
+classifiers = ["Development Status :: 3 - Alpha", "Programming Language :: Python :: 3", "Programming Language :: Rust"]
+
+[tool.maturin]
+manifest-path = "crates/python/Cargo.toml"
+python-source = "python"
+module-name = "py_skia_canvas._native"
+bindings = "pyo3"
+locked = true
+include = [{ path = "scripts/build_manylinux.sh", format = "sdist" }, { path = "scripts/build_windows.ps1", format = "sdist" }, { path = "tools/manylinux.Dockerfile", format = "sdist" }, { path = "crates/skia-bindings/**/*", format = "sdist" }]
+exclude = ["crates/skia-bindings/skia/**", "crates/skia-bindings/.git/**"]

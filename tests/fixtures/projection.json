@@ -1,0 +1,2178 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Original createProjection point parsing/basis expansion/Skia solver/results/errors and real rendering.",
+  "cases": [
+    {
+      "id": "projection-default-basis-quad",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              10.25,
+              8.75,
+              143.5,
+              16.25,
+              128.75,
+              88.5,
+              22.5,
+              80.25
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "projection-default-basis-size",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              120.5,
+              70.25
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "projection-default-basis-rect",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              15.25,
+              10.75,
+              140.5,
+              89.25
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "projection-explicit-size-basis",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              10.25,
+              8.75,
+              143.5,
+              16.25,
+              128.75,
+              88.5,
+              22.5,
+              80.25
+            ],
+            [
+              160,
+              100
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "projection-explicit-rect-basis",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              10.25,
+              8.75,
+              143.5,
+              16.25,
+              128.75,
+              88.5,
+              22.5,
+              80.25
+            ],
+            [
+              20.25,
+              10.75,
+              140.5,
+              90.25
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "projection-explicit-quad-basis",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              10.25,
+              8.75,
+              143.5,
+              16.25,
+              128.75,
+              88.5,
+              22.5,
+              80.25
+            ],
+            [
+              0,
+              0,
+              150.5,
+              5.25,
+              145.75,
+              95.5,
+              3.25,
+              90.25
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "projection-three-point-affine",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              20.25,
+              15.75,
+              143.5,
+              23.25,
+              30.5,
+              85.25
+            ],
+            [
+              0,
+              0,
+              160,
+              0,
+              0,
+              100
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "projection-context-state-unchanged",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            "translate(15.25px,10.75px) rotate(17.125deg)"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "getTransform",
+          "args": [],
+          "id": "before"
+        },
+        {
+          "op": "call",
+          "target": "before",
+          "name": "toJSON",
+          "args": [],
+          "save": "before"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "save",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              10.25,
+              8.75,
+              143.5,
+              16.25,
+              128.75,
+              88.5,
+              22.5,
+              80.25
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "getTransform",
+          "args": [],
+          "id": "after"
+        },
+        {
+          "op": "call",
+          "target": "after",
+          "name": "toJSON",
+          "args": [],
+          "save": "after"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "restore",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "getTransform",
+          "args": [],
+          "id": "restored"
+        },
+        {
+          "op": "call",
+          "target": "restored",
+          "name": "toJSON",
+          "args": [],
+          "save": "restored"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "projection-resize-current-bounds",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "width",
+          "value": 200
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "height",
+          "value": 120
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              160,
+              100
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "projection-negative-rect",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              140.5,
+              90.25,
+              15.25,
+              10.75
+            ],
+            [
+              160,
+              100,
+              0,
+              0
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "projection-crossed-quad",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              15,
+              15,
+              145,
+              85,
+              145,
+              15,
+              15,
+              85
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "projection-snapshot-isolation",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              10.25,
+              8.75,
+              143.5,
+              16.25,
+              128.75,
+              88.5,
+              22.5,
+              80.25
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              10.25,
+              8.75,
+              143.5,
+              16.25,
+              128.75,
+              88.5,
+              22.5,
+              80.25
+            ]
+          ],
+          "id": "second"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "p"
+          },
+          "right": {
+            "$ref": "second"
+          },
+          "save": "independent"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "first"
+        },
+        {
+          "op": "set",
+          "target": "p",
+          "name": "e",
+          "value": 70.25
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "toJSON",
+          "args": [],
+          "save": "unmodified"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "getTransform",
+          "args": [],
+          "id": "ctxMatrix"
+        },
+        {
+          "op": "call",
+          "target": "ctxMatrix",
+          "name": "toJSON",
+          "args": [],
+          "save": "ctxUnchanged"
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "second"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "projection-path-transform",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              10.25,
+              8.75,
+              143.5,
+              16.25,
+              128.75,
+              88.5,
+              22.5,
+              80.25
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0L160 0L80 100Z"
+          ],
+          "id": "path"
+        },
+        {
+          "op": "call",
+          "target": "path",
+          "name": "transform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "id": "transformed"
+        },
+        {
+          "op": "get",
+          "target": "transformed",
+          "name": "edges",
+          "save": "edges"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "transformed"
+            }
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [],
+          "id": "added"
+        },
+        {
+          "op": "call",
+          "target": "added",
+          "name": "addPath",
+          "args": [
+            {
+              "$ref": "path"
+            },
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "added"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "projection-cross-canvas",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Canvas",
+          "args": [
+            80,
+            50
+          ],
+          "id": "other"
+        },
+        {
+          "op": "call",
+          "target": "other",
+          "name": "getContext",
+          "args": [
+            "2d"
+          ],
+          "id": "otherCtx"
+        },
+        {
+          "op": "call",
+          "target": "otherCtx",
+          "name": "createProjection",
+          "args": [
+            [
+              160,
+              100
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "otherBasis"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "projection-fractional-rounding",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              0.123456789,
+              3.141592653589793,
+              150.123456789,
+              7.987654321,
+              139.99999999,
+              90.00000001,
+              7.333333333,
+              87.77777777
+            ],
+            [
+              0,
+              0,
+              159.99999999,
+              99.99999999
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "projection-gradient-clip-text",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              10.25,
+              8.75,
+              143.5,
+              16.25,
+              128.75,
+              88.5,
+              22.5,
+              80.25
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createLinearGradient",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ],
+          "id": "gradient"
+        },
+        {
+          "op": "call",
+          "target": "gradient",
+          "name": "addColorStop",
+          "args": [
+            0,
+            "#2060ff"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "gradient",
+          "name": "addColorStop",
+          "args": [
+            1,
+            "#ff2450"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "gradient"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "roundRect",
+          "args": [
+            0,
+            0,
+            160,
+            100,
+            8
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj",
+            20.25,
+            55.5
+          ]
+        }
+      ]
+    }
+  ]
+}

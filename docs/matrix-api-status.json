@@ -1,0 +1,1900 @@
+{
+  "schema": "py-skia-canvas-scoped-api-status/v1",
+  "baseline": "3.0.8",
+  "batch": "G4-matrix-5",
+  "notFullLedgerPromotion": true,
+  "constructorCSSBound": true,
+  "entries": [
+    {
+      "class": "DOMMatrix",
+      "name": "multiply",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, other",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 475,
+          "symbol": "multiply"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 86,
+        "symbol": "DOMMatrix.multiply"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "multiplySelf",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, other",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 479,
+          "symbol": "multiplySelf"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 94,
+        "symbol": "DOMMatrix.multiplySelf"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "preMultiplySelf",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, other",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 489,
+          "symbol": "preMultiplySelf"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 103,
+        "symbol": "DOMMatrix.preMultiplySelf"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "translate",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, tx=_MISSING, ty=_MISSING, tz=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 499,
+          "symbol": "translate"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 112,
+        "symbol": "DOMMatrix.translate"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "translateSelf",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, tx=_MISSING, ty=_MISSING, tz=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 503,
+          "symbol": "translateSelf"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 119,
+        "symbol": "DOMMatrix.translateSelf"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "scale",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, scaleX=_MISSING, scaleY=_MISSING, scaleZ=_MISSING, originX=_MISSING, originY=_MISSING, originZ=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 518,
+          "symbol": "scale"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 129,
+        "symbol": "DOMMatrix.scale"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "scale3d",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, scale=_MISSING, originX=_MISSING, originY=_MISSING, originZ=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 522,
+          "symbol": "scale3d"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 136,
+        "symbol": "DOMMatrix.scale3d"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "scale3dSelf",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, scale=_MISSING, originX=_MISSING, originY=_MISSING, originZ=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 526,
+          "symbol": "scale3dSelf"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 143,
+        "symbol": "DOMMatrix.scale3dSelf"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "scaleSelf",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, scaleX=_MISSING, scaleY=_MISSING, scaleZ=_MISSING, originX=_MISSING, originY=_MISSING, originZ=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 530,
+          "symbol": "scaleSelf"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 150,
+        "symbol": "DOMMatrix.scaleSelf"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "rotateFromVector",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, x=_MISSING, y=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 558,
+          "symbol": "rotateFromVector"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 166,
+        "symbol": "DOMMatrix.rotateFromVector"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "rotateFromVectorSelf",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, x=_MISSING, y=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 562,
+          "symbol": "rotateFromVectorSelf"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 173,
+        "symbol": "DOMMatrix.rotateFromVectorSelf"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "rotate",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, rotX=_MISSING, rotY=_MISSING, rotZ=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 567,
+          "symbol": "rotate"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 182,
+        "symbol": "DOMMatrix.rotate"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "rotateSelf",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, rotX=_MISSING, rotY=_MISSING, rotZ=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 571,
+          "symbol": "rotateSelf"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 189,
+        "symbol": "DOMMatrix.rotateSelf"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "rotateAxisAngle",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, x=_MISSING, y=_MISSING, z=_MISSING, angle=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 621,
+          "symbol": "rotateAxisAngle"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 207,
+        "symbol": "DOMMatrix.rotateAxisAngle"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "rotateAxisAngleSelf",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, x=_MISSING, y=_MISSING, z=_MISSING, angle=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 625,
+          "symbol": "rotateAxisAngleSelf"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 214,
+        "symbol": "DOMMatrix.rotateAxisAngleSelf"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "skew",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, sx=_MISSING, sy=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 660,
+          "symbol": "skew"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 233,
+        "symbol": "DOMMatrix.skew"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "skewSelf",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, sx=_MISSING, sy=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 664,
+          "symbol": "skewSelf"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 240,
+        "symbol": "DOMMatrix.skewSelf"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "skewX",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, sx=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 682,
+          "symbol": "skewX"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 252,
+        "symbol": "DOMMatrix.skewX"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "skewXSelf",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, sx=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 686,
+          "symbol": "skewXSelf"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 256,
+        "symbol": "DOMMatrix.skewXSelf"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "skewY",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, sy=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 703,
+          "symbol": "skewY"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 266,
+        "symbol": "DOMMatrix.skewY"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "skewYSelf",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, sy=_MISSING, *extra",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 707,
+          "symbol": "skewYSelf"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 270,
+        "symbol": "DOMMatrix.skewYSelf"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "flipX",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 724,
+          "symbol": "flipX"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 280,
+        "symbol": "DOMMatrix.flipX"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "flipY",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 733,
+          "symbol": "flipY"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 287,
+        "symbol": "DOMMatrix.flipY"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "inverse",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 742,
+          "symbol": "inverse"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 294,
+        "symbol": "DOMMatrix.inverse"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "invertSelf",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 746,
+          "symbol": "invertSelf"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 301,
+        "symbol": "DOMMatrix.invertSelf"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "setMatrixValue",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self, transformList",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 781,
+          "symbol": "setMatrixValue"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 321,
+        "symbol": "DOMMatrix.setMatrixValue"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "toString",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "self",
+      "units": "Matrix coefficients/scales/vectors unitless, coordinates/origins canvas units, operation angles degrees",
+      "return": "Original self/new DOMMatrix, string, or distinct undefined singleton according to upstream branch",
+      "exceptions": "Original 3D invertSelf Error(RuntimeError); original parser SyntaxError/TypeError; unsupported object arithmetic coercion TypeError",
+      "ownership": "Python-owned value arrays; original newInstance sharing and mutation/detachment retained; no GPU references/affinity",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 843,
+          "symbol": "toString"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_matrix_ops.py",
+        "line": 331,
+        "symbol": "DOMMatrix.toString"
+      },
+      "cases": [
+        "matrix-multiply-order",
+        "matrix-self-multiply-flags",
+        "matrix-translate-defaults",
+        "matrix-scale-origin",
+        "matrix-scale-three-d",
+        "matrix-rotate-two-d",
+        "matrix-rotate-three-d",
+        "matrix-rotate-vector",
+        "matrix-axis-angle",
+        "matrix-skew-directions",
+        "matrix-no-op-array-sharing",
+        "matrix-flips-reset-flag",
+        "matrix-inverse-return-semantics",
+        "matrix-inverse-singular-undefined",
+        "matrix-inverse-three-d",
+        "matrix-set-matrix-value",
+        "matrix-nonfinite-trig",
+        "matrix-number-to-string",
+        "matrix-css-identity-keywords",
+        "matrix-css-translate-axes",
+        "matrix-css-scale-axes",
+        "matrix-css-rotate-units",
+        "matrix-css-rotate-axes",
+        "matrix-css-skew",
+        "matrix-css-matrix-string",
+        "matrix-css-matrix-three-d",
+        "matrix-css-composition",
+        "matrix-css-syntax-errors",
+        "matrix-css-unit-errors",
+        "matrix-css-permissive-prefixes",
+        "matrix-css-nan-suffix",
+        "matrix-css-context-path-errors",
+        "matrix-singular-array-type",
+        "matrix-undefined-defaults",
+        "matrix-three-d-format-thresholds",
+        "matrix-css-original-overloads"
+      ],
+      "evidence": [
+        "test-runs/20261027-matrix-final-2/run.json"
+      ],
+      "unverified": [
+        "Complete JS valueOf/host/undefined/STRICT contract outside selected profile",
+        "Extreme shortest decimal Number formatting beyond tested range",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    }
+  ],
+  "mathSource": "references/math/node-v22.23.2/source.json"
+}

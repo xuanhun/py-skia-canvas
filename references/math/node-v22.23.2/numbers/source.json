@@ -1,0 +1,119 @@
+{
+  "nodeCommit": "aa4c77582be995286fc6e00aaf530dc7ade102a9",
+  "files": [
+    {
+      "path": "src/base/numbers/bignum-dtoa.cc",
+      "sha256": "95f5da6eddd22593f29ddfc220d9e875ad072607ebb39a34b16b450e4fc7f39f",
+      "bytes": 26427,
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/numbers/bignum-dtoa.cc"
+    },
+    {
+      "path": "src/base/numbers/bignum-dtoa.h",
+      "sha256": "3942e034cfcb26d4dee0be5404f78c77d252452268c9f1fd44dc6e603af7b541",
+      "bytes": 2845,
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/numbers/bignum-dtoa.h"
+    },
+    {
+      "path": "src/base/numbers/bignum.cc",
+      "sha256": "fc29cffe67ef84dd9254b0db015a50b7f3aff5905d44921051a1eb5182491da1",
+      "bytes": 21628,
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/numbers/bignum.cc"
+    },
+    {
+      "path": "src/base/numbers/bignum.h",
+      "sha256": "a637293704e80470e4dfa37bcf1147c7f59100067ce81e55be54ae0aafc85206",
+      "bytes": 4068,
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/numbers/bignum.h"
+    },
+    {
+      "path": "src/base/numbers/cached-powers.cc",
+      "sha256": "0c052308447b845ecd02ad23a074812f99251cebd7dd60df5d42231e5af8e8da",
+      "bytes": 6023,
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/numbers/cached-powers.cc"
+    },
+    {
+      "path": "src/base/numbers/cached-powers.h",
+      "sha256": "d643924afa3a79d7ea011ad25760b12c92c68e0a4c8f2983f5a6bf3d0b4933f0",
+      "bytes": 1615,
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/numbers/cached-powers.h"
+    },
+    {
+      "path": "src/base/numbers/diy-fp.h",
+      "sha256": "a98cf9a7198fc3bef9e399cabad1c7c8f06ffdb13ace758f0e93e6cbea470cd1",
+      "bytes": 2986,
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/numbers/diy-fp.h"
+    },
+    {
+      "path": "src/base/numbers/double.h",
+      "sha256": "0a45d39df46d2821feced879f278d7f6f6f83a398e43863897f523d3501d9de6",
+      "bytes": 6935,
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/numbers/double.h"
+    },
+    {
+      "path": "src/base/numbers/dtoa.cc",
+      "sha256": "55a7f9e2a82d5dae21f43d7d3089ffb1372406acfedf1099258aee9cff36a6db",
+      "bytes": 2057,
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/numbers/dtoa.cc"
+    },
+    {
+      "path": "src/base/numbers/dtoa.h",
+      "sha256": "0427b72a4521ca8992539aea1d8c67ace0d1c598532e17a992225438710e640f",
+      "bytes": 3506,
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/numbers/dtoa.h"
+    },
+    {
+      "path": "src/base/numbers/fast-dtoa.cc",
+      "sha256": "b51c3b37dbbf93cce1361edf37775a174b08fa3c093a71891f2bbedfb3d1b495",
+      "bytes": 31750,
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/numbers/fast-dtoa.cc"
+    },
+    {
+      "path": "src/base/numbers/fast-dtoa.h",
+      "sha256": "0766d2e056c9a1eeced297c1c561d46df46417ccdf34865203092ce096d12571",
+      "bytes": 2459,
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/numbers/fast-dtoa.h"
+    },
+    {
+      "path": "src/numbers/conversions.cc",
+      "sha256": "4367bb3a9a4056c0cffcad69961962394dfe092d28f1ef94c9eca9bac27235f4",
+      "bytes": 52738,
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/numbers/conversions.cc"
+    },
+    {
+      "path": "src/base/strings.cc",
+      "sha256": "f99f4ba0a03499e5ba1f1772f946b48b99a33c5d8aaf7b353d14885bef8b7ff9",
+      "bytes": 815,
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/strings.cc"
+    },
+    {
+      "path": "src/base/strings.h",
+      "sha256": "efa09267988e0fec94997d9ede1ec75c6e9658ad24f9e6ef0c7f53ed6fea0cb3",
+      "bytes": 1557,
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/strings.h"
+    },
+    {
+      "path": "src/base/vector.h",
+      "sha256": "251afa73713b89db4e898a43884a94b39a9264bef686e6d52090f4a791fb2699",
+      "bytes": 12532,
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/vector.h"
+    },
+    {
+      "path": "src/base/numbers/fixed-dtoa.cc",
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/numbers/fixed-dtoa.cc",
+      "bytes": 13631,
+      "sha256": "e280d3825c9b6c695ca047628ed173e096f721f6f7a8d0ee40f09799aafe158a"
+    },
+    {
+      "path": "src/base/numbers/fixed-dtoa.h",
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/numbers/fixed-dtoa.h",
+      "bytes": 1416,
+      "sha256": "e35ef1ac01cbe8fd1f6a1afde02319306285fb89871ac66ba0d8b65bf4cc5459"
+    },
+    {
+      "path": "src/base/numbers/diy-fp.cc",
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/numbers/diy-fp.cc",
+      "bytes": 1070,
+      "sha256": "a866972a7e243b639530585bc67fb40de1a3be494209df4ed947dd4202330325"
+    }
+  ]
+}

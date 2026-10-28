@@ -1,0 +1,9 @@
+[workspace]
+members = ["crates/canvas-core", "crates/node", "crates/python"]
+resolver = "2"
+
+[profile.release]
+lto = "fat"
+
+[patch.crates-io]
+skia-bindings = { path = "crates/skia-bindings" }

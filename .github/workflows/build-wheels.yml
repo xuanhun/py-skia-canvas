@@ -1,0 +1,33 @@
+name: Build wheel candidates
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
+      - run: rustup toolchain install 1.90.0 --profile minimal
+      - run: ./scripts/build_windows.ps1
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: unreviewed-windows
+          path: dist/*.whl
+          if-no-files-found: error
+  linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - run: rustup toolchain install 1.90.0 --profile minimal
+      - run: docker build -f tools/manylinux.Dockerfile -t canvas-builder .
+      - name: Build original Skia and static dependencies
+        run: |
+          docker run --rm -v "$PWD:/io" -v "$HOME/.cargo:/rust/cargo" -v "$HOME/.rustup:/rust/rustup" -e CARGO_HOME=/rust/cargo -e RUSTUP_HOME=/rust/rustup -w /io canvas-builder bash scripts/build_manylinux.sh
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: unreviewed-linux
+          path: dist/*.whl
+          if-no-files-found: error

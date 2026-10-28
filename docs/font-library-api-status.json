@@ -1,0 +1,232 @@
+{
+  "schema": "py-skia-canvas-scoped-api-status/v1",
+  "baseline": "3.0.8",
+  "batch": "G5-font-library-1",
+  "notFullLedgerPromotion": true,
+  "entries": [
+    {
+      "class": "FontLibrary",
+      "name": "families",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "none",
+      "units": "Names/paths/style/width strings and original numeric weights, no coordinate units",
+      "return": "Sorted family list snapshot",
+      "exceptions": "No expected error",
+      "ownership": "Singleton resolves calling thread original Rust TLS; fonts remain on that thread, returned Python snapshots independent; no GPU transfer",
+      "upstream": [
+        "lib/classes/typography.js:FontLibrary",
+        "src/font_library.rs:get_families/families",
+        "src/typography.rs:typeface_details"
+      ],
+      "core": "crates/canvas-core/src/font_library.rs:get_families/families",
+      "python": "python/py_skia_canvas/_fonts.py:families",
+      "cases": [
+        "fontlib-system-families",
+        "fontlib-array-files",
+        "fontlib-alias-styles",
+        "fontlib-mapping",
+        "fontlib-mapping-numeric-keys",
+        "fontlib-replace-same-style",
+        "fontlib-repeat-file",
+        "fontlib-reset-snapshots"
+      ],
+      "evidence": [
+        "test-runs/20261028-fontlib-final/run.json"
+      ],
+      "unverified": [
+        "ctx.font CSS parser and actual custom alias glyph selection",
+        "Complete JS host/proxy/prototype/coercion and Python subclass conversions",
+        "Windows WOFF/WOFF2 execution, hardware GPU, Metal, manylinux and release"
+      ]
+    },
+    {
+      "class": "FontLibrary",
+      "name": "has",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "familyName:string; extra arguments ignored",
+      "units": "Names/paths/style/width strings and original numeric weights, no coordinate units",
+      "return": "bool, case-sensitive membership",
+      "exceptions": "Missing/non-string TypeError",
+      "ownership": "Singleton resolves calling thread original Rust TLS; fonts remain on that thread, returned Python snapshots independent; no GPU transfer",
+      "upstream": [
+        "lib/classes/typography.js:FontLibrary",
+        "src/font_library.rs:has/families",
+        "src/typography.rs:typeface_details"
+      ],
+      "core": "crates/canvas-core/src/font_library.rs:has/families",
+      "python": "python/py_skia_canvas/_fonts.py:has",
+      "cases": [
+        "fontlib-system-families",
+        "fontlib-generic-query",
+        "fontlib-single-file",
+        "fontlib-alias-file",
+        "fontlib-reset-snapshots",
+        "fontlib-empty-registrations",
+        "fontlib-unicode-empty-alias",
+        "fontlib-variable-family-metadata",
+        "fontlib-query-type-errors",
+        "fontlib-filtered-path-holes",
+        "fontlib-filesystem-errors",
+        "fontlib-partial-array-registration",
+        "fontlib-partial-mapping-registration",
+        "fontlib-recovery-after-error"
+      ],
+      "evidence": [
+        "test-runs/20261028-fontlib-final/run.json"
+      ],
+      "unverified": [
+        "ctx.font CSS parser and actual custom alias glyph selection",
+        "Complete JS host/proxy/prototype/coercion and Python subclass conversions",
+        "Windows WOFF/WOFF2 execution, hardware GPU, Metal, manylinux and release"
+      ]
+    },
+    {
+      "class": "FontLibrary",
+      "name": "family",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "name:string; extra arguments ignored",
+      "units": "Names/paths/style/width strings and original numeric weights, no coordinate units",
+      "return": "Family/weights/widths/styles snapshot or undefined",
+      "exceptions": "Missing/non-string TypeError",
+      "ownership": "Singleton resolves calling thread original Rust TLS; fonts remain on that thread, returned Python snapshots independent; no GPU transfer",
+      "upstream": [
+        "lib/classes/typography.js:FontLibrary",
+        "src/font_library.rs:family/family_details",
+        "src/typography.rs:typeface_details"
+      ],
+      "core": "crates/canvas-core/src/font_library.rs:family/family_details",
+      "python": "python/py_skia_canvas/_fonts.py:family",
+      "cases": [
+        "fontlib-system-families",
+        "fontlib-generic-query",
+        "fontlib-single-file",
+        "fontlib-array-files",
+        "fontlib-alias-file",
+        "fontlib-alias-styles",
+        "fontlib-mapping",
+        "fontlib-replace-same-style",
+        "fontlib-repeat-file",
+        "fontlib-reset-snapshots",
+        "fontlib-unicode-empty-alias",
+        "fontlib-variable-family-metadata",
+        "fontlib-query-type-errors",
+        "fontlib-filtered-path-holes",
+        "fontlib-partial-array-registration",
+        "fontlib-recovery-after-error"
+      ],
+      "evidence": [
+        "test-runs/20261028-fontlib-final/run.json"
+      ],
+      "unverified": [
+        "ctx.font CSS parser and actual custom alias glyph selection",
+        "Complete JS host/proxy/prototype/coercion and Python subclass conversions",
+        "Windows WOFF/WOFF2 execution, hardware GPU, Metal, manylinux and release"
+      ]
+    },
+    {
+      "class": "FontLibrary",
+      "name": "use",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "file:string | files:array; alias:string + file(s); mapping:string-key dict",
+      "units": "Names/paths/style/width strings and original numeric weights, no coordinate units",
+      "return": "File/family/weight/style/width metadata list or alias mapping; filtered paths leave undefined slots",
+      "exceptions": "Original Error on signature/read/decode; null mapping TypeError; prior registrations remain on later failure",
+      "ownership": "Singleton resolves calling thread original Rust TLS; fonts remain on that thread, returned Python snapshots independent; no GPU transfer",
+      "upstream": [
+        "lib/classes/typography.js:FontLibrary",
+        "src/font_library.rs:addFamily/load_typeface/typeface_metadata/add_typeface",
+        "src/typography.rs:typeface_details"
+      ],
+      "core": "crates/canvas-core/src/font_library.rs:addFamily/load_typeface/typeface_metadata/add_typeface",
+      "python": "python/py_skia_canvas/_fonts.py:use",
+      "cases": [
+        "fontlib-single-file",
+        "fontlib-array-files",
+        "fontlib-alias-file",
+        "fontlib-alias-styles",
+        "fontlib-mapping",
+        "fontlib-mapping-numeric-keys",
+        "fontlib-replace-same-style",
+        "fontlib-repeat-file",
+        "fontlib-reset-snapshots",
+        "fontlib-empty-registrations",
+        "fontlib-unicode-empty-alias",
+        "fontlib-variable-family-metadata",
+        "fontlib-use-signature-errors",
+        "fontlib-filtered-path-holes",
+        "fontlib-filesystem-errors",
+        "fontlib-partial-array-registration",
+        "fontlib-partial-mapping-registration",
+        "fontlib-empty-undefined-paths",
+        "fontlib-recovery-after-error"
+      ],
+      "evidence": [
+        "test-runs/20261028-fontlib-final/run.json"
+      ],
+      "unverified": [
+        "ctx.font CSS parser and actual custom alias glyph selection",
+        "Complete JS host/proxy/prototype/coercion and Python subclass conversions",
+        "Windows WOFF/WOFF2 execution, hardware GPU, Metal, manylinux and release"
+      ]
+    },
+    {
+      "class": "FontLibrary",
+      "name": "reset",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "extra arguments ignored",
+      "units": "Names/paths/style/width strings and original numeric weights, no coordinate units",
+      "return": "undefined",
+      "exceptions": "No expected error",
+      "ownership": "Singleton resolves calling thread original Rust TLS; fonts remain on that thread, returned Python snapshots independent; no GPU transfer",
+      "upstream": [
+        "lib/classes/typography.js:FontLibrary",
+        "src/font_library.rs:reset",
+        "src/typography.rs:typeface_details"
+      ],
+      "core": "crates/canvas-core/src/font_library.rs:reset",
+      "python": "python/py_skia_canvas/_fonts.py:reset",
+      "cases": [
+        "fontlib-system-families",
+        "fontlib-generic-query",
+        "fontlib-single-file",
+        "fontlib-array-files",
+        "fontlib-alias-file",
+        "fontlib-alias-styles",
+        "fontlib-mapping",
+        "fontlib-mapping-numeric-keys",
+        "fontlib-replace-same-style",
+        "fontlib-repeat-file",
+        "fontlib-reset-snapshots",
+        "fontlib-empty-registrations",
+        "fontlib-unicode-empty-alias",
+        "fontlib-variable-family-metadata",
+        "fontlib-query-type-errors",
+        "fontlib-use-signature-errors",
+        "fontlib-filtered-path-holes",
+        "fontlib-filesystem-errors",
+        "fontlib-partial-array-registration",
+        "fontlib-partial-mapping-registration",
+        "fontlib-empty-undefined-paths",
+        "fontlib-recovery-after-error"
+      ],
+      "evidence": [
+        "test-runs/20261028-fontlib-final/run.json"
+      ],
+      "unverified": [
+        "ctx.font CSS parser and actual custom alias glyph selection",
+        "Complete JS host/proxy/prototype/coercion and Python subclass conversions",
+        "Windows WOFF/WOFF2 execution, hardware GPU, Metal, manylinux and release"
+      ]
+    }
+  ]
+}

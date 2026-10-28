@@ -1,0 +1,13 @@
+{
+  "version": "2.17.1",
+  "source": "https://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.17.1.orig.tar.gz",
+  "bytes": 622045,
+  "sha256": "f07504cef87f171ee1748352e2df9b9f125352f620fa0d03a9284306ea2c40a4",
+  "officialNativeEvidence": {
+    "symbol": "FcGetVersion",
+    "address": "0x17c84c0",
+    "returnValueHex": "0x54c5",
+    "returnValue": 21701,
+    "nativeSha256": "2363537634644a50b69d785411713d12ae62453c1238bb98842e65b9919777f9"
+  }
+}

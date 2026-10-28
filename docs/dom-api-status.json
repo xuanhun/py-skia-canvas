@@ -1,0 +1,4741 @@
+{
+  "schema": "py-skia-canvas-scoped-api-status/v1",
+  "baseline": "3.0.8",
+  "batch": "G4-dom-values-4",
+  "notFullLedgerPromotion": true,
+  "entries": [
+    {
+      "class": "DOMPoint",
+      "name": "constructor",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 31,
+          "symbol": "constructor"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 53,
+        "symbol": "DOMPoint.constructor"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMPoint",
+      "name": "fromPoint",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 38,
+          "symbol": "fromPoint"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 58,
+        "symbol": "DOMPoint.fromPoint"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMPoint",
+      "name": "matrixTransform",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 47,
+          "symbol": "matrixTransform"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 68,
+        "symbol": "DOMPoint.matrixTransform"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMPoint",
+      "name": "toJSON",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 69,
+          "symbol": "toJSON"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 83,
+        "symbol": "DOMPoint.toJSON"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMPoint",
+      "name": "x",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 30,
+          "symbol": "x"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 53,
+        "symbol": "DOMPoint.x"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMPoint",
+      "name": "x",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 30,
+          "symbol": "x"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 53,
+        "symbol": "DOMPoint.x"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMPoint",
+      "name": "y",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 30,
+          "symbol": "y"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 53,
+        "symbol": "DOMPoint.y"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMPoint",
+      "name": "y",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 30,
+          "symbol": "y"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 53,
+        "symbol": "DOMPoint.y"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMPoint",
+      "name": "z",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 30,
+          "symbol": "z"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 53,
+        "symbol": "DOMPoint.z"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMPoint",
+      "name": "z",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 30,
+          "symbol": "z"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 53,
+        "symbol": "DOMPoint.z"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMPoint",
+      "name": "w",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 30,
+          "symbol": "w"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 53,
+        "symbol": "DOMPoint.w"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMPoint",
+      "name": "w",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 30,
+          "symbol": "w"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 53,
+        "symbol": "DOMPoint.w"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMRect",
+      "name": "constructor",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 87,
+          "symbol": "constructor"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 99,
+        "symbol": "DOMRect.constructor"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMRect",
+      "name": "fromRect",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 94,
+          "symbol": "fromRect"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 104,
+        "symbol": "DOMRect.fromRect"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMRect",
+      "name": "top",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 98,
+          "symbol": "top"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 115,
+        "symbol": "DOMRect.top"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMRect",
+      "name": "left",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 102,
+          "symbol": "left"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 120,
+        "symbol": "DOMRect.left"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMRect",
+      "name": "right",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 106,
+          "symbol": "right"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 125,
+        "symbol": "DOMRect.right"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMRect",
+      "name": "bottom",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 110,
+          "symbol": "bottom"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 130,
+        "symbol": "DOMRect.bottom"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMRect",
+      "name": "toJSON",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 114,
+          "symbol": "toJSON"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 134,
+        "symbol": "DOMRect.toJSON"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMRect",
+      "name": "x",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 86,
+          "symbol": "x"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 99,
+        "symbol": "DOMRect.x"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMRect",
+      "name": "x",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 86,
+          "symbol": "x"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 99,
+        "symbol": "DOMRect.x"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMRect",
+      "name": "y",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 86,
+          "symbol": "y"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 99,
+        "symbol": "DOMRect.y"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMRect",
+      "name": "y",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 86,
+          "symbol": "y"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 99,
+        "symbol": "DOMRect.y"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMRect",
+      "name": "width",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 86,
+          "symbol": "width"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 99,
+        "symbol": "DOMRect.width"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMRect",
+      "name": "width",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 86,
+          "symbol": "width"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 99,
+        "symbol": "DOMRect.width"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMRect",
+      "name": "height",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 86,
+          "symbol": "height"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 99,
+        "symbol": "DOMRect.height"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMRect",
+      "name": "height",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 86,
+          "symbol": "height"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 99,
+        "symbol": "DOMRect.height"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "constructor",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 389,
+          "symbol": "constructor"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 151,
+        "symbol": "DOMMatrix.constructor"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "is2D",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 319,
+          "symbol": "is2D"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 187,
+        "symbol": "DOMMatrix.is2D"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "isIdentity",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 323,
+          "symbol": "isIdentity"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 192,
+        "symbol": "DOMMatrix.isIdentity"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "isMatrix3",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 359,
+          "symbol": "isMatrix3"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 200,
+        "symbol": "DOMMatrix.isMatrix3"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "isMatrix4",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 370,
+          "symbol": "isMatrix4"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 210,
+        "symbol": "DOMMatrix.isMatrix4"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "fromMatrix",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 332,
+          "symbol": "fromMatrix"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 220,
+        "symbol": "DOMMatrix.fromMatrix"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "fromFloat32Array",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 349,
+          "symbol": "fromFloat32Array"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 235,
+        "symbol": "DOMMatrix.fromFloat32Array"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "fromFloat64Array",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 354,
+          "symbol": "fromFloat64Array"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 246,
+        "symbol": "DOMMatrix.fromFloat64Array"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "transformPoint",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 791,
+          "symbol": "transformPoint"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 256,
+        "symbol": "DOMMatrix.transformPoint"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "toFloat32Array",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 807,
+          "symbol": "toFloat32Array"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 269,
+        "symbol": "DOMMatrix.toFloat32Array"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "toFloat64Array",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 811,
+          "symbol": "toFloat64Array"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 276,
+        "symbol": "DOMMatrix.toFloat64Array"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "toJSON",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 815,
+          "symbol": "toJSON"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 283,
+        "symbol": "DOMMatrix.toJSON"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "clone",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 851,
+          "symbol": "clone"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 290,
+        "symbol": "DOMMatrix.clone"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "a",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 312,
+          "symbol": "a"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.a"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "a",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 312,
+          "symbol": "a"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.a"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "b",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 313,
+          "symbol": "b"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.b"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "b",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 313,
+          "symbol": "b"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.b"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "c",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 314,
+          "symbol": "c"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.c"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "c",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 314,
+          "symbol": "c"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.c"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "d",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 315,
+          "symbol": "d"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.d"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "d",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 315,
+          "symbol": "d"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.d"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "e",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 316,
+          "symbol": "e"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.e"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "e",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 316,
+          "symbol": "e"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.e"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "f",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 317,
+          "symbol": "f"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.f"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "f",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 317,
+          "symbol": "f"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.f"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m11",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 295,
+          "symbol": "m11"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m11"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m11",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 295,
+          "symbol": "m11"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m11"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m12",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 296,
+          "symbol": "m12"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m12"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m12",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 296,
+          "symbol": "m12"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m12"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m13",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 297,
+          "symbol": "m13"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m13"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m13",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 297,
+          "symbol": "m13"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m13"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m14",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 298,
+          "symbol": "m14"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m14"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m14",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 298,
+          "symbol": "m14"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m14"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m21",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 299,
+          "symbol": "m21"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m21"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m21",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 299,
+          "symbol": "m21"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m21"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m22",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 300,
+          "symbol": "m22"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m22"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m22",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 300,
+          "symbol": "m22"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m22"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m23",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 301,
+          "symbol": "m23"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m23"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m23",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 301,
+          "symbol": "m23"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m23"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m24",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 302,
+          "symbol": "m24"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m24"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m24",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 302,
+          "symbol": "m24"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m24"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m31",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 303,
+          "symbol": "m31"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m31"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m31",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 303,
+          "symbol": "m31"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m31"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m32",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 304,
+          "symbol": "m32"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m32"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m32",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 304,
+          "symbol": "m32"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m32"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m33",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 305,
+          "symbol": "m33"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m33"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m33",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 305,
+          "symbol": "m33"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m33"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m34",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 306,
+          "symbol": "m34"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m34"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m34",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 306,
+          "symbol": "m34"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m34"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m41",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 307,
+          "symbol": "m41"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m41"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m41",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 307,
+          "symbol": "m41"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m41"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m42",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 308,
+          "symbol": "m42"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m42"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m42",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 308,
+          "symbol": "m42"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m42"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m43",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 309,
+          "symbol": "m43"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m43"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m43",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 309,
+          "symbol": "m43"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m43"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m44",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 310,
+          "symbol": "m44"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m44"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "DOMMatrix",
+      "name": "m44",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/geometry.js",
+          "line": 310,
+          "symbol": "m44"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_geometry.py",
+        "line": 298,
+        "symbol": "DOMMatrix.m44"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "setTransform",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 39,
+          "symbol": "setTransform"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 582,
+        "symbol": "CanvasRenderingContext2D.setTransform"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "transform",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 45,
+          "symbol": "transform"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 590,
+        "symbol": "CanvasRenderingContext2D.transform"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "currentTransform",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 38,
+          "symbol": "currentTransform"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 598,
+        "symbol": "CanvasRenderingContext2D.currentTransform"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "currentTransform",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 39,
+          "symbol": "currentTransform"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 607,
+        "symbol": "CanvasRenderingContext2D.currentTransform"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "getTransform",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 42,
+          "symbol": "getTransform"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 614,
+        "symbol": "CanvasRenderingContext2D.getTransform"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "addPath",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 47,
+          "symbol": "addPath"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 151,
+        "symbol": "Path2D.addPath"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "transform",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Numeric value profile including tagged IEEE values, 6/16 arrays/scalars, DOM values and matrix-like objects; complete JS coercion/CSS/operations pending",
+      "units": "Coordinates/rect dimensions/translations in canvas units; coefficients/homogeneous w unitless",
+      "return": "Independent Python-owned DOM value/dict/array or original scalar; None for setters",
+      "exceptions": "Original audited numeric constructor/field/null/typed-array/transform TypeError; Context/Path owner RuntimeError; CSS parser NotImplementedError",
+      "ownership": "DOM data is independent Python-owned f64 storage, any thread; Canvas/Path native access remains owner TLS",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 93,
+          "symbol": "transform"
+        }
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 238,
+        "symbol": "Path2D.transform"
+      },
+      "cases": [
+        "dom-point-values",
+        "dom-rect-signed",
+        "dom-matrix-six-aliases",
+        "dom-matrix-perspective",
+        "dom-matrix-object-defaults",
+        "dom-matrix-sticky-clone",
+        "dom-matrix-array-snapshots",
+        "dom-context-getter-snapshots",
+        "dom-context-stack-resize",
+        "dom-path-dom-overloads",
+        "dom-nonfinite-values",
+        "dom-constructor-errors",
+        "dom-transform-array16-concat",
+        "dom-point-2d-fast-path",
+        "dom-null-static-contracts",
+        "dom-filtered-native-matrix-arity",
+        "dom-typed-f32-overflow",
+        "dom-point-f64-expression-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-dom-values-final-2/run.json"
+      ],
+      "unverified": [
+        "CSS strings, matrix arithmetic/inversion/stringification/createProjection",
+        "Complete JS coercion/undefined/host-object/STRICT contracts",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    }
+  ]
+}
+

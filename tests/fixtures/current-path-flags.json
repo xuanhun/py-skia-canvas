@@ -1,0 +1,190 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Original native bool_arg_or ignores non-boolean CCW values; dash-offset getter included.",
+  "cases": [
+    {
+      "id": "g4-ccw-numeric",
+      "group": "g4-current-path-flags",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "arc",
+          "args": [
+            45.25,
+            45.5,
+            30.75,
+            0.2,
+            1.4,
+            1
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "closePath"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#2878d9"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            105.25,
+            60.75,
+            30.5,
+            15.25,
+            0.3,
+            0.2,
+            1.4,
+            1
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "closePath"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#cc3277"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashOffset",
+          "value": -2.25
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "lineDashOffset",
+          "save": "dashOffset"
+        }
+      ]
+    },
+    {
+      "id": "g4-ccw-string",
+      "group": "g4-current-path-flags",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "arc",
+          "args": [
+            45.25,
+            45.5,
+            30.75,
+            0.2,
+            1.4,
+            "true"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "closePath"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#2878d9"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            105.25,
+            60.75,
+            30.5,
+            15.25,
+            0.3,
+            0.2,
+            1.4,
+            "true"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "closePath"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#cc3277"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashOffset",
+          "value": -2.25
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "lineDashOffset",
+          "save": "dashOffset"
+        }
+      ]
+    }
+  ]
+}

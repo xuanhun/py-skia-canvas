@@ -1,0 +1,9143 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Original text draw/outline argument count, String and staged numeric/STRICT contracts",
+  "cases": [
+    {
+      "id": "text-contract-000",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            {
+              "$undefined": true
+            },
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-001",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            null,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-002",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            false,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-003",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            true,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-004",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            0,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-005",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            -0.0,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-006",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            1.25,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-007",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            1e-07,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-008",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            1e+21,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-009",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            1000000000000000128,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-010",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57 A\nB",
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-011",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "\ud800x",
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-012",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            [],
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-013",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            [
+              null,
+              {
+                "$undefined": true
+              }
+            ],
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-014",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            [
+              "ffi",
+              "\u5b57"
+            ],
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-015",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            [
+              [
+                1
+              ]
+            ],
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-016",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            {},
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-017",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            {
+              "$number": "NaN"
+            },
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-018",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            {
+              "$number": "Infinity"
+            },
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-019",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "bad",
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-020",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "0x10",
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-021",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            {
+              "$undefined": true
+            },
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-022",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            null,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-023",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            false,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-024",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            true,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-025",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            0,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-026",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            -0.0,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-027",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            1.25,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-028",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            1e-07,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-029",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            1e+21,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-030",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            1000000000000000128,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-031",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            "ffi \u5b57 A\nB",
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-032",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            "\ud800x",
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-033",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            [],
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-034",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            [
+              null,
+              {
+                "$undefined": true
+              }
+            ],
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-035",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            [
+              "ffi",
+              "\u5b57"
+            ],
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-036",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            [
+              [
+                1
+              ]
+            ],
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-037",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            {},
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-038",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            {
+              "$number": "NaN"
+            },
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-039",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            {
+              "$number": "Infinity"
+            },
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-040",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            "bad",
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-041",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            "0x10",
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-042",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            {
+              "$undefined": true
+            },
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-043",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            null,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-044",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            false,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-045",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            true,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-046",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            0,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-047",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            -0.0,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-048",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            1.25,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-049",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            1e-07,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-050",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            1e+21,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-051",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            1000000000000000128,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-052",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            "ffi \u5b57 A\nB",
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-053",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            "\ud800x",
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-054",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            [],
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-055",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            [
+              null,
+              {
+                "$undefined": true
+              }
+            ],
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-056",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            [
+              "ffi",
+              "\u5b57"
+            ],
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-057",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            [
+              [
+                1
+              ]
+            ],
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-058",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            {},
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-059",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            {
+              "$number": "NaN"
+            },
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-060",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            {
+              "$number": "Infinity"
+            },
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-061",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            "bad",
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-062",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            "0x10",
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-063",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            {
+              "$undefined": true
+            }
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-064",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            null
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-065",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            false
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-066",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            true
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-067",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            0
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-068",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            -0.0
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-069",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            1.25
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-070",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            1e-07
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-071",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            1e+21
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-072",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            1000000000000000128
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-073",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            "ffi \u5b57 A\nB"
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-074",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            "\ud800x"
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-075",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            []
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-076",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            [
+              null,
+              {
+                "$undefined": true
+              }
+            ]
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-077",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            [
+              "ffi",
+              "\u5b57"
+            ]
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-078",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-079",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            {}
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-080",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            {
+              "$number": "NaN"
+            }
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-081",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            {
+              "$number": "Infinity"
+            }
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-082",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            "bad"
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-083",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            "0x10"
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-084",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-085",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi"
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-086",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi",
+            2.25
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-087",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi",
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-088",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi",
+            2.25,
+            22.5,
+            60
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-089",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi",
+            2.25,
+            22.5,
+            60,
+            "extra"
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-090",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "ffi",
+            2.25,
+            22.5,
+            60,
+            "extra",
+            "extra2"
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-091",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            {
+              "$undefined": true
+            },
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-092",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            null,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-093",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            false,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-094",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            true,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-095",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            0,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-096",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            -0.0,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-097",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            1.25,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-098",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            1e-07,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-099",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            1e+21,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-100",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            1000000000000000128,
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-101",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57 A\nB",
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-102",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "\ud800x",
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-103",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            [],
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-104",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            [
+              null,
+              {
+                "$undefined": true
+              }
+            ],
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-105",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            [
+              "ffi",
+              "\u5b57"
+            ],
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-106",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            [
+              [
+                1
+              ]
+            ],
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-107",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            {},
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-108",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            {
+              "$number": "NaN"
+            },
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-109",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            {
+              "$number": "Infinity"
+            },
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-110",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "bad",
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-111",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "0x10",
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-112",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            {
+              "$undefined": true
+            },
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-113",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            null,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-114",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            false,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-115",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            true,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-116",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            0,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-117",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            -0.0,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-118",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            1.25,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-119",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            1e-07,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-120",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            1e+21,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-121",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            1000000000000000128,
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-122",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            "ffi \u5b57 A\nB",
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-123",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            "\ud800x",
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-124",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            [],
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-125",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            [
+              null,
+              {
+                "$undefined": true
+              }
+            ],
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-126",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            [
+              "ffi",
+              "\u5b57"
+            ],
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-127",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            [
+              [
+                1
+              ]
+            ],
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-128",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            {},
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-129",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            {
+              "$number": "NaN"
+            },
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-130",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            {
+              "$number": "Infinity"
+            },
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-131",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            "bad",
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-132",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            "0x10",
+            22.5,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-133",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            {
+              "$undefined": true
+            },
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-134",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            null,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-135",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            false,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-136",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            true,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-137",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            0,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-138",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            -0.0,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-139",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            1.25,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-140",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            1e-07,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-141",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            1e+21,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-142",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            1000000000000000128,
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-143",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            "ffi \u5b57 A\nB",
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-144",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            "\ud800x",
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-145",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            [],
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-146",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            [
+              null,
+              {
+                "$undefined": true
+              }
+            ],
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-147",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            [
+              "ffi",
+              "\u5b57"
+            ],
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-148",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            [
+              [
+                1
+              ]
+            ],
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-149",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            {},
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-150",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            {
+              "$number": "NaN"
+            },
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-151",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            {
+              "$number": "Infinity"
+            },
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-152",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            "bad",
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-153",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            "0x10",
+            70
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-154",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            {
+              "$undefined": true
+            }
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-155",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            null
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-156",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            false
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-157",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            true
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-158",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            0
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-159",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            -0.0
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-160",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            1.25
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-161",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            1e-07
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-162",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            1e+21
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-163",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            1000000000000000128
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-164",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            "ffi \u5b57 A\nB"
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-165",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            "\ud800x"
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-166",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            []
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-167",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            [
+              null,
+              {
+                "$undefined": true
+              }
+            ]
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-168",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            [
+              "ffi",
+              "\u5b57"
+            ]
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-169",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-170",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            {}
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-171",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            {
+              "$number": "NaN"
+            }
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-172",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            {
+              "$number": "Infinity"
+            }
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-173",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            "bad"
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-174",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi \u5b57",
+            2.25,
+            22.5,
+            "0x10"
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-175",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-176",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi"
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-177",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi",
+            2.25
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-178",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi",
+            2.25,
+            22.5
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-179",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi",
+            2.25,
+            22.5,
+            60
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-180",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi",
+            2.25,
+            22.5,
+            60,
+            "extra"
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-181",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "ffi",
+            2.25,
+            22.5,
+            60,
+            "extra",
+            "extra2"
+          ],
+          "observeError": "result"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-182",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            {
+              "$undefined": true
+            }
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-183",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            null
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-184",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            false
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-185",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            true
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-186",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            0
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-187",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            -0.0
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-188",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            1.25
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-189",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            1e-07
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-190",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            1e+21
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-191",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            1000000000000000128
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-192",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57 A\nB"
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-193",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "\ud800x"
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-194",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            []
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-195",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            [
+              null,
+              {
+                "$undefined": true
+              }
+            ]
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-196",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            [
+              "ffi",
+              "\u5b57"
+            ]
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-197",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-198",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            {}
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-199",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            {
+              "$number": "NaN"
+            }
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-200",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            {
+              "$number": "Infinity"
+            }
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-201",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "bad"
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-202",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "0x10"
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-203",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            {
+              "$undefined": true
+            }
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-204",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            {
+              "$undefined": true
+            },
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-205",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            null
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-206",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            null,
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-207",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            false
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-208",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            false,
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-209",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            true
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-210",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            true,
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-211",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            0
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-212",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            0,
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-213",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            -0.0
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-214",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            -0.0,
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-215",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            1.25
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-216",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            1.25,
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-217",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            1e-07
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-218",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            1e-07,
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-219",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            1e+21
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-220",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            1e+21,
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-221",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            1000000000000000128
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-222",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            1000000000000000128,
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-223",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            "ffi \u5b57 A\nB"
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-224",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            "ffi \u5b57 A\nB",
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-225",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            "\ud800x"
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-226",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            "\ud800x",
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-227",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            []
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-228",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            [],
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-229",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            [
+              null,
+              {
+                "$undefined": true
+              }
+            ]
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-230",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            [
+              null,
+              {
+                "$undefined": true
+              }
+            ],
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-231",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            [
+              "ffi",
+              "\u5b57"
+            ]
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-232",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            [
+              "ffi",
+              "\u5b57"
+            ],
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-233",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-234",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            [
+              [
+                1
+              ]
+            ],
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-235",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            {}
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-236",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            {},
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-237",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            {
+              "$number": "NaN"
+            }
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-238",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            {
+              "$number": "NaN"
+            },
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-239",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            {
+              "$number": "Infinity"
+            }
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-240",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            {
+              "$number": "Infinity"
+            },
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-241",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            "bad"
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-242",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            "bad",
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-243",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            "0x10"
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-244",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            "0x10",
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-245",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-246",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57"
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-247",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            60
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-248",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            60,
+            18
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    },
+    {
+      "id": "text-contract-249",
+      "group": "completion-text",
+      "width": 96,
+      "height": 64,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "15px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#204080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "ffi \u5b57",
+            60,
+            18,
+            "extra"
+          ],
+          "observeError": "result",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "ifRef": "p",
+          "observeError": "stroke"
+        }
+      ]
+    }
+  ]
+}

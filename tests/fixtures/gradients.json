@@ -1,0 +1,1462 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Original gradient geometry/stop ordering/sharing and JS cached-reference quirks; sameRef is observation only.",
+  "cases": [
+    {
+      "id": "gradient-duplicate-epsilon",
+      "group": "python-gradients",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createLinearGradient",
+          "args": [
+            3.25,
+            2.75,
+            150.5,
+            80.25
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            1,
+            "red"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0,
+            "blue"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.5,
+            "green"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.5,
+            "rgba(255,200,0,0.3)"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.5000000596046448,
+            "#cc3277"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            2.5,
+            155.5,
+            93.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gradient-shared-mutate",
+      "group": "python-gradients",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createLinearGradient",
+          "args": [
+            3.25,
+            2.75,
+            150.5,
+            80.25
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0,
+            "#126bff"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            1,
+            "#e74228"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            80,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.5,
+            "#20e943"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            80,
+            0,
+            80,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gradient-radial",
+      "group": "python-gradients",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createRadialGradient",
+          "args": [
+            60.25,
+            40.75,
+            7.25,
+            90.5,
+            55.25,
+            65.75
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0,
+            "#126bff"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            1,
+            "#e74228"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.4,
+            "rgba(50,210,30,0.35)"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gradient-conic-transform",
+      "group": "python-gradients",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "translate",
+          "args": [
+            20.25,
+            5.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createConicGradient",
+          "args": [
+            -0.73,
+            55.25,
+            45.75
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0,
+            "#126bff"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            1,
+            "#e74228"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.25,
+            "#30ce80"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.75,
+            "rgba(180,40,210,0.5)"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "resetTransform",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            1.1,
+            0.9
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            120
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gradient-zero-one-stops",
+      "group": "python-gradients",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createLinearGradient",
+          "args": [
+            3.25,
+            2.75,
+            150.5,
+            80.25
+          ],
+          "id": "zero"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "zero"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            80,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createLinearGradient",
+          "args": [
+            3.25,
+            2.75,
+            150.5,
+            80.25
+          ],
+          "id": "one"
+        },
+        {
+          "op": "call",
+          "target": "one",
+          "name": "addColorStop",
+          "args": [
+            0.37,
+            "#cc3277"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "one"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            80,
+            0,
+            80,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gradient-degenerate-coordinates",
+      "group": "python-gradients",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createLinearGradient",
+          "args": [
+            20,
+            20,
+            20,
+            20
+          ],
+          "id": "linear"
+        },
+        {
+          "op": "call",
+          "target": "linear",
+          "name": "addColorStop",
+          "args": [
+            0,
+            "#126bff"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "linear",
+          "name": "addColorStop",
+          "args": [
+            1,
+            "#e74228"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "linear"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            80,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createRadialGradient",
+          "args": [
+            40,
+            50,
+            -10,
+            110,
+            50,
+            25
+          ],
+          "id": "radial",
+          "observeError": "negativeRadiusCtor"
+        },
+        {
+          "op": "call",
+          "target": "radial",
+          "name": "addColorStop",
+          "args": [
+            0,
+            "#126bff"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "radial",
+          "name": "addColorStop",
+          "args": [
+            1,
+            "#e74228"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "radial"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            80,
+            0,
+            80,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gradient-stop-errors",
+      "group": "python-gradients",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createLinearGradient",
+          "args": [
+            3.25,
+            2.75,
+            150.5,
+            80.25
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            -1,
+            "red"
+          ],
+          "observeError": "offsetLow"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            2,
+            "red"
+          ],
+          "observeError": "offsetHigh"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            -1,
+            "not-a-color"
+          ],
+          "observeError": "rangeBeforeColor"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.5,
+            "not-a-color"
+          ],
+          "observeError": "badColor"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.5,
+            null
+          ],
+          "observeError": "nullColor"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.5
+          ],
+          "observeError": "missingColor"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            1.00000001,
+            "#ff2460"
+          ],
+          "observeError": "roundedToOne"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            -1e-60,
+            "#0060ff"
+          ],
+          "observeError": "roundedToNegativeZero"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gradient-direct-constructor",
+      "group": "python-gradients",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "id": "g",
+          "args": [
+            "LINEAR",
+            0.25,
+            5.75,
+            150.5,
+            80.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0,
+            "#126bff"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            1,
+            "#e74228"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "id": "returned"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "returned"
+          },
+          "right": {
+            "$ref": "g"
+          },
+          "save": "identity"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "CanvasGradient",
+          "args": [
+            "unknown"
+          ],
+          "observeError": "badConstructor"
+        }
+      ]
+    },
+    {
+      "id": "gradient-reference-cache-restore",
+      "group": "python-gradients",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createLinearGradient",
+          "args": [
+            3.25,
+            2.75,
+            150.5,
+            80.25
+          ],
+          "id": "g1"
+        },
+        {
+          "op": "call",
+          "target": "g1",
+          "name": "addColorStop",
+          "args": [
+            0,
+            "#126bff"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g1",
+          "name": "addColorStop",
+          "args": [
+            1,
+            "#e74228"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createLinearGradient",
+          "args": [
+            3.25,
+            2.75,
+            150.5,
+            80.25
+          ],
+          "id": "g2"
+        },
+        {
+          "op": "call",
+          "target": "g2",
+          "name": "addColorStop",
+          "args": [
+            0,
+            "green"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g2",
+          "name": "addColorStop",
+          "args": [
+            1,
+            "yellow"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g1"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "save",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g2"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "restore",
+          "args": []
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "id": "returned"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "returned"
+          },
+          "right": {
+            "$ref": "g2"
+          },
+          "save": "cachedG2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            80,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "returned",
+          "name": "addColorStop",
+          "args": [
+            0.5,
+            "black"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            80,
+            0,
+            80,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gradient-invalid-css-reference-cache",
+      "group": "python-gradients",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createLinearGradient",
+          "args": [
+            3.25,
+            2.75,
+            150.5,
+            80.25
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0,
+            "#126bff"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            1,
+            "#e74228"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "not-a-color"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "id": "returned"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "returned"
+          },
+          "right": null,
+          "save": "cachedNull"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            80,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.5,
+            "#28e858"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            80,
+            0,
+            80,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gradient-cross-canvas",
+      "group": "python-gradients",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createLinearGradient",
+          "args": [
+            3.25,
+            2.75,
+            150.5,
+            80.25
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0,
+            "#126bff"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            1,
+            "#e74228"
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Canvas",
+          "id": "other",
+          "args": [
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "other",
+          "name": "getContext",
+          "args": [
+            "2d"
+          ],
+          "id": "otherCtx"
+        },
+        {
+          "op": "set",
+          "target": "otherCtx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "otherCtx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "otherCtx",
+          "name": "getImageData",
+          "args": [
+            0,
+            0,
+            32,
+            24
+          ],
+          "save": "before"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0.5,
+            "#20e943"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "otherCtx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "otherCtx",
+          "name": "getImageData",
+          "args": [
+            0,
+            0,
+            32,
+            24
+          ],
+          "save": "after"
+        },
+        {
+          "op": "get",
+          "target": "otherCtx",
+          "name": "fillStyle",
+          "id": "otherStyle"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "otherStyle"
+          },
+          "right": {
+            "$ref": "g"
+          },
+          "save": "sameObject"
+        }
+      ]
+    },
+    {
+      "id": "gradient-stroke-and-text",
+      "group": "python-gradients",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createLinearGradient",
+          "args": [
+            3.25,
+            2.75,
+            150.5,
+            80.25
+          ],
+          "id": "g"
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            0,
+            "#126bff"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "g",
+          "name": "addColorStop",
+          "args": [
+            1,
+            "#e74228"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            8.25,
+            8.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            40.25,
+            130.5,
+            130.25,
+            -30.5,
+            150.75,
+            80.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "g"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj",
+            10.25,
+            88.5
+          ]
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "id": "strokeRef"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "strokeRef"
+          },
+          "right": {
+            "$ref": "g"
+          },
+          "save": "strokeIdentity"
+        }
+      ]
+    }
+  ]
+}

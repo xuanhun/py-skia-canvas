@@ -1,0 +1,11 @@
+// Actual original platform renderer; controller captures exact named X11 client only.
+import fs from 'node:fs';import {createRequire} from 'node:module';let [modulePath,input,out,stop]=process.argv.slice(2),{Canvas,Window,App}=createRequire(import.meta.url)(modulePath),cfg=JSON.parse(fs.readFileSync(input));fs.mkdirSync(out);
+App.eventLoop=cfg.mode||'native';let opts={left:200,top:200,title:'py-skia-canvas-G9-'+cfg.id,borderless:true,background:'white',fit:cfg.fit||'contain'};
+if(cfg.page){let c=new Canvas(100,60);c.newPage();c.newPage(80,50);opts.canvas=c;opts.page=1;}
+let w=new Window(160,100,opts),events=[],frames=0,setup=0,ticks=0,timerAtReady=0,timerAdvanced=false;let timer=setInterval(()=>ticks++,1);
+for(let kind of ['move','resize','keydown','keyup','mousedown','mouseup','wheel','input','fullscreen','focus','blur','close'])w.on(kind,e=>{if(kind==='keydown'&&e.key==='c'&&cfg.prevent){e.preventDefault();}events.push(Object.fromEntries(Object.entries(e).filter(([k,v])=>k!=='target'&&typeof v!=='function')));});w.on('setup',()=>setup++);
+w.on('draw',({frame})=>{frames++;let x=w.ctx;x.fillStyle='white';x.fillRect(0,0,w.canvas.width,w.canvas.height);x.fillStyle='#d02880';x.fillRect(5.25,10.5,60.5,30.25);x.strokeStyle='#123456';x.lineWidth=1.25;x.beginPath();x.moveTo(2,2);x.bezierCurveTo(12,60,80,0,95,40);x.stroke();x.font='13px sans-serif';x.fillStyle='#102030';x.fillText('Canvas GUI',3,55);
+ if(frame===5){timerAtReady=ticks;console.log('READY');}if(frame===10)timerAdvanced=ticks>timerAtReady;if((fs.existsSync(stop)&&frame>=12)||frame>=300)w.close();});
+let session=App.launch();let before={running:App.running,same:session===App.launch()};await session;clearInterval(timer);
+let error;try{App.eventLoop='node';}catch(e){error={type:e.name,message:e.message};}
+fs.writeFileSync(out+'/page.rgba',Buffer.from(w.ctx.getImageData(0,0,w.canvas.width,w.canvas.height).data));fs.writeFileSync(out+'/page.png',w.canvas.toBufferSync('png'));fs.writeFileSync(out+'/run.json',JSON.stringify({id:cfg.id,before,after:{running:App.running,windows:App.windows.length,closed:w.closed},modeError:error,setup,timerAdvanced,events,frames,state:w.state,canvas:[w.canvas.width,w.canvas.height],gpu:w.canvas.gpu,engine:w.canvas.engine})+'\n');console.log('DONE');

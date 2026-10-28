@@ -1,0 +1,432 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Original Context/Path default distinction, finite point radii, sign reordering, truncate/expand and validation order.",
+  "cases": [
+    {
+      "id": "roundrect-default-distinction",
+      "group": "roundrect",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "roundRect",
+          "args": [
+            5.25,
+            5.75,
+            120.5,
+            80.25
+          ]
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "d",
+          "save": "omittedPathRadius"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "roundRect",
+          "args": [
+            5.25,
+            5.75,
+            120.5,
+            80.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#2878d9"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "roundRect",
+          "args": [
+            10.25,
+            15.75,
+            130.5,
+            90.25,
+            []
+          ]
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "edges",
+          "save": "emptyArrayEdges"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ce3277"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roundrect-negative-size-points",
+      "group": "roundrect",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "roundRect",
+          "args": [
+            150.25,
+            110.75,
+            -130.5,
+            -90.25,
+            [
+              {
+                "x": 5.25,
+                "y": 15.5
+              },
+              {
+                "x": 25.75,
+                "y": 10.25
+              },
+              {
+                "x": 18.5,
+                "y": 30.25
+              }
+            ]
+          ]
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "d",
+          "save": "svg"
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "bounds",
+          "save": "bounds"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#2878d9"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            0.9,
+            0.2,
+            -0.15,
+            0.85,
+            20.25,
+            5.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "roundRect",
+          "args": [
+            0.25,
+            0.75,
+            135.5,
+            95.25,
+            [
+              4.25,
+              15.5
+            ]
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ce3277"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 2.5
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "roundrect-invalid-radii-order",
+      "group": "roundrect",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "rect",
+          "args": [
+            5,
+            5,
+            130,
+            90
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "roundRect",
+          "args": [
+            0,
+            0,
+            100,
+            100,
+            [
+              -1
+            ]
+          ],
+          "observeError": "negative"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "roundRect",
+          "args": [
+            0,
+            0,
+            100,
+            100,
+            [
+              "3"
+            ]
+          ],
+          "observeError": "stringIgnored"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "roundRect",
+          "args": [
+            0,
+            0,
+            100,
+            100,
+            [
+              false
+            ]
+          ],
+          "observeError": "boolIgnored"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "roundRect",
+          "args": [
+            0,
+            0,
+            100,
+            100,
+            [
+              -1,
+              "bad"
+            ]
+          ],
+          "observeError": "invalidBeforeNegative"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "roundRect",
+          "args": [
+            0,
+            0,
+            100,
+            100,
+            null
+          ],
+          "observeError": "nullIgnored"
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "d",
+          "save": "retainedSvg"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#2878d9"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roundrect-truncate-and-expand",
+      "group": "roundrect",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "roundRect",
+          "args": [
+            5.25,
+            8.75,
+            135.5,
+            95.25,
+            [
+              4.25,
+              12.5,
+              25.75,
+              18.25,
+              -100
+            ]
+          ],
+          "observeError": "fifthIgnored"
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "edges",
+          "save": "edges"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "roundRect",
+          "args": [
+            145.25,
+            10.75,
+            -125.5,
+            85.25,
+            {
+              "x": 25.5,
+              "y": 12.25
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ce3277"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 2.5
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    }
+  ]
+}

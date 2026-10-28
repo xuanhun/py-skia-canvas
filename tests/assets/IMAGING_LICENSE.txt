@@ -1,0 +1,2 @@
+rgba-grid.png/raw, svg-width.svg, svg-height.svg, svg-viewbox.svg, broken-image.txt are original synthetic test assets, MIT licensed under this repository LICENSE. No third-party images or system fonts are included.
+rgba-grid.jpeg/webp are fixed-official-oracle encodings of the same original synthetic grid, and rgba-grid.bmp/two-color.gif are hand-built synthetic data under the same MIT license.

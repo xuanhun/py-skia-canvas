@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/xuanhun/py-skia-canvas/build-provenance.schema.json",
+  "title": "Build provenance, separate from rendering and release acceptance",
+  "type": "object",
+  "required": ["schema", "role", "status", "upstreamCommit", "sourceMap", "commands", "features", "toolchain", "dependencies", "skia", "artifacts", "limitations"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "py-skia-canvas-build-provenance/v1"},
+    "role": {"enum": ["original-node", "source-node", "shared-core-node", "python-wheel"]},
+    "status": {"enum": ["INCOMPLETE", "BUILT"]},
+    "upstreamCommit": {"const": "042312a3f40b660b1d7dc0beba541486171bc5cc"},
+    "sourceMap": {"oneOf": [{"$ref": "#/$defs/artifact"}, {"type": "null"}]},
+    "commands": {"type": "array", "items": {"type": "object", "required": ["argv", "exitCode", "log"], "additionalProperties": false,
+      "properties": {"argv": {"type": "array", "items": {"type": "string"}}, "exitCode": {"type": ["integer", "null"]}, "log": {"$ref": "#/$defs/artifact"}}}},
+    "features": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "toolchain": {"type": "object", "required": ["target", "rustc", "cargo", "cc", "cxx", "python", "node", "maturin"], "additionalProperties": false,
+      "properties": {
+        "target": {"type": "string"}, "rustc": {"type": ["string", "null"]}, "cargo": {"type": ["string", "null"]},
+        "cc": {"type": ["string", "null"]}, "cxx": {"type": ["string", "null"]}, "python": {"type": ["string", "null"]},
+        "node": {"type": ["string", "null"]}, "maturin": {"type": ["string", "null"]}
+      }},
+    "dependencies": {"type": "array", "items": {"$ref": "#/$defs/artifact"}},
+    "skia": {"type": "object", "required": ["version", "rustSkiaCommit", "sourceTag", "gnArguments", "cacheUrl", "patches", "fontBackend"], "additionalProperties": false,
+      "properties": {
+        "version": {"const": "0.88.0"}, "rustSkiaCommit": {"type": ["string", "null"]}, "sourceTag": {"type": ["string", "null"]},
+        "gnArguments": {"type": ["string", "null"]}, "cacheUrl": {"type": ["string", "null"]},
+        "patches": {"type": "array", "items": {"$ref": "#/$defs/artifact"}}, "fontBackend": {"type": ["string", "null"]}
+      }},
+    "artifacts": {"type": "array", "items": {"$ref": "#/$defs/artifact"}},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "artifact": {"type": "object", "required": ["path", "bytes", "sha256"], "additionalProperties": false,
+      "properties": {"path": {"type": "string"}, "bytes": {"type": "integer", "minimum": 0}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}}
+  }
+}

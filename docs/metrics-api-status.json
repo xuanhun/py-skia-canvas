@@ -1,0 +1,68 @@
+{
+  "schema": "py-skia-canvas-scoped-api-status/v1",
+  "baseline": "3.0.8",
+  "batch": "G5-metrics-5",
+  "notFullLedgerPromotion": true,
+  "entries": [
+    {
+      "name": "TextMetrics.constructor",
+      "parameters": "values=undefined, *extra ignored",
+      "returns": "Shallow owned top-level copy; children retain identity",
+      "exceptions": "Top keys TypeError on overwrite/delete; custom host/prototype/private-name contracts pending",
+      "units": "Field values unchanged; string indices UTF-16 code units",
+      "ownership": "Pure Python values, any thread; no Canvas/font/GPU reference",
+      "upstream": "lib/classes/typography.js:41 TextMetrics; lib/classes/neon.js:readOnly",
+      "implementation": "python/py_skia_canvas/_metrics.py",
+      "contractAudit": "partial",
+      "pythonBound": true
+    },
+    {
+      "name": "TextMetrics.fields",
+      "parameters": "13 original metrics and lines/runs",
+      "returns": "Original core metrics; children list/dict retain original keys and mutable identity",
+      "exceptions": "Initial top fields TypeError; added attrs writable/deletable; missing metrics undefined",
+      "units": "Canvas units; original line/run indices UTF-16",
+      "ownership": "Owned snapshot survives resize/GC/owner exit; any thread",
+      "upstream": "src/typography.rs:Typesetter::metrics; lib/classes/typography.js:41",
+      "implementation": "python/py_skia_canvas/_metrics.py; crates/python/src/lib.rs:measure",
+      "contractAudit": "partial",
+      "pythonBound": true
+    },
+    {
+      "name": "CanvasRenderingContext2D.measureText",
+      "parameters": "text=undefined,maxWidth=undefined,*extra ignored",
+      "returns": "TextMetrics from original Typesetter",
+      "exceptions": "Owner RuntimeError; original native errors; arbitrary JS host/valueOf/Proxy/cycles pending",
+      "units": "Text ordinary JS String/UTF16 replacement; maxWidth canvas units finite f64->f32 at original boundary",
+      "ownership": "Context/GPU/fonts owner TLS; owned arguments before borrow, result independent",
+      "upstream": "lib/classes/context.js:toString/measureText; src/context/api.rs:measureText/opt_float_arg",
+      "implementation": "python/py_skia_canvas/_text_api.py; __init__.py:measureText; crates/python/src/lib.rs:_text_width/measure",
+      "contractAudit": "partial",
+      "pythonBound": true
+    },
+    {
+      "name": "private diagnostic glyphs",
+      "parameters": "text UTF-8,width optional f32",
+      "returns": "Owned glyph/font positions/bounds/style/variation/table transport; evidence hashes only",
+      "exceptions": "Owner RuntimeError; cluster offsets deliberately not read due upstream allocation mismatch",
+      "units": "Canvas units; glyph IDs unitless; table/file identity bytes/SHA",
+      "ownership": "Visitor/Typeface borrows owner thread only; no borrowed object escapes; raw table bytes hash/discard without persistence",
+      "upstream": "src/typography.rs:Typesetter::new/layout; Skia m140 ParagraphImpl.cpp:extendedVisit; skia-safe0.88 Typeface",
+      "implementation": "crates/canvas-core/src/typography/audit.rs; scripts/audit_glyph_sources.py",
+      "contractAudit": "partial",
+      "pythonBound": true
+    }
+  ],
+  "fixtures": [
+    "text-metrics.json",
+    "text-metrics-edges.json",
+    "font-fallback.json"
+  ],
+  "pending": [
+    "Host/proxy/valueOf/prototype/subclasses/cyclic inputs",
+    "Complete fillText/strokeText/outlineText coercion",
+    "Safe cluster provenance and actual GPU drawing run font identity",
+    "Missing music/emoji glyphs, complete emoji resources/platform/license audit",
+    "Windows hardware GPU/Metal/static-fontconfig/manylinux/release"
+  ]
+}

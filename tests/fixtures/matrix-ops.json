@@ -1,0 +1,1836 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Original DOMMatrix math/parser/defaults/flags/sharing/errors and real draw via original core.",
+  "cases": [
+    {
+      "id": "matrix-multiply-order",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              0.125,
+              0.25,
+              0.875,
+              10.25,
+              8.75
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              0.75,
+              0.25,
+              -0.125,
+              1.5,
+              20,
+              5
+            ]
+          ],
+          "id": "other"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "multiply",
+          "args": [
+            {
+              "$ref": "other"
+            }
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "product"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "source"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "multiplySelf",
+          "args": [
+            {
+              "$ref": "other"
+            }
+          ],
+          "id": "self"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "m"
+          },
+          "right": {
+            "$ref": "self"
+          },
+          "save": "selfIdentity"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "multiplied"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "preMultiplySelf",
+          "args": [
+            {
+              "$ref": "other"
+            }
+          ],
+          "id": "pre"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "m"
+          },
+          "right": {
+            "$ref": "pre"
+          },
+          "save": "preIdentity"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "preMultiplied"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-self-multiply-flags",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              0.125,
+              0.5,
+              0.001,
+              0.25,
+              0.875,
+              0,
+              -0.0005,
+              0,
+              0,
+              1,
+              0,
+              10.25,
+              8.75,
+              0,
+              1
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [],
+          "id": "identity"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "multiply",
+          "args": [
+            {
+              "$ref": "identity"
+            }
+          ],
+          "id": "result"
+        },
+        {
+          "op": "call",
+          "target": "result",
+          "name": "toJSON",
+          "args": [],
+          "save": "copyFlagReset"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "multiplySelf",
+          "args": [
+            {
+              "$ref": "m"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "selfSquare"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "preMultiplySelf",
+          "args": [
+            {
+              "$ref": "m"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "selfFourth"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-translate-defaults",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              0.125,
+              0.25,
+              0.875,
+              10.25,
+              8.75
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "translate",
+          "args": [],
+          "id": "copy"
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "toJSON",
+          "args": [],
+          "save": "defaultCopy"
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "translateSelf",
+          "args": [
+            2.25,
+            -3.5,
+            4.75
+          ],
+          "id": "self"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "copy"
+          },
+          "right": {
+            "$ref": "self"
+          },
+          "save": "same"
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "toJSON",
+          "args": [],
+          "save": "3d"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "translateSelf",
+          "args": [
+            null,
+            "2",
+            null
+          ]
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "primitiveCoercion"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-scale-origin",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              0.125,
+              0.25,
+              0.875,
+              10.25,
+              8.75
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "scale",
+          "args": [
+            1.25,
+            0.75,
+            1,
+            25.25,
+            20.75,
+            0
+          ],
+          "id": "copy"
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "toJSON",
+          "args": [],
+          "save": "originScale"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "source"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "scaleSelf",
+          "args": [
+            2,
+            null,
+            false,
+            "bad",
+            null,
+            false
+          ],
+          "id": "self"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "m"
+          },
+          "right": {
+            "$ref": "self"
+          },
+          "save": "self"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "typeDefaults"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "copy"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-scale-three-d",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              0.125,
+              0.5,
+              0.001,
+              0.25,
+              0.875,
+              0,
+              -0.0005,
+              0,
+              0,
+              1,
+              0,
+              10.25,
+              8.75,
+              0,
+              1
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "scale3d",
+          "args": [
+            1.25,
+            2.25,
+            3.5,
+            4.75
+          ],
+          "id": "copy"
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "toJSON",
+          "args": [],
+          "save": "three"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "scale3dSelf",
+          "args": [
+            0.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "self"
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "scale",
+          "args": [],
+          "id": "default"
+        },
+        {
+          "op": "call",
+          "target": "default",
+          "name": "toJSON",
+          "args": [],
+          "save": "defaultFlagReset"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-rotate-two-d",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              0.125,
+              0.25,
+              0.875,
+              10.25,
+              8.75
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "rotate",
+          "args": [
+            33.3333333333333
+          ],
+          "id": "copy"
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "toJSON",
+          "args": [],
+          "save": "rotated"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "rotateSelf",
+          "args": [
+            -74.125
+          ],
+          "id": "self"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "m"
+          },
+          "right": {
+            "$ref": "self"
+          },
+          "save": "same"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "self"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "copy"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-rotate-three-d",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              0.125,
+              0.5,
+              0.001,
+              0.25,
+              0.875,
+              0,
+              -0.0005,
+              0,
+              0,
+              1,
+              0,
+              10.25,
+              8.75,
+              0,
+              1
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "rotate",
+          "args": [
+            17.25,
+            -33.125,
+            72.75
+          ],
+          "id": "copy"
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "toJSON",
+          "args": [],
+          "save": "xyz"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "rotateSelf",
+          "args": [
+            null,
+            0,
+            0
+          ]
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "nullXFlag"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "copy"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-rotate-vector",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              0.125,
+              0.25,
+              0.875,
+              10.25,
+              8.75
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "rotateFromVector",
+          "args": [
+            0.375,
+            -0.8125
+          ],
+          "id": "copy"
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "toJSON",
+          "args": [],
+          "save": "vector"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "rotateFromVectorSelf",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "zeroVector"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "rotateFromVectorSelf",
+          "args": [
+            {
+              "$number": "-0"
+            },
+            -1
+          ]
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "signedVector"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "copy"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-axis-angle",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              0.125,
+              0.25,
+              0.875,
+              10.25,
+              8.75
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "rotateAxisAngle",
+          "args": [
+            1.25,
+            -0.75,
+            2.5,
+            33.125
+          ],
+          "id": "copy"
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "toJSON",
+          "args": [],
+          "save": "normalizedAxis"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "rotateAxisAngleSelf",
+          "args": [
+            0,
+            0,
+            1,
+            -17.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "unitZ"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "copy"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-skew-directions",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              0.125,
+              0.25,
+              0.875,
+              10.25,
+              8.75
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "skew",
+          "args": [
+            17.125,
+            -23.75
+          ],
+          "id": "copy"
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "toJSON",
+          "args": [],
+          "save": "xy"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "skewXSelf",
+          "args": [
+            33.3333333333333
+          ]
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "skewYSelf",
+          "args": [
+            -61.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "selfXY"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "skewSelf",
+          "args": [
+            12,
+            null
+          ]
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "nullY"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "copy"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-no-op-array-sharing",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              0.125,
+              0.5,
+              0.001,
+              0.25,
+              0.875,
+              0,
+              -0.0005,
+              0,
+              0,
+              1,
+              0,
+              10.25,
+              8.75,
+              0,
+              1
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "skewX",
+          "args": [],
+          "id": "copy"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "m"
+          },
+          "right": {
+            "$ref": "copy"
+          },
+          "save": "different"
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "toJSON",
+          "args": [],
+          "save": "resetFlag"
+        },
+        {
+          "op": "set",
+          "target": "copy",
+          "name": "e",
+          "value": 77
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "sharedAfterSkewNoop"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "rotateAxisAngle",
+          "args": [
+            0,
+            0,
+            0,
+            90
+          ],
+          "id": "axis"
+        },
+        {
+          "op": "set",
+          "target": "axis",
+          "name": "f",
+          "value": 55
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "sharedAfterZeroAxis"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "translate",
+          "args": [],
+          "id": "translated"
+        },
+        {
+          "op": "set",
+          "target": "translated",
+          "name": "e",
+          "value": 88
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "translationDetached"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-flips-reset-flag",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              0.125,
+              0.5,
+              0.001,
+              0.25,
+              0.875,
+              0,
+              -0.0005,
+              0,
+              0,
+              1,
+              0,
+              10.25,
+              8.75,
+              0,
+              1
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "flipX",
+          "args": [],
+          "id": "x"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "flipY",
+          "args": [],
+          "id": "y"
+        },
+        {
+          "op": "call",
+          "target": "x",
+          "name": "toJSON",
+          "args": [],
+          "save": "flipX"
+        },
+        {
+          "op": "call",
+          "target": "y",
+          "name": "toJSON",
+          "args": [],
+          "save": "flipY"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "source"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "x"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-inverse-return-semantics",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              0.125,
+              0.25,
+              0.875,
+              10.25,
+              8.75
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "invertSelf",
+          "args": [],
+          "id": "result"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "m"
+          },
+          "right": {
+            "$ref": "result"
+          },
+          "save": "differentResult"
+        },
+        {
+          "op": "call",
+          "target": "result",
+          "name": "toJSON",
+          "args": [],
+          "save": "inverse"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "unchangedSource"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "inverse",
+          "args": [],
+          "id": "copy"
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "toJSON",
+          "args": [],
+          "save": "inverseCopy"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "result"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-inverse-singular-undefined",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1,
+              2,
+              2,
+              4,
+              5,
+              6
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "inverse",
+          "args": [],
+          "save": "copyUndefined"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "sourceAfterInverse"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "invertSelf",
+          "args": [],
+          "save": "selfUndefined"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "mutatedNaNs"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-inverse-three-d",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              0.125,
+              0.5,
+              0.001,
+              0.25,
+              0.875,
+              0,
+              -0.0005,
+              0,
+              0,
+              1,
+              0,
+              10.25,
+              8.75,
+              0,
+              1
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "invertSelf",
+          "args": [],
+          "observeError": "threeDError"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "unchanged"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "inverse",
+          "args": [],
+          "id": "copy"
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "toJSON",
+          "args": [],
+          "save": "nonSelfResetsFlag"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-set-matrix-value",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              0.125,
+              0.25,
+              0.875,
+              10.25,
+              8.75
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "setMatrixValue",
+          "args": [
+            "translate(20.25px, 10.75px) scale(125%, 75%)"
+          ],
+          "id": "result"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "m"
+          },
+          "right": {
+            "$ref": "result"
+          },
+          "save": "same"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "set"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "setMatrixValue",
+          "args": [
+            "unknown(2)"
+          ],
+          "observeError": "syntax"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toJSON",
+          "args": [],
+          "save": "retained"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "m"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-nonfinite-trig",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "rotate",
+          "args": [
+            {
+              "$number": "Infinity"
+            }
+          ],
+          "id": "rot"
+        },
+        {
+          "op": "call",
+          "target": "rot",
+          "name": "toJSON",
+          "args": [],
+          "save": "infiniteRotation"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "skew",
+          "args": [
+            {
+              "$number": "NaN"
+            },
+            12
+          ],
+          "id": "skew"
+        },
+        {
+          "op": "call",
+          "target": "skew",
+          "name": "toJSON",
+          "args": [],
+          "save": "nanSkewDefaults"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "rotateAxisAngle",
+          "args": [
+            {
+              "$number": "Infinity"
+            },
+            1,
+            0,
+            30
+          ],
+          "id": "axis"
+        },
+        {
+          "op": "call",
+          "target": "axis",
+          "name": "toJSON",
+          "args": [],
+          "save": "infiniteAxis"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrix-number-to-string",
+      "group": "python-matrix-ops",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              {
+                "$number": "-0"
+              },
+              0.1,
+              2.5,
+              5e-13,
+              -1e-15
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toString",
+          "args": [],
+          "save": "twoD"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.25,
+              0.125,
+              0.5,
+              0.001,
+              0.25,
+              0.875,
+              0,
+              -0.0005,
+              0,
+              0,
+              1,
+              0,
+              10.25,
+              8.75,
+              0,
+              1
+            ]
+          ],
+          "id": "three"
+        },
+        {
+          "op": "call",
+          "target": "three",
+          "name": "toString",
+          "args": [],
+          "save": "threeD"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1e+21,
+              1e+22,
+              1e-20,
+              2.5000000000005,
+              {
+                "$number": "Infinity"
+              },
+              {
+                "$number": "NaN"
+              }
+            ]
+          ],
+          "id": "large"
+        },
+        {
+          "op": "call",
+          "target": "large",
+          "name": "toString",
+          "args": [],
+          "save": "large"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            5.5,
+            65.75,
+            40.25
+          ]
+        }
+      ]
+    }
+  ]
+}

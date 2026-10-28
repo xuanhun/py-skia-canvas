@@ -1,0 +1,433 @@
+{
+  "baseline": "skia-canvas@3.0.8",
+  "batch": "G8",
+  "sourceMap": "crates/source-map.json",
+  "items": [
+    {
+      "name": "Canvas.newPage",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.pages",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.getContext",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.toBuffer",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.toBufferSync",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.toFile",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.toFileSync",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.toURL",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.toURLSync",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.toDataURL",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.raw",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.png",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.jpg",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.pdf",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.svg",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.webp",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.saveAs",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.saveAsSync",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    },
+    {
+      "name": "Canvas.toDataURLSync",
+      "status": "python_bound",
+      "scope": "Ordinary primitives/options; complete JS host contracts remain G0",
+      "parameters": "See original canvas.js signatures and Python docstrings; dimensions canvas units, quality fraction, density scale, MSAA samples, page 1-based/negative, filename padding digits",
+      "returns": "Context/pages copy/owned bytes/None/data URL or eagerly started repeatable awaitable as upstream method",
+      "exceptions": "Original validation Error/TypeError/RangeError and codec/I/O Error; async file prefix I/O Error; unsupported unsafe fractional page/host profile explicitly NotImplementedError",
+      "ownership": "Original Canvas/Context in owner TLS; metadata-only page leases; materialized PageSequence on original Rayon worker; channel-only awaitable",
+      "upstream": "lib/classes/canvas.js; src/canvas.rs; utils.rs:export_options_arg; context/page.rs",
+      "core": "canvas/exports.rs + canvas/options.rs + original PageSequence/PageCache",
+      "fixtures": [
+        "tests/fixtures/pages.json",
+        "tests/fixtures/exports.json"
+      ],
+      "evidence": "test-runs/20261028-export-final-1/run.json",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested",
+      "scopeEvidence": [
+        "test-runs/20261028-export-audits-2",
+        "test-runs/20261028-export-final-1"
+      ]
+    }
+  ],
+  "pending": [
+    "Full host coercion and unsafe fractional-page native panic G0",
+    "Node file URL and Sharp streams G0",
+    "App/Window G9",
+    "Windows/Metal/hardware-GPU/full release G10"
+  ],
+  "schema": "py-skia-canvas-scoped-api-status/v1",
+  "notFullLedgerPromotion": true
+}

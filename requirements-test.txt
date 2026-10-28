@@ -1,0 +1,2 @@
+# Development-only PNG decoder for scripts/compare_runs.py. Not a product dependency.
+Pillow==13.0.0

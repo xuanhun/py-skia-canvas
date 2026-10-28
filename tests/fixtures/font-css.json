@@ -1,0 +1,3764 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Original CSS font setter/getter, selection and state; system font file fingerprints only, no redistribution.",
+  "cases": [
+    {
+      "id": "fontcss-default-basic",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "default"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "selected"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "selectedMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            42
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-absolute-units",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "18px serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            35
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "13.5pt serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            69
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "1.125pc serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            103
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "0.1875in serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            137
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "0.47625cm serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            171
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "4.7625mm serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font5Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            205
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "19.05q serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font6"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font6Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            239
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-relative-units",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "112.5% serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            35
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "1.125em serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            69
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "1.125rem serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            103
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "2ex serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            137
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "2ch serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            171
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "1.25em serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font5Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            205
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-named-sizes",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "xx-small serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            35
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "x-small serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            69
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "small serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            103
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "smaller serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            137
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "medium serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            171
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "large serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font5Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            205
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "larger serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font6"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font6Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            239
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "x-large serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font7"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font7Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            273
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "xx-large serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font8Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            307
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-weight-style",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "normal 23px \"DejaVu Sans Mono\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            35
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "bold 23px \"DejaVu Sans Mono\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            69
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "italic 23px \"DejaVu Sans Mono\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            103
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "oblique 23px \"DejaVu Sans Mono\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            137
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "bold italic 23px \"DejaVu Sans Mono\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            171
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "lighter 23px \"DejaVu Sans Mono\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font5Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            205
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "bolder 23px \"DejaVu Sans Mono\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font6"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font6Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            239
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "500 23px \"DejaVu Sans Mono\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font7"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font7Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            273
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "1000 23px \"DejaVu Sans Mono\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font8Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            307
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-small-caps",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas ffi Small Caps 123"
+          ],
+          "save": "font0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas ffi Small Caps 123",
+            10.25,
+            35
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "small-caps 28px \"DejaVu Sans\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas ffi Small Caps 123"
+          ],
+          "save": "font1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas ffi Small Caps 123",
+            10.25,
+            69
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "italic small-caps bold 28px serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas ffi Small Caps 123"
+          ],
+          "save": "font2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas ffi Small Caps 123",
+            10.25,
+            103
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-stretch-shorthand",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "ultra-condensed 26px Ubuntu"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            35
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "semi-condensed 26px Ubuntu"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            69
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "normal 26px Ubuntu"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            103
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "semi-expanded 26px Ubuntu"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            137
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "ultra-expanded 26px Ubuntu"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            171
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-quoted-family-stack",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px \"DejaVu Sans Mono\", serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            35
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px 'DejaVu Serif', sans-serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            69
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px MissingFamily, \"DejaVu Sans\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            103
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px monospace"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            137
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-line-height",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "22px/1.5 \"DejaVu Sans\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj\nsecond line"
+          ],
+          "save": "font0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj\nsecond line",
+            10.25,
+            35
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "22px/normal \"DejaVu Sans\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj\nsecond line"
+          ],
+          "save": "font1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj\nsecond line",
+            10.25,
+            69
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "22px/32px \"DejaVu Sans\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj\nsecond line"
+          ],
+          "save": "font2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj\nsecond line",
+            10.25,
+            103
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "22px/150% \"DejaVu Sans\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj\nsecond line"
+          ],
+          "save": "font3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj\nsecond line",
+            10.25,
+            137
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "22px/2rem \"DejaVu Sans\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj\nsecond line"
+          ],
+          "save": "font4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj\nsecond line",
+            10.25,
+            171
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-registered-alias",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "CSS Mono",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
+          ],
+          "save": "loaded"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"CSS Mono\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "alias"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "aliasMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            42
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans Mono\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "system"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "systemMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            95
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-registered-styles",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "CSS Styles",
+            [
+              "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
+              "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf",
+              "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf"
+            ]
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "26px \"CSS Styles\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            35
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "bold 26px \"CSS Styles\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            69
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "italic 26px \"CSS Styles\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            103
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-replace-alias",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "CSS Replace",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "26px \"CSS Replace\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "mono"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "monoMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            42
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "CSS Replace",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "26px \"CSS Replace\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "serif"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "serifMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            95
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-reset-recorded-alias",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "CSS Reset",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "25px \"CSS Reset\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "registered"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "registeredMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            42
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "canonicalAfterReset"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "retainedMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            95
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "25px \"DejaVu Sans\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "systemAfterReset"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "systemAfterResetMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            145
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-save-restore",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px \"DejaVu Serif\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "first"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "firstMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            42
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "save",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "bold 31px \"DejaVu Sans Mono\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "second"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "secondMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "restore",
+          "args": []
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "restored"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            155
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-resize-reset",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "bold 30px serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "beforeResize"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "beforeResizeMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            42
+          ]
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "width",
+          "value": 620
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "afterResize"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "29px \"DejaVu Sans Mono\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "afterSet"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "afterSetMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            42
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-cross-canvas",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "Canvas",
+          "args": [
+            80,
+            50
+          ],
+          "id": "other"
+        },
+        {
+          "op": "call",
+          "target": "other",
+          "name": "getContext",
+          "args": [
+            "2d"
+          ],
+          "id": "otherCtx"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "27px serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "main"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "mainMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            42
+          ]
+        },
+        {
+          "op": "set",
+          "target": "otherCtx",
+          "name": "font",
+          "value": "bold 17px monospace"
+        },
+        {
+          "op": "get",
+          "target": "otherCtx",
+          "name": "font",
+          "save": "otherFont"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "mainUnchanged"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-outline-selected",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "CSS Outline",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "32px \"CSS Outline\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "outlineFont"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "outlineFontMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            42
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "AV fj ffi"
+          ],
+          "id": "outline"
+        },
+        {
+          "op": "get",
+          "target": "outline",
+          "name": "bounds",
+          "save": "outlineBounds"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#d62f60"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "translate",
+          "args": [
+            10,
+            130
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "outline"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-maxwidth",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "32px \"DejaVu Sans Mono\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "selected"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "selectedMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            42
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123",
+            130.25
+          ],
+          "save": "limitedMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            100,
+            130.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            155,
+            220.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-variable-weights",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "CSS Variable",
+            "/usr/share/fonts/truetype/ubuntu/Ubuntu[wdth,wght].ttf"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "100 29px \"CSS Variable\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            35
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "400 29px \"CSS Variable\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            69
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "550 29px \"CSS Variable\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            103
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "700 29px \"CSS Variable\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            137
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "900 29px \"CSS Variable\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            171
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-variable-width",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "CSS Width",
+            "/usr/share/fonts/truetype/ubuntu/Ubuntu[wdth,wght].ttf"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "ultra-condensed 29px \"CSS Width\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            35
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "condensed 29px \"CSS Width\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            69
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "normal 29px \"CSS Width\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            103
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "expanded 29px \"CSS Width\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            137
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "ultra-expanded 29px \"CSS Width\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "font4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            171
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-mixed-scripts",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "arabicHebrew"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV é العربية שלום ffi"
+          ],
+          "save": "arabicHebrewMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV é العربية שלום ffi",
+            10.25,
+            55
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"Noto Sans CJK SC\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "cjk"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "中文測試 Canvas"
+          ],
+          "save": "cjkMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "中文測試 Canvas",
+            10.25,
+            115
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontcss-transform-gradient",
+      "group": "python-font-css",
+      "width": 620,
+      "height": 380,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            380
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "italic bold 32px \"DejaVu Sans Mono\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "font",
+          "save": "font"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj ffi 0123"
+          ],
+          "save": "fontMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj ffi 0123",
+            10.25,
+            42
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createLinearGradient",
+          "args": [
+            0,
+            0,
+            400,
+            200
+          ],
+          "id": "ramp"
+        },
+        {
+          "op": "call",
+          "target": "ramp",
+          "name": "addColorStop",
+          "args": [
+            0,
+            "#2060ff"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ramp",
+          "name": "addColorStop",
+          "args": [
+            1,
+            "#ff2450"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "ramp"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "translate",
+          "args": [
+            30.25,
+            105.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rotate",
+          "args": [
+            0.125
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Gradient AV fj ffi",
+            0,
+            0
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    }
+  ]
+}

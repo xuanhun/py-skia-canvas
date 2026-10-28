@@ -1,0 +1,3062 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "cases": [
+    {
+      "id": "effects-shadow-0",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(40, 160, 90, .65)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 0
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 5.25
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 7.75
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "shadowColor"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "save": "shadowBlur"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "save": "shadowOffsetX"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "save": "shadowOffsetY"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-1",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(40, 160, 90, .65)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 0
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": -6.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 3.25
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "shadowColor"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "save": "shadowBlur"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "save": "shadowOffsetX"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "save": "shadowOffsetY"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-2",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(40, 160, 90, .65)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 1.25
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 5.25
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 7.75
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "shadowColor"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "save": "shadowBlur"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "save": "shadowOffsetX"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "save": "shadowOffsetY"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-3",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(40, 160, 90, .65)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 1.25
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": -6.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 3.25
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "shadowColor"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "save": "shadowBlur"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "save": "shadowOffsetX"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "save": "shadowOffsetY"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-4",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(40, 160, 90, .65)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 4.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 5.25
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 7.75
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "shadowColor"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "save": "shadowBlur"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "save": "shadowOffsetX"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "save": "shadowOffsetY"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-5",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(40, 160, 90, .65)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 4.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": -6.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 3.25
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "shadowColor"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "save": "shadowBlur"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "save": "shadowOffsetX"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "save": "shadowOffsetY"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-6",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(40, 160, 90, .65)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 10
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 5.25
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 7.75
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "shadowColor"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "save": "shadowBlur"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "save": "shadowOffsetX"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "save": "shadowOffsetY"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-7",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(40, 160, 90, .65)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 10
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": -6.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 3.25
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "shadowColor"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "save": "shadowBlur"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "save": "shadowOffsetX"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "save": "shadowOffsetY"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-8",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(40, 160, 90, .65)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": -1
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 5.25
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 7.75
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "shadowColor"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "save": "shadowBlur"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "save": "shadowOffsetX"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "save": "shadowOffsetY"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-9",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(40, 160, 90, .65)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": -1
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": -6.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 3.25
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "shadowColor"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "save": "shadowBlur"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "save": "shadowOffsetX"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "save": "shadowOffsetY"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-color-10",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "red"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 3.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 8
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "color"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-color-11",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "#4280a0"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 3.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 8
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "color"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-color-12",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(30,50,70,.25)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 3.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 8
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "color"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-color-13",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "transparent"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 3.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 8
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "color"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-color-14",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "currentColor"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 3.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 8
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "color"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-color-15",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "not-a-color"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 3.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 8
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "color"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-color-16",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": [
+            "red"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 3.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 8
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "color"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-color-17",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": null
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 3.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 8
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "color"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-image",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "#e02880"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 3.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 8.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 6.25
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            60.5,
+            20.25,
+            140.5,
+            140.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-text",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(10,40,200,.7)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 2.25
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 3.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 4.25
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "36px DejaVu Sans"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#d02070"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV ffi",
+            20,
+            80
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "Canvas",
+            20,
+            145
+          ]
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-transform-clip",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "translate",
+          "args": [
+            30.5,
+            10.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            30,
+            0,
+            160,
+            150
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "#20a060"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 4.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 10.25
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": -5.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-filter-order",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "#e02080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 3.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 8
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "drop-shadow(-4px 1px 2px blue) blur(1px) brightness(.8)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-save-restore",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "red"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 5
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "save",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "blue"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 12
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "restore",
+          "args": []
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowColor",
+          "save": "restoredColor"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "save": "restoredOffset"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-shadow-put-data",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "red"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 12
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "invert(1)"
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.raw"
+            },
+            8,
+            8
+          ],
+          "id": "d"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "putImageData",
+          "args": [
+            {
+              "$ref": "d"
+            },
+            100,
+            90
+          ]
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "save": "blur"
+        }
+      ]
+    }
+  ]
+}

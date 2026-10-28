@@ -1,0 +1,1033 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Original TextMetrics language contract, full line/run values and selected fallback; no font bytes redistributed.",
+  "cases": [
+    {
+      "id": "metrics-readonly-width",
+      "group": "python-text-metrics",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px \"DejaVu Sans\""
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV"
+          ],
+          "save": "before",
+          "id": "m"
+        },
+        {
+          "op": "set",
+          "target": "m",
+          "name": "width",
+          "value": 7,
+          "observeError": "overwrite"
+        },
+        {
+          "op": "get",
+          "target": "m",
+          "name": "width",
+          "save": "after"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Metrics AV fj ffi",
+            10.25,
+            360.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "metrics-readonly-lines",
+      "group": "python-text-metrics",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px \"DejaVu Sans\""
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV"
+          ],
+          "save": "before",
+          "id": "m"
+        },
+        {
+          "op": "set",
+          "target": "m",
+          "name": "lines",
+          "value": [],
+          "observeError": "overwrite"
+        },
+        {
+          "op": "get",
+          "target": "m",
+          "name": "lines",
+          "save": "after"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Metrics AV fj ffi",
+            10.25,
+            360.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "metrics-readonly-delete",
+      "group": "python-text-metrics",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px \"DejaVu Sans\""
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV"
+          ],
+          "save": "before",
+          "id": "m"
+        },
+        {
+          "op": "delete",
+          "target": "m",
+          "name": "width",
+          "observeError": "delete"
+        },
+        {
+          "op": "get",
+          "target": "m",
+          "name": "width",
+          "save": "after"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Metrics AV fj ffi",
+            10.25,
+            360.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "metrics-constructor-readonly",
+      "group": "python-text-metrics",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px \"DejaVu Sans\""
+        },
+        {
+          "op": "construct",
+          "class": "TextMetrics",
+          "args": [
+            {
+              "width": null,
+              "extra": {
+                "$undefined": true
+              }
+            }
+          ],
+          "id": "m"
+        },
+        {
+          "op": "set",
+          "target": "m",
+          "name": "width",
+          "value": 1,
+          "observeError": "nullReadonly"
+        },
+        {
+          "op": "set",
+          "target": "m",
+          "name": "extra",
+          "value": 2,
+          "observeError": "undefinedReadonly"
+        },
+        {
+          "op": "get",
+          "target": "m",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "m",
+          "name": "extra",
+          "save": "extra"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Metrics AV fj ffi",
+            10.25,
+            360.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "metrics-constructor-source-copy",
+      "group": "python-text-metrics",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px \"DejaVu Sans\""
+        },
+        {
+          "op": "construct",
+          "class": "TextMetrics",
+          "args": [
+            {
+              "width": 3
+            }
+          ],
+          "id": "source"
+        },
+        {
+          "op": "construct",
+          "class": "TextMetrics",
+          "args": [
+            {
+              "$ref": "source"
+            }
+          ],
+          "id": "copy"
+        },
+        {
+          "op": "get",
+          "target": "copy",
+          "name": "width",
+          "save": "copyWidth"
+        },
+        {
+          "op": "set",
+          "target": "copy",
+          "name": "width",
+          "value": 4,
+          "observeError": "copyReadonly"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Metrics AV fj ffi",
+            10.25,
+            360.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "metrics-zero-width-spaces",
+      "group": "python-text-metrics",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textWrap",
+          "value": true
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "A\u200bB\u200dC\u200eD\u200fE\u00a0F",
+            80
+          ],
+          "save": "zeroWidth"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "A\u200bB\u200dC\u200eD\u200fE\u00a0F",
+            10.25,
+            50,
+            80
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Metrics AV fj ffi",
+            10.25,
+            360.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "metrics-combining-and-missing",
+      "group": "python-text-metrics",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textWrap",
+          "value": true
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "e\u0301 A\u0327 \u03a9 \u0416 \u4e2d \u0378",
+            140.5
+          ],
+          "save": "combining"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "e\u0301 A\u0327 \u03a9 \u0416 \u4e2d \u0378",
+            10.25,
+            60,
+            140.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Metrics AV fj ffi",
+            10.25,
+            360.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "metrics-surrogate-inputs",
+      "group": "python-text-metrics",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px \"DejaVu Sans\""
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "A\ud800B\udc00C"
+          ],
+          "save": "lone"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "\ud83d\ude00"
+          ],
+          "save": "pair"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Metrics AV fj ffi",
+            10.25,
+            360.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "metrics-width-native-filter",
+      "group": "python-text-metrics",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px \"DejaVu Sans\""
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV ffi",
+            ""
+          ],
+          "save": "w0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV ffi",
+            "  "
+          ],
+          "save": "w1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV ffi",
+            "0b1000000"
+          ],
+          "save": "w2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV ffi",
+            "0o100"
+          ],
+          "save": "w3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV ffi",
+            "0x40"
+          ],
+          "save": "w4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV ffi",
+            "0X40"
+          ],
+          "save": "w5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV ffi",
+            "-1"
+          ],
+          "save": "w6"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV ffi",
+            "NaN"
+          ],
+          "save": "w7"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV ffi",
+            "Infinity"
+          ],
+          "save": "w8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV ffi",
+            [
+              null
+            ]
+          ],
+          "save": "w9"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV ffi",
+            [
+              false
+            ]
+          ],
+          "save": "w10"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV ffi",
+            [
+              {}
+            ]
+          ],
+          "save": "w11"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV ffi",
+            [
+              1,
+              2
+            ]
+          ],
+          "save": "w12"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Metrics AV fj ffi",
+            10.25,
+            360.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "metrics-snapshot-after-resize",
+      "group": "python-text-metrics",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px \"DejaVu Sans\""
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV ffi words"
+          ],
+          "save": "before",
+          "id": "m"
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "width",
+          "value": 620
+        },
+        {
+          "op": "get",
+          "target": "m",
+          "name": "width",
+          "save": "stillWidth"
+        },
+        {
+          "op": "get",
+          "target": "m",
+          "name": "lines",
+          "save": "stillLines"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px serif"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV ffi words"
+          ],
+          "save": "after"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Metrics AV fj ffi",
+            10.25,
+            360.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    }
+  ]
+}

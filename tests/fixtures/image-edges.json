@@ -1,0 +1,2208 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "cases": [
+    {
+      "id": "imaging-empty-image",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [],
+          "id": "img"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "complete",
+          "save": "complete"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "src",
+          "save": "src"
+        },
+        {
+          "op": "call",
+          "target": "img",
+          "name": "decode",
+          "args": [],
+          "observeError": "decode"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            0,
+            0
+          ],
+          "observeError": "draw"
+        }
+      ]
+    },
+    {
+      "id": "imaging-invalid-image-data",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "broken-image.txt"
+            }
+          ],
+          "observeError": "broken"
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$bytes": []
+            }
+          ],
+          "observeError": "empty"
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            "hello"
+          ],
+          "observeError": "url"
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            "data:image/png;base64,AAAA"
+          ],
+          "observeError": "decode"
+        }
+      ]
+    },
+    {
+      "id": "imaging-dataurl-errors",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            "data:image/png;weird,abcd"
+          ],
+          "observeError": "err0"
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            "data:image/svg+xml;utf8,%FF"
+          ],
+          "observeError": "err1"
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            "data:image/png,AA"
+          ],
+          "observeError": "err2"
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            "data:;base64,AA"
+          ],
+          "observeError": "err3"
+        }
+      ]
+    },
+    {
+      "id": "imaging-data-constructor-3",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [],
+          "id": "d",
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-data-constructor-4",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            0,
+            1
+          ],
+          "id": "d",
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-data-constructor-5",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            1,
+            0
+          ],
+          "id": "d",
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-data-constructor-6",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            -2,
+            -2
+          ],
+          "id": "d",
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-data-constructor-7",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            {
+              "$bytes": [
+                1,
+                2,
+                3
+              ]
+            },
+            1
+          ],
+          "id": "d",
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-data-constructor-8",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            {
+              "$bytes": [
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            2,
+            2
+          ],
+          "id": "d",
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-data-constructor-9",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            1,
+            1,
+            {
+              "colorType": "nope"
+            }
+          ],
+          "id": "d",
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-data-constructor-10",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            1,
+            1,
+            {
+              "colorSpace": "display-p3"
+            }
+          ],
+          "id": "d",
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-data-constructor-11",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            null,
+            2
+          ],
+          "id": "d",
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-data-constructor-12",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            {
+              "$undefined": true
+            },
+            2
+          ],
+          "id": "d",
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-readonly",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            2,
+            2
+          ],
+          "id": "d"
+        },
+        {
+          "op": "set",
+          "target": "d",
+          "name": "width",
+          "value": 9,
+          "observeError": "width"
+        },
+        {
+          "op": "set",
+          "target": "d",
+          "name": "data",
+          "value": null,
+          "observeError": "data"
+        },
+        {
+          "op": "delete",
+          "target": "d",
+          "name": "height",
+          "observeError": "delete"
+        },
+        {
+          "op": "get",
+          "target": "d",
+          "name": "data",
+          "save": "unchanged"
+        }
+      ]
+    },
+    {
+      "id": "imaging-invalid-sampling",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "imageSmoothingEnabled",
+          "save": "defaultEnabled"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "save": "defaultQuality"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "value": "HIGH"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "save": "upper"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "value": "unknown"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "save": "invalid"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "value": false,
+          "observeError": "boolean"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingEnabled",
+          "value": {}
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "imageSmoothingEnabled",
+          "save": "truth"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "save",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingEnabled",
+          "value": false
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "restore",
+          "args": []
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "imageSmoothingEnabled",
+          "save": "restored"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "save": "reset"
+        }
+      ]
+    },
+    {
+      "id": "imaging-read-errors-15",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "getImageData",
+          "args": [
+            0,
+            0,
+            4,
+            4,
+            {
+              "density": 0
+            }
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-read-errors-16",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "getImageData",
+          "args": [
+            0,
+            0,
+            4,
+            4,
+            {
+              "density": true
+            }
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-read-errors-17",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "getImageData",
+          "args": [
+            0,
+            0,
+            4,
+            4,
+            {
+              "density": 1.5
+            }
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-read-errors-18",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "getImageData",
+          "args": [
+            0,
+            0,
+            4,
+            4,
+            {
+              "msaa": -1
+            }
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-read-errors-19",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "getImageData",
+          "args": [
+            0,
+            0,
+            4,
+            4,
+            {
+              "msaa": "bogus"
+            }
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-read-errors-20",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "getImageData",
+          "args": [
+            0,
+            0,
+            4,
+            4,
+            {
+              "colorType": "bogus"
+            }
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-read-errors-21",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "getImageData",
+          "args": [
+            0,
+            0,
+            4,
+            4,
+            {
+              "colorSpace": "display-p3"
+            }
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-draw-errors-22",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            0
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-draw-errors-23",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            0,
+            0,
+            1
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-draw-errors-24",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            0,
+            0,
+            1,
+            2,
+            3
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-draw-errors-25",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            0,
+            0,
+            {
+              "$number": "NaN"
+            },
+            2
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-draw-errors-26",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            "bad",
+            0
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-draw-errors-27",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            "10",
+            null,
+            16,
+            16
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-put-errors-28",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            2,
+            2
+          ],
+          "id": "d"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "putImageData",
+          "args": [],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-put-errors-29",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            2,
+            2
+          ],
+          "id": "d"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "putImageData",
+          "args": [
+            1,
+            2
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-put-errors-30",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            2,
+            2
+          ],
+          "id": "d"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "putImageData",
+          "args": [
+            null,
+            0,
+            0
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-put-errors-31",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            2,
+            2
+          ],
+          "id": "d"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "putImageData",
+          "args": [
+            {
+              "$ref": "d"
+            },
+            0,
+            0,
+            1
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-put-errors-32",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            2,
+            2
+          ],
+          "id": "d"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "putImageData",
+          "args": [
+            {
+              "$ref": "d"
+            },
+            "bad",
+            0
+          ],
+          "observeError": "error"
+        }
+      ]
+    },
+    {
+      "id": "imaging-put-errors-33",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "ImageData",
+          "args": [
+            2,
+            2
+          ],
+          "id": "d"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "putImageData",
+          "args": [
+            {
+              "$ref": "d"
+            },
+            0,
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "observeError": "error"
+        }
+      ]
+    }
+  ]
+}

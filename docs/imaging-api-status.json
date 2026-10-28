@@ -1,0 +1,103 @@
+{
+  "schema": "py-skia-canvas-scoped-api-status/v1",
+  "baseline": "3.0.8",
+  "batch": "G6-imaging",
+  "notFullLedgerPromotion": true,
+  "acceptance": "Python versus fixed official Node A; user-adjusted 2026-10-28",
+  "entries": [
+    {
+      "names": "Image/width/height/complete/src/decode",
+      "parameters": "data=undefined,src=\"\"; src bytes/dataURL/path/HTTP; decode awaitable",
+      "units": "Pixels; labels and flags unitless",
+      "returns": "Image/self, dimensions/complete/src; load/error callbacks",
+      "exceptions": "Original malformed URL/failed Skia decode/HTTP/file errors; owner RuntimeError",
+      "ownership": "ID-only native owner TLS; async workers carry bytes only; complete/error callbacks after native borrow",
+      "upstream": "lib/classes/imagery.js:Image/loadImage/fetchData; lib/urls.js; src/image.rs:set_data",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested"
+    },
+    {
+      "names": "loadImage/loadImageData",
+      "parameters": "source, options; ImageData width/height/settings",
+      "units": "Pixels/raw bytes, request headers unitless",
+      "returns": "awaitable Image or owned ImageData; loadImageData uses raw constructor",
+      "exceptions": "Original decode/HTTP/file/dimension errors",
+      "ownership": "Transport may use I/O threads; original decoder stays owner asyncio loop; no GPU movement",
+      "upstream": "lib/classes/imagery.js:loadImage/loadImageData/fetchData",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested"
+    },
+    {
+      "names": "ImageData/createImageData",
+      "parameters": "size/settings; Buffer,width,height/settings; ImageData copy; Image/settings",
+      "units": "Pixels, bytes/pixel, original colorType strings",
+      "returns": "Readonly metadata and mutable clamped fixed-size bytes",
+      "exceptions": "Original argc/length/colorSpace/colorType TypeError/RangeError",
+      "ownership": "Pure Python owned values, copied Buffer/shared existing data; any thread after Image pixels copied on owner",
+      "upstream": "lib/classes/imagery.js:ImageData/pixelSize; context.js:createImageData",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested"
+    },
+    {
+      "names": "drawImage/drawCanvas",
+      "parameters": "Image/ImageData/Canvas,2/4/8 coords",
+      "units": "Canvas units, source bitmap pixels",
+      "returns": "None; original bitmap/vector branch/crop/SVG sizing",
+      "exceptions": "Original load/arity/type/dimensions errors; nonfinite bail/default or STRICT TypeError; >8 coords unsupported",
+      "ownership": "Native resources owner only, snapshot before target borrow supports self-copy; no callbacks or GPU transfer",
+      "upstream": "lib/classes/context.js:drawImage/drawCanvas; src/context/api.rs:_layout_rects/drawImage/drawCanvas",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested"
+    },
+    {
+      "names": "getImageData/putImageData",
+      "parameters": "crop/settings density/matte/msaa/color; data,dx,dy,optional dirty rect",
+      "units": "Canvas units and pixel dimensions/byte layouts",
+      "returns": "Owned ImageData or None; original crop/blit",
+      "exceptions": "Original density/MSAA/export/dimension errors; BGR101010x read fails like official host",
+      "ownership": "Owner Context/GPU, byte copies before borrow; returned ImageData independent",
+      "upstream": "lib/classes/context.js:getImageData/putImageData; src/context/api.rs; context/mod.rs:blit_pixels",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested"
+    },
+    {
+      "names": "imageSmoothingEnabled/imageSmoothingQuality",
+      "parameters": "JS truth flag or quality string",
+      "units": "Unitless",
+      "returns": "Original bool/quality, State save/restore/reset",
+      "exceptions": "Invalid quality ignored, nonstring TypeError; owner RuntimeError",
+      "ownership": "Original owner State/image_filter sampling; no second policy",
+      "upstream": "lib/classes/context.js; src/context/api.rs:imageSmoothing*; filter.rs:ImageFilter",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested"
+    },
+    {
+      "names": "CanvasPattern/createPattern/setTransform",
+      "parameters": "Canvas,source,repetition; DOM matrix/6/16 coefficients",
+      "units": "Canvas units, unitless repeats/matrix linear terms",
+      "returns": "Original Rc shared pattern; setTransform None",
+      "exceptions": "Original source/repetition/matrix errors; owner RuntimeError",
+      "ownership": "ID-only owner TLS, original snapshots, same-thread State shares Rc; deferred foreign drop",
+      "upstream": "lib/classes/canvas.js:CanvasPattern; context.js:createPattern; src/pattern.rs",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested"
+    },
+    {
+      "names": "CanvasTexture/createTexture",
+      "parameters": "spacing,options path/color/line/cap/angle/outline/offset",
+      "units": "Lengths canvas units, radians",
+      "returns": "Original Rc shared texture",
+      "exceptions": "Original argc/path/number/cap errors; owner RuntimeError",
+      "ownership": "Path snapshot and texture Rc remain owner TLS, independent source lifetime",
+      "upstream": "lib/classes/canvas.js:CanvasTexture; context.js:createTexture; src/texture.rs",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested"
+    }
+  ],
+  "pending": [
+    "Full host/proxy/valueOf/prototype/typed-buffer detachment and numeric extremes",
+    "Node Sharp/toSharp, complete EventEmitter and URL/request/agent/proxy interoperability",
+    "Original >8-coordinate native panic input outside supported profile",
+    "Windows hardware GPU/Metal/manylinux/static-fontconfig/full font/license/release acceptance"
+  ]
+}

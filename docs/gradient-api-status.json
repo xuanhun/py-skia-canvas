@@ -1,0 +1,476 @@
+{
+  "schema": "py-skia-canvas-scoped-api-status/v1",
+  "baseline": "3.0.8",
+  "batch": "G4-gradients-3",
+  "notFullLedgerPromotion": true,
+  "entries": [
+    {
+      "class": "CanvasGradient",
+      "name": "constructor",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry; CSS string colors and shared CanvasGradient styles. Full JS object/non-finite/STRICT coercion remains pending.",
+      "units": "Coordinates/radii in canvas units; conic angle radians; normalized f32 stop offset; CSS color strings",
+      "return": "CanvasGradient for constructor/factories; CSS string, cached object or None for style getters; None for mutators",
+      "exceptions": "Offset RangeError(ValueError) precedes color TypeError after f32 conversion; unknown constructor Error(RuntimeError); foreign owner RuntimeError",
+      "ownership": "Owner TLS native Rc ramp, Python metadata handles only; same-owner cross-Canvas sharing; queued foreign GC; style cache distinct from native State",
+      "upstream": [
+        {
+          "path": "lib/classes/canvas.js",
+          "line": 129,
+          "symbol": "constructor"
+        },
+        {
+          "path": "src/gradient.rs",
+          "line": 121,
+          "symbol": "constructor"
+        }
+      ],
+      "core": "crates/canvas-core/src/gradient.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_gradient.py",
+        "line": 13,
+        "symbol": "CanvasGradient.__init__"
+      },
+      "cases": [
+        "gradient-duplicate-epsilon",
+        "gradient-shared-mutate",
+        "gradient-radial",
+        "gradient-conic-transform",
+        "gradient-zero-one-stops",
+        "gradient-degenerate-coordinates",
+        "gradient-stop-errors",
+        "gradient-direct-constructor",
+        "gradient-reference-cache-restore",
+        "gradient-invalid-css-reference-cache",
+        "gradient-cross-canvas",
+        "gradient-stroke-and-text"
+      ],
+      "evidence": [
+        "test-runs/20261027-gradients-final/run.json"
+      ],
+      "unverified": [
+        "Full missing/null/undefined/object and non-finite coercion outside explicit cases",
+        "Complete STRICT mode contract in Python",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "CanvasGradient",
+      "name": "addColorStop",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry; CSS string colors and shared CanvasGradient styles. Full JS object/non-finite/STRICT coercion remains pending.",
+      "units": "Coordinates/radii in canvas units; conic angle radians; normalized f32 stop offset; CSS color strings",
+      "return": "CanvasGradient for constructor/factories; CSS string, cached object or None for style getters; None for mutators",
+      "exceptions": "Offset RangeError(ValueError) precedes color TypeError after f32 conversion; unknown constructor Error(RuntimeError); foreign owner RuntimeError",
+      "ownership": "Owner TLS native Rc ramp, Python metadata handles only; same-owner cross-Canvas sharing; queued foreign GC; style cache distinct from native State",
+      "upstream": [
+        {
+          "path": "lib/classes/canvas.js",
+          "line": 136,
+          "symbol": "addColorStop"
+        },
+        {
+          "path": "src/gradient.rs",
+          "line": 157,
+          "symbol": "addColorStop"
+        }
+      ],
+      "core": "crates/canvas-core/src/gradient.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_gradient.py",
+        "line": 33,
+        "symbol": "CanvasGradient.addColorStop"
+      },
+      "cases": [
+        "gradient-duplicate-epsilon",
+        "gradient-shared-mutate",
+        "gradient-radial",
+        "gradient-conic-transform",
+        "gradient-zero-one-stops",
+        "gradient-degenerate-coordinates",
+        "gradient-stop-errors",
+        "gradient-direct-constructor",
+        "gradient-reference-cache-restore",
+        "gradient-invalid-css-reference-cache",
+        "gradient-cross-canvas",
+        "gradient-stroke-and-text"
+      ],
+      "evidence": [
+        "test-runs/20261027-gradients-final/run.json"
+      ],
+      "unverified": [
+        "Full missing/null/undefined/object and non-finite coercion outside explicit cases",
+        "Complete STRICT mode contract in Python",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "createLinearGradient",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry; CSS string colors and shared CanvasGradient styles. Full JS object/non-finite/STRICT coercion remains pending.",
+      "units": "Coordinates/radii in canvas units; conic angle radians; normalized f32 stop offset; CSS color strings",
+      "return": "CanvasGradient for constructor/factories; CSS string, cached object or None for style getters; None for mutators",
+      "exceptions": "Offset RangeError(ValueError) precedes color TypeError after f32 conversion; unknown constructor Error(RuntimeError); foreign owner RuntimeError",
+      "ownership": "Owner TLS native Rc ramp, Python metadata handles only; same-owner cross-Canvas sharing; queued foreign GC; style cache distinct from native State",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 105,
+          "symbol": "createLinearGradient"
+        },
+        {
+          "path": "src/gradient.rs",
+          "line": 121,
+          "symbol": "createLinearGradient"
+        }
+      ],
+      "core": "crates/canvas-core/src/gradient.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 330,
+        "symbol": "CanvasRenderingContext2D.createLinearGradient"
+      },
+      "cases": [
+        "gradient-duplicate-epsilon",
+        "gradient-shared-mutate",
+        "gradient-radial",
+        "gradient-conic-transform",
+        "gradient-zero-one-stops",
+        "gradient-degenerate-coordinates",
+        "gradient-stop-errors",
+        "gradient-direct-constructor",
+        "gradient-reference-cache-restore",
+        "gradient-invalid-css-reference-cache",
+        "gradient-cross-canvas",
+        "gradient-stroke-and-text"
+      ],
+      "evidence": [
+        "test-runs/20261027-gradients-final/run.json"
+      ],
+      "unverified": [
+        "Full missing/null/undefined/object and non-finite coercion outside explicit cases",
+        "Complete STRICT mode contract in Python",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "createRadialGradient",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry; CSS string colors and shared CanvasGradient styles. Full JS object/non-finite/STRICT coercion remains pending.",
+      "units": "Coordinates/radii in canvas units; conic angle radians; normalized f32 stop offset; CSS color strings",
+      "return": "CanvasGradient for constructor/factories; CSS string, cached object or None for style getters; None for mutators",
+      "exceptions": "Offset RangeError(ValueError) precedes color TypeError after f32 conversion; unknown constructor Error(RuntimeError); foreign owner RuntimeError",
+      "ownership": "Owner TLS native Rc ramp, Python metadata handles only; same-owner cross-Canvas sharing; queued foreign GC; style cache distinct from native State",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 108,
+          "symbol": "createRadialGradient"
+        },
+        {
+          "path": "src/gradient.rs",
+          "line": 133,
+          "symbol": "createRadialGradient"
+        }
+      ],
+      "core": "crates/canvas-core/src/gradient.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 338,
+        "symbol": "CanvasRenderingContext2D.createRadialGradient"
+      },
+      "cases": [
+        "gradient-duplicate-epsilon",
+        "gradient-shared-mutate",
+        "gradient-radial",
+        "gradient-conic-transform",
+        "gradient-zero-one-stops",
+        "gradient-degenerate-coordinates",
+        "gradient-stop-errors",
+        "gradient-direct-constructor",
+        "gradient-reference-cache-restore",
+        "gradient-invalid-css-reference-cache",
+        "gradient-cross-canvas",
+        "gradient-stroke-and-text"
+      ],
+      "evidence": [
+        "test-runs/20261027-gradients-final/run.json"
+      ],
+      "unverified": [
+        "Full missing/null/undefined/object and non-finite coercion outside explicit cases",
+        "Complete STRICT mode contract in Python",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "createConicGradient",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry; CSS string colors and shared CanvasGradient styles. Full JS object/non-finite/STRICT coercion remains pending.",
+      "units": "Coordinates/radii in canvas units; conic angle radians; normalized f32 stop offset; CSS color strings",
+      "return": "CanvasGradient for constructor/factories; CSS string, cached object or None for style getters; None for mutators",
+      "exceptions": "Offset RangeError(ValueError) precedes color TypeError after f32 conversion; unknown constructor Error(RuntimeError); foreign owner RuntimeError",
+      "ownership": "Owner TLS native Rc ramp, Python metadata handles only; same-owner cross-Canvas sharing; queued foreign GC; style cache distinct from native State",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 111,
+          "symbol": "createConicGradient"
+        },
+        {
+          "path": "src/gradient.rs",
+          "line": 145,
+          "symbol": "createConicGradient"
+        }
+      ],
+      "core": "crates/canvas-core/src/gradient.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 346,
+        "symbol": "CanvasRenderingContext2D.createConicGradient"
+      },
+      "cases": [
+        "gradient-duplicate-epsilon",
+        "gradient-shared-mutate",
+        "gradient-radial",
+        "gradient-conic-transform",
+        "gradient-zero-one-stops",
+        "gradient-degenerate-coordinates",
+        "gradient-stop-errors",
+        "gradient-direct-constructor",
+        "gradient-reference-cache-restore",
+        "gradient-invalid-css-reference-cache",
+        "gradient-cross-canvas",
+        "gradient-stroke-and-text"
+      ],
+      "evidence": [
+        "test-runs/20261027-gradients-final/run.json"
+      ],
+      "unverified": [
+        "Full missing/null/undefined/object and non-finite coercion outside explicit cases",
+        "Complete STRICT mode contract in Python",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "fillStyle",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry; CSS string colors and shared CanvasGradient styles. Full JS object/non-finite/STRICT coercion remains pending.",
+      "units": "Coordinates/radii in canvas units; conic angle radians; normalized f32 stop offset; CSS color strings",
+      "return": "CanvasGradient for constructor/factories; CSS string, cached object or None for style getters; None for mutators",
+      "exceptions": "Offset RangeError(ValueError) precedes color TypeError after f32 conversion; unknown constructor Error(RuntimeError); foreign owner RuntimeError",
+      "ownership": "Owner TLS native Rc ramp, Python metadata handles only; same-owner cross-Canvas sharing; queued foreign GC; style cache distinct from native State",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 131,
+          "symbol": "fillStyle"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 501,
+          "symbol": "fillStyle"
+        }
+      ],
+      "core": "crates/canvas-core/src/gradient.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 275,
+        "symbol": "CanvasRenderingContext2D.fillStyle"
+      },
+      "cases": [
+        "gradient-duplicate-epsilon",
+        "gradient-shared-mutate",
+        "gradient-radial",
+        "gradient-conic-transform",
+        "gradient-zero-one-stops",
+        "gradient-degenerate-coordinates",
+        "gradient-stop-errors",
+        "gradient-direct-constructor",
+        "gradient-reference-cache-restore",
+        "gradient-invalid-css-reference-cache",
+        "gradient-cross-canvas",
+        "gradient-stroke-and-text"
+      ],
+      "evidence": [
+        "test-runs/20261027-gradients-final/run.json"
+      ],
+      "unverified": [
+        "Full missing/null/undefined/object and non-finite coercion outside explicit cases",
+        "Complete STRICT mode contract in Python",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "fillStyle",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry; CSS string colors and shared CanvasGradient styles. Full JS object/non-finite/STRICT coercion remains pending.",
+      "units": "Coordinates/radii in canvas units; conic angle radians; normalized f32 stop offset; CSS color strings",
+      "return": "CanvasGradient for constructor/factories; CSS string, cached object or None for style getters; None for mutators",
+      "exceptions": "Offset RangeError(ValueError) precedes color TypeError after f32 conversion; unknown constructor Error(RuntimeError); foreign owner RuntimeError",
+      "ownership": "Owner TLS native Rc ramp, Python metadata handles only; same-owner cross-Canvas sharing; queued foreign GC; style cache distinct from native State",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 124,
+          "symbol": "fillStyle"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 508,
+          "symbol": "fillStyle"
+        }
+      ],
+      "core": "crates/canvas-core/src/gradient.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 285,
+        "symbol": "CanvasRenderingContext2D.fillStyle"
+      },
+      "cases": [
+        "gradient-duplicate-epsilon",
+        "gradient-shared-mutate",
+        "gradient-radial",
+        "gradient-conic-transform",
+        "gradient-zero-one-stops",
+        "gradient-degenerate-coordinates",
+        "gradient-stop-errors",
+        "gradient-direct-constructor",
+        "gradient-reference-cache-restore",
+        "gradient-invalid-css-reference-cache",
+        "gradient-cross-canvas",
+        "gradient-stroke-and-text"
+      ],
+      "evidence": [
+        "test-runs/20261027-gradients-final/run.json"
+      ],
+      "unverified": [
+        "Full missing/null/undefined/object and non-finite coercion outside explicit cases",
+        "Complete STRICT mode contract in Python",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "strokeStyle",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry; CSS string colors and shared CanvasGradient styles. Full JS object/non-finite/STRICT coercion remains pending.",
+      "units": "Coordinates/radii in canvas units; conic angle radians; normalized f32 stop offset; CSS color strings",
+      "return": "CanvasGradient for constructor/factories; CSS string, cached object or None for style getters; None for mutators",
+      "exceptions": "Offset RangeError(ValueError) precedes color TypeError after f32 conversion; unknown constructor Error(RuntimeError); foreign owner RuntimeError",
+      "ownership": "Owner TLS native Rc ramp, Python metadata handles only; same-owner cross-Canvas sharing; queued foreign GC; style cache distinct from native State",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 143,
+          "symbol": "strokeStyle"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 519,
+          "symbol": "strokeStyle"
+        }
+      ],
+      "core": "crates/canvas-core/src/gradient.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 293,
+        "symbol": "CanvasRenderingContext2D.strokeStyle"
+      },
+      "cases": [
+        "gradient-duplicate-epsilon",
+        "gradient-shared-mutate",
+        "gradient-radial",
+        "gradient-conic-transform",
+        "gradient-zero-one-stops",
+        "gradient-degenerate-coordinates",
+        "gradient-stop-errors",
+        "gradient-direct-constructor",
+        "gradient-reference-cache-restore",
+        "gradient-invalid-css-reference-cache",
+        "gradient-cross-canvas",
+        "gradient-stroke-and-text"
+      ],
+      "evidence": [
+        "test-runs/20261027-gradients-final/run.json"
+      ],
+      "unverified": [
+        "Full missing/null/undefined/object and non-finite coercion outside explicit cases",
+        "Complete STRICT mode contract in Python",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "strokeStyle",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry; CSS string colors and shared CanvasGradient styles. Full JS object/non-finite/STRICT coercion remains pending.",
+      "units": "Coordinates/radii in canvas units; conic angle radians; normalized f32 stop offset; CSS color strings",
+      "return": "CanvasGradient for constructor/factories; CSS string, cached object or None for style getters; None for mutators",
+      "exceptions": "Offset RangeError(ValueError) precedes color TypeError after f32 conversion; unknown constructor Error(RuntimeError); foreign owner RuntimeError",
+      "ownership": "Owner TLS native Rc ramp, Python metadata handles only; same-owner cross-Canvas sharing; queued foreign GC; style cache distinct from native State",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 136,
+          "symbol": "strokeStyle"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 526,
+          "symbol": "strokeStyle"
+        }
+      ],
+      "core": "crates/canvas-core/src/gradient.rs",
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 302,
+        "symbol": "CanvasRenderingContext2D.strokeStyle"
+      },
+      "cases": [
+        "gradient-duplicate-epsilon",
+        "gradient-shared-mutate",
+        "gradient-radial",
+        "gradient-conic-transform",
+        "gradient-zero-one-stops",
+        "gradient-degenerate-coordinates",
+        "gradient-stop-errors",
+        "gradient-direct-constructor",
+        "gradient-reference-cache-restore",
+        "gradient-invalid-css-reference-cache",
+        "gradient-cross-canvas",
+        "gradient-stroke-and-text"
+      ],
+      "evidence": [
+        "test-runs/20261027-gradients-final/run.json"
+      ],
+      "unverified": [
+        "Full missing/null/undefined/object and non-finite coercion outside explicit cases",
+        "Complete STRICT mode contract in Python",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    }
+  ]
+}

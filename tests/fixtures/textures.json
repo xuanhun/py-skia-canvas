@@ -1,0 +1,486 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "cases": [
+    {
+      "id": "imaging-texture-0",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createTexture",
+          "args": [
+            8,
+            {}
+          ],
+          "id": "t"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "t"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            10,
+            10,
+            220,
+            150
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-texture-1",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createTexture",
+          "args": [
+            [
+              12,
+              7
+            ],
+            {
+              "color": "#2060c0",
+              "line": 2,
+              "angle": 0.3
+            }
+          ],
+          "id": "t"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "t"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            10,
+            10,
+            220,
+            150
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-texture-2",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createTexture",
+          "args": [
+            [
+              8
+            ],
+            {
+              "color": "#d02860",
+              "cap": "round",
+              "offset": [
+                2,
+                3
+              ],
+              "outline": true
+            }
+          ],
+          "id": "t"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "t"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            10,
+            10,
+            220,
+            150
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-texture-3",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createTexture",
+          "args": [
+            16,
+            {
+              "color": "rgba(20,160,70,.7)",
+              "line": 3,
+              "angle": 0
+            }
+          ],
+          "id": "t"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "t"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            10,
+            10,
+            220,
+            150
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-texture-path",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0L6 3L3 6Z"
+          ],
+          "id": "path"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createTexture",
+          "args": [
+            [
+              15,
+              12
+            ],
+            {
+              "path": {
+                "$ref": "path"
+              },
+              "color": "#e04080",
+              "offset": 2
+            }
+          ],
+          "id": "t"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "t"
+          }
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-texture-errors",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createTexture",
+          "args": [],
+          "observeError": "missing"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createTexture",
+          "args": [
+            8,
+            {
+              "cap": "bad"
+            }
+          ],
+          "observeError": "cap"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createTexture",
+          "args": [
+            8,
+            {
+              "path": null
+            }
+          ],
+          "observeError": "path"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createTexture",
+          "args": [
+            []
+          ],
+          "observeError": "spacing"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Original SVG pattern autosizing, using a project-authored MIT asset without intrinsic width/height.",
+  "cases": [
+    {"id": "pattern-autosize-wide", "group": "paint-resources", "width": 128, "height": 64, "mode": "default", "ops": [
+      {"op": "loadImage", "path": "tests/assets/checker-autosize.svg", "id": "img"},
+      {"op": "call", "target": "ctx", "name": "createPattern", "args": [{"$ref": "img"}, "repeat"], "id": "pattern"},
+      {"op": "set", "target": "ctx", "name": "fillStyle", "value": {"$ref": "pattern"}},
+      {"op": "call", "target": "ctx", "name": "fillRect", "args": [0, 0, 128, 64]}
+    ]},
+    {"id": "pattern-autosize-tall", "group": "paint-resources", "width": 48, "height": 96, "mode": "default", "ops": [
+      {"op": "loadImage", "path": "tests/assets/checker-autosize.svg", "id": "img"},
+      {"op": "call", "target": "ctx", "name": "createPattern", "args": [{"$ref": "img"}, "repeat"], "id": "pattern"},
+      {"op": "set", "target": "ctx", "name": "fillStyle", "value": {"$ref": "pattern"}},
+      {"op": "call", "target": "ctx", "name": "fillRect", "args": [0, 0, 48, 96]}
+    ]}
+  ]
+}

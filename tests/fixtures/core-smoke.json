@@ -1,0 +1,18 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Counterpart of the Node-free Rust core probe; uses original default text style, no alternate shaping implementation.",
+  "cases": [{
+    "id": "core-gpu-smoke", "group": "core-gpu-probe", "width": 300, "height": 150, "mode": "default", "fontPolicy": "system-unpinned",
+    "ops": [
+      {"op": "set", "target": "ctx", "name": "fillStyle", "value": "#ffffff"},
+      {"op": "call", "target": "ctx", "name": "fillRect", "args": [0, 0, 300, 150]},
+      {"op": "set", "target": "ctx", "name": "fillStyle", "value": "#2878d9"},
+      {"op": "call", "target": "ctx", "name": "fillRect", "args": [10.25, 11.75, 113.5, 63.25]},
+      {"op": "call", "target": "ctx", "name": "measureText", "args": ["Canvas AV fj"], "save": "metrics"},
+      {"op": "set", "target": "ctx", "name": "fillStyle", "value": "#000000"},
+      {"op": "call", "target": "ctx", "name": "fillText", "args": ["Canvas AV fj", 10.25, 100.5]},
+      {"op": "set", "target": "ctx", "name": "fillStyle", "value": "#0050ff"},
+      {"op": "call", "target": "ctx", "name": "fillText", "args": ["Canvas AV fj", 10.25, 120.5]}
+    ]
+  }]
+}

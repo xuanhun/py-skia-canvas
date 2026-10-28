@@ -1,0 +1,497 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Initial real Python typed API scopes; default GPU plus explicit diagnostic CPU control. Not complete JS coercion or API coverage.",
+  "cases": [
+    {
+      "id": "python-state-rects",
+      "group": "python-core",
+      "width": 160,
+      "height": 80,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ffffff"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            80
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "save",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(23, 80, 190, 0.375)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.7
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            4.25,
+            3.75,
+            71.5,
+            30.25
+          ]
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "save": "color"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "save": "alpha"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "restore",
+          "args": []
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "save": "restoredColor"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "save": "restoredAlpha"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ff007f"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeRect",
+          "args": [
+            0.5,
+            0.5,
+            120.25,
+            50.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clearRect",
+          "args": [
+            35.25,
+            10.25,
+            6.5,
+            18.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "python-resize-reset",
+      "group": "python-core",
+      "width": 160,
+      "height": 80,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            80
+          ]
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "width",
+          "value": 160
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "save": "resetColor"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "save": "resetAlpha"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#2878d9"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            3.25,
+            8.5,
+            100.5,
+            30.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "save": "fullResetColor"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            2.5,
+            3.25,
+            40.5,
+            24.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "python-default-text",
+      "group": "python-core",
+      "width": 160,
+      "height": 80,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ffffff"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            80
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#1234ba"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj Canvas",
+            4.25,
+            20.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj Canvas",
+            4.25,
+            40.5,
+            35.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#000000"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "AV fj",
+            4.25,
+            65.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj Canvas"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj Canvas",
+            35.25
+          ],
+          "save": "limitedMetrics"
+        }
+      ]
+    },
+    {
+      "id": "python-surrogate-text",
+      "group": "python-core",
+      "width": 160,
+      "height": 80,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ffffff"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            80
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "black"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "A\ud800B\udc00C",
+            3.25,
+            25.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "A\ud800B\udc00C"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "A\ud83d\ude42B"
+          ],
+          "save": "utf16Metrics"
+        }
+      ]
+    },
+    {
+      "id": "python-invalid-css",
+      "group": "python-core",
+      "width": 160,
+      "height": 80,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#3388dd"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "not a color"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "save": "retainedColor"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.4
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 2
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "save": "retainedAlpha"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0.25,
+            0.75,
+            90.5,
+            60.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "python-constructor-false",
+      "group": "python-core",
+      "width": 160,
+      "height": 80,
+      "mode": "constructor-false",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "gpu",
+          "save": "gpu"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "engine",
+          "save": "engine"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ef307f"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            2.5,
+            4.75,
+            96.5,
+            43.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "python-cpu-control",
+      "group": "python-core",
+      "width": 160,
+      "height": 80,
+      "mode": "cpu-setter",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#1234ba"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            2.5,
+            4.75,
+            96.5,
+            43.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV fj",
+            2.25,
+            70.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV fj"
+          ],
+          "save": "metrics"
+        }
+      ]
+    }
+  ]
+}

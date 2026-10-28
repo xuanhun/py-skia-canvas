@@ -1,0 +1,1610 @@
+{
+  "schema": "py-skia-canvas-native-api-index/v1",
+  "commit": "042312a3f40b660b1d7dc0beba541486171bc5cc",
+  "warning": "Native entry points are not the full public API. Audit JS wrappers and index.d.ts separately.",
+  "publicExports": [
+    "Canvas",
+    "CanvasGradient",
+    "CanvasPattern",
+    "CanvasTexture",
+    "Image",
+    "ImageData",
+    "loadImage",
+    "loadImageData",
+    "Path2D",
+    "DOMPoint",
+    "DOMMatrix",
+    "DOMRect",
+    "FontLibrary",
+    "TextMetrics",
+    "CanvasRenderingContext2D",
+    "App",
+    "Window"
+  ],
+  "nativeExports": [
+    {
+      "name": "Image_new",
+      "rustFunction": "image::new",
+      "group": "Image",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 34,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Image_get_src",
+      "rustFunction": "image::get_src",
+      "group": "Image",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 35,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Image_set_src",
+      "rustFunction": "image::set_src",
+      "group": "Image",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 36,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Image_set_data",
+      "rustFunction": "image::set_data",
+      "group": "Image",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 37,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Image_get_width",
+      "rustFunction": "image::get_width",
+      "group": "Image",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 38,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Image_get_height",
+      "rustFunction": "image::get_height",
+      "group": "Image",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 39,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Image_get_complete",
+      "rustFunction": "image::get_complete",
+      "group": "Image",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 40,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Image_pixels",
+      "rustFunction": "image::pixels",
+      "group": "Image",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 41,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_new",
+      "rustFunction": "path::new",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 45,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_from_path",
+      "rustFunction": "path::from_path",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 46,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_from_svg",
+      "rustFunction": "path::from_svg",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 47,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_addPath",
+      "rustFunction": "path::addPath",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 48,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_closePath",
+      "rustFunction": "path::closePath",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 49,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_moveTo",
+      "rustFunction": "path::moveTo",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 50,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_lineTo",
+      "rustFunction": "path::lineTo",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 51,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_bezierCurveTo",
+      "rustFunction": "path::bezierCurveTo",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 52,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_quadraticCurveTo",
+      "rustFunction": "path::quadraticCurveTo",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 53,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_conicCurveTo",
+      "rustFunction": "path::conicCurveTo",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 54,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_arc",
+      "rustFunction": "path::arc",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 55,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_arcTo",
+      "rustFunction": "path::arcTo",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 56,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_ellipse",
+      "rustFunction": "path::ellipse",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 57,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_rect",
+      "rustFunction": "path::rect",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 58,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_roundRect",
+      "rustFunction": "path::roundRect",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 59,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_op",
+      "rustFunction": "path::op",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 60,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_interpolate",
+      "rustFunction": "path::interpolate",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 61,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_simplify",
+      "rustFunction": "path::simplify",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 62,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_unwind",
+      "rustFunction": "path::unwind",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 63,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_round",
+      "rustFunction": "path::round",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 64,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_trim",
+      "rustFunction": "path::trim",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 65,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_jitter",
+      "rustFunction": "path::jitter",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 66,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_offset",
+      "rustFunction": "path::offset",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 67,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_transform",
+      "rustFunction": "path::transform",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 68,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_bounds",
+      "rustFunction": "path::bounds",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 69,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_contains",
+      "rustFunction": "path::contains",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 70,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_edges",
+      "rustFunction": "path::edges",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 71,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_get_d",
+      "rustFunction": "path::get_d",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 72,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Path2D_set_d",
+      "rustFunction": "path::set_d",
+      "group": "Path2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 73,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasGradient_linear",
+      "rustFunction": "gradient::linear",
+      "group": "CanvasGradient",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 77,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasGradient_radial",
+      "rustFunction": "gradient::radial",
+      "group": "CanvasGradient",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 78,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasGradient_conic",
+      "rustFunction": "gradient::conic",
+      "group": "CanvasGradient",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 79,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasGradient_addColorStop",
+      "rustFunction": "gradient::addColorStop",
+      "group": "CanvasGradient",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 80,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasGradient_repr",
+      "rustFunction": "gradient::repr",
+      "group": "CanvasGradient",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 81,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasPattern_from_image",
+      "rustFunction": "pattern::from_image",
+      "group": "CanvasPattern",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 85,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasPattern_from_image_data",
+      "rustFunction": "pattern::from_image_data",
+      "group": "CanvasPattern",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 86,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasPattern_from_canvas",
+      "rustFunction": "pattern::from_canvas",
+      "group": "CanvasPattern",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 87,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasPattern_setTransform",
+      "rustFunction": "pattern::setTransform",
+      "group": "CanvasPattern",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 88,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasPattern_repr",
+      "rustFunction": "pattern::repr",
+      "group": "CanvasPattern",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 89,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasTexture_new",
+      "rustFunction": "texture::new",
+      "group": "CanvasTexture",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 93,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasTexture_repr",
+      "rustFunction": "texture::repr",
+      "group": "CanvasTexture",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 94,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "FontLibrary_get_families",
+      "rustFunction": "font_library::get_families",
+      "group": "FontLibrary",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 98,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "FontLibrary_has",
+      "rustFunction": "font_library::has",
+      "group": "FontLibrary",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 99,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "FontLibrary_family",
+      "rustFunction": "font_library::family",
+      "group": "FontLibrary",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 100,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "FontLibrary_addFamily",
+      "rustFunction": "font_library::addFamily",
+      "group": "FontLibrary",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 101,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "FontLibrary_reset",
+      "rustFunction": "font_library::reset",
+      "group": "FontLibrary",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 102,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Canvas_new",
+      "rustFunction": "canvas::new",
+      "group": "Canvas",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 106,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Canvas_get_engine",
+      "rustFunction": "canvas::get_engine",
+      "group": "Canvas",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 108,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Canvas_set_engine",
+      "rustFunction": "canvas::set_engine",
+      "group": "Canvas",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 109,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Canvas_get_engine_status",
+      "rustFunction": "canvas::get_engine_status",
+      "group": "Canvas",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 110,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Canvas_get_width",
+      "rustFunction": "canvas::get_width",
+      "group": "Canvas",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 112,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Canvas_set_width",
+      "rustFunction": "canvas::set_width",
+      "group": "Canvas",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 113,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Canvas_get_height",
+      "rustFunction": "canvas::get_height",
+      "group": "Canvas",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 114,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Canvas_set_height",
+      "rustFunction": "canvas::set_height",
+      "group": "Canvas",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 115,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Canvas_save",
+      "rustFunction": "canvas::save",
+      "group": "Canvas",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 117,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Canvas_saveSync",
+      "rustFunction": "canvas::saveSync",
+      "group": "Canvas",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 118,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Canvas_toBuffer",
+      "rustFunction": "canvas::toBuffer",
+      "group": "Canvas",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 119,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "Canvas_toBufferSync",
+      "rustFunction": "canvas::toBufferSync",
+      "group": "Canvas",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 120,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_new",
+      "rustFunction": "ctx::new",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 124,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_resetSize",
+      "rustFunction": "ctx::resetSize",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 125,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_size",
+      "rustFunction": "ctx::get_size",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 126,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_size",
+      "rustFunction": "ctx::set_size",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 127,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_reset",
+      "rustFunction": "ctx::reset",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 128,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_save",
+      "rustFunction": "ctx::save",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 131,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_restore",
+      "rustFunction": "ctx::restore",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 132,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_transform",
+      "rustFunction": "ctx::transform",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 133,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_translate",
+      "rustFunction": "ctx::translate",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 134,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_scale",
+      "rustFunction": "ctx::scale",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 135,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_rotate",
+      "rustFunction": "ctx::rotate",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 136,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_resetTransform",
+      "rustFunction": "ctx::resetTransform",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 137,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_currentTransform",
+      "rustFunction": "ctx::get_currentTransform",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 138,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_currentTransform",
+      "rustFunction": "ctx::set_currentTransform",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 139,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_createProjection",
+      "rustFunction": "ctx::createProjection",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 140,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_beginPath",
+      "rustFunction": "ctx::beginPath",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 143,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_rect",
+      "rustFunction": "ctx::rect",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 144,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_roundRect",
+      "rustFunction": "ctx::roundRect",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 145,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_arc",
+      "rustFunction": "ctx::arc",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 146,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_ellipse",
+      "rustFunction": "ctx::ellipse",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 147,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_moveTo",
+      "rustFunction": "ctx::moveTo",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 148,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_lineTo",
+      "rustFunction": "ctx::lineTo",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 149,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_arcTo",
+      "rustFunction": "ctx::arcTo",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 150,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_bezierCurveTo",
+      "rustFunction": "ctx::bezierCurveTo",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 151,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_quadraticCurveTo",
+      "rustFunction": "ctx::quadraticCurveTo",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 152,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_conicCurveTo",
+      "rustFunction": "ctx::conicCurveTo",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 153,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_closePath",
+      "rustFunction": "ctx::closePath",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 154,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_isPointInPath",
+      "rustFunction": "ctx::isPointInPath",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 155,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_isPointInStroke",
+      "rustFunction": "ctx::isPointInStroke",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 156,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_clip",
+      "rustFunction": "ctx::clip",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 157,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_fill",
+      "rustFunction": "ctx::fill",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 160,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_stroke",
+      "rustFunction": "ctx::stroke",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 161,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_fillRect",
+      "rustFunction": "ctx::fillRect",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 162,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_strokeRect",
+      "rustFunction": "ctx::strokeRect",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 163,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_clearRect",
+      "rustFunction": "ctx::clearRect",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 164,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_fillStyle",
+      "rustFunction": "ctx::get_fillStyle",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 165,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_fillStyle",
+      "rustFunction": "ctx::set_fillStyle",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 166,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_strokeStyle",
+      "rustFunction": "ctx::get_strokeStyle",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 167,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_strokeStyle",
+      "rustFunction": "ctx::set_strokeStyle",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 168,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_getLineDash",
+      "rustFunction": "ctx::getLineDash",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 171,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_setLineDash",
+      "rustFunction": "ctx::setLineDash",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 172,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_lineCap",
+      "rustFunction": "ctx::get_lineCap",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 173,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_lineCap",
+      "rustFunction": "ctx::set_lineCap",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 174,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_lineDashFit",
+      "rustFunction": "ctx::get_lineDashFit",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 175,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_lineDashFit",
+      "rustFunction": "ctx::set_lineDashFit",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 176,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_lineDashMarker",
+      "rustFunction": "ctx::get_lineDashMarker",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 177,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_lineDashMarker",
+      "rustFunction": "ctx::set_lineDashMarker",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 178,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_lineDashOffset",
+      "rustFunction": "ctx::get_lineDashOffset",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 179,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_lineDashOffset",
+      "rustFunction": "ctx::set_lineDashOffset",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 180,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_lineJoin",
+      "rustFunction": "ctx::get_lineJoin",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 181,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_lineJoin",
+      "rustFunction": "ctx::set_lineJoin",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 182,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_lineWidth",
+      "rustFunction": "ctx::get_lineWidth",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 183,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_lineWidth",
+      "rustFunction": "ctx::set_lineWidth",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 184,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_miterLimit",
+      "rustFunction": "ctx::get_miterLimit",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 185,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_miterLimit",
+      "rustFunction": "ctx::set_miterLimit",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 186,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_drawImage",
+      "rustFunction": "ctx::drawImage",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 189,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_drawCanvas",
+      "rustFunction": "ctx::drawCanvas",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 190,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_getImageData",
+      "rustFunction": "ctx::getImageData",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 191,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_putImageData",
+      "rustFunction": "ctx::putImageData",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 192,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_imageSmoothingEnabled",
+      "rustFunction": "ctx::get_imageSmoothingEnabled",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 193,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_imageSmoothingEnabled",
+      "rustFunction": "ctx::set_imageSmoothingEnabled",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 194,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_imageSmoothingQuality",
+      "rustFunction": "ctx::get_imageSmoothingQuality",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 195,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_imageSmoothingQuality",
+      "rustFunction": "ctx::set_imageSmoothingQuality",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 196,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_fillText",
+      "rustFunction": "ctx::fillText",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 199,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_strokeText",
+      "rustFunction": "ctx::strokeText",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 200,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_measureText",
+      "rustFunction": "ctx::measureText",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 201,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_outlineText",
+      "rustFunction": "ctx::outlineText",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 202,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_font",
+      "rustFunction": "ctx::get_font",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 203,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_font",
+      "rustFunction": "ctx::set_font",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 204,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_textAlign",
+      "rustFunction": "ctx::get_textAlign",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 205,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_textAlign",
+      "rustFunction": "ctx::set_textAlign",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 206,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_textBaseline",
+      "rustFunction": "ctx::get_textBaseline",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 207,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_textBaseline",
+      "rustFunction": "ctx::set_textBaseline",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 208,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_direction",
+      "rustFunction": "ctx::get_direction",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 209,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_direction",
+      "rustFunction": "ctx::set_direction",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 210,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_letterSpacing",
+      "rustFunction": "ctx::get_letterSpacing",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 211,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_letterSpacing",
+      "rustFunction": "ctx::set_letterSpacing",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 212,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_wordSpacing",
+      "rustFunction": "ctx::get_wordSpacing",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 213,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_wordSpacing",
+      "rustFunction": "ctx::set_wordSpacing",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 214,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_fontHinting",
+      "rustFunction": "ctx::get_fontHinting",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 215,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_fontHinting",
+      "rustFunction": "ctx::set_fontHinting",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 216,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_fontVariant",
+      "rustFunction": "ctx::get_fontVariant",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 217,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_fontVariant",
+      "rustFunction": "ctx::set_fontVariant",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 218,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_fontStretch",
+      "rustFunction": "ctx::get_fontStretch",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 219,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_fontStretch",
+      "rustFunction": "ctx::set_fontStretch",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 220,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_textWrap",
+      "rustFunction": "ctx::get_textWrap",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 221,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_textWrap",
+      "rustFunction": "ctx::set_textWrap",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 222,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_textDecoration",
+      "rustFunction": "ctx::get_textDecoration",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 223,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_textDecoration",
+      "rustFunction": "ctx::set_textDecoration",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 224,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_globalAlpha",
+      "rustFunction": "ctx::get_globalAlpha",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 227,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_globalAlpha",
+      "rustFunction": "ctx::set_globalAlpha",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 228,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_globalCompositeOperation",
+      "rustFunction": "ctx::get_globalCompositeOperation",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 229,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_globalCompositeOperation",
+      "rustFunction": "ctx::set_globalCompositeOperation",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 230,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_filter",
+      "rustFunction": "ctx::get_filter",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 231,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_filter",
+      "rustFunction": "ctx::set_filter",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 232,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_shadowBlur",
+      "rustFunction": "ctx::get_shadowBlur",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 233,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_shadowBlur",
+      "rustFunction": "ctx::set_shadowBlur",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 234,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_shadowColor",
+      "rustFunction": "ctx::get_shadowColor",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 235,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_shadowColor",
+      "rustFunction": "ctx::set_shadowColor",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 236,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_shadowOffsetX",
+      "rustFunction": "ctx::get_shadowOffsetX",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 237,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_get_shadowOffsetY",
+      "rustFunction": "ctx::get_shadowOffsetY",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 238,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_shadowOffsetX",
+      "rustFunction": "ctx::set_shadowOffsetX",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 239,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "CanvasRenderingContext2D_set_shadowOffsetY",
+      "rustFunction": "ctx::set_shadowOffsetY",
+      "group": "CanvasRenderingContext2D",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 240,
+      "status": "inventoried",
+      "feature": null
+    },
+    {
+      "name": "App_register",
+      "rustFunction": "gui::register",
+      "group": "App",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 245,
+      "status": "inventoried",
+      "feature": "window"
+    },
+    {
+      "name": "App_activate",
+      "rustFunction": "gui::activate",
+      "group": "App",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 246,
+      "status": "inventoried",
+      "feature": "window"
+    },
+    {
+      "name": "App_quit",
+      "rustFunction": "gui::quit",
+      "group": "App",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 247,
+      "status": "inventoried",
+      "feature": "window"
+    },
+    {
+      "name": "App_closeWindow",
+      "rustFunction": "gui::close",
+      "group": "App",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 248,
+      "status": "inventoried",
+      "feature": "window"
+    },
+    {
+      "name": "App_openWindow",
+      "rustFunction": "gui::open",
+      "group": "App",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 249,
+      "status": "inventoried",
+      "feature": "window"
+    },
+    {
+      "name": "App_setRate",
+      "rustFunction": "gui::set_rate",
+      "group": "App",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 250,
+      "status": "inventoried",
+      "feature": "window"
+    },
+    {
+      "name": "App_setMode",
+      "rustFunction": "gui::set_mode",
+      "group": "App",
+      "source": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "line": 251,
+      "status": "inventoried",
+      "feature": "window"
+    }
+  ]
+}

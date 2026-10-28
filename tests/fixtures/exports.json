@@ -1,0 +1,1548 @@
+{
+  "schema": "py-skia-canvas-exports/v1",
+  "cases": [
+    {
+      "id": "export-000",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {}
+    },
+    {
+      "id": "export-001",
+      "method": "toBuffer",
+      "extension": "png",
+      "opts": {}
+    },
+    {
+      "id": "export-002",
+      "method": "toBufferSync",
+      "extension": "jpg",
+      "opts": {}
+    },
+    {
+      "id": "export-003",
+      "method": "toBuffer",
+      "extension": "jpg",
+      "opts": {}
+    },
+    {
+      "id": "export-004",
+      "method": "toBufferSync",
+      "extension": "jpeg",
+      "opts": {}
+    },
+    {
+      "id": "export-005",
+      "method": "toBuffer",
+      "extension": "jpeg",
+      "opts": {}
+    },
+    {
+      "id": "export-006",
+      "method": "toBufferSync",
+      "extension": "webp",
+      "opts": {}
+    },
+    {
+      "id": "export-007",
+      "method": "toBuffer",
+      "extension": "webp",
+      "opts": {}
+    },
+    {
+      "id": "export-008",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {}
+    },
+    {
+      "id": "export-009",
+      "method": "toBuffer",
+      "extension": "raw",
+      "opts": {}
+    },
+    {
+      "id": "export-010",
+      "method": "toBufferSync",
+      "extension": "pdf",
+      "opts": {}
+    },
+    {
+      "id": "export-011",
+      "method": "toBuffer",
+      "extension": "pdf",
+      "opts": {}
+    },
+    {
+      "id": "export-012",
+      "method": "toBufferSync",
+      "extension": "svg",
+      "opts": {}
+    },
+    {
+      "id": "export-013",
+      "method": "toBuffer",
+      "extension": "svg",
+      "opts": {}
+    },
+    {
+      "id": "export-014",
+      "method": "toBufferSync",
+      "extension": "image/png",
+      "opts": {}
+    },
+    {
+      "id": "export-015",
+      "method": "toBuffer",
+      "extension": "image/png",
+      "opts": {}
+    },
+    {
+      "id": "export-016",
+      "method": "toBufferSync",
+      "extension": "application/pdf",
+      "opts": {}
+    },
+    {
+      "id": "export-017",
+      "method": "toBuffer",
+      "extension": "application/pdf",
+      "opts": {}
+    },
+    {
+      "id": "export-018",
+      "method": "toBufferSync",
+      "extension": ".PNG",
+      "opts": {}
+    },
+    {
+      "id": "export-019",
+      "method": "toBuffer",
+      "extension": ".PNG",
+      "opts": {}
+    },
+    {
+      "id": "export-020",
+      "method": "toBufferSync",
+      "extension": "png@2x",
+      "opts": {}
+    },
+    {
+      "id": "export-021",
+      "method": "toBuffer",
+      "extension": "png@2x",
+      "opts": {}
+    },
+    {
+      "id": "export-022",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "page": 1
+      }
+    },
+    {
+      "id": "export-023",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "page": -1
+      }
+    },
+    {
+      "id": "export-024",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "page": -2
+      }
+    },
+    {
+      "id": "export-025",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "page": 0
+      }
+    },
+    {
+      "id": "export-026",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "page": "-1"
+      }
+    },
+    {
+      "id": "export-027",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "density": 2
+      }
+    },
+    {
+      "id": "export-028",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "quality": 0
+      }
+    },
+    {
+      "id": "export-029",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "quality": 1
+      }
+    },
+    {
+      "id": "export-030",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "matte": "#efd7a1"
+      }
+    },
+    {
+      "id": "export-031",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "msaa": 0
+      }
+    },
+    {
+      "id": "export-032",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "msaa": "2.9"
+      }
+    },
+    {
+      "id": "export-033",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "msaa": false
+      }
+    },
+    {
+      "id": "export-034",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "outline": true
+      }
+    },
+    {
+      "id": "export-035",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "downsample": true
+      }
+    },
+    {
+      "id": "export-036",
+      "method": "toURLSync",
+      "extension": "png",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-037",
+      "method": "toURL",
+      "extension": "png",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-038",
+      "method": "toDataURL",
+      "extension": "png",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-039",
+      "method": "toFileSync",
+      "extension": "png",
+      "opts": {},
+      "filename": "single.png"
+    },
+    {
+      "id": "export-040",
+      "method": "toFile",
+      "extension": "png",
+      "opts": {},
+      "filename": "single.png"
+    },
+    {
+      "id": "export-041",
+      "method": "toFileSync",
+      "extension": "png",
+      "opts": {},
+      "filename": "file-{03}-{}.strip.png"
+    },
+    {
+      "id": "export-042",
+      "method": "toFile",
+      "extension": "png",
+      "opts": {},
+      "filename": "file-{03}-{}.strip.png"
+    },
+    {
+      "id": "export-043",
+      "method": "toBufferSync",
+      "extension": "jpg",
+      "opts": {
+        "page": 1
+      }
+    },
+    {
+      "id": "export-044",
+      "method": "toBufferSync",
+      "extension": "jpg",
+      "opts": {
+        "page": -1
+      }
+    },
+    {
+      "id": "export-045",
+      "method": "toBufferSync",
+      "extension": "jpg",
+      "opts": {
+        "page": -2
+      }
+    },
+    {
+      "id": "export-046",
+      "method": "toBufferSync",
+      "extension": "jpg",
+      "opts": {
+        "page": 0
+      }
+    },
+    {
+      "id": "export-047",
+      "method": "toBufferSync",
+      "extension": "jpg",
+      "opts": {
+        "page": "-1"
+      }
+    },
+    {
+      "id": "export-048",
+      "method": "toBufferSync",
+      "extension": "jpg",
+      "opts": {
+        "density": 2
+      }
+    },
+    {
+      "id": "export-049",
+      "method": "toBufferSync",
+      "extension": "jpg",
+      "opts": {
+        "quality": 0
+      }
+    },
+    {
+      "id": "export-050",
+      "method": "toBufferSync",
+      "extension": "jpg",
+      "opts": {
+        "quality": 1
+      }
+    },
+    {
+      "id": "export-051",
+      "method": "toBufferSync",
+      "extension": "jpg",
+      "opts": {
+        "matte": "#efd7a1"
+      }
+    },
+    {
+      "id": "export-052",
+      "method": "toBufferSync",
+      "extension": "jpg",
+      "opts": {
+        "msaa": 0
+      }
+    },
+    {
+      "id": "export-053",
+      "method": "toBufferSync",
+      "extension": "jpg",
+      "opts": {
+        "msaa": "2.9"
+      }
+    },
+    {
+      "id": "export-054",
+      "method": "toBufferSync",
+      "extension": "jpg",
+      "opts": {
+        "msaa": false
+      }
+    },
+    {
+      "id": "export-055",
+      "method": "toBufferSync",
+      "extension": "jpg",
+      "opts": {
+        "outline": true
+      }
+    },
+    {
+      "id": "export-056",
+      "method": "toBufferSync",
+      "extension": "jpg",
+      "opts": {
+        "downsample": true
+      }
+    },
+    {
+      "id": "export-057",
+      "method": "toURLSync",
+      "extension": "jpg",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-058",
+      "method": "toURL",
+      "extension": "jpg",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-059",
+      "method": "toDataURL",
+      "extension": "jpg",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-060",
+      "method": "toFileSync",
+      "extension": "jpg",
+      "opts": {},
+      "filename": "single.jpg"
+    },
+    {
+      "id": "export-061",
+      "method": "toFile",
+      "extension": "jpg",
+      "opts": {},
+      "filename": "single.jpg"
+    },
+    {
+      "id": "export-062",
+      "method": "toFileSync",
+      "extension": "jpg",
+      "opts": {},
+      "filename": "file-{03}-{}.strip.jpg"
+    },
+    {
+      "id": "export-063",
+      "method": "toFile",
+      "extension": "jpg",
+      "opts": {},
+      "filename": "file-{03}-{}.strip.jpg"
+    },
+    {
+      "id": "export-064",
+      "method": "toBufferSync",
+      "extension": "webp",
+      "opts": {
+        "page": 1
+      }
+    },
+    {
+      "id": "export-065",
+      "method": "toBufferSync",
+      "extension": "webp",
+      "opts": {
+        "page": -1
+      }
+    },
+    {
+      "id": "export-066",
+      "method": "toBufferSync",
+      "extension": "webp",
+      "opts": {
+        "page": -2
+      }
+    },
+    {
+      "id": "export-067",
+      "method": "toBufferSync",
+      "extension": "webp",
+      "opts": {
+        "page": 0
+      }
+    },
+    {
+      "id": "export-068",
+      "method": "toBufferSync",
+      "extension": "webp",
+      "opts": {
+        "page": "-1"
+      }
+    },
+    {
+      "id": "export-069",
+      "method": "toBufferSync",
+      "extension": "webp",
+      "opts": {
+        "density": 2
+      }
+    },
+    {
+      "id": "export-070",
+      "method": "toBufferSync",
+      "extension": "webp",
+      "opts": {
+        "quality": 0
+      }
+    },
+    {
+      "id": "export-071",
+      "method": "toBufferSync",
+      "extension": "webp",
+      "opts": {
+        "quality": 1
+      }
+    },
+    {
+      "id": "export-072",
+      "method": "toBufferSync",
+      "extension": "webp",
+      "opts": {
+        "matte": "#efd7a1"
+      }
+    },
+    {
+      "id": "export-073",
+      "method": "toBufferSync",
+      "extension": "webp",
+      "opts": {
+        "msaa": 0
+      }
+    },
+    {
+      "id": "export-074",
+      "method": "toBufferSync",
+      "extension": "webp",
+      "opts": {
+        "msaa": "2.9"
+      }
+    },
+    {
+      "id": "export-075",
+      "method": "toBufferSync",
+      "extension": "webp",
+      "opts": {
+        "msaa": false
+      }
+    },
+    {
+      "id": "export-076",
+      "method": "toBufferSync",
+      "extension": "webp",
+      "opts": {
+        "outline": true
+      }
+    },
+    {
+      "id": "export-077",
+      "method": "toBufferSync",
+      "extension": "webp",
+      "opts": {
+        "downsample": true
+      }
+    },
+    {
+      "id": "export-078",
+      "method": "toURLSync",
+      "extension": "webp",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-079",
+      "method": "toURL",
+      "extension": "webp",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-080",
+      "method": "toDataURL",
+      "extension": "webp",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-081",
+      "method": "toFileSync",
+      "extension": "webp",
+      "opts": {},
+      "filename": "single.webp"
+    },
+    {
+      "id": "export-082",
+      "method": "toFile",
+      "extension": "webp",
+      "opts": {},
+      "filename": "single.webp"
+    },
+    {
+      "id": "export-083",
+      "method": "toFileSync",
+      "extension": "webp",
+      "opts": {},
+      "filename": "file-{03}-{}.strip.webp"
+    },
+    {
+      "id": "export-084",
+      "method": "toFile",
+      "extension": "webp",
+      "opts": {},
+      "filename": "file-{03}-{}.strip.webp"
+    },
+    {
+      "id": "export-085",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "page": 1
+      }
+    },
+    {
+      "id": "export-086",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "page": -1
+      }
+    },
+    {
+      "id": "export-087",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "page": -2
+      }
+    },
+    {
+      "id": "export-088",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "page": 0
+      }
+    },
+    {
+      "id": "export-089",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "page": "-1"
+      }
+    },
+    {
+      "id": "export-090",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "density": 2
+      }
+    },
+    {
+      "id": "export-091",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "quality": 0
+      }
+    },
+    {
+      "id": "export-092",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "quality": 1
+      }
+    },
+    {
+      "id": "export-093",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "matte": "#efd7a1"
+      }
+    },
+    {
+      "id": "export-094",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "msaa": 0
+      }
+    },
+    {
+      "id": "export-095",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "msaa": "2.9"
+      }
+    },
+    {
+      "id": "export-096",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "msaa": false
+      }
+    },
+    {
+      "id": "export-097",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "outline": true
+      }
+    },
+    {
+      "id": "export-098",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "downsample": true
+      }
+    },
+    {
+      "id": "export-099",
+      "method": "toURLSync",
+      "extension": "raw",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-100",
+      "method": "toURL",
+      "extension": "raw",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-101",
+      "method": "toDataURL",
+      "extension": "raw",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-102",
+      "method": "toFileSync",
+      "extension": "raw",
+      "opts": {},
+      "filename": "single.raw"
+    },
+    {
+      "id": "export-103",
+      "method": "toFile",
+      "extension": "raw",
+      "opts": {},
+      "filename": "single.raw"
+    },
+    {
+      "id": "export-104",
+      "method": "toFileSync",
+      "extension": "raw",
+      "opts": {},
+      "filename": "file-{03}-{}.strip.raw"
+    },
+    {
+      "id": "export-105",
+      "method": "toFile",
+      "extension": "raw",
+      "opts": {},
+      "filename": "file-{03}-{}.strip.raw"
+    },
+    {
+      "id": "export-106",
+      "method": "toBufferSync",
+      "extension": "pdf",
+      "opts": {
+        "page": 1
+      }
+    },
+    {
+      "id": "export-107",
+      "method": "toBufferSync",
+      "extension": "pdf",
+      "opts": {
+        "page": -1
+      }
+    },
+    {
+      "id": "export-108",
+      "method": "toBufferSync",
+      "extension": "pdf",
+      "opts": {
+        "page": -2
+      }
+    },
+    {
+      "id": "export-109",
+      "method": "toBufferSync",
+      "extension": "pdf",
+      "opts": {
+        "page": 0
+      }
+    },
+    {
+      "id": "export-110",
+      "method": "toBufferSync",
+      "extension": "pdf",
+      "opts": {
+        "page": "-1"
+      }
+    },
+    {
+      "id": "export-111",
+      "method": "toBufferSync",
+      "extension": "pdf",
+      "opts": {
+        "density": 2
+      }
+    },
+    {
+      "id": "export-112",
+      "method": "toBufferSync",
+      "extension": "pdf",
+      "opts": {
+        "quality": 0
+      }
+    },
+    {
+      "id": "export-113",
+      "method": "toBufferSync",
+      "extension": "pdf",
+      "opts": {
+        "quality": 1
+      }
+    },
+    {
+      "id": "export-114",
+      "method": "toBufferSync",
+      "extension": "pdf",
+      "opts": {
+        "matte": "#efd7a1"
+      }
+    },
+    {
+      "id": "export-115",
+      "method": "toBufferSync",
+      "extension": "pdf",
+      "opts": {
+        "msaa": 0
+      }
+    },
+    {
+      "id": "export-116",
+      "method": "toBufferSync",
+      "extension": "pdf",
+      "opts": {
+        "msaa": "2.9"
+      }
+    },
+    {
+      "id": "export-117",
+      "method": "toBufferSync",
+      "extension": "pdf",
+      "opts": {
+        "msaa": false
+      }
+    },
+    {
+      "id": "export-118",
+      "method": "toBufferSync",
+      "extension": "pdf",
+      "opts": {
+        "outline": true
+      }
+    },
+    {
+      "id": "export-119",
+      "method": "toBufferSync",
+      "extension": "pdf",
+      "opts": {
+        "downsample": true
+      }
+    },
+    {
+      "id": "export-120",
+      "method": "toURLSync",
+      "extension": "pdf",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-121",
+      "method": "toURL",
+      "extension": "pdf",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-122",
+      "method": "toDataURL",
+      "extension": "pdf",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-123",
+      "method": "toFileSync",
+      "extension": "pdf",
+      "opts": {},
+      "filename": "single.pdf"
+    },
+    {
+      "id": "export-124",
+      "method": "toFile",
+      "extension": "pdf",
+      "opts": {},
+      "filename": "single.pdf"
+    },
+    {
+      "id": "export-125",
+      "method": "toFileSync",
+      "extension": "pdf",
+      "opts": {},
+      "filename": "file-{03}-{}.strip.pdf"
+    },
+    {
+      "id": "export-126",
+      "method": "toFile",
+      "extension": "pdf",
+      "opts": {},
+      "filename": "file-{03}-{}.strip.pdf"
+    },
+    {
+      "id": "export-127",
+      "method": "toBufferSync",
+      "extension": "svg",
+      "opts": {
+        "page": 1
+      }
+    },
+    {
+      "id": "export-128",
+      "method": "toBufferSync",
+      "extension": "svg",
+      "opts": {
+        "page": -1
+      }
+    },
+    {
+      "id": "export-129",
+      "method": "toBufferSync",
+      "extension": "svg",
+      "opts": {
+        "page": -2
+      }
+    },
+    {
+      "id": "export-130",
+      "method": "toBufferSync",
+      "extension": "svg",
+      "opts": {
+        "page": 0
+      }
+    },
+    {
+      "id": "export-131",
+      "method": "toBufferSync",
+      "extension": "svg",
+      "opts": {
+        "page": "-1"
+      }
+    },
+    {
+      "id": "export-132",
+      "method": "toBufferSync",
+      "extension": "svg",
+      "opts": {
+        "density": 2
+      }
+    },
+    {
+      "id": "export-133",
+      "method": "toBufferSync",
+      "extension": "svg",
+      "opts": {
+        "quality": 0
+      }
+    },
+    {
+      "id": "export-134",
+      "method": "toBufferSync",
+      "extension": "svg",
+      "opts": {
+        "quality": 1
+      }
+    },
+    {
+      "id": "export-135",
+      "method": "toBufferSync",
+      "extension": "svg",
+      "opts": {
+        "matte": "#efd7a1"
+      }
+    },
+    {
+      "id": "export-136",
+      "method": "toBufferSync",
+      "extension": "svg",
+      "opts": {
+        "msaa": 0
+      }
+    },
+    {
+      "id": "export-137",
+      "method": "toBufferSync",
+      "extension": "svg",
+      "opts": {
+        "msaa": "2.9"
+      }
+    },
+    {
+      "id": "export-138",
+      "method": "toBufferSync",
+      "extension": "svg",
+      "opts": {
+        "msaa": false
+      }
+    },
+    {
+      "id": "export-139",
+      "method": "toBufferSync",
+      "extension": "svg",
+      "opts": {
+        "outline": true
+      }
+    },
+    {
+      "id": "export-140",
+      "method": "toBufferSync",
+      "extension": "svg",
+      "opts": {
+        "downsample": true
+      }
+    },
+    {
+      "id": "export-141",
+      "method": "toURLSync",
+      "extension": "svg",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-142",
+      "method": "toURL",
+      "extension": "svg",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-143",
+      "method": "toDataURL",
+      "extension": "svg",
+      "opts": {},
+      "quality": 0.4
+    },
+    {
+      "id": "export-144",
+      "method": "toFileSync",
+      "extension": "svg",
+      "opts": {},
+      "filename": "single.svg"
+    },
+    {
+      "id": "export-145",
+      "method": "toFile",
+      "extension": "svg",
+      "opts": {},
+      "filename": "single.svg"
+    },
+    {
+      "id": "export-146",
+      "method": "toFileSync",
+      "extension": "svg",
+      "opts": {},
+      "filename": "file-{03}-{}.strip.svg"
+    },
+    {
+      "id": "export-147",
+      "method": "toFile",
+      "extension": "svg",
+      "opts": {},
+      "filename": "file-{03}-{}.strip.svg"
+    },
+    {
+      "id": "export-148",
+      "method": "property",
+      "extension": "png",
+      "opts": {}
+    },
+    {
+      "id": "export-149",
+      "method": "property",
+      "extension": "jpg",
+      "opts": {}
+    },
+    {
+      "id": "export-150",
+      "method": "property",
+      "extension": "webp",
+      "opts": {}
+    },
+    {
+      "id": "export-151",
+      "method": "property",
+      "extension": "raw",
+      "opts": {}
+    },
+    {
+      "id": "export-152",
+      "method": "property",
+      "extension": "pdf",
+      "opts": {}
+    },
+    {
+      "id": "export-153",
+      "method": "property",
+      "extension": "svg",
+      "opts": {}
+    },
+    {
+      "id": "export-154",
+      "method": "toFileSync",
+      "extension": "jpg",
+      "opts": {
+        "format": "webp"
+      },
+      "filename": "override.jpg"
+    },
+    {
+      "id": "export-155",
+      "method": "toFileSync",
+      "extension": "jpg",
+      "opts": {
+        "page": 2,
+        "density": 2
+      },
+      "filename": "override.jpg"
+    },
+    {
+      "id": "export-156",
+      "method": "toFileSync",
+      "extension": "jpg",
+      "opts": {
+        "page": -1,
+        "format": "png"
+      },
+      "filename": "override.jpg"
+    },
+    {
+      "id": "export-157",
+      "method": "toFileSync",
+      "extension": "jpg",
+      "opts": {
+        "quality": 0.3,
+        "downsample": true
+      },
+      "filename": "override.jpg"
+    },
+    {
+      "id": "export-158",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "colorType": "rgba",
+        "page": 1
+      }
+    },
+    {
+      "id": "export-159",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "colorType": "bgra",
+        "page": 1
+      }
+    },
+    {
+      "id": "export-160",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "colorType": "rgb",
+        "page": 1
+      }
+    },
+    {
+      "id": "export-161",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "colorType": "RGBAF16",
+        "page": 1
+      }
+    },
+    {
+      "id": "export-162",
+      "method": "toBufferSync",
+      "extension": "raw",
+      "opts": {
+        "colorType": "Gray8",
+        "page": 1
+      }
+    },
+    {
+      "id": "export-163",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": null
+    },
+    {
+      "id": "export-164",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": false
+    },
+    {
+      "id": "export-165",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": "ordinary"
+    },
+    {
+      "id": "export-166",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": 0.5
+    },
+    {
+      "id": "export-167",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "quality": true
+      }
+    },
+    {
+      "id": "export-168",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "quality": -1
+      }
+    },
+    {
+      "id": "export-169",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "quality": 1.1
+      }
+    },
+    {
+      "id": "export-170",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "quality": "0.5"
+      }
+    },
+    {
+      "id": "export-171",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "density": 0
+      }
+    },
+    {
+      "id": "export-172",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "density": 1.5
+      }
+    },
+    {
+      "id": "export-173",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "density": true
+      }
+    },
+    {
+      "id": "export-174",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "density": "2"
+      }
+    },
+    {
+      "id": "export-175",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "msaa": -1
+      }
+    },
+    {
+      "id": "export-176",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "msaa": "invalid"
+      }
+    },
+    {
+      "id": "export-177",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "colorType": "wrong"
+      }
+    },
+    {
+      "id": "export-178",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "colorType": false
+      }
+    },
+    {
+      "id": "export-179",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "page": 4
+      }
+    },
+    {
+      "id": "export-180",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "page": -4
+      }
+    },
+    {
+      "id": "export-181",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "page": "4"
+      }
+    },
+    {
+      "id": "export-182",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "page": true
+      }
+    },
+    {
+      "id": "export-183",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "page": [
+          1
+        ]
+      }
+    },
+    {
+      "id": "export-184",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "page": {}
+      }
+    },
+    {
+      "id": "export-185",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "matte": null
+      }
+    },
+    {
+      "id": "export-186",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "matte": [
+          "red"
+        ]
+      }
+    },
+    {
+      "id": "export-187",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "matte": {}
+      }
+    },
+    {
+      "id": "export-188",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "outline": []
+      }
+    },
+    {
+      "id": "export-189",
+      "method": "toBufferSync",
+      "extension": "png",
+      "opts": {
+        "downsample": {}
+      }
+    },
+    {
+      "id": "export-190",
+      "method": "toBufferSync",
+      "extension": "",
+      "opts": {}
+    },
+    {
+      "id": "export-191",
+      "method": "toBufferSync",
+      "extension": "wrong",
+      "opts": {}
+    },
+    {
+      "id": "export-192",
+      "method": "toBufferSync",
+      "extension": "image/PNG",
+      "opts": {}
+    },
+    {
+      "id": "export-193",
+      "method": "toFileSync",
+      "extension": "png",
+      "opts": {},
+      "filename": "missing"
+    },
+    {
+      "id": "export-194",
+      "method": "toFile",
+      "extension": "png",
+      "opts": {},
+      "filename": "missing"
+    },
+    {
+      "id": "export-195",
+      "method": "toFileSync",
+      "extension": "png",
+      "opts": {},
+      "filename": "missing/sub.png"
+    },
+    {
+      "id": "export-196",
+      "method": "toFile",
+      "extension": "png",
+      "opts": {},
+      "filename": "missing/sub.png"
+    },
+    {
+      "id": "export-197",
+      "method": "toFileSync",
+      "extension": "png",
+      "opts": {
+        "format": "png"
+      },
+      "filename": "missing/sub.png"
+    },
+    {
+      "id": "export-198",
+      "method": "toFile",
+      "extension": "png",
+      "opts": {
+        "format": "png"
+      },
+      "filename": "missing/sub.png"
+    },
+    {
+      "id": "export-199",
+      "method": "toFileSync",
+      "extension": "png",
+      "opts": {},
+      "filename": "file@2x.png"
+    },
+    {
+      "id": "export-200",
+      "method": "toFile",
+      "extension": "png",
+      "opts": {},
+      "filename": "file@2x.png"
+    },
+    {
+      "id": "export-201",
+      "method": "toDataURL",
+      "extension": "png",
+      "opts": {},
+      "quality": true
+    },
+    {
+      "id": "export-202",
+      "method": "toDataURL",
+      "extension": "png",
+      "opts": {},
+      "quality": "0.5"
+    },
+    {
+      "id": "export-203",
+      "method": "toDataURL",
+      "extension": "png",
+      "opts": {},
+      "quality": {}
+    },
+    {
+      "id": "export-204",
+      "method": "toDataURL",
+      "extension": "png",
+      "opts": {},
+      "quality": -1
+    },
+    {
+      "id": "export-205",
+      "method": "toDataURL",
+      "extension": "png",
+      "opts": {},
+      "quality": 2
+    }
+  ]
+}

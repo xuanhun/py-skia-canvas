@@ -1,0 +1,1723 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "cases": [
+    {
+      "id": "contract-hit-000",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-001",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            1
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-002",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            10,
+            10
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-003",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            null,
+            false
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-004",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            "10",
+            [
+              "10"
+            ]
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-005",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            {
+              "$number": "Infinity"
+            },
+            2
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-006",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            {},
+            2
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-007",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            10,
+            10,
+            "evenodd"
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-008",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            10,
+            10,
+            {
+              "$undefined": true
+            }
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-009",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            10,
+            10,
+            null
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-010",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            10,
+            10,
+            "bad"
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-011",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            10,
+            10,
+            2
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-012",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            10,
+            10,
+            "bad",
+            3
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-013",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            10,
+            10,
+            "evenodd",
+            3,
+            4
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-014",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            10,
+            10
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-015",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            "10",
+            [
+              10
+            ]
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-016",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            10,
+            10,
+            {
+              "$undefined": true
+            }
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-017",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            10,
+            10,
+            "evenodd"
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-018",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-019",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            1
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-020",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            10,
+            10
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-021",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            null,
+            false
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-022",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            "10",
+            [
+              "10"
+            ]
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-023",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            {
+              "$number": "Infinity"
+            },
+            2
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-024",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            {},
+            2
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-025",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            10,
+            10,
+            "evenodd"
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-026",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            10,
+            10,
+            {
+              "$undefined": true
+            }
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-027",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            10,
+            10,
+            null
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-028",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            10,
+            10,
+            "bad"
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-029",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            10,
+            10,
+            2
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-030",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            10,
+            10,
+            "bad",
+            3
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-031",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            10,
+            10,
+            "evenodd",
+            3,
+            4
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-032",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            10,
+            10
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-033",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            "10",
+            [
+              10
+            ]
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-034",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            10,
+            10,
+            {
+              "$undefined": true
+            }
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-035",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            10,
+            10,
+            "evenodd"
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-036",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "contains",
+          "args": [],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-037",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "contains",
+          "args": [
+            1
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-038",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "contains",
+          "args": [
+            "bad"
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-039",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "contains",
+          "args": [
+            "bad",
+            {
+              "$undefined": true
+            }
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-040",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "contains",
+          "args": [
+            10,
+            "bad"
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-041",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "contains",
+          "args": [
+            "10",
+            [
+              10
+            ]
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-042",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "contains",
+          "args": [
+            null,
+            false
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-043",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "contains",
+          "args": [
+            {
+              "$number": "Infinity"
+            },
+            2
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    },
+    {
+      "id": "contract-hit-044",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0H30V30H0Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "contains",
+          "args": [
+            10,
+            10,
+            123
+          ],
+          "save": "hit",
+          "observeError": "test"
+        }
+      ]
+    }
+  ]
+}

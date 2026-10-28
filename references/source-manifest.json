@@ -1,0 +1,254 @@
+{
+  "schema": "py-skia-canvas-source-manifest/v1",
+  "repository": "https://github.com/samizdatco/skia-canvas",
+  "tag": "v3.0.8",
+  "commit": "042312a3f40b660b1d7dc0beba541486171bc5cc",
+  "selection": "Rust/JS source, lockfiles, licenses and selected build references; no binaries",
+  "files": [
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/.github/workflows/build.yml",
+      "bytes": 4064,
+      "sha256": "a03edfd81f3f178633984c343d85f110db7a0c072f877da9b316c10131a2e25a"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/Cargo.lock",
+      "bytes": 81612,
+      "sha256": "ab736640506d8346047c4d2efb235269e78cdff95a7e899f680c073b7130e388"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/Cargo.toml",
+      "bytes": 1676,
+      "sha256": "a477990ebc56469a50465b3acb27dc4f6707626c6116491d3a2fc3fd17757905"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/containers/use-static-fontconfig.patch",
+      "bytes": 2540,
+      "sha256": "7ac1b6b5c029c2ee58b3abfdaf0e2976c758bc4fe97fb0038f3a4a0bc21f60f7"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/lib/browser.js",
+      "bytes": 8791,
+      "sha256": "0175d300d5ebb202c67082395227b5e86fae454ff01eab98af48b5d1b35c9828"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/lib/classes/canvas.js",
+      "bytes": 11404,
+      "sha256": "0ae9d783927bbf9b349f3e50b7ea15fe0514518605dc39d5e0153234aa1fc5fc"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/lib/classes/context.js",
+      "bytes": 13124,
+      "sha256": "30e8a81276a049f9a701770382e2757553f525cc1df147fded03d2996490534d"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/lib/classes/css.js",
+      "bytes": 13082,
+      "sha256": "122b8ba515a07c07fc7ecea6e3b813c8575fadd9af21c46dbd0b857ecc5b7cf3"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/lib/classes/geometry.js",
+      "bytes": 25469,
+      "sha256": "25ab3a4ecd0a2fa253d628dce205fda006d469daf9e0b717fc3b2db69e51025b"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/lib/classes/gui.js",
+      "bytes": 11055,
+      "sha256": "a34a262b615e98279ba5889ba4739b5e0f2651ea3f5d58adea592a83ee5851da"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/lib/classes/imagery.js",
+      "bytes": 8106,
+      "sha256": "0ef9b8d4afcfb74de99b278266869f3f2b3edf470f767a5b75f4649ed342d6a5"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/lib/classes/neon.js",
+      "bytes": 3058,
+      "sha256": "50e496cd4d12fcbbf4ddb1f614efe550ec469b56ff15e1b63a2c3c885f1b1fa2"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/lib/classes/path.js",
+      "bytes": 4023,
+      "sha256": "b6eeaec1b53590cc3f01d300744ec4fb70b8cb4d14e7f98ab0539da4cdde9a37"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/lib/classes/typography.js",
+      "bytes": 1153,
+      "sha256": "417e1aa09c34e463e1ab622222b3da3968a3c4f701d32dc5474f3762215cf09f"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/lib/fonts/fonts.conf",
+      "bytes": 1233,
+      "sha256": "f9e269a6c1f2712197f2d9dc16c466529d55d59f4e1e62efe37fbfd4266447d3"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/lib/index.d.ts",
+      "bytes": 43488,
+      "sha256": "d201df7f003092331feaadc9c4ade40443c5f6d12e4889f5c34908aaac2f6081"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/lib/index.js",
+      "bytes": 783,
+      "sha256": "0ecedc521668884b36e84b175e09bbeba4f5f5a0163ff62fdb4e23da1cd7b798"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/lib/index.mjs",
+      "bytes": 594,
+      "sha256": "a79794651fb4e102b798e94ceac32bdb917c4fc128e59b015885b26af14b8817"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/lib/prebuild.mjs",
+      "bytes": 6024,
+      "sha256": "5b7a7f999e7d0b648688f4ec852ca30785727b54b823fc57a6da055f369306ba"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/lib/urls.js",
+      "bytes": 2295,
+      "sha256": "25ab71a88bb150cead4e16943db6e088d1092290c64322927fef8de45db23820"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/LICENSE",
+      "bytes": 1097,
+      "sha256": "20b5b335df1316f75acf67c85e14ffc7398189333897adcf30858b2faab7aed2"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/Makefile",
+      "bytes": 2465,
+      "sha256": "f907b2c5a4208ebf84b6a093e7371957c88d57d3ca44bc7095b46e17aa080868"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/package-lock.json",
+      "bytes": 17637,
+      "sha256": "335cbece0f2c368e281406ef1587da948fe79bc27053046e0eccd80fa33d1120"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/package.json",
+      "bytes": 1580,
+      "sha256": "895fe3dbeb9b4fe366c089cdd2959f9c72910444447d5036b5403e7f2ff84941"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/README.md",
+      "bytes": 26580,
+      "sha256": "62d8c245b87da200fcfda60da2594ea7aadc097001820510ea838b52ff1aabd4"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/canvas.rs",
+      "bytes": 7673,
+      "sha256": "6983f1f0b28a49ec306b6222a16c8c2722ec89814081101ff2b3df0302f57ecc"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/context/api.rs",
+      "bytes": 42459,
+      "sha256": "df1acc8ff46e7bb8336dac2ebfd546b8629a84463f83d1aafd4657868580801c"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/context/mod.rs",
+      "bytes": 25999,
+      "sha256": "bc53af135ed7dcd46dea5b27b167952ffffcbf17b613bcf288e092ab3f5434dc"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/context/page.rs",
+      "bytes": 24513,
+      "sha256": "4a941a1204622542172b9e67f3c461e7bc02b50735070ac3ac44693f736a02be"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/filter.rs",
+      "bytes": 9148,
+      "sha256": "769a2c3dea370c59717ec41d1fa1e7b1403bf9c76c08616f20f9613686b6a976"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/font_library.rs",
+      "bytes": 17527,
+      "sha256": "40c496269c9d6cb5ff1ce0a23adab03e0e867f9b5decad8a94407df7bfc0c20f"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/gpu/metal.rs",
+      "bytes": 12481,
+      "sha256": "125c116215d625a92dbd13a5201eb4d2c82c4a92dca7136184d093259c7291b0"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/gpu/mod.rs",
+      "bytes": 5172,
+      "sha256": "9122419e4e6393af5896facc5739dcc3308cdf078b8b9329560adc9625e8b8fd"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/gpu/vulkan/engine.rs",
+      "bytes": 10833,
+      "sha256": "161714e734aa0bd4b6d9796efe7ac830d99cd311398541ff802440cb201c6f84"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/gpu/vulkan/mod.rs",
+      "bytes": 4004,
+      "sha256": "6e70dc7c5141096403fae9372486b48705b310bd56e4d8c37b84f02909f171b3"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/gpu/vulkan/renderer.rs",
+      "bytes": 17891,
+      "sha256": "4e67075372b11b20df9153976a2880268b679760feddc658d76dd240e1145c17"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/gradient.rs",
+      "bytes": 6005,
+      "sha256": "033c62e4df988475be66f2dcf8d83bf199dc42a4d526f807efaa8fdfcca4fadd"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/gui/app.rs",
+      "bytes": 12309,
+      "sha256": "bffa40b26b387b0e8381e809c76ac1a6701670fa72458851ad9a21a6cd11ee5d"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/gui/event.rs",
+      "bytes": 9325,
+      "sha256": "72ea365586a9f9cb8f07e99be7a1148423ad2f95282a23544d4feb3676351564"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/gui/mod.rs",
+      "bytes": 2284,
+      "sha256": "3b527c6b66ec7530b7928ac2e672ba8e0b9be59e44d94931611c1a8bc609961c"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/gui/window.rs",
+      "bytes": 9399,
+      "sha256": "e6b4b292d9f22bc3dea2e5a890605492c895ec3547fcd53c0f932ac0e950ce3e"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/gui/window_mgr.rs",
+      "bytes": 5144,
+      "sha256": "8b781fd95b765417df60f39fa404cf93ca7e308410ffc96b58ac1018f41e1a5a"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/image.rs",
+      "bytes": 8580,
+      "sha256": "8bc0f44c98f67b0ba3ac894d682f7e64a62d99dfed350df835e594571c96c660"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/lib.rs",
+      "bytes": 15054,
+      "sha256": "6b575aa8da3ac2729e9de7b73cf43a8e2ae118ec214dacff9164daca8509c832"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/path.rs",
+      "bytes": 20108,
+      "sha256": "3aa466ca0bb696ab48272331145fc40a7d1c5de00b140729d49730e6d0a39a43"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/pattern.rs",
+      "bytes": 4338,
+      "sha256": "fc361cc1190f4a35b75fc3572cf5b8bb12539c948d9da4ff3b97494bdba4f559"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/texture.rs",
+      "bytes": 3961,
+      "sha256": "13914b8bb7ef9c835cc9ebd5302d693fe5b30e0325827fbff58a59056893ca07"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/typography.rs",
+      "bytes": 22492,
+      "sha256": "114f4997e63d3f95795172ac8814e8eec7dbc2621130922717c9bbc62ff93d7e"
+    },
+    {
+      "path": "references/upstream/skia-canvas-3.0.8/src/utils.rs",
+      "bytes": 31406,
+      "sha256": "1bf5ab56942edb9c819620cf5b844e4c1b9b6e33708db7ef41772bb79640000d"
+    }
+  ]
+}

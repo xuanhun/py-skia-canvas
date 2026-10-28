@@ -1,0 +1,936 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "FontLibrary original singleton queries/registration/reset/partial failures. Linux system font files are input paths only; no font bytes bundled.",
+  "cases": [
+    {
+      "id": "fontlib-query-type-errors",
+      "group": "python-font-library",
+      "width": 240,
+      "height": 80,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            240,
+            80
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "has",
+          "args": [],
+          "observeError": "hasMissing"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "family",
+          "args": [],
+          "observeError": "familyMissing"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "has",
+          "args": [
+            null
+          ],
+          "observeError": "hasNull"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "family",
+          "args": [
+            123
+          ],
+          "observeError": "familyNumber"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "has",
+          "args": [
+            true
+          ],
+          "observeError": "hasBool"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "has",
+          "args": [
+            "DejaVu Sans",
+            "extra"
+          ],
+          "save": "ignoredExtra"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj / font library",
+            8.25,
+            35.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj / font library"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontlib-use-signature-errors",
+      "group": "python-font-library",
+      "width": 240,
+      "height": 80,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            240,
+            80
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [],
+          "observeError": "missing"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            null
+          ],
+          "observeError": "nullObject"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            123
+          ],
+          "observeError": "number"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            false
+          ],
+          "observeError": "bool"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            {
+              "$undefined": true
+            }
+          ],
+          "observeError": "undefined"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "A",
+            {}
+          ],
+          "observeError": "badSecond"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "A",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+          ],
+          "observeError": "tooMany"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj / font library",
+            8.25,
+            35.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj / font library"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontlib-filtered-path-holes",
+      "group": "python-font-library",
+      "width": 240,
+      "height": 80,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            240,
+            80
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            [
+              123,
+              "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+              null,
+              false,
+              {},
+              [
+                "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+              ],
+              "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+            ]
+          ],
+          "save": "filtered"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            {
+              "No File": false,
+              "Mixed": [
+                null,
+                "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
+                4
+              ]
+            }
+          ],
+          "save": "mappingFiltered"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "has",
+          "args": [
+            "No File"
+          ],
+          "save": "noAlias"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "family",
+          "args": [
+            "Mixed"
+          ],
+          "save": "mappedAlias"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj / font library",
+            8.25,
+            35.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj / font library"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontlib-filesystem-errors",
+      "group": "python-font-library",
+      "width": 240,
+      "height": 80,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            240,
+            80
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "Missing",
+            "/usr/share/fonts/truetype/dejavu/__py_skia_canvas_missing_20261028__.ttf"
+          ],
+          "observeError": "missingFile"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "Directory",
+            "/usr/share/fonts/truetype/dejavu"
+          ],
+          "observeError": "directory"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "Bad",
+            "/mnt/c/code/py-skia-canvas/tests/assets/checker.svg"
+          ],
+          "observeError": "badData"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "has",
+          "args": [
+            "Missing"
+          ],
+          "save": "missingAbsent"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "has",
+          "args": [
+            "Bad"
+          ],
+          "save": "badAbsent"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj / font library",
+            8.25,
+            35.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj / font library"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontlib-partial-array-registration",
+      "group": "python-font-library",
+      "width": 240,
+      "height": 80,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            240,
+            80
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "Partial",
+            [
+              "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+              "/usr/share/fonts/truetype/dejavu/__py_skia_canvas_missing_20261028__.ttf",
+              "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+            ]
+          ],
+          "observeError": "laterReadFailure"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "has",
+          "args": [
+            "Partial"
+          ],
+          "save": "firstCommitted"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "family",
+          "args": [
+            "Partial"
+          ],
+          "save": "partialStyles"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "Never",
+            [
+              "/usr/share/fonts/truetype/dejavu/__py_skia_canvas_missing_20261028__.ttf",
+              "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+            ]
+          ],
+          "observeError": "firstReadFailure"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "has",
+          "args": [
+            "Never"
+          ],
+          "save": "firstFailureNoCommit"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj / font library",
+            8.25,
+            35.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj / font library"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontlib-partial-mapping-registration",
+      "group": "python-font-library",
+      "width": 240,
+      "height": 80,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            240,
+            80
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            {
+              "First": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+              "Bad": "/mnt/c/code/py-skia-canvas/tests/assets/checker.svg",
+              "Later": "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf"
+            }
+          ],
+          "observeError": "mappingFailure"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "has",
+          "args": [
+            "First"
+          ],
+          "save": "firstCommitted"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "has",
+          "args": [
+            "Bad"
+          ],
+          "save": "badAbsent"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "has",
+          "args": [
+            "Later"
+          ],
+          "save": "laterNotVisited"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj / font library",
+            8.25,
+            35.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj / font library"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontlib-empty-undefined-paths",
+      "group": "python-font-library",
+      "width": 240,
+      "height": 80,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            240,
+            80
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            ""
+          ],
+          "observeError": "emptyPath"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "Path Alias",
+            []
+          ],
+          "save": "emptyAliasFiles"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            {
+              "Empty String Path": ""
+            }
+          ],
+          "observeError": "mappedEmptyPath"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            {
+              "Filtered Missing": {
+                "$undefined": true
+              },
+              "Filtered Null": null
+            }
+          ],
+          "save": "filteredNoFiles"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj / font library",
+            8.25,
+            35.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj / font library"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "fontlib-recovery-after-error",
+      "group": "python-font-library",
+      "width": 240,
+      "height": 80,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            240,
+            80
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "Recovered",
+            [
+              "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+              "/mnt/c/code/py-skia-canvas/tests/assets/checker.svg"
+            ]
+          ],
+          "observeError": "partialDecodeFailure"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "has",
+          "args": [
+            "Recovered"
+          ],
+          "save": "resetRemoved"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "Recovered",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+          ],
+          "save": "afterRecovery"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "family",
+          "args": [
+            "Recovered"
+          ],
+          "save": "boldOnly"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "has",
+          "args": [
+            "Recovered"
+          ],
+          "save": "gone"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj / font library",
+            8.25,
+            35.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj / font library"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    }
+  ]
+}

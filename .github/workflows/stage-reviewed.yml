@@ -1,0 +1,39 @@
+name: Stage accepted local wheel bytes
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Reviewed release containing reviewed-wheels.zip'
+        required: true
+      bundle_sha256:
+        description: 'Reviewed archive SHA256'
+        required: true
+      manifest_sha256:
+        description: 'Reviewed release-manifest.json SHA256'
+        required: true
+permissions:
+  contents: read
+jobs:
+  stage:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    environment: release-review
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Download the approved bytes
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+          BUNDLE_SHA: ${{ inputs.bundle_sha256 }}
+          MANIFEST_SHA: ${{ inputs.manifest_sha256 }}
+        run: |
+          gh release download "$RELEASE_TAG" --pattern reviewed-wheels.zip
+          echo "$BUNDLE_SHA  reviewed-wheels.zip" | sha256sum -c -
+          python -m zipfile -e reviewed-wheels.zip reviewed
+          python scripts/verify_release_bundle.py reviewed --manifest-sha256 "$MANIFEST_SHA"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: reviewed-wheels
+          path: reviewed/*
+          if-no-files-found: error

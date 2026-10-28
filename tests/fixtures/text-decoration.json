@@ -1,0 +1,3685 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Original textDecoration parser, typed validation and rendering, system font paths/fingerprints only.",
+  "cases": [
+    {
+      "id": "decoration-default-lines",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "default"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            40
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "overline #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            85
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "line-through rgb(10,180,90)"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            130
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "none"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            175
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-line-styles",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "solid underline 2px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            40
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "double underline 2px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            85
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "dotted underline 2px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            130
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "dashed underline 2px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            175
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "wavy underline 2px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            220
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-overline-styles",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "solid overline 2px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            40
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "double overline 2px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            85
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "dotted overline 2px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            130
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "dashed overline 2px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            175
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "wavy overline 2px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            220
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-strike-styles",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "solid line-through 2px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            40
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "double line-through 2px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            85
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "dotted line-through 2px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            130
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "dashed line-through 2px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            175
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "wavy line-through 2px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            220
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-absolute-thickness",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline .25px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            40
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline 1.5pt #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            85
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline .125pc #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            130
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline .02in #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            175
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline .05cm #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            220
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline .5mm #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row5Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            265
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline 2q #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row6"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row6Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            310
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-default-from-font",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            40
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline from-font red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            85
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline auto red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            130
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline 3px from-font red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            175
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline 3px auto red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            220
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-colors",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            40
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline #20aa60"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            85
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline #33445588"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            130
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline rgb(10,180,90)"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            175
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline rgba(10,20,250,0.5)"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            220
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline transparent"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row5Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            265
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-order",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "red 2px dashed underline"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            40
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "2px underline red double"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            85
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline overline red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            130
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline red overline"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            175
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "line-through underline blue"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            220
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-whitespace",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "  underline red  "
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            40
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline\tred"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            85
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline\nred"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            130
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline   2px  red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            175
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline  2px red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "row4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "row4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            220
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-font-sizes",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline 2px red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "small"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "smallMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            40
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "42px serif"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "wavy underline 2px red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "large"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "largeMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            105
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "20px monospace"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "double line-through .5pt red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "mono"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "monoMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            160
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-font-change-retention",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "wavy underline 3px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "before"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "beforeMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            45
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "italic bold 36px serif"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "afterFont"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "afterFontMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            115
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-wrap",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textWrap",
+          "value": true
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "letterSpacing",
+          "value": ".5px"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "wordSpacing",
+          "value": "2px"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "wavy underline 1.5px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "wrapped"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "A word with ffi AV text and another long line",
+            240.25
+          ],
+          "save": "wrappedMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "A word with ffi AV text and another long line",
+            10.25,
+            45,
+            240.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-align-direction",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textAlign",
+          "value": "right"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "direction",
+          "value": "rtl"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textBaseline",
+          "value": "middle"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "double underline 2px red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "AV שלום العربية ffi"
+          ],
+          "save": "bidiMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "AV שלום العربية ffi",
+            570.25,
+            80
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-baselines",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textBaseline",
+          "value": "top"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "baseline0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "baseline0Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            35
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textBaseline",
+          "value": "hanging"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "baseline1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "baseline1Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            80
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textBaseline",
+          "value": "middle"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "baseline2"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "baseline2Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            125
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textBaseline",
+          "value": "alphabetic"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "baseline3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "baseline3Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            170
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textBaseline",
+          "value": "ideographic"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "baseline4"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "baseline4Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            215
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textBaseline",
+          "value": "bottom"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "baseline5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "baseline5Metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            260
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-save-restore",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline 2px red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "before"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "beforeMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            45
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "save",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "wavy overline 3px blue"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "inside"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "insideMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            105
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "restore",
+          "args": []
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "restored"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "restoredMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            165
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-resize",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "wavy underline 3px red"
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "width",
+          "value": 620
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "afterResize"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px serif"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "afterResizeMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            70
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-cross-canvas",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "construct",
+          "class": "Canvas",
+          "args": [
+            80,
+            40
+          ],
+          "id": "other"
+        },
+        {
+          "op": "call",
+          "target": "other",
+          "name": "getContext",
+          "args": [
+            "2d"
+          ],
+          "id": "otherCtx"
+        },
+        {
+          "op": "set",
+          "target": "otherCtx",
+          "name": "textDecoration",
+          "value": "underline red"
+        },
+        {
+          "op": "get",
+          "target": "otherCtx",
+          "name": "textDecoration",
+          "save": "other"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "main"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "mainMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            70
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-stroke",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "double underline 2px #d02060"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeText",
+          "args": [
+            "Canvas AV fj ffi",
+            10.25,
+            65
+          ]
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "strokeDecoration"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi"
+          ],
+          "save": "strokeMetrics"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-outline",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "wavy underline 2px red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "Canvas AV fj ffi"
+          ],
+          "id": "outline"
+        },
+        {
+          "op": "get",
+          "target": "outline",
+          "name": "bounds",
+          "save": "outlineBounds"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "translate",
+          "args": [
+            10.25,
+            85
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "outline"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-gradient-transform",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createLinearGradient",
+          "args": [
+            0,
+            0,
+            500,
+            0
+          ],
+          "id": "ramp"
+        },
+        {
+          "op": "call",
+          "target": "ramp",
+          "name": "addColorStop",
+          "args": [
+            0,
+            "#2060ff"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ramp",
+          "name": "addColorStop",
+          "args": [
+            1,
+            "#ff2450"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": {
+            "$ref": "ramp"
+          }
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "wavy underline 2px #10b060"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "translate",
+          "args": [
+            25.25,
+            110.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rotate",
+          "args": [
+            0.1
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "gradientMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            0
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-clip-maxwidth",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "roundRect",
+          "args": [
+            8,
+            8,
+            320,
+            160,
+            12
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "double underline 3px red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "clipped"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi wide text",
+            240.25
+          ],
+          "save": "clippedMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi wide text",
+            10.25,
+            70,
+            240.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-alias-reset",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "use",
+          "args": [
+            "Decor Mono",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"Decor Mono\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline 2px red"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "beforeReset"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "beforeResetMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            55
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "afterReset"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "afterResetMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            115
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "decoration-other-text-state",
+      "group": "python-text-decoration",
+      "width": 620,
+      "height": 400,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "white"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            620,
+            400
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px \"DejaVu Sans\""
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "letterSpacing",
+          "value": "1px"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "wordSpacing",
+          "value": "3px"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fontVariant",
+          "value": "small-caps"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fontHinting",
+          "value": true
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "dotted line-through 1.5px #d02060"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "textDecoration",
+          "save": "textState"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV fj ffi 0123"
+          ],
+          "save": "textStateMetrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV fj ffi 0123",
+            10.25,
+            60
+          ]
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        }
+      ]
+    }
+  ]
+}

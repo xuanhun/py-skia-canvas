@@ -1,0 +1,1066 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "G2 filter/sampling extraction regression, compared to original Node with zero tolerance.",
+  "cases": [
+    {
+      "id": "filter-none",
+      "group": "effects",
+      "width": 96,
+      "height": 72,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f4f1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            96,
+            72
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            1.25,
+            0.75
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "none"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f24a20"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            8.25,
+            9.5,
+            42.5,
+            48.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(25,65,255,0.6)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            28.5,
+            31.25,
+            32.5,
+            35.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filter-blur",
+      "group": "effects",
+      "width": 96,
+      "height": 72,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f4f1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            96,
+            72
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            1.25,
+            0.75
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "blur(1.25px)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f24a20"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            8.25,
+            9.5,
+            42.5,
+            48.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(25,65,255,0.6)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            28.5,
+            31.25,
+            32.5,
+            35.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filter-brightness",
+      "group": "effects",
+      "width": 96,
+      "height": 72,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f4f1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            96,
+            72
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            1.25,
+            0.75
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "brightness(0.6)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f24a20"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            8.25,
+            9.5,
+            42.5,
+            48.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(25,65,255,0.6)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            28.5,
+            31.25,
+            32.5,
+            35.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filter-contrast",
+      "group": "effects",
+      "width": 96,
+      "height": 72,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f4f1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            96,
+            72
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            1.25,
+            0.75
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "contrast(1.4)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f24a20"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            8.25,
+            9.5,
+            42.5,
+            48.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(25,65,255,0.6)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            28.5,
+            31.25,
+            32.5,
+            35.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filter-shadow",
+      "group": "effects",
+      "width": 96,
+      "height": 72,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f4f1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            96,
+            72
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            1.25,
+            0.75
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "drop-shadow(2px 3px 1.5px rgba(0,0,80,0.5))"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f24a20"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            8.25,
+            9.5,
+            42.5,
+            48.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(25,65,255,0.6)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            28.5,
+            31.25,
+            32.5,
+            35.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filter-grayscale",
+      "group": "effects",
+      "width": 96,
+      "height": 72,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f4f1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            96,
+            72
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            1.25,
+            0.75
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "grayscale(0.7)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f24a20"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            8.25,
+            9.5,
+            42.5,
+            48.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(25,65,255,0.6)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            28.5,
+            31.25,
+            32.5,
+            35.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filter-hue",
+      "group": "effects",
+      "width": 96,
+      "height": 72,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f4f1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            96,
+            72
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            1.25,
+            0.75
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "hue-rotate(67deg)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f24a20"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            8.25,
+            9.5,
+            42.5,
+            48.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(25,65,255,0.6)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            28.5,
+            31.25,
+            32.5,
+            35.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filter-invert",
+      "group": "effects",
+      "width": 96,
+      "height": 72,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f4f1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            96,
+            72
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            1.25,
+            0.75
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "invert(0.65)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f24a20"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            8.25,
+            9.5,
+            42.5,
+            48.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(25,65,255,0.6)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            28.5,
+            31.25,
+            32.5,
+            35.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filter-opacity",
+      "group": "effects",
+      "width": 96,
+      "height": 72,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f4f1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            96,
+            72
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            1.25,
+            0.75
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "opacity(0.45)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f24a20"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            8.25,
+            9.5,
+            42.5,
+            48.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(25,65,255,0.6)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            28.5,
+            31.25,
+            32.5,
+            35.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filter-saturate",
+      "group": "effects",
+      "width": 96,
+      "height": 72,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f4f1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            96,
+            72
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            1.25,
+            0.75
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "saturate(1.7)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f24a20"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            8.25,
+            9.5,
+            42.5,
+            48.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(25,65,255,0.6)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            28.5,
+            31.25,
+            32.5,
+            35.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filter-sepia",
+      "group": "effects",
+      "width": 96,
+      "height": 72,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f4f1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            96,
+            72
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            1.25,
+            0.75
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "sepia(0.8)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f24a20"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            8.25,
+            9.5,
+            42.5,
+            48.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(25,65,255,0.6)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            28.5,
+            31.25,
+            32.5,
+            35.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filter-chain",
+      "group": "effects",
+      "width": 96,
+      "height": 72,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f4f1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            96,
+            72
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            1.25,
+            0.75
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "brightness(0.7) blur(0.8px) hue-rotate(45deg)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f24a20"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            8.25,
+            9.5,
+            42.5,
+            48.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(25,65,255,0.6)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            28.5,
+            31.25,
+            32.5,
+            35.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sampling-none",
+      "group": "images",
+      "width": 96,
+      "height": 72,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "loadImage",
+          "path": "tests/assets/checker.svg",
+          "id": "img"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingEnabled",
+          "value": false
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "value": "low"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            3.25,
+            4.75,
+            78.5,
+            60.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sampling-low",
+      "group": "images",
+      "width": 96,
+      "height": 72,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "loadImage",
+          "path": "tests/assets/checker.svg",
+          "id": "img"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingEnabled",
+          "value": true
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "value": "low"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            3.25,
+            4.75,
+            78.5,
+            60.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sampling-medium",
+      "group": "images",
+      "width": 96,
+      "height": 72,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "loadImage",
+          "path": "tests/assets/checker.svg",
+          "id": "img"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingEnabled",
+          "value": true
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "value": "medium"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            3.25,
+            4.75,
+            78.5,
+            60.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sampling-high",
+      "group": "images",
+      "width": 96,
+      "height": 72,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "loadImage",
+          "path": "tests/assets/checker.svg",
+          "id": "img"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingEnabled",
+          "value": true
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "value": "high"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            3.25,
+            4.75,
+            78.5,
+            60.25
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1204 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "cases": [
+    {
+      "id": "effects-marker-move0",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M-3 -2L5 0L-3 2Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashMarker",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashFit",
+          "value": "move"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "lineDashFit",
+          "save": "fit"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setLineDash",
+          "args": [
+            [
+              16,
+              10
+            ]
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 2
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#d02880"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            20.25,
+            40.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            100,
+            0,
+            40,
+            170,
+            225,
+            140
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-marker-turn1",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M-3 -2L5 0L-3 2Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashMarker",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashFit",
+          "value": "turn"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "lineDashFit",
+          "save": "fit"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setLineDash",
+          "args": [
+            [
+              16,
+              10
+            ]
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 2
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#d02880"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            20.25,
+            40.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            100,
+            0,
+            40,
+            170,
+            225,
+            140
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-marker-follow2",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M-3 -2L5 0L-3 2Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashMarker",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashFit",
+          "value": "follow"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "lineDashFit",
+          "save": "fit"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setLineDash",
+          "args": [
+            [
+              16,
+              10
+            ]
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 2
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#d02880"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            20.25,
+            40.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            100,
+            0,
+            40,
+            170,
+            225,
+            140
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-marker-turn3",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M-3 -2L5 0L-3 2Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashMarker",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashFit",
+          "value": "TURN"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "lineDashFit",
+          "save": "fit"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setLineDash",
+          "args": [
+            [
+              16,
+              10
+            ]
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 2
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#d02880"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            20.25,
+            40.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            100,
+            0,
+            40,
+            170,
+            225,
+            140
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-marker-bogus4",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M-3 -2L5 0L-3 2Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashMarker",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashFit",
+          "value": "bogus"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "lineDashFit",
+          "save": "fit"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setLineDash",
+          "args": [
+            [
+              16,
+              10
+            ]
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 2
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#d02880"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            20.25,
+            40.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            100,
+            0,
+            40,
+            170,
+            225,
+            140
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-marker-effects",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M-2 -2L3 0L-2 2Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashMarker",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashFit",
+          "value": "follow"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashOffset",
+          "value": 2.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setLineDash",
+          "args": [
+            [
+              12,
+              8
+            ]
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "red"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 2
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 4
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "blur(.5px)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#2060c0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            15,
+            40
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            150,
+            0,
+            80,
+            180,
+            235,
+            140
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-marker-restore",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "lineDashFit",
+          "save": "default"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashFit",
+          "value": "move"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "save",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashFit",
+          "value": "follow"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "restore",
+          "args": []
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "lineDashFit",
+          "save": "restored"
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "width",
+          "value": 256
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "lineDashFit",
+          "save": "resized"
+        }
+      ]
+    },
+    {
+      "id": "effects-path-round",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M20 20L150 30L80 140Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "round",
+          "args": [
+            3.5
+          ],
+          "id": "q"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "drop-shadow(4px 5px 2px red)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#2060c0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "q"
+            }
+          ]
+        },
+        {
+          "op": "get",
+          "target": "q",
+          "name": "bounds",
+          "save": "bounds"
+        }
+      ]
+    },
+    {
+      "id": "effects-path-trim",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M20 20L150 30L80 140Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "trim",
+          "args": [
+            0.2,
+            0.8
+          ],
+          "id": "q"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "drop-shadow(4px 5px 2px red)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#2060c0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "q"
+            }
+          ]
+        },
+        {
+          "op": "get",
+          "target": "q",
+          "name": "bounds",
+          "save": "bounds"
+        }
+      ]
+    },
+    {
+      "id": "effects-path-jitter",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M20 20L150 30L80 140Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "jitter",
+          "args": [
+            5.5,
+            1.25,
+            42
+          ],
+          "id": "q"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "drop-shadow(4px 5px 2px red)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#2060c0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "q"
+            }
+          ]
+        },
+        {
+          "op": "get",
+          "target": "q",
+          "name": "bounds",
+          "save": "bounds"
+        }
+      ]
+    },
+    {
+      "id": "effects-path-offset",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M20 20L150 30L80 140Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "offset",
+          "args": [
+            10.25,
+            5.5
+          ],
+          "id": "q"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "drop-shadow(4px 5px 2px red)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#2060c0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "q"
+            }
+          ]
+        },
+        {
+          "op": "get",
+          "target": "q",
+          "name": "bounds",
+          "save": "bounds"
+        }
+      ]
+    },
+    {
+      "id": "effects-path-unwind",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M20 20L150 30L80 140Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "unwind",
+          "args": [],
+          "id": "q"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "drop-shadow(4px 5px 2px red)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#2060c0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "q"
+            }
+          ]
+        },
+        {
+          "op": "get",
+          "target": "q",
+          "name": "bounds",
+          "save": "bounds"
+        }
+      ]
+    },
+    {
+      "id": "effects-path-simplify",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M20 20L150 30L80 140Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "simplify",
+          "args": [
+            "evenodd"
+          ],
+          "id": "q"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "drop-shadow(4px 5px 2px red)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#2060c0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "q"
+            }
+          ]
+        },
+        {
+          "op": "get",
+          "target": "q",
+          "name": "bounds",
+          "save": "bounds"
+        }
+      ]
+    }
+  ]
+}

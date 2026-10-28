@@ -1,0 +1,150 @@
+{
+  "schema": "py-skia-canvas-scoped-api-status/v1",
+  "baseline": "3.0.8",
+  "batch": "G5-font-css-2",
+  "notFullLedgerPromotion": true,
+  "entries": [
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "font",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "none",
+      "units": "Parsed f64 CSS px then original native f32; lineHeight ratio calculated after f32 cast; weight/style/stretch/features unitless",
+      "return": "Original core canonical string snapshot",
+      "exceptions": "Owner RuntimeError",
+      "ownership": "Owner TLS Context/fonts/GPU; descriptor parsing before native borrow, Python cache has no native objects",
+      "upstream": [
+        "lib/classes/context.js:226-227",
+        "lib/classes/css.js:parseFont/parseSize/parseWeight",
+        "src/typography.rs:285 font_arg",
+        "src/context/api.rs:847-860 get_font/set_font",
+        "src/context/mod.rs:551 set_font"
+      ],
+      "core": [
+        "crates/canvas-core/src/typography.rs:font_spec",
+        "crates/canvas-core/src/context/mod.rs:set_font",
+        "crates/canvas-core/src/font_library.rs:update_style"
+      ],
+      "python": [
+        "python/py_skia_canvas/__init__.py:CanvasRenderingContext2D.font",
+        "python/py_skia_canvas/_font_css.py:parse_font",
+        "crates/python/src/font.rs:decode"
+      ],
+      "cases": [
+        "fontcss-default-basic",
+        "fontcss-absolute-units",
+        "fontcss-relative-units",
+        "fontcss-named-sizes",
+        "fontcss-weight-style",
+        "fontcss-small-caps",
+        "fontcss-stretch-shorthand",
+        "fontcss-quoted-family-stack",
+        "fontcss-line-height",
+        "fontcss-registered-alias",
+        "fontcss-registered-styles",
+        "fontcss-replace-alias",
+        "fontcss-reset-recorded-alias",
+        "fontcss-save-restore",
+        "fontcss-resize-reset",
+        "fontcss-cross-canvas",
+        "fontcss-outline-selected",
+        "fontcss-maxwidth",
+        "fontcss-variable-weights",
+        "fontcss-variable-width",
+        "fontcss-mixed-scripts",
+        "fontcss-transform-gradient",
+        "fontcss-invalid-values",
+        "fontcss-lineheight-errors",
+        "fontcss-missing-family",
+        "fontcss-permissive-size-syntax",
+        "fontcss-nonstring-inputs",
+        "fontcss-cached-array-input",
+        "fontcss-bracket-tokenizer",
+        "fontcss-escaped-separators",
+        "fontcss-duplicate-attributes",
+        "fontcss-whitespace"
+      ],
+      "evidence": [
+        "test-runs/20261028-fontcss-final/run.json"
+      ],
+      "unverified": [
+        "Complete JS prototype/host/proxy/custom coercion and extreme shortest-number strings",
+        "Complete fallback/glyph source/emoji and arbitrary Python subclasses",
+        "Other text-state setters, Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    },
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "font",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "Original CSS font string and scoped ordinary primitive/array cache inputs",
+      "units": "Parsed f64 CSS px then original native f32; lineHeight ratio calculated after f32 cast; weight/style/stretch/features unitless",
+      "return": "None; invalid parse/empty first family/original unavailable style retains state",
+      "exceptions": "Owner RuntimeError; complete host/prototype errors remain unaudited",
+      "ownership": "Owner TLS Context/fonts/GPU; descriptor parsing before native borrow, Python cache has no native objects",
+      "upstream": [
+        "lib/classes/context.js:226-227",
+        "lib/classes/css.js:parseFont/parseSize/parseWeight",
+        "src/typography.rs:285 font_arg",
+        "src/context/api.rs:847-860 get_font/set_font",
+        "src/context/mod.rs:551 set_font"
+      ],
+      "core": [
+        "crates/canvas-core/src/typography.rs:font_spec",
+        "crates/canvas-core/src/context/mod.rs:set_font",
+        "crates/canvas-core/src/font_library.rs:update_style"
+      ],
+      "python": [
+        "python/py_skia_canvas/__init__.py:CanvasRenderingContext2D.font",
+        "python/py_skia_canvas/_font_css.py:parse_font",
+        "crates/python/src/font.rs:decode"
+      ],
+      "cases": [
+        "fontcss-default-basic",
+        "fontcss-absolute-units",
+        "fontcss-relative-units",
+        "fontcss-named-sizes",
+        "fontcss-weight-style",
+        "fontcss-small-caps",
+        "fontcss-stretch-shorthand",
+        "fontcss-quoted-family-stack",
+        "fontcss-line-height",
+        "fontcss-registered-alias",
+        "fontcss-registered-styles",
+        "fontcss-replace-alias",
+        "fontcss-reset-recorded-alias",
+        "fontcss-save-restore",
+        "fontcss-resize-reset",
+        "fontcss-cross-canvas",
+        "fontcss-outline-selected",
+        "fontcss-maxwidth",
+        "fontcss-variable-weights",
+        "fontcss-variable-width",
+        "fontcss-mixed-scripts",
+        "fontcss-transform-gradient",
+        "fontcss-invalid-values",
+        "fontcss-lineheight-errors",
+        "fontcss-missing-family",
+        "fontcss-permissive-size-syntax",
+        "fontcss-nonstring-inputs",
+        "fontcss-cached-array-input",
+        "fontcss-bracket-tokenizer",
+        "fontcss-escaped-separators",
+        "fontcss-duplicate-attributes",
+        "fontcss-whitespace"
+      ],
+      "evidence": [
+        "test-runs/20261028-fontcss-final/run.json"
+      ],
+      "unverified": [
+        "Complete JS prototype/host/proxy/custom coercion and extreme shortest-number strings",
+        "Complete fallback/glyph source/emoji and arbitrary Python subclasses",
+        "Other text-state setters, Windows/hardware GPU/Metal/manylinux/release"
+      ]
+    }
+  ]
+}

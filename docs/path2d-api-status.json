@@ -1,0 +1,1469 @@
+{
+  "schema": "py-skia-canvas-scoped-api-status/v1",
+  "baseline": "3.0.8",
+  "batch": "G4-path2d-2",
+  "notFullLedgerPromotion": true,
+  "entries": [
+    {
+      "class": "Path2D",
+      "name": "constructor",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 26,
+          "symbol": "constructor"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 102,
+          "symbol": "new"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 29,
+        "symbol": "Path2D.__init__"
+      },
+      "cases": [
+        "path2d-svg-copy-set",
+        "path2d-constructor-invalid",
+        "path2d-primitive-edges",
+        "path2d-arcs-ellipses",
+        "path2d-explicit-fill-hit-clip",
+        "path2d-transformed-add-self",
+        "path2d-boolean-all",
+        "path2d-interpolation-errors",
+        "path2d-effects-and-points",
+        "path2d-snapshot-retained",
+        "path2d-fill-type-side-effects",
+        "path2d-number-tokens",
+        "g4-adapter-construct-concat",
+        "g4-adapter-simplify-unwind",
+        "g4-adapter-ops-interpolate",
+        "g4-adapter-path-builder-effects",
+        "roundrect-default-distinction",
+        "roundrect-negative-size-points",
+        "roundrect-invalid-radii-order",
+        "roundrect-truncate-and-expand"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "d",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 36,
+          "symbol": "d"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 534,
+          "symbol": "get_d"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 53,
+        "symbol": "Path2D.d"
+      },
+      "cases": [
+        "path2d-svg-copy-set",
+        "path2d-constructor-invalid",
+        "path2d-transformed-add-self",
+        "path2d-boolean-all",
+        "path2d-effects-and-points",
+        "path2d-snapshot-retained",
+        "g4-adapter-construct-concat",
+        "g4-adapter-simplify-unwind",
+        "g4-adapter-ops-interpolate",
+        "g4-adapter-path-builder-effects",
+        "roundrect-default-distinction",
+        "roundrect-negative-size-points",
+        "roundrect-invalid-radii-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "d",
+      "access": "set",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 37,
+          "symbol": "d"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 540,
+          "symbol": "set_d"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 58,
+        "symbol": "Path2D.d"
+      },
+      "cases": [
+        "path2d-svg-copy-set",
+        "path2d-snapshot-retained"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "bounds",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 34,
+          "symbol": "bounds"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 447,
+          "symbol": "bounds"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 66,
+        "symbol": "Path2D.bounds"
+      },
+      "cases": [
+        "path2d-svg-copy-set",
+        "path2d-constructor-invalid",
+        "path2d-transformed-add-self",
+        "path2d-boolean-all",
+        "path2d-snapshot-retained",
+        "path2d-number-tokens",
+        "g4-adapter-simplify-unwind",
+        "g4-adapter-path-builder-effects",
+        "roundrect-negative-size-points"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "edges",
+      "access": "get",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 35,
+          "symbol": "edges"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 492,
+          "symbol": "edges"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 74,
+        "symbol": "Path2D.edges"
+      },
+      "cases": [
+        "path2d-constructor-invalid",
+        "path2d-primitive-edges",
+        "path2d-arcs-ellipses",
+        "path2d-interpolation-errors",
+        "path2d-effects-and-points",
+        "path2d-number-tokens",
+        "g4-adapter-construct-concat",
+        "g4-adapter-ops-interpolate",
+        "g4-adapter-path-builder-effects",
+        "roundrect-default-distinction",
+        "roundrect-truncate-and-expand"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "contains",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 38,
+          "symbol": "contains"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 470,
+          "symbol": "contains"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 81,
+        "symbol": "Path2D.contains"
+      },
+      "cases": [
+        "path2d-fill-type-side-effects"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "closePath",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "pending",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 56,
+          "symbol": "closePath"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 142,
+          "symbol": "closePath"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 92,
+        "symbol": "Path2D.closePath"
+      },
+      "cases": [],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "moveTo",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 54,
+          "symbol": "moveTo"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 150,
+          "symbol": "moveTo"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 96,
+        "symbol": "Path2D.moveTo"
+      },
+      "cases": [
+        "path2d-arcs-ellipses",
+        "path2d-number-tokens"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "lineTo",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 55,
+          "symbol": "lineTo"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 163,
+          "symbol": "lineTo"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 100,
+        "symbol": "Path2D.lineTo"
+      },
+      "cases": [
+        "path2d-primitive-edges",
+        "path2d-number-tokens"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "bezierCurveTo",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 58,
+          "symbol": "bezierCurveTo"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 177,
+          "symbol": "bezierCurveTo"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 104,
+        "symbol": "Path2D.bezierCurveTo"
+      },
+      "cases": [
+        "path2d-primitive-edges"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "quadraticCurveTo",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 59,
+          "symbol": "quadraticCurveTo"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 191,
+          "symbol": "quadraticCurveTo"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 108,
+        "symbol": "Path2D.quadraticCurveTo"
+      },
+      "cases": [
+        "path2d-primitive-edges"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "conicCurveTo",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 60,
+          "symbol": "conicCurveTo"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 205,
+          "symbol": "conicCurveTo"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 112,
+        "symbol": "Path2D.conicCurveTo"
+      },
+      "cases": [
+        "path2d-primitive-edges"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "arc",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 65,
+          "symbol": "arc"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 219,
+          "symbol": "arc"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 116,
+        "symbol": "Path2D.arc"
+      },
+      "cases": [
+        "path2d-arcs-ellipses"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "ellipse",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 63,
+          "symbol": "ellipse"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 247,
+          "symbol": "ellipse"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 123,
+        "symbol": "Path2D.ellipse"
+      },
+      "cases": [
+        "path2d-arcs-ellipses"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "arcTo",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 57,
+          "symbol": "arcTo"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 233,
+          "symbol": "arcTo"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 130,
+        "symbol": "Path2D.arcTo"
+      },
+      "cases": [
+        "path2d-arcs-ellipses"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "rect",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 64,
+          "symbol": "rect"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 264,
+          "symbol": "rect"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 137,
+        "symbol": "Path2D.rect"
+      },
+      "cases": [
+        "path2d-constructor-invalid",
+        "roundrect-invalid-radii-order"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "roundRect",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 66,
+          "symbol": "roundRect"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 280,
+          "symbol": "roundRect"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 141,
+        "symbol": "Path2D.roundRect"
+      },
+      "cases": [
+        "roundrect-default-distinction",
+        "roundrect-negative-size-points",
+        "roundrect-invalid-radii-order",
+        "roundrect-truncate-and-expand"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "addPath",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 47,
+          "symbol": "addPath"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 120,
+          "symbol": "addPath"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 151,
+        "symbol": "Path2D.addPath"
+      },
+      "cases": [
+        "path2d-transformed-add-self",
+        "g4-adapter-construct-concat"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "op",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "pending",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 12,
+          "symbol": "op"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 299,
+          "symbol": "op"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 163,
+        "symbol": "Path2D.op"
+      },
+      "cases": [],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "difference",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 81,
+          "symbol": "difference"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 299,
+          "symbol": "op"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 172,
+        "symbol": "Path2D.difference"
+      },
+      "cases": [
+        "path2d-boolean-all"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "intersect",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 82,
+          "symbol": "intersect"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 299,
+          "symbol": "op"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 176,
+        "symbol": "Path2D.intersect"
+      },
+      "cases": [
+        "path2d-boolean-all"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "union",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 83,
+          "symbol": "union"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 299,
+          "symbol": "op"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 180,
+        "symbol": "Path2D.union"
+      },
+      "cases": [
+        "path2d-boolean-all",
+        "g4-adapter-ops-interpolate"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "xor",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 84,
+          "symbol": "xor"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 299,
+          "symbol": "op"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 184,
+        "symbol": "Path2D.xor"
+      },
+      "cases": [
+        "path2d-boolean-all"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "complement",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 80,
+          "symbol": "complement"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 299,
+          "symbol": "op"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 188,
+        "symbol": "Path2D.complement"
+      },
+      "cases": [
+        "path2d-boolean-all"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "interpolate",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 17,
+          "symbol": "interpolate"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 316,
+          "symbol": "interpolate"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 192,
+        "symbol": "Path2D.interpolate"
+      },
+      "cases": [
+        "path2d-interpolation-errors",
+        "g4-adapter-ops-interpolate"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "effect",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "pending",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 22,
+          "symbol": "effect"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 388,
+          "symbol": "round"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 210,
+        "symbol": "Path2D.effect"
+      },
+      "cases": [],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "simplify",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 88,
+          "symbol": "simplify"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 332,
+          "symbol": "simplify"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 220,
+        "symbol": "Path2D.simplify"
+      },
+      "cases": [
+        "path2d-fill-type-side-effects",
+        "g4-adapter-simplify-unwind"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "unwind",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 89,
+          "symbol": "unwind"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 350,
+          "symbol": "unwind"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 227,
+        "symbol": "Path2D.unwind"
+      },
+      "cases": [
+        "path2d-fill-type-side-effects",
+        "g4-adapter-simplify-unwind"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "offset",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 91,
+          "symbol": "offset"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 367,
+          "symbol": "offset"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 234,
+        "symbol": "Path2D.offset"
+      },
+      "cases": [
+        "g4-adapter-ops-interpolate",
+        "g4-adapter-path-builder-effects"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "transform",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 93,
+          "symbol": "transform"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 378,
+          "symbol": "transform"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 238,
+        "symbol": "Path2D.transform"
+      },
+      "cases": [
+        "path2d-snapshot-retained",
+        "g4-adapter-ops-interpolate"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "round",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 90,
+          "symbol": "round"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 388,
+          "symbol": "round"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 245,
+        "symbol": "Path2D.round"
+      },
+      "cases": [
+        "path2d-effects-and-points",
+        "g4-adapter-path-builder-effects"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "trim",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 97,
+          "symbol": "trim"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 406,
+          "symbol": "trim"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 252,
+        "symbol": "Path2D.trim"
+      },
+      "cases": [
+        "path2d-effects-and-points",
+        "g4-adapter-path-builder-effects"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "jitter",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 87,
+          "symbol": "jitter"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 427,
+          "symbol": "jitter"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 278,
+        "symbol": "Path2D.jitter"
+      },
+      "cases": [
+        "path2d-effects-and-points",
+        "g4-adapter-path-builder-effects"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    },
+    {
+      "class": "Path2D",
+      "name": "points",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "inputScope": "Finite numeric geometry, SVG strings, original bool flags, numeric/dict corner radii and six-number matrices; full JS coercion/DOM/dynamic effect audit pending",
+      "units": "Canvas units for geometry and effects, radians for arc/rotation, unitless weights/fractions/seed/style",
+      "return": "Original Path2D/owned dict/list/string/bool or None for mutators",
+      "exceptions": "Original ellipse/radii RangeError(ValueError), SVG/rule/interpolation TypeError, boolean Error(RuntimeError); ownership RuntimeError",
+      "ownership": "Metadata-only handle, native data in owner TLS; returned snapshots registered on same owner",
+      "upstream": [
+        {
+          "path": "lib/classes/path.js",
+          "line": 40,
+          "symbol": "points"
+        },
+        {
+          "path": "src/path.rs",
+          "line": 427,
+          "symbol": "jitter"
+        }
+      ],
+      "core": "crates/canvas-core/src/path/operations.rs",
+      "python": {
+        "path": "python/py_skia_canvas/_path.py",
+        "line": 285,
+        "symbol": "Path2D.points"
+      },
+      "cases": [
+        "path2d-effects-and-points"
+      ],
+      "evidence": [
+        "test-runs/20261027-path2d-final/run.json"
+      ],
+      "unverified": [
+        "Full coercion/missing/null/undefined/STRICT contracts",
+        "DOM/3D matrix inputs and dynamic effects outside supported targets",
+        "Windows/Metal/release acceptance"
+      ]
+    }
+  ],
+  "contextAdditions": [
+    "fill/stroke/clip/isPointInPath/isPointInStroke explicit Path2D overload",
+    "outlineText",
+    "lineDashMarker",
+    "roundRect",
+    "six-element matrix arrays"
+  ]
+}

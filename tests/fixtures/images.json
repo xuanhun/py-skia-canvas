@@ -1,0 +1,2692 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "cases": [
+    {
+      "id": "imaging-rgba-grid-png",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "complete",
+          "save": "complete"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "src",
+          "save": "src"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            150.5,
+            15.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-checker-svg",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "checker.svg"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "complete",
+          "save": "complete"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "src",
+          "save": "src"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            150.5,
+            15.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-checker-autosize-svg",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "checker-autosize.svg"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "complete",
+          "save": "complete"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "src",
+          "save": "src"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            150.5,
+            15.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-svg-width-svg",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "svg-width.svg"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "complete",
+          "save": "complete"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "src",
+          "save": "src"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            150.5,
+            15.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-svg-height-svg",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "svg-height.svg"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "complete",
+          "save": "complete"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "src",
+          "save": "src"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            150.5,
+            15.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-svg-viewbox-svg",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "svg-viewbox.svg"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "complete",
+          "save": "complete"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "src",
+          "save": "src"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            150.5,
+            15.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-dataurl",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAvUlEQVR4nBXOMRHAIAwF0DjgUBILGOAQwsCAgWwcEwIQwIgIjrljBTB2qIT09yl4ZKwS28cFe0uyS5udNG13ly3y2qxkWB3zI4FvTbyo8XSTu1xc9OVMZLwK+0eDvyn55ZqfMn3Xyxd6fXZkoirHh0K8XYpLWpw6Y6crFvfGLGQqDhWHikPFoeJQcag41P8wcBg4DBwGDgOHgcPAYfyHjcPGYeOwcdg4bBw2Dvs/HBwODgeHg8PB4eBwcDhZPgoPiHEYhQTVAAAAAElFTkSuQmCC"
+          ],
+          "id": "img"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "complete",
+          "save": "complete"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "src",
+          "save": "src"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-dataurl-svg",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22red%22%2F%3E%3C%2Fsvg%3E"
+          ],
+          "id": "img"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "complete",
+          "save": "complete"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "src",
+          "save": "src"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-buffer-src-label",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            },
+            "owned-name"
+          ],
+          "id": "img"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "complete",
+          "save": "complete"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "src",
+          "save": "src"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-load-file",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "loadImage",
+          "path": "tests/assets/rgba-grid.png",
+          "id": "img"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "complete",
+          "save": "complete"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-decode",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "img",
+          "name": "decode",
+          "args": [],
+          "id": "decoded"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "img"
+          },
+          "right": {
+            "$ref": "decoded"
+          },
+          "save": "same"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-src-bytes",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [],
+          "id": "img"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "complete",
+          "save": "complete"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "src",
+          "save": "src"
+        },
+        {
+          "op": "set",
+          "target": "img",
+          "name": "src",
+          "value": {
+            "$assetBytes": "rgba-grid.png"
+          }
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "src",
+          "save": "loadedSrc"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-src-dataurl",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [],
+          "id": "img"
+        },
+        {
+          "op": "set",
+          "target": "img",
+          "name": "src",
+          "value": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAvUlEQVR4nBXOMRHAIAwF0DjgUBILGOAQwsCAgWwcEwIQwIgIjrljBTB2qIT09yl4ZKwS28cFe0uyS5udNG13ly3y2qxkWB3zI4FvTbyo8XSTu1xc9OVMZLwK+0eDvyn55ZqfMn3Xyxd6fXZkoirHh0K8XYpLWpw6Y6crFvfGLGQqDhWHikPFoeJQcag41P8wcBg4DBwGDgOHgcPAYfyHjcPGYeOwcdg4bBw2Dvs/HBwODgeHg8PB4eBwcDhZPgoPiHEYhQTVAAAAAElFTkSuQmCC"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "complete",
+          "save": "complete"
+        },
+        {
+          "op": "get",
+          "target": "img",
+          "name": "src",
+          "save": "src"
+        },
+        {
+          "op": "call",
+          "target": "img",
+          "name": "decode",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-draw-13",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.5,
+            10.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-draw-14",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.5,
+            10.75,
+            72.25,
+            58.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-draw-15",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            1.25,
+            2.5,
+            5.25,
+            4.5,
+            10.5,
+            20.25,
+            150.5,
+            130.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-draw-16",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            -3,
+            -2,
+            14,
+            12,
+            10,
+            15,
+            180,
+            150
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-draw-17",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            6,
+            6,
+            5,
+            5,
+            20,
+            20,
+            100,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-draw-18",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            6,
+            6,
+            -5,
+            -4,
+            20,
+            20,
+            120,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-draw-19",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10,
+            10,
+            -120,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-draw-20",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10,
+            10,
+            0,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-sampling-low",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "value": "low"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "save": "quality"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-sampling-medium",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "value": "medium"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "save": "quality"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-sampling-high",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "value": "high"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "imageSmoothingQuality",
+          "save": "quality"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-sampling-disabled",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "imageSmoothingEnabled",
+          "value": false
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "imageSmoothingEnabled",
+          "save": "enabled"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10.25,
+            12.75,
+            128.5,
+            128.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-canvas-false",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Canvas",
+          "args": [
+            48,
+            36
+          ],
+          "id": "src"
+        },
+        {
+          "op": "call",
+          "target": "src",
+          "name": "getContext",
+          "args": [
+            "2d"
+          ],
+          "id": "sc"
+        },
+        {
+          "op": "set",
+          "target": "sc",
+          "name": "fillStyle",
+          "value": "#ef6028"
+        },
+        {
+          "op": "call",
+          "target": "sc",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "set",
+          "target": "sc",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "sc",
+          "name": "fillRect",
+          "args": [
+            8.5,
+            7.25,
+            24.5,
+            20.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "src"
+            },
+            10.25,
+            15.75,
+            180.5,
+            130.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "sc",
+          "name": "fillStyle",
+          "value": "black"
+        },
+        {
+          "op": "call",
+          "target": "sc",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "src"
+            },
+            200,
+            20,
+            40,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-canvas-true",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Canvas",
+          "args": [
+            48,
+            36
+          ],
+          "id": "src"
+        },
+        {
+          "op": "call",
+          "target": "src",
+          "name": "getContext",
+          "args": [
+            "2d"
+          ],
+          "id": "sc"
+        },
+        {
+          "op": "set",
+          "target": "sc",
+          "name": "fillStyle",
+          "value": "#ef6028"
+        },
+        {
+          "op": "call",
+          "target": "sc",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "set",
+          "target": "sc",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "sc",
+          "name": "fillRect",
+          "args": [
+            8.5,
+            7.25,
+            24.5,
+            20.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawCanvas",
+          "args": [
+            {
+              "$ref": "src"
+            },
+            10.25,
+            15.75,
+            180.5,
+            130.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "sc",
+          "name": "fillStyle",
+          "value": "black"
+        },
+        {
+          "op": "call",
+          "target": "sc",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawCanvas",
+          "args": [
+            {
+              "$ref": "src"
+            },
+            200,
+            20,
+            40,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-self-bitmap",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#e02080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            5,
+            5,
+            45,
+            45
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "canvas"
+            },
+            0,
+            0,
+            64,
+            64,
+            80,
+            50,
+            128,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-self-vector",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#e02080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            5,
+            5,
+            45,
+            45
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawCanvas",
+          "args": [
+            {
+              "$ref": "canvas"
+            },
+            0,
+            0,
+            64,
+            64,
+            80,
+            50,
+            128,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imaging-transform-clip-alpha",
+      "group": "python-imaging",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#f5f0e8"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            256,
+            192
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#224080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            225,
+            160,
+            20,
+            20
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "save",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "translate",
+          "args": [
+            100,
+            25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rotate",
+          "args": [
+            0.2
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            100,
+            100
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.5
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            0,
+            0,
+            160,
+            160
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "restore",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            10,
+            10,
+            64,
+            64
+          ]
+        }
+      ]
+    }
+  ]
+}

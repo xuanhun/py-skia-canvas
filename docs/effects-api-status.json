@@ -1,0 +1,85 @@
+{
+  "schema": "py-skia-canvas-scoped-api-status/v1",
+  "baseline": "3.0.8",
+  "batch": "G7-effects",
+  "notFullLedgerPromotion": true,
+  "entries": [
+    {
+      "names": "filter",
+      "parameters": "CSS string; parser descriptor contains canonical and insertion-ordered values",
+      "units": "Lengths default16px em/CSS px; hue degrees; plain amounts f64->native f32",
+      "returns": "Owned current canonical string",
+      "exceptions": "Invalid CSS ignored; null Error/nonstring TypeError; original field errors",
+      "ownership": "Owner TLS Context/cache/Skia only; owned reads before borrow, no GPU transfer/unsafe Send or Sync",
+      "upstream": "css.js:parseFilter/parsePercentage/parseAngle/parseSize; utils.rs:filter_arg; context/api.rs:get/set_filter; filter.rs",
+      "core": "context/effects.rs; filter/arguments.rs; existing original renderer",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested"
+    },
+    {
+      "names": "shadowBlur/shadowOffsetX/shadowOffsetY",
+      "parameters": "Ordinary numeric primitive/array/string through original _as_float",
+      "units": "Canvas units, finite f64 then f32; original overflow semantics retained",
+      "returns": "Original current f32 scalar",
+      "exceptions": "Invalid default bail/STRICT TypeError with U+FE0F; negative blur ignored",
+      "ownership": "Owner TLS Context/cache/Skia only; owned reads before borrow, no GPU transfer/unsafe Send or Sync",
+      "upstream": "context.js shadow properties; utils.rs:float_arg_or_bail; context/api.rs shadow getters/setters",
+      "core": "context/effects.rs; filter/arguments.rs; existing original renderer",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested"
+    },
+    {
+      "names": "shadowColor",
+      "parameters": "Original CSS string/ordinary object toString, unsupported colors ignored",
+      "units": "Packed original color/CSS unitless",
+      "returns": "Original formatted CSS color",
+      "exceptions": "Original invalid color ignore; owner RuntimeError; host/proxy callbacks pending",
+      "ownership": "Owner TLS Context/cache/Skia only; owned reads before borrow, no GPU transfer/unsafe Send or Sync",
+      "upstream": "context.js:shadowColor; utils.rs:color_in; context/api.rs:get/set_shadowColor",
+      "core": "context/effects.rs; filter/arguments.rs; existing original renderer",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested"
+    },
+    {
+      "names": "globalCompositeOperation",
+      "parameters": "Original string name/28 modes, case-insensitive",
+      "units": "Unitless",
+      "returns": "Original canonical mode, State and Paint both updated",
+      "exceptions": "Invalid string ignored; nonstring TypeError; owner RuntimeError",
+      "ownership": "Owner TLS Context/cache/Skia only; owned reads before borrow, no GPU transfer/unsafe Send or Sync",
+      "upstream": "context/api.rs:get/set_globalCompositeOperation; utils.rs:to/from_blend_mode; Context2D::render_to_canvas",
+      "core": "context/effects.rs; filter/arguments.rs; existing original renderer",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested"
+    },
+    {
+      "names": "globalAlpha",
+      "parameters": "Original ordinary float input; default1 and [0,1] guard",
+      "units": "Unitless, original finite-f64->f32 boundary",
+      "returns": "Current original f32 scalar",
+      "exceptions": "Invalid default bail/STRICT TypeError; range ignored; owner RuntimeError",
+      "ownership": "Owner TLS Context/cache/Skia only; owned reads before borrow, no GPU transfer/unsafe Send or Sync",
+      "upstream": "context/api.rs:get/set_globalAlpha; original utils::_as_float",
+      "core": "context/effects.rs; filter/arguments.rs; existing original renderer",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested"
+    },
+    {
+      "names": "lineDashFit",
+      "parameters": "move/turn/follow, case-insensitive; used with existing lineDashMarker/list/offset",
+      "units": "Unitless fit style; marker coordinates canvas units",
+      "returns": "Original canonical fit name",
+      "exceptions": "Invalid string ignored; nonstring fitStyle TypeError; owner RuntimeError",
+      "ownership": "Owner TLS Context/cache/Skia only; owned reads before borrow, no GPU transfer/unsafe Send or Sync",
+      "upstream": "context/api.rs:get/set_lineDashFit; utils.rs:to/from_1d_style; Context2D::paint_for_stroke",
+      "core": "context/effects.rs; filter/arguments.rs; existing original renderer",
+      "pythonBound": true,
+      "contractAudit": "scoped-official-tested"
+    }
+  ],
+  "pending": [
+    "Full host/proxy/valueOf/prototype/subclass/cyclic object semantics",
+    "G8 pages/complete export/async ownership",
+    "Windows/Metal/static-fontconfig/manylinux/full license/release"
+  ]
+}

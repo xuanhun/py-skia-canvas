@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- Original test asset, distributed under this repository's MIT license. -->
+  <path fill="#2878d9" d="M0 0h32v32H0z"/>
+  <path fill="#ffb300" d="M0 0h16v16H0zM16 16h16v16H16z"/>
+  <circle cx="16" cy="16" r="5.5" fill="white" fill-opacity=".5"/>
+</svg>

@@ -1,0 +1,6 @@
+# Preserve source/fixture/license fingerprints on every platform.
+# Shell scripts are authored with LF; Git must not rewrite audited file bytes.
+* -text
+*.png binary
+*.rgba binary
+references/upstream/** -text

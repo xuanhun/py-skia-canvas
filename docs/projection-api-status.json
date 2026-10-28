@@ -1,0 +1,81 @@
+{
+  "schema": "py-skia-canvas-scoped-api-status/v1",
+  "baseline": "3.0.8",
+  "batch": "G4-projection-6",
+  "notFullLedgerPromotion": true,
+  "entries": [
+    {
+      "class": "CanvasRenderingContext2D",
+      "name": "createProjection",
+      "access": "call",
+      "pythonBound": true,
+      "contractAudit": "partial",
+      "parameters": "quad=undefined, basis=undefined, extra args ignored",
+      "inputScope": "Original primitive/string/null/undefined/array point conversion with one-level wrapper flatten; flat numeric size/rect/3-point/quad plus selected invalid cases",
+      "units": "Points/bounds canvas units; returned matrix coefficients unitless and translations canvas units",
+      "return": "Independent Python-owned DOMMatrix snapshot; no Context state mutation",
+      "exceptions": "Original odd-count first/second TypeError and solver/expanded-count TypeError; owner RuntimeError",
+      "ownership": "Owner TLS Context read only; no Python callbacks during native borrow; returned values independent of owner lifetime",
+      "upstream": [
+        {
+          "path": "lib/classes/context.js",
+          "line": 50,
+          "symbol": "createProjection"
+        },
+        {
+          "path": "src/context/api.rs",
+          "line": 142,
+          "symbol": "createProjection"
+        },
+        {
+          "path": "src/utils.rs",
+          "line": 490,
+          "symbol": "points_arg"
+        }
+      ],
+      "core": [
+        "crates/canvas-core/src/context/operations.rs:createProjection",
+        "crates/canvas-core/src/utils.rs:parse_number_string"
+      ],
+      "python": {
+        "path": "python/py_skia_canvas/__init__.py",
+        "line": 635,
+        "symbol": "CanvasRenderingContext2D.createProjection"
+      },
+      "cases": [
+        "projection-default-basis-quad",
+        "projection-default-basis-size",
+        "projection-default-basis-rect",
+        "projection-explicit-size-basis",
+        "projection-explicit-rect-basis",
+        "projection-explicit-quad-basis",
+        "projection-three-point-affine",
+        "projection-context-state-unchanged",
+        "projection-resize-current-bounds",
+        "projection-negative-rect",
+        "projection-crossed-quad",
+        "projection-snapshot-isolation",
+        "projection-path-transform",
+        "projection-cross-canvas",
+        "projection-fractional-rounding",
+        "projection-gradient-clip-text",
+        "projection-odd-count-errors",
+        "projection-missing-null-values",
+        "projection-size-error-counts",
+        "projection-degenerate-errors",
+        "projection-filtered-finite-double",
+        "projection-primitive-coercion",
+        "projection-nested-and-objects",
+        "projection-string-grammar-f32"
+      ],
+      "evidence": [
+        "test-runs/20261028-projection-final/run.json"
+      ],
+      "unverified": [
+        "Complete host/proxy/cyclic object and custom coercion contracts",
+        "All nonstandard Python sequence/subclass conversions",
+        "Windows/hardware GPU/Metal/release acceptance"
+      ]
+    }
+  ]
+}

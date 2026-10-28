@@ -1,0 +1,1515 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "cases": [
+    {
+      "id": "pages-newpage-0",
+      "group": "python-exports",
+      "width": 48,
+      "height": 36,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            24,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "newPage",
+          "args": [],
+          "id": "second"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "pages",
+          "id": "pages"
+        },
+        {
+          "op": "get",
+          "target": "pages",
+          "name": "length",
+          "save": "pageCount"
+        },
+        {
+          "op": "get",
+          "target": "pages",
+          "name": "0",
+          "id": "p0"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "ctx"
+          },
+          "right": {
+            "$ref": "p0"
+          },
+          "save": "first"
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "getContext",
+          "args": [
+            "2d"
+          ],
+          "id": "head"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "head"
+          },
+          "right": {
+            "$ref": "second"
+          },
+          "save": "head"
+        },
+        {
+          "op": "get",
+          "target": "second",
+          "name": "fillStyle",
+          "save": "default"
+        },
+        {
+          "op": "set",
+          "target": "second",
+          "name": "fillStyle",
+          "value": "blue"
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            10,
+            10
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ffaa22"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            25,
+            5,
+            5,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pages-newpage-1",
+      "group": "python-exports",
+      "width": 48,
+      "height": 36,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            24,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "newPage",
+          "args": [
+            90
+          ],
+          "id": "second"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "pages",
+          "id": "pages"
+        },
+        {
+          "op": "get",
+          "target": "pages",
+          "name": "length",
+          "save": "pageCount"
+        },
+        {
+          "op": "get",
+          "target": "pages",
+          "name": "0",
+          "id": "p0"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "ctx"
+          },
+          "right": {
+            "$ref": "p0"
+          },
+          "save": "first"
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "getContext",
+          "args": [
+            "2d"
+          ],
+          "id": "head"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "head"
+          },
+          "right": {
+            "$ref": "second"
+          },
+          "save": "head"
+        },
+        {
+          "op": "get",
+          "target": "second",
+          "name": "fillStyle",
+          "save": "default"
+        },
+        {
+          "op": "set",
+          "target": "second",
+          "name": "fillStyle",
+          "value": "blue"
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            10,
+            10
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ffaa22"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            25,
+            5,
+            5,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pages-newpage-2",
+      "group": "python-exports",
+      "width": 48,
+      "height": 36,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            24,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "newPage",
+          "args": [
+            80,
+            52
+          ],
+          "id": "second"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "pages",
+          "id": "pages"
+        },
+        {
+          "op": "get",
+          "target": "pages",
+          "name": "length",
+          "save": "pageCount"
+        },
+        {
+          "op": "get",
+          "target": "pages",
+          "name": "0",
+          "id": "p0"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "ctx"
+          },
+          "right": {
+            "$ref": "p0"
+          },
+          "save": "first"
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "getContext",
+          "args": [
+            "2d"
+          ],
+          "id": "head"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "head"
+          },
+          "right": {
+            "$ref": "second"
+          },
+          "save": "head"
+        },
+        {
+          "op": "get",
+          "target": "second",
+          "name": "fillStyle",
+          "save": "default"
+        },
+        {
+          "op": "set",
+          "target": "second",
+          "name": "fillStyle",
+          "value": "blue"
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            10,
+            10
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ffaa22"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            25,
+            5,
+            5,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pages-newpage-3",
+      "group": "python-exports",
+      "width": 48,
+      "height": 36,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            24,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "newPage",
+          "args": [
+            90,
+            80,
+            70
+          ],
+          "id": "second"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "pages",
+          "id": "pages"
+        },
+        {
+          "op": "get",
+          "target": "pages",
+          "name": "length",
+          "save": "pageCount"
+        },
+        {
+          "op": "get",
+          "target": "pages",
+          "name": "0",
+          "id": "p0"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "ctx"
+          },
+          "right": {
+            "$ref": "p0"
+          },
+          "save": "first"
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "getContext",
+          "args": [
+            "2d"
+          ],
+          "id": "head"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "head"
+          },
+          "right": {
+            "$ref": "second"
+          },
+          "save": "head"
+        },
+        {
+          "op": "get",
+          "target": "second",
+          "name": "fillStyle",
+          "save": "default"
+        },
+        {
+          "op": "set",
+          "target": "second",
+          "name": "fillStyle",
+          "value": "blue"
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            10,
+            10
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ffaa22"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            25,
+            5,
+            5,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pages-newpage-4",
+      "group": "python-exports",
+      "width": 48,
+      "height": 36,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            24,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "newPage",
+          "args": [
+            0,
+            0
+          ],
+          "id": "second"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "pages",
+          "id": "pages"
+        },
+        {
+          "op": "get",
+          "target": "pages",
+          "name": "length",
+          "save": "pageCount"
+        },
+        {
+          "op": "get",
+          "target": "pages",
+          "name": "0",
+          "id": "p0"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "ctx"
+          },
+          "right": {
+            "$ref": "p0"
+          },
+          "save": "first"
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "getContext",
+          "args": [
+            "2d"
+          ],
+          "id": "head"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "head"
+          },
+          "right": {
+            "$ref": "second"
+          },
+          "save": "head"
+        },
+        {
+          "op": "get",
+          "target": "second",
+          "name": "fillStyle",
+          "save": "default"
+        },
+        {
+          "op": "set",
+          "target": "second",
+          "name": "fillStyle",
+          "value": "blue"
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            10,
+            10
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ffaa22"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            25,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "width",
+          "value": 36
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "height",
+          "value": 28
+        }
+      ]
+    },
+    {
+      "id": "pages-newpage-5",
+      "group": "python-exports",
+      "width": 48,
+      "height": 36,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            24,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "newPage",
+          "args": [
+            -1,
+            -2
+          ],
+          "id": "second"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "pages",
+          "id": "pages"
+        },
+        {
+          "op": "get",
+          "target": "pages",
+          "name": "length",
+          "save": "pageCount"
+        },
+        {
+          "op": "get",
+          "target": "pages",
+          "name": "0",
+          "id": "p0"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "ctx"
+          },
+          "right": {
+            "$ref": "p0"
+          },
+          "save": "first"
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "getContext",
+          "args": [
+            "2d"
+          ],
+          "id": "head"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "head"
+          },
+          "right": {
+            "$ref": "second"
+          },
+          "save": "head"
+        },
+        {
+          "op": "get",
+          "target": "second",
+          "name": "fillStyle",
+          "save": "default"
+        },
+        {
+          "op": "set",
+          "target": "second",
+          "name": "fillStyle",
+          "value": "blue"
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            10,
+            10
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ffaa22"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            25,
+            5,
+            5,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pages-newpage-6",
+      "group": "python-exports",
+      "width": 48,
+      "height": 36,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            24,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "newPage",
+          "args": [
+            12.25,
+            18.5
+          ],
+          "id": "second"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "width",
+          "save": "width"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "height",
+          "save": "height"
+        },
+        {
+          "op": "get",
+          "target": "canvas",
+          "name": "pages",
+          "id": "pages"
+        },
+        {
+          "op": "get",
+          "target": "pages",
+          "name": "length",
+          "save": "pageCount"
+        },
+        {
+          "op": "get",
+          "target": "pages",
+          "name": "0",
+          "id": "p0"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "ctx"
+          },
+          "right": {
+            "$ref": "p0"
+          },
+          "save": "first"
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "getContext",
+          "args": [
+            "2d"
+          ],
+          "id": "head"
+        },
+        {
+          "op": "sameRef",
+          "left": {
+            "$ref": "head"
+          },
+          "right": {
+            "$ref": "second"
+          },
+          "save": "head"
+        },
+        {
+          "op": "get",
+          "target": "second",
+          "name": "fillStyle",
+          "save": "default"
+        },
+        {
+          "op": "set",
+          "target": "second",
+          "name": "fillStyle",
+          "value": "blue"
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            10,
+            10
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ffaa22"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            25,
+            5,
+            5,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pages-reset-0-32",
+      "group": "python-exports",
+      "width": 48,
+      "height": 36,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "newPage",
+          "args": [],
+          "id": "second"
+        },
+        {
+          "op": "set",
+          "target": "second",
+          "name": "fillStyle",
+          "value": "blue"
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "width",
+          "value": 32
+        },
+        {
+          "op": "get",
+          "target": "second",
+          "name": "fillStyle",
+          "save": "newStyle"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "save": "oldStyle"
+        }
+      ]
+    },
+    {
+      "id": "pages-reset-0-32p5",
+      "group": "python-exports",
+      "width": 48,
+      "height": 36,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "newPage",
+          "args": [],
+          "id": "second"
+        },
+        {
+          "op": "set",
+          "target": "second",
+          "name": "fillStyle",
+          "value": "blue"
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "width",
+          "value": 32.5
+        },
+        {
+          "op": "get",
+          "target": "second",
+          "name": "fillStyle",
+          "save": "newStyle"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "save": "oldStyle"
+        }
+      ]
+    },
+    {
+      "id": "pages-reset-0-0",
+      "group": "python-exports",
+      "width": 48,
+      "height": 36,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "newPage",
+          "args": [],
+          "id": "second"
+        },
+        {
+          "op": "set",
+          "target": "second",
+          "name": "fillStyle",
+          "value": "blue"
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "width",
+          "value": 0
+        },
+        {
+          "op": "get",
+          "target": "second",
+          "name": "fillStyle",
+          "save": "newStyle"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "save": "oldStyle"
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "width",
+          "value": 32
+        }
+      ]
+    },
+    {
+      "id": "pages-reset-0-n1",
+      "group": "python-exports",
+      "width": 48,
+      "height": 36,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "newPage",
+          "args": [],
+          "id": "second"
+        },
+        {
+          "op": "set",
+          "target": "second",
+          "name": "fillStyle",
+          "value": "blue"
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "width",
+          "value": -1
+        },
+        {
+          "op": "get",
+          "target": "second",
+          "name": "fillStyle",
+          "save": "newStyle"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "save": "oldStyle"
+        }
+      ]
+    },
+    {
+      "id": "pages-reset-1-32",
+      "group": "python-exports",
+      "width": 48,
+      "height": 36,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "newPage",
+          "args": [],
+          "id": "second"
+        },
+        {
+          "op": "set",
+          "target": "second",
+          "name": "fillStyle",
+          "value": "blue"
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "height",
+          "value": 32
+        },
+        {
+          "op": "get",
+          "target": "second",
+          "name": "fillStyle",
+          "save": "newStyle"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "save": "oldStyle"
+        }
+      ]
+    },
+    {
+      "id": "pages-reset-1-32p5",
+      "group": "python-exports",
+      "width": 48,
+      "height": 36,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "newPage",
+          "args": [],
+          "id": "second"
+        },
+        {
+          "op": "set",
+          "target": "second",
+          "name": "fillStyle",
+          "value": "blue"
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "height",
+          "value": 32.5
+        },
+        {
+          "op": "get",
+          "target": "second",
+          "name": "fillStyle",
+          "save": "newStyle"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "save": "oldStyle"
+        }
+      ]
+    },
+    {
+      "id": "pages-reset-1-0",
+      "group": "python-exports",
+      "width": 48,
+      "height": 36,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "newPage",
+          "args": [],
+          "id": "second"
+        },
+        {
+          "op": "set",
+          "target": "second",
+          "name": "fillStyle",
+          "value": "blue"
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "height",
+          "value": 0
+        },
+        {
+          "op": "get",
+          "target": "second",
+          "name": "fillStyle",
+          "save": "newStyle"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "save": "oldStyle"
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "height",
+          "value": 32
+        }
+      ]
+    },
+    {
+      "id": "pages-reset-1-n1",
+      "group": "python-exports",
+      "width": 48,
+      "height": 36,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "call",
+          "target": "canvas",
+          "name": "newPage",
+          "args": [],
+          "id": "second"
+        },
+        {
+          "op": "set",
+          "target": "second",
+          "name": "fillStyle",
+          "value": "blue"
+        },
+        {
+          "op": "call",
+          "target": "second",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            48,
+            36
+          ]
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "height",
+          "value": -1
+        },
+        {
+          "op": "get",
+          "target": "second",
+          "name": "fillStyle",
+          "save": "newStyle"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "save": "oldStyle"
+        }
+      ]
+    }
+  ]
+}

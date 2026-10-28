@@ -1,0 +1,1551 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "G4 current paths, scalar transforms, clipping, hit tests and stroke styles; no standalone Path2D or DOM geometry claims.",
+  "cases": [
+    {
+      "id": "g4-lines-cubic-quad",
+      "group": "g4-current-path",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#2878d9"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            5.25,
+            10.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "lineTo",
+          "args": [
+            90.75,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            140.5,
+            -5.25,
+            120.25,
+            90.75,
+            80.5,
+            70.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "quadraticCurveTo",
+          "args": [
+            40.25,
+            115.5,
+            5.25,
+            10.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "closePath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#d53a72"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 2.75
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "g4-implicit-conic",
+      "group": "g4-current-path",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#185cad"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "lineTo",
+          "args": [
+            15.5,
+            15.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "quadraticCurveTo",
+          "args": [
+            40.25,
+            2.5,
+            75.5,
+            45.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            120.5,
+            80.25,
+            30.25,
+            100.75,
+            5.5,
+            85.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "conicCurveTo",
+          "args": [
+            90.25,
+            120.5,
+            140.5,
+            60.25,
+            0.65
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "g4-arc-sweeps",
+      "group": "g4-current-path",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 2.25
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#126dcc"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "arc",
+          "args": [
+            40.25,
+            40.5,
+            25.75,
+            -1.2,
+            6.9
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "arc",
+          "args": [
+            110.25,
+            55.75,
+            32.5,
+            1.25,
+            -6.2,
+            true
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "g4-ellipse-rotated",
+      "group": "g4-current-path",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#3278cd"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            70.5,
+            55.25,
+            48.75,
+            22.5,
+            0.57,
+            0.25,
+            7.0
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#e53177"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 2.5
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            90.25,
+            60.75,
+            48.75,
+            12.5,
+            -0.72,
+            0.1,
+            -7.0,
+            true
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "g4-arc-to-radius-errors",
+      "group": "g4-current-path",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            5.25,
+            90.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "arcTo",
+          "args": [
+            80.75,
+            10.25,
+            145.5,
+            90.75,
+            20.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "arcTo",
+          "args": [
+            150,
+            110,
+            10,
+            110,
+            0
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.5
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "arcTo",
+          "args": [
+            1,
+            2,
+            3,
+            4,
+            -1
+          ],
+          "observeError": "arcToError"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            50,
+            50,
+            -2,
+            3,
+            0,
+            0,
+            6.28
+          ],
+          "observeError": "ellipseError"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "arc",
+          "args": [
+            90,
+            40,
+            -10,
+            0,
+            6.28
+          ],
+          "observeError": "negativeArc"
+        }
+      ]
+    },
+    {
+      "id": "g4-evenodd-hits",
+      "group": "g4-current-path",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            10.25,
+            10.5,
+            130.5,
+            95.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            40.25,
+            30.75,
+            70.5,
+            40.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            60,
+            50,
+            "nonzero"
+          ],
+          "save": "winding"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            60,
+            50,
+            "evenodd"
+          ],
+          "save": "evenodd"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            5,
+            5
+          ],
+          "save": "outside"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#bb3190"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            "evenodd"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 6.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            10.25,
+            50
+          ],
+          "save": "strokeHit"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            25,
+            50
+          ],
+          "save": "strokeMiss"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            "bad-rule"
+          ],
+          "observeError": "fillRuleError"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            "bad-rule"
+          ],
+          "observeError": "clipRuleError"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            60,
+            50,
+            "bad-rule"
+          ],
+          "observeError": "hitRuleError"
+        }
+      ]
+    },
+    {
+      "id": "g4-nested-clip-restore",
+      "group": "g4-current-path",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ffffff"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            120
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "save",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            5.25,
+            10.75,
+            100.5,
+            95.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "save",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "translate",
+          "args": [
+            30.25,
+            5.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "arc",
+          "args": [
+            40.25,
+            48.5,
+            35.75,
+            0,
+            6.283185307179586
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#2878d9"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            -50,
+            -50,
+            240,
+            200
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "restore",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#d73d87"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            5,
+            5,
+            120,
+            15
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "restore",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "black"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "strokeRect",
+          "args": [
+            2.5,
+            2.5,
+            154.5,
+            114.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g4-transforms-mid-path",
+      "group": "g4-current-path",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            10.5,
+            10.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "translate",
+          "args": [
+            35.75,
+            15.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "lineTo",
+          "args": [
+            55.5,
+            5.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            1.35,
+            0.65
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "quadraticCurveTo",
+          "args": [
+            80.25,
+            110.75,
+            20.5,
+            90.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rotate",
+          "args": [
+            0.37
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "lineTo",
+          "args": [
+            -10.25,
+            40.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "closePath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "resetTransform",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#247cd9"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 2.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "g4-matrix-compose",
+      "group": "g4-current-path",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            1.1,
+            0.25,
+            -0.35,
+            0.9,
+            38.25,
+            7.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "transform",
+          "args": [
+            0.8,
+            -0.1,
+            0.25,
+            1.2,
+            5.5,
+            7.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "save",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0.25,
+            0.75,
+            85.5,
+            65.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ea4b6d"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "restore",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "resetTransform",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#1868ce"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 2.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "g4-singular-transform",
+      "group": "g4-current-path",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            10.5,
+            10.25,
+            90.5,
+            70.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            0,
+            1
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            40,
+            40
+          ],
+          "save": "singularHit"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#bb3277"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "resetTransform",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#176cc0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "g4-stroke-line-styles",
+      "group": "g4-current-path",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 8.25
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineCap",
+          "value": "ROUND"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineJoin",
+          "value": "bevel"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "miterLimit",
+          "value": 2.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashOffset",
+          "value": 1.75
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setLineDash",
+          "args": [
+            [
+              7.5,
+              3.25,
+              1.75
+            ]
+          ]
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "lineCap",
+          "save": "cap"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "lineJoin",
+          "save": "join"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "miterLimit",
+          "save": "miter"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "getLineDash",
+          "args": [],
+          "save": "dash"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            12.25,
+            15.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "lineTo",
+          "args": [
+            75.75,
+            75.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "lineTo",
+          "args": [
+            135.5,
+            20.75
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#2074c3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 0
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "miterLimit",
+          "value": -1
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineCap",
+          "value": "bad"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineJoin",
+          "value": "bad"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "lineWidth",
+          "save": "retainedWidth"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "miterLimit",
+          "save": "retainedMiter"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "lineCap",
+          "save": "retainedCap"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "lineJoin",
+          "save": "retainedJoin"
+        }
+      ]
+    },
+    {
+      "id": "g4-dash-invalid-and-save",
+      "group": "g4-current-path",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setLineDash",
+          "args": [
+            [
+              4.25,
+              3.75
+            ]
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "save",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setLineDash",
+          "args": [
+            [
+              2.5,
+              1,
+              3.25
+            ]
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "getLineDash",
+          "args": [],
+          "save": "odd"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setLineDash",
+          "args": [
+            [
+              4,
+              -1
+            ]
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "getLineDash",
+          "args": [],
+          "save": "afterInvalid"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "restore",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "getLineDash",
+          "args": [],
+          "save": "restored"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashOffset",
+          "value": -2.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            5.5,
+            10.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "lineTo",
+          "args": [
+            150.5,
+            100.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "g4-transform-ellipse-negative-scale",
+      "group": "g4-current-path",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "translate",
+          "args": [
+            135.25,
+            15.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            -1.35,
+            1.2
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rotate",
+          "args": [
+            0.17
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            40.25,
+            30.5,
+            30.75,
+            18.25,
+            -0.3,
+            -1,
+            5.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            4.25,
+            55.75,
+            70.5,
+            -15.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#276dd0"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            "evenodd"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 2.75
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "g4-path-survives-save",
+      "group": "g4-current-path",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            5.25,
+            8.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "save",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "translate",
+          "args": [
+            30.25,
+            10.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "lineTo",
+          "args": [
+            70.25,
+            20.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "restore",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "lineTo",
+          "args": [
+            120.5,
+            105.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "closePath",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#267ad1"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "save",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            0,
+            0,
+            40,
+            40
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            70.5,
+            65.25,
+            70.25,
+            40.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": []
+        }
+      ]
+    }
+  ]
+}

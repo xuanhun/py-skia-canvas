@@ -1,0 +1,660 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "G2 original context/typography/font extraction; system fallback fidelity is not glyph availability acceptance.",
+  "cases": [
+    {
+      "id": "text-utf16-single",
+      "group": "text-core",
+      "width": 300,
+      "height": 140,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "20px sans-serif"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textWrap",
+          "value": false
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "A\ud83d\ude00e\u0301 B\nLine AV ffi  ",
+            155.25
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "A\ud83d\ude00e\u0301 B\nLine AV ffi  ",
+            9.25,
+            35.75,
+            155.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-utf16-wrap",
+      "group": "text-core",
+      "width": 300,
+      "height": 140,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "20px sans-serif"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textWrap",
+          "value": true
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "A\ud83d\ude00e\u0301 B\nLine AV ffi  ",
+            155.25
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "A\ud83d\ude00e\u0301 B\nLine AV ffi  ",
+            9.25,
+            35.75,
+            155.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-baseline-top",
+      "group": "text-core",
+      "width": 300,
+      "height": 140,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "italic bold 21.5px sans-serif"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textBaseline",
+          "value": "top"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(20,80,230,0.55)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "A\u030a V fj"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "A\u030a V fj",
+            10.25,
+            72.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-baseline-hanging",
+      "group": "text-core",
+      "width": 300,
+      "height": 140,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "italic bold 21.5px sans-serif"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textBaseline",
+          "value": "hanging"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(20,80,230,0.55)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "A\u030a V fj"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "A\u030a V fj",
+            10.25,
+            72.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-baseline-middle",
+      "group": "text-core",
+      "width": 300,
+      "height": 140,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "italic bold 21.5px sans-serif"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textBaseline",
+          "value": "middle"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(20,80,230,0.55)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "A\u030a V fj"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "A\u030a V fj",
+            10.25,
+            72.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-baseline-alphabetic",
+      "group": "text-core",
+      "width": 300,
+      "height": 140,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "italic bold 21.5px sans-serif"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textBaseline",
+          "value": "alphabetic"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(20,80,230,0.55)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "A\u030a V fj"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "A\u030a V fj",
+            10.25,
+            72.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-baseline-ideographic",
+      "group": "text-core",
+      "width": 300,
+      "height": 140,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "italic bold 21.5px sans-serif"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textBaseline",
+          "value": "ideographic"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(20,80,230,0.55)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "A\u030a V fj"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "A\u030a V fj",
+            10.25,
+            72.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-baseline-bottom",
+      "group": "text-core",
+      "width": 300,
+      "height": 140,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "italic bold 21.5px sans-serif"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textBaseline",
+          "value": "bottom"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(20,80,230,0.55)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "A\u030a V fj"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "A\u030a V fj",
+            10.25,
+            72.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-spacing-decoration",
+      "group": "text-core",
+      "width": 300,
+      "height": 140,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "22px sans-serif"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "letterSpacing",
+          "value": "0.08em",
+          "observeError": "set-letterSpacing"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "letterSpacing",
+          "value": "1.25px"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "wordSpacing",
+          "value": "3.25px",
+          "observeError": "set-wordSpacing"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "textDecoration",
+          "value": "underline wavy #205ae0 1.5px",
+          "observeError": "set-textDecoration"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "A V AV  "
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "A V AV  ",
+            10,
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-outline-path",
+      "group": "text-core",
+      "width": 300,
+      "height": 140,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "28px serif"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "AV fj"
+          ],
+          "id": "outline"
+        },
+        {
+          "op": "get",
+          "target": "outline",
+          "name": "bounds",
+          "save": "bounds"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#d53091"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "translate",
+          "args": [
+            15.25,
+            60.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "outline"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-library-reset",
+      "group": "text-core",
+      "width": 300,
+      "height": 140,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "20px sans-serif"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV ffi"
+          ],
+          "save": "beforeReset"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "Canvas AV ffi"
+          ],
+          "save": "afterReset"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "has",
+          "args": [
+            "__py_skia_missing_family__"
+          ],
+          "save": "missingFamily"
+        },
+        {
+          "op": "call",
+          "target": "fontLibrary",
+          "name": "family",
+          "args": [
+            "__py_skia_missing_family__"
+          ],
+          "save": "missingDetails"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV ffi",
+            10.25,
+            45.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-surrogate-contract",
+      "group": "text-core",
+      "width": 300,
+      "height": 140,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "20px sans-serif"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "measureText",
+          "args": [
+            "A\ud800B\udfff"
+          ],
+          "save": "metrics"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "A\ud800B\udfff",
+            10.25,
+            45.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-shadow-scaled",
+      "group": "text-core",
+      "width": 300,
+      "height": 140,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "24px sans-serif"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "scale",
+          "args": [
+            1.2,
+            0.85
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(25,40,120,0.5)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 3.75
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 2.5
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetY",
+          "value": 3.25
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#e53525"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas AV",
+            10.25,
+            55.5
+          ]
+        }
+      ]
+    }
+  ]
+}

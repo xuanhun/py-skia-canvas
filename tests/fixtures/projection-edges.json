@@ -1,0 +1,1125 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Original createProjection point parsing/basis expansion/Skia solver/results/errors and real rendering.",
+  "cases": [
+    {
+      "id": "projection-odd-count-errors",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              1
+            ]
+          ],
+          "observeError": "first"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              1
+            ],
+            [
+              1
+            ]
+          ],
+          "observeError": "firstBeforeSecond"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              80,
+              50
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "observeError": "second"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "observeError": "firstFilteredCount"
+        }
+      ]
+    },
+    {
+      "id": "projection-missing-null-values",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [],
+          "observeError": "missing"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            {
+              "$undefined": true
+            }
+          ],
+          "observeError": "undefined"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            null
+          ],
+          "observeError": "null"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            false
+          ],
+          "observeError": "false"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            ""
+          ],
+          "observeError": "emptyString"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              80,
+              50
+            ],
+            null
+          ],
+          "observeError": "nullBasis"
+        }
+      ]
+    },
+    {
+      "id": "projection-size-error-counts",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            []
+          ],
+          "observeError": "zero"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              0,
+              0,
+              50,
+              0,
+              10,
+              40
+            ]
+          ],
+          "observeError": "threeDefaultBasis"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              10.25,
+              8.75,
+              143.5,
+              16.25,
+              128.75,
+              88.5,
+              22.5,
+              80.25
+            ],
+            [
+              0,
+              0,
+              160,
+              0,
+              0,
+              100
+            ]
+          ],
+          "observeError": "mismatchedBasis"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              0,
+              0,
+              1,
+              1,
+              2,
+              2,
+              3,
+              3,
+              4,
+              4
+            ]
+          ],
+          "observeError": "fiveQuad"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              0,
+              0,
+              1,
+              1,
+              2,
+              2,
+              3,
+              3,
+              4,
+              4
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              2,
+              2,
+              3,
+              3,
+              4,
+              4
+            ]
+          ],
+          "observeError": "fiveBoth"
+        }
+      ]
+    },
+    {
+      "id": "projection-degenerate-errors",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              10.25,
+              8.75,
+              143.5,
+              16.25,
+              128.75,
+              88.5,
+              22.5,
+              80.25
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "observeError": "zeroBasis"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              10.25,
+              8.75,
+              143.5,
+              16.25,
+              128.75,
+              88.5,
+              22.5,
+              80.25
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              2,
+              2,
+              3,
+              3
+            ]
+          ],
+          "observeError": "collinearBasis"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              0,
+              0
+            ]
+          ],
+          "observeError": "zeroDestination",
+          "id": "zeroDest"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              0,
+              0,
+              10,
+              0,
+              20,
+              0
+            ],
+            [
+              0,
+              0,
+              160,
+              0,
+              0,
+              100
+            ]
+          ],
+          "observeError": "singularDestination",
+          "id": "singularThree"
+        },
+        {
+          "op": "call",
+          "target": "singularThree",
+          "name": "toJSON",
+          "args": [],
+          "save": "singularMatrix"
+        },
+        {
+          "op": "call",
+          "target": "zeroDest",
+          "name": "toJSON",
+          "args": [],
+          "save": "zeroDestinationMatrix"
+        }
+      ]
+    },
+    {
+      "id": "projection-filtered-finite-double",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              {
+                "$number": "NaN"
+              },
+              160,
+              {
+                "$number": "Infinity"
+              },
+              100,
+              {
+                "$number": "-Infinity"
+              }
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              160,
+              {
+                "$number": "NaN"
+              }
+            ]
+          ],
+          "observeError": "filteredOdd"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              160,
+              100
+            ],
+            [
+              {
+                "$number": "Infinity"
+              },
+              {
+                "$number": "NaN"
+              }
+            ]
+          ],
+          "id": "defaultAfterFilter"
+        },
+        {
+          "op": "call",
+          "target": "defaultAfterFilter",
+          "name": "toJSON",
+          "args": [],
+          "save": "defaultAfterFilter"
+        }
+      ]
+    },
+    {
+      "id": "projection-primitive-coercion",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              "0xA0",
+              "0o144"
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              false,
+              null,
+              true,
+              0,
+              "0xA0",
+              "0b1100100",
+              "",
+              100
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              160,
+              100,
+              0,
+              100
+            ]
+          ],
+          "id": "mixed"
+        },
+        {
+          "op": "call",
+          "target": "mixed",
+          "name": "toJSON",
+          "args": [],
+          "save": "mixed"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              "160",
+              "100"
+            ],
+            [
+              [],
+              [],
+              [
+                160
+              ],
+              [
+                [
+                  100
+                ]
+              ]
+            ]
+          ],
+          "id": "nestedBasis"
+        },
+        {
+          "op": "call",
+          "target": "nestedBasis",
+          "name": "toJSON",
+          "args": [],
+          "save": "nestedBasis"
+        }
+      ]
+    },
+    {
+      "id": "projection-nested-and-objects",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              [
+                10,
+                10
+              ],
+              [
+                150,
+                10
+              ],
+              [
+                150,
+                90
+              ],
+              [
+                10,
+                90
+              ]
+            ]
+          ],
+          "observeError": "nestedPairsDropped"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              [
+                160
+              ],
+              [
+                100
+              ]
+            ]
+          ],
+          "id": "singleNested"
+        },
+        {
+          "op": "call",
+          "target": "singleNested",
+          "name": "toJSON",
+          "args": [],
+          "save": "singleNested"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              {},
+              160,
+              {
+                "x": 1
+              },
+              100
+            ]
+          ],
+          "id": "objectsDropped"
+        },
+        {
+          "op": "call",
+          "target": "objectsDropped",
+          "name": "toJSON",
+          "args": [],
+          "save": "objectsDropped"
+        },
+        {
+          "op": "construct",
+          "class": "DOMRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ],
+          "id": "rect"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            {
+              "$ref": "rect"
+            }
+          ],
+          "observeError": "rectObjectDropped"
+        }
+      ]
+    },
+    {
+      "id": "projection-string-grammar-f32",
+      "group": "python-projection",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            1.25,
+            1.75,
+            12.5,
+            8.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              " ",
+              "0X10",
+              "1_2",
+              "0x10000000000000000",
+              "160",
+              "100",
+              "\ud800",
+              "0b2"
+            ]
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "toJSON",
+          "args": [],
+          "save": "projection"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            160,
+            100
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ed3c68"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 3.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "ellipse",
+          "args": [
+            80,
+            50,
+            50,
+            28,
+            0.2,
+            0,
+            6.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              {
+                "$number": "-0"
+              },
+              0,
+              160,
+              0,
+              160,
+              100,
+              0,
+              100
+            ]
+          ],
+          "id": "signedZero"
+        },
+        {
+          "op": "call",
+          "target": "signedZero",
+          "name": "toJSON",
+          "args": [],
+          "save": "signedZero"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              1e+100,
+              100
+            ]
+          ],
+          "observeError": "finiteOverflow"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "createProjection",
+          "args": [
+            [
+              "nan",
+              "inf",
+              "Infinity",
+              "+Infinity",
+              160,
+              100
+            ]
+          ],
+          "id": "stringsNonfinite"
+        },
+        {
+          "op": "call",
+          "target": "stringsNonfinite",
+          "name": "toJSON",
+          "args": [],
+          "save": "stringsNonfinite"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4362 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "cases": [
+    {
+      "id": "effects-blend-source-over",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "source-over"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-destination-over",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "destination-over"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-copy",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "copy"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-destination",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "destination"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-clear",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "clear"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-source-in",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "source-in"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-destination-in",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "destination-in"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-source-out",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "source-out"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-destination-out",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "destination-out"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-source-atop",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "source-atop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-destination-atop",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "destination-atop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-xor",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "xor"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-lighter",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "lighter"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-multiply",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "multiply"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-screen",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "screen"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-overlay",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "overlay"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-darken",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "darken"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-lighten",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "lighten"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-color-dodge",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "color-dodge"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-color-burn",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "color-burn"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-hard-light",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "hard-light"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-soft-light",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "soft-light"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-difference",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "difference"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-exclusion",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "exclusion"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-hue",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "hue"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-saturation",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "saturation"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-color",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "color"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-luminosity",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "luminosity"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.675
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "mode"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-image-copy",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "copy"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.6
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            60.5,
+            20.25,
+            140.5,
+            140.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-image-source-in",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "source-in"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.6
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            60.5,
+            20.25,
+            140.5,
+            140.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-image-destination-out",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "destination-out"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.6
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            60.5,
+            20.25,
+            140.5,
+            140.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-image-multiply",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "multiply"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.6
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            60.5,
+            20.25,
+            140.5,
+            140.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-image-screen",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "screen"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.6
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            60.5,
+            20.25,
+            140.5,
+            140.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-image-color",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "color"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.6
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            60.5,
+            20.25,
+            140.5,
+            140.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-image-lighter",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "lighter"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.6
+        },
+        {
+          "op": "construct",
+          "class": "Image",
+          "args": [
+            {
+              "$assetBytes": "rgba-grid.png"
+            }
+          ],
+          "id": "img"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "drawImage",
+          "args": [
+            {
+              "$ref": "img"
+            },
+            60.5,
+            20.25,
+            140.5,
+            140.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-shadow-source-in",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "source-in"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.7
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(20,150,80,.6)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 4
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 7
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "hue-rotate(30deg) contrast(1.2)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-shadow-copy",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "copy"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.7
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(20,150,80,.6)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 4
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 7
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "hue-rotate(30deg) contrast(1.2)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-shadow-xor",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "xor"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.7
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(20,150,80,.6)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 4
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 7
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "hue-rotate(30deg) contrast(1.2)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-shadow-multiply",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "multiply"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.7
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(20,150,80,.6)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 4
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 7
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "hue-rotate(30deg) contrast(1.2)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-shadow-source-over",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "source-over"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalAlpha",
+          "value": 0.7
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowColor",
+          "value": "rgba(20,150,80,.6)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 4
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowOffsetX",
+          "value": 7
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "filter",
+          "value": "hue-rotate(30deg) contrast(1.2)"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-state",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "multiply"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "save",
+          "args": []
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "copy"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "restore",
+          "args": []
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "restored"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "NOT-A-MODE"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "ignored"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "reset",
+          "args": []
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "save": "reset"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#ed4080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            64.5,
+            46.25,
+            120.75,
+            85.5
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#24a080"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 5.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "beginPath",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            25.75,
+            160.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "bezierCurveTo",
+          "args": [
+            80.25,
+            80.5,
+            140.5,
+            180.75,
+            225.25,
+            135.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "effects-blend-text",
+      "group": "python-effects",
+      "width": 256,
+      "height": 192,
+      "mode": "default",
+      "fontPolicy": "system-file-fingerprints-no-redistribution",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "rgba(36,84,180,0.75)"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            12.25,
+            17.75,
+            125.5,
+            102.25
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "globalCompositeOperation",
+          "value": "source-atop"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "font",
+          "value": "36px DejaVu Sans"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#e02880"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillText",
+          "args": [
+            "Canvas ffi",
+            10,
+            80
+          ]
+        }
+      ]
+    }
+  ]
+}

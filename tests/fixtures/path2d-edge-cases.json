@@ -1,0 +1,141 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Original source fill-type side effects and finite f64-to-f32 overflow/negative-zero edge tokens.",
+  "cases": [
+    {
+      "id": "path2d-fill-type-side-effects",
+      "group": "path2d-edge-cases",
+      "width": 160,
+      "height": 120,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p",
+          "args": [
+            "M10 10H140V110H10ZM35 35H110V85H35Z"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "contains",
+          "args": [
+            60,
+            55
+          ],
+          "save": "before"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "simplify",
+          "args": [
+            "evenodd"
+          ],
+          "id": "simple"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "contains",
+          "args": [
+            60,
+            55
+          ],
+          "save": "afterSimplify"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "unwind",
+          "id": "unwound"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "contains",
+          "args": [
+            60,
+            55
+          ],
+          "save": "afterUnwind"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "unwound"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path2d-number-tokens",
+      "group": "path2d-edge-cases",
+      "width": 64,
+      "height": 40,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "moveTo",
+          "args": [
+            1e+39,
+            0
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "lineTo",
+          "args": [
+            -0.0,
+            1.25
+          ]
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "edges",
+          "save": "edges"
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "bounds",
+          "save": "bounds"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#2878d9"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            3.25,
+            4.5,
+            40.25,
+            20.75
+          ]
+        }
+      ]
+    }
+  ]
+}

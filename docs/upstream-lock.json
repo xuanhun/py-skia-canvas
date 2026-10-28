@@ -1,0 +1,50 @@
+{
+  "schema": "py-skia-canvas-upstream-lock/v1",
+  "repository": "https://github.com/samizdatco/skia-canvas",
+  "version": "3.0.8",
+  "commit": "042312a3f40b660b1d7dc0beba541486171bc5cc",
+  "sourceManifestSha256": "3ae030aa834735ba573c0e4c37d86f71795f77b5de829ccf54ad275e71a693cf",
+  "cargoLockSha256": "ab736640506d8346047c4d2efb235269e78cdff95a7e899f680c073b7130e388",
+  "npmSourceLockSha256": "335cbece0f2c368e281406ef1587da948fe79bc27053046e0eccd80fa33d1120",
+  "originalNativeSha256": {
+    "win32-x64": "4e5b185ccdffceede5468b47c4646e2ce66f4e85ec35a753007ec32cb8720498",
+    "linux-x64": "2363537634644a50b69d785411713d12ae62453c1238bb98842e65b9919777f9"
+  },
+  "skia": {
+    "skiaSafe": "0.88.0",
+    "rustSkiaCommit": "38fd2e759f27f399c0c54a8bb9241dbe400ccc6d",
+    "sourceTag": "m140-0.87.4",
+    "originalBinaryGnArguments": null
+  },
+  "features": {
+    "win32": [
+      "vulkan",
+      "window"
+    ],
+    "linux": [
+      "vulkan",
+      "window",
+      "freetype"
+    ],
+    "darwin": [
+      "metal",
+      "window"
+    ]
+  },
+  "linuxReleasePatch": "references/upstream/skia-canvas-3.0.8/containers/use-static-fontconfig.patch",
+  "developmentTools": {
+    "rust": "1.90.0",
+    "typescript": "5.9.3",
+    "nodeWindows": "24.19.0",
+    "nodeLinux": "22.23.2",
+    "pythonTarget": "3.13",
+    "pyo3": "0.27.2",
+    "maturin": "1.9.6",
+    "projectMsrv": null
+  },
+  "limitations": [
+    "Original binary GN arguments/compiler are unverified.",
+    "CPython 3.13 Linux wheel validated with PyO3 0.27.2/Maturin 1.9.6; project MSRV is unvalidated below pinned Rust 1.90.0; rust-skia declares 1.82.",
+    "Native hashes reproduced on Windows and Linux; other targets require new explicit pins."
+  ]
+}

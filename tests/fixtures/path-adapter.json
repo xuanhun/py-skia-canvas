@@ -1,0 +1,380 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Node-only regression for reboxed Path2D return families; does not claim Python Path2D bindings.",
+  "cases": [
+    {
+      "id": "g4-adapter-construct-concat",
+      "group": "node-path-adapter",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p",
+          "args": [
+            "M10 10L95 15Q130 60 80 100L15 75Z"
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "copy",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "addPath",
+          "args": [
+            {
+              "$ref": "copy"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "addPath",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            [
+              1,
+              0,
+              0,
+              1,
+              40,
+              15
+            ]
+          ]
+        },
+        {
+          "op": "get",
+          "target": "copy",
+          "name": "d",
+          "save": "svg"
+        },
+        {
+          "op": "get",
+          "target": "copy",
+          "name": "edges",
+          "save": "edges"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "copy"
+            },
+            "evenodd"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g4-adapter-simplify-unwind",
+      "group": "node-path-adapter",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p",
+          "args": [
+            "M10 10H100V100H10ZM35 35H135V115H35Z"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "simplify",
+          "args": [
+            "evenodd"
+          ],
+          "id": "simple"
+        },
+        {
+          "op": "call",
+          "target": "simple",
+          "name": "unwind",
+          "args": [],
+          "id": "unwound"
+        },
+        {
+          "op": "get",
+          "target": "unwound",
+          "name": "bounds",
+          "save": "bounds"
+        },
+        {
+          "op": "get",
+          "target": "unwound",
+          "name": "d",
+          "save": "svg"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "unwound"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g4-adapter-ops-interpolate",
+      "group": "node-path-adapter",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p",
+          "args": [
+            "M10 10L95 15Q130 60 80 100L15 75Z"
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "other",
+          "args": [
+            "M25 15L120 25Q145 75 110 110L30 90Z"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "interpolate",
+          "args": [
+            {
+              "$ref": "other"
+            },
+            0.35
+          ],
+          "id": "tween"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "union",
+          "args": [
+            {
+              "$ref": "other"
+            }
+          ],
+          "id": "merged"
+        },
+        {
+          "op": "call",
+          "target": "tween",
+          "name": "offset",
+          "args": [
+            5.25,
+            7.75
+          ],
+          "id": "shifted"
+        },
+        {
+          "op": "call",
+          "target": "shifted",
+          "name": "transform",
+          "args": [
+            0.85,
+            0.12,
+            -0.2,
+            0.95,
+            15.25,
+            0.5
+          ],
+          "id": "mapped"
+        },
+        {
+          "op": "get",
+          "target": "merged",
+          "name": "d",
+          "save": "mergedSvg"
+        },
+        {
+          "op": "get",
+          "target": "mapped",
+          "name": "edges",
+          "save": "mappedEdges"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "merged"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "red"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "mapped"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g4-adapter-path-builder-effects",
+      "group": "node-path-adapter",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "system-unpinned",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p",
+          "args": [
+            "M10 10L95 15Q130 60 80 100L15 75Z"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "round",
+          "args": [
+            8.25
+          ],
+          "id": "rounded"
+        },
+        {
+          "op": "call",
+          "target": "rounded",
+          "name": "trim",
+          "args": [
+            0.1,
+            0.9
+          ],
+          "id": "trimmed"
+        },
+        {
+          "op": "call",
+          "target": "trimmed",
+          "name": "jitter",
+          "args": [
+            6.25,
+            1.5,
+            42
+          ],
+          "id": "jittered"
+        },
+        {
+          "op": "get",
+          "target": "jittered",
+          "name": "edges",
+          "save": "jitteredEdges"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "jittered"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "round",
+          "args": [
+            0
+          ],
+          "id": "fallback"
+        },
+        {
+          "op": "get",
+          "target": "fallback",
+          "name": "bounds",
+          "save": "fallbackBounds"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "outlineText",
+          "args": [
+            "AV fj"
+          ],
+          "id": "outline"
+        },
+        {
+          "op": "call",
+          "target": "outline",
+          "name": "offset",
+          "args": [
+            20,
+            65
+          ],
+          "id": "textPath"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "textPath"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineDashMarker",
+          "value": {
+            "$ref": "p"
+          }
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "lineDashMarker",
+          "id": "marker"
+        },
+        {
+          "op": "get",
+          "target": "marker",
+          "name": "d",
+          "save": "markerSvg"
+        }
+      ]
+    }
+  ]
+}

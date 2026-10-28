@@ -1,0 +1,85 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "cases": [
+    {
+      "id": "contract-env-flags",
+      "group": "python-contracts",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": 3
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "value": "bad",
+          "observeError": "shadow"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "shadowBlur",
+          "save": "blur"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "moveTo",
+          "args": [
+            "bad",
+            2
+          ],
+          "observeError": "path"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "translate",
+          "args": [
+            "bad",
+            2
+          ],
+          "observeError": "matrix"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "red"
+        },
+        {
+          "op": "set",
+          "target": "canvas",
+          "name": "width",
+          "value": {
+            "$number": "Infinity"
+          },
+          "observeError": "dimension"
+        },
+        {
+          "op": "get",
+          "target": "ctx",
+          "name": "fillStyle",
+          "save": "style"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            16,
+            12
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "nodeVersion": "22.23.2",
+  "nodeCommit": "aa4c77582be995286fc6e00aaf530dc7ade102a9",
+  "v8Version": "12.4.254.21-node.56",
+  "files": [
+    {
+      "path": "ieee754.cc",
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/ieee754.cc",
+      "sha256": "da01a54955911cfc550117988de91516c6f1aac343af28142dce619b433a67fc",
+      "bytes": 103259
+    },
+    {
+      "path": "ieee754.h",
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/ieee754.h",
+      "sha256": "c968700367cc44a8255b4d44f382e704674f8f8e4bb14eb022b82f60a1e87b71",
+      "bytes": 3597
+    },
+    {
+      "path": "overflowing-math.h",
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/src/base/overflowing-math.h",
+      "sha256": "71df4b1bd4dc85a1644eace5fd04e76b4203a2e0a4842edbe06d2a862058b858",
+      "bytes": 3185
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/nodejs/node/aa4c77582be995286fc6e00aaf530dc7ade102a9/deps/v8/LICENSE",
+      "sha256": "81680185f0cb339021e3b73714499264de72f33b17cfdb0c14f400de6d95cf0e",
+      "bytes": 3098
+    }
+  ],
+  "scope": "Standalone original Math.sin/cos/tan/atan2 only; no V8/Node runtime. Full original source retained; custom export/config/memcpy glue only.",
+  "flags": [
+    "-ffp-contract=off",
+    "-fno-fast-math"
+  ]
+}

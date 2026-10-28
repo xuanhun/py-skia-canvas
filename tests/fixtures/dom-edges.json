@@ -1,0 +1,435 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "DOM null errors, native finite filtering arity, f32 overflow, f64 expression order.",
+  "cases": [
+    {
+      "id": "dom-null-static-contracts",
+      "group": "python-dom-values",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "DOMPoint",
+          "name": "fromPoint",
+          "args": [
+            null
+          ],
+          "observeError": "pointNull"
+        },
+        {
+          "op": "call",
+          "target": "DOMRect",
+          "name": "fromRect",
+          "args": [
+            null
+          ],
+          "observeError": "rectNull"
+        },
+        {
+          "op": "call",
+          "target": "DOMMatrix",
+          "name": "isMatrix3",
+          "args": [
+            null
+          ],
+          "observeError": "matrix3Null"
+        },
+        {
+          "op": "call",
+          "target": "DOMMatrix",
+          "name": "isMatrix4",
+          "args": [
+            null
+          ],
+          "observeError": "matrix4Null"
+        },
+        {
+          "op": "call",
+          "target": "DOMMatrix",
+          "name": "fromMatrix",
+          "args": [
+            null
+          ],
+          "observeError": "fromNull"
+        },
+        {
+          "op": "call",
+          "target": "DOMMatrix",
+          "name": "isMatrix3",
+          "args": [
+            {
+              "a": 1,
+              "b": 0,
+              "c": 0,
+              "d": 1,
+              "e": 0,
+              "f": 0
+            }
+          ],
+          "save": "sixObject"
+        },
+        {
+          "op": "call",
+          "target": "DOMMatrix",
+          "name": "isMatrix4",
+          "args": [
+            {}
+          ],
+          "save": "emptyFour"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            3.5,
+            4.25,
+            65,
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dom-filtered-native-matrix-arity",
+      "group": "python-dom-values",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            2,
+            2,
+            25,
+            25
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              {
+                "$number": "NaN"
+              },
+              {
+                "$number": "NaN"
+              },
+              {
+                "$number": "NaN"
+              },
+              1,
+              8,
+              5
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "setTransform",
+          "args": [
+            {
+              "$ref": "m"
+            }
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "getTransform",
+          "args": [],
+          "id": "six"
+        },
+        {
+          "op": "call",
+          "target": "six",
+          "name": "toJSON",
+          "args": [],
+          "save": "sixAfterFiltering"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            3,
+            4,
+            60,
+            40
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "args": [
+            "M0 0L30 0L15 20Z"
+          ],
+          "id": "p"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              {
+                "$number": "Infinity"
+              }
+            ]
+          ],
+          "id": "invalid"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "transform",
+          "args": [
+            {
+              "$ref": "invalid"
+            }
+          ],
+          "observeError": "invalidPathTransform"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "addPath",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            {
+              "$ref": "invalid"
+            }
+          ],
+          "observeError": "invalidAddPath"
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "edges",
+          "save": "sourceRetained"
+        }
+      ]
+    },
+    {
+      "id": "dom-typed-f32-overflow",
+      "group": "python-dom-values",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1,
+              0,
+              1e+100,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              -1e+100,
+              1
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toFloat32Array",
+          "args": [],
+          "id": "f32",
+          "save": "f32Overflow"
+        },
+        {
+          "op": "call",
+          "target": "DOMMatrix",
+          "name": "fromFloat32Array",
+          "args": [
+            {
+              "$ref": "f32"
+            }
+          ],
+          "id": "copy"
+        },
+        {
+          "op": "call",
+          "target": "copy",
+          "name": "toJSON",
+          "args": [],
+          "save": "importedInfinity"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "toFloat64Array",
+          "args": [],
+          "save": "sourceF64"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            3.25,
+            8.75,
+            70,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dom-point-f64-expression-order",
+      "group": "python-dom-values",
+      "width": 160,
+      "height": 100,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#286bc5"
+        },
+        {
+          "op": "construct",
+          "class": "DOMMatrix",
+          "args": [
+            [
+              1.0000000000000002,
+              0.3333333333333333,
+              0.10000000000000002,
+              1.9999999999999998,
+              9007199254740990,
+              -1e-13
+            ]
+          ],
+          "id": "m"
+        },
+        {
+          "op": "construct",
+          "class": "DOMPoint",
+          "args": [
+            -9007199254740989,
+            0.10000000000000002,
+            0,
+            1
+          ],
+          "id": "p"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "matrixTransform",
+          "args": [
+            {
+              "$ref": "m"
+            }
+          ],
+          "save": "fast"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "transformPoint",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "save": "full"
+        },
+        {
+          "op": "construct",
+          "class": "DOMPoint",
+          "args": [
+            -0.1,
+            0.3333333333333333,
+            2.9999999999999996,
+            0.5
+          ],
+          "id": "p3"
+        },
+        {
+          "op": "call",
+          "target": "p3",
+          "name": "matrixTransform",
+          "args": [
+            {
+              "$ref": "m"
+            }
+          ],
+          "save": "point3"
+        },
+        {
+          "op": "call",
+          "target": "m",
+          "name": "transformPoint",
+          "args": [
+            {
+              "$ref": "p3"
+            }
+          ],
+          "save": "matrix3"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            8.5,
+            9.75,
+            70,
+            50
+          ]
+        }
+      ]
+    }
+  ]
+}

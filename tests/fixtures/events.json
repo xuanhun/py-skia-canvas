@@ -1,0 +1,2140 @@
+{
+  "schema": "py-skia-canvas-events/v1",
+  "cases": [
+    {
+      "id": "events-000",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "x",
+            {
+              "$undefined": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-001",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "x",
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-002",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "x",
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-003",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "x",
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-004",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "x",
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-005",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "x",
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-006",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "x",
+            1.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-007",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "x",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-008",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "x",
+            "nonzero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-009",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "x",
+            "evenodd"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-010",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "x",
+            "BAD"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-011",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "x",
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-012",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "x",
+            [
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-013",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "x",
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-014",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "x",
+            {
+              "$number": "NaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-015",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "x",
+            {
+              "$number": "Infinity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-016",
+      "ops": [
+        {
+          "name": "once",
+          "args": [
+            "x",
+            {
+              "$undefined": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-017",
+      "ops": [
+        {
+          "name": "once",
+          "args": [
+            "x",
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-018",
+      "ops": [
+        {
+          "name": "once",
+          "args": [
+            "x",
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-019",
+      "ops": [
+        {
+          "name": "once",
+          "args": [
+            "x",
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-020",
+      "ops": [
+        {
+          "name": "once",
+          "args": [
+            "x",
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-021",
+      "ops": [
+        {
+          "name": "once",
+          "args": [
+            "x",
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-022",
+      "ops": [
+        {
+          "name": "once",
+          "args": [
+            "x",
+            1.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-023",
+      "ops": [
+        {
+          "name": "once",
+          "args": [
+            "x",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-024",
+      "ops": [
+        {
+          "name": "once",
+          "args": [
+            "x",
+            "nonzero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-025",
+      "ops": [
+        {
+          "name": "once",
+          "args": [
+            "x",
+            "evenodd"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-026",
+      "ops": [
+        {
+          "name": "once",
+          "args": [
+            "x",
+            "BAD"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-027",
+      "ops": [
+        {
+          "name": "once",
+          "args": [
+            "x",
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-028",
+      "ops": [
+        {
+          "name": "once",
+          "args": [
+            "x",
+            [
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-029",
+      "ops": [
+        {
+          "name": "once",
+          "args": [
+            "x",
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-030",
+      "ops": [
+        {
+          "name": "once",
+          "args": [
+            "x",
+            {
+              "$number": "NaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-031",
+      "ops": [
+        {
+          "name": "once",
+          "args": [
+            "x",
+            {
+              "$number": "Infinity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-032",
+      "ops": [
+        {
+          "name": "prependListener",
+          "args": [
+            "x",
+            {
+              "$undefined": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-033",
+      "ops": [
+        {
+          "name": "prependListener",
+          "args": [
+            "x",
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-034",
+      "ops": [
+        {
+          "name": "prependListener",
+          "args": [
+            "x",
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-035",
+      "ops": [
+        {
+          "name": "prependListener",
+          "args": [
+            "x",
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-036",
+      "ops": [
+        {
+          "name": "prependListener",
+          "args": [
+            "x",
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-037",
+      "ops": [
+        {
+          "name": "prependListener",
+          "args": [
+            "x",
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-038",
+      "ops": [
+        {
+          "name": "prependListener",
+          "args": [
+            "x",
+            1.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-039",
+      "ops": [
+        {
+          "name": "prependListener",
+          "args": [
+            "x",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-040",
+      "ops": [
+        {
+          "name": "prependListener",
+          "args": [
+            "x",
+            "nonzero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-041",
+      "ops": [
+        {
+          "name": "prependListener",
+          "args": [
+            "x",
+            "evenodd"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-042",
+      "ops": [
+        {
+          "name": "prependListener",
+          "args": [
+            "x",
+            "BAD"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-043",
+      "ops": [
+        {
+          "name": "prependListener",
+          "args": [
+            "x",
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-044",
+      "ops": [
+        {
+          "name": "prependListener",
+          "args": [
+            "x",
+            [
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-045",
+      "ops": [
+        {
+          "name": "prependListener",
+          "args": [
+            "x",
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-046",
+      "ops": [
+        {
+          "name": "prependListener",
+          "args": [
+            "x",
+            {
+              "$number": "NaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-047",
+      "ops": [
+        {
+          "name": "prependListener",
+          "args": [
+            "x",
+            {
+              "$number": "Infinity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-048",
+      "ops": [
+        {
+          "name": "prependOnceListener",
+          "args": [
+            "x",
+            {
+              "$undefined": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-049",
+      "ops": [
+        {
+          "name": "prependOnceListener",
+          "args": [
+            "x",
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-050",
+      "ops": [
+        {
+          "name": "prependOnceListener",
+          "args": [
+            "x",
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-051",
+      "ops": [
+        {
+          "name": "prependOnceListener",
+          "args": [
+            "x",
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-052",
+      "ops": [
+        {
+          "name": "prependOnceListener",
+          "args": [
+            "x",
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-053",
+      "ops": [
+        {
+          "name": "prependOnceListener",
+          "args": [
+            "x",
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-054",
+      "ops": [
+        {
+          "name": "prependOnceListener",
+          "args": [
+            "x",
+            1.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-055",
+      "ops": [
+        {
+          "name": "prependOnceListener",
+          "args": [
+            "x",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-056",
+      "ops": [
+        {
+          "name": "prependOnceListener",
+          "args": [
+            "x",
+            "nonzero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-057",
+      "ops": [
+        {
+          "name": "prependOnceListener",
+          "args": [
+            "x",
+            "evenodd"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-058",
+      "ops": [
+        {
+          "name": "prependOnceListener",
+          "args": [
+            "x",
+            "BAD"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-059",
+      "ops": [
+        {
+          "name": "prependOnceListener",
+          "args": [
+            "x",
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-060",
+      "ops": [
+        {
+          "name": "prependOnceListener",
+          "args": [
+            "x",
+            [
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-061",
+      "ops": [
+        {
+          "name": "prependOnceListener",
+          "args": [
+            "x",
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-062",
+      "ops": [
+        {
+          "name": "prependOnceListener",
+          "args": [
+            "x",
+            {
+              "$number": "NaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-063",
+      "ops": [
+        {
+          "name": "prependOnceListener",
+          "args": [
+            "x",
+            {
+              "$number": "Infinity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-064",
+      "ops": [
+        {
+          "name": "removeListener",
+          "args": [
+            "x",
+            {
+              "$undefined": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-065",
+      "ops": [
+        {
+          "name": "removeListener",
+          "args": [
+            "x",
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-066",
+      "ops": [
+        {
+          "name": "removeListener",
+          "args": [
+            "x",
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-067",
+      "ops": [
+        {
+          "name": "removeListener",
+          "args": [
+            "x",
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-068",
+      "ops": [
+        {
+          "name": "removeListener",
+          "args": [
+            "x",
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-069",
+      "ops": [
+        {
+          "name": "removeListener",
+          "args": [
+            "x",
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-070",
+      "ops": [
+        {
+          "name": "removeListener",
+          "args": [
+            "x",
+            1.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-071",
+      "ops": [
+        {
+          "name": "removeListener",
+          "args": [
+            "x",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-072",
+      "ops": [
+        {
+          "name": "removeListener",
+          "args": [
+            "x",
+            "nonzero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-073",
+      "ops": [
+        {
+          "name": "removeListener",
+          "args": [
+            "x",
+            "evenodd"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-074",
+      "ops": [
+        {
+          "name": "removeListener",
+          "args": [
+            "x",
+            "BAD"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-075",
+      "ops": [
+        {
+          "name": "removeListener",
+          "args": [
+            "x",
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-076",
+      "ops": [
+        {
+          "name": "removeListener",
+          "args": [
+            "x",
+            [
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-077",
+      "ops": [
+        {
+          "name": "removeListener",
+          "args": [
+            "x",
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-078",
+      "ops": [
+        {
+          "name": "removeListener",
+          "args": [
+            "x",
+            {
+              "$number": "NaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-079",
+      "ops": [
+        {
+          "name": "removeListener",
+          "args": [
+            "x",
+            {
+              "$number": "Infinity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-080",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            {
+              "$undefined": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-081",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-082",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-083",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-084",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-085",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-086",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            1.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-087",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-088",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            "nonzero"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-089",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            "evenodd"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-090",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            "BAD"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-091",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-092",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            [
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-093",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-094",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            {
+              "$number": "NaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-095",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            {
+              "$number": "Infinity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-096",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            {
+              "$undefined": true
+            },
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "once",
+          "args": [
+            {
+              "$undefined": true
+            },
+            {
+              "$callback": "f1"
+            }
+          ]
+        },
+        {
+          "name": "emit",
+          "args": [
+            {
+              "$undefined": true
+            },
+            3
+          ]
+        },
+        {
+          "name": "eventNames"
+        },
+        {
+          "name": "listeners",
+          "args": [
+            {
+              "$undefined": true
+            }
+          ]
+        },
+        {
+          "name": "removeAllListeners",
+          "args": [
+            {
+              "$undefined": true
+            }
+          ]
+        },
+        {
+          "name": "eventNames"
+        }
+      ]
+    },
+    {
+      "id": "events-097",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            null,
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "once",
+          "args": [
+            null,
+            {
+              "$callback": "f1"
+            }
+          ]
+        },
+        {
+          "name": "emit",
+          "args": [
+            null,
+            3
+          ]
+        },
+        {
+          "name": "eventNames"
+        },
+        {
+          "name": "listeners",
+          "args": [
+            null
+          ]
+        },
+        {
+          "name": "removeAllListeners",
+          "args": [
+            null
+          ]
+        },
+        {
+          "name": "eventNames"
+        }
+      ]
+    },
+    {
+      "id": "events-098",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            false,
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "once",
+          "args": [
+            false,
+            {
+              "$callback": "f1"
+            }
+          ]
+        },
+        {
+          "name": "emit",
+          "args": [
+            false,
+            3
+          ]
+        },
+        {
+          "name": "eventNames"
+        },
+        {
+          "name": "listeners",
+          "args": [
+            false
+          ]
+        },
+        {
+          "name": "removeAllListeners",
+          "args": [
+            false
+          ]
+        },
+        {
+          "name": "eventNames"
+        }
+      ]
+    },
+    {
+      "id": "events-099",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            true,
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "once",
+          "args": [
+            true,
+            {
+              "$callback": "f1"
+            }
+          ]
+        },
+        {
+          "name": "emit",
+          "args": [
+            true,
+            3
+          ]
+        },
+        {
+          "name": "eventNames"
+        },
+        {
+          "name": "listeners",
+          "args": [
+            true
+          ]
+        },
+        {
+          "name": "removeAllListeners",
+          "args": [
+            true
+          ]
+        },
+        {
+          "name": "eventNames"
+        }
+      ]
+    },
+    {
+      "id": "events-100",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            0,
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "once",
+          "args": [
+            0,
+            {
+              "$callback": "f1"
+            }
+          ]
+        },
+        {
+          "name": "emit",
+          "args": [
+            0,
+            3
+          ]
+        },
+        {
+          "name": "eventNames"
+        },
+        {
+          "name": "listeners",
+          "args": [
+            0
+          ]
+        },
+        {
+          "name": "removeAllListeners",
+          "args": [
+            0
+          ]
+        },
+        {
+          "name": "eventNames"
+        }
+      ]
+    },
+    {
+      "id": "events-101",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            -1,
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "once",
+          "args": [
+            -1,
+            {
+              "$callback": "f1"
+            }
+          ]
+        },
+        {
+          "name": "emit",
+          "args": [
+            -1,
+            3
+          ]
+        },
+        {
+          "name": "eventNames"
+        },
+        {
+          "name": "listeners",
+          "args": [
+            -1
+          ]
+        },
+        {
+          "name": "removeAllListeners",
+          "args": [
+            -1
+          ]
+        },
+        {
+          "name": "eventNames"
+        }
+      ]
+    },
+    {
+      "id": "events-102",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            1.25,
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "once",
+          "args": [
+            1.25,
+            {
+              "$callback": "f1"
+            }
+          ]
+        },
+        {
+          "name": "emit",
+          "args": [
+            1.25,
+            3
+          ]
+        },
+        {
+          "name": "eventNames"
+        },
+        {
+          "name": "listeners",
+          "args": [
+            1.25
+          ]
+        },
+        {
+          "name": "removeAllListeners",
+          "args": [
+            1.25
+          ]
+        },
+        {
+          "name": "eventNames"
+        }
+      ]
+    },
+    {
+      "id": "events-103",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "",
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "once",
+          "args": [
+            "",
+            {
+              "$callback": "f1"
+            }
+          ]
+        },
+        {
+          "name": "emit",
+          "args": [
+            "",
+            3
+          ]
+        },
+        {
+          "name": "eventNames"
+        },
+        {
+          "name": "listeners",
+          "args": [
+            ""
+          ]
+        },
+        {
+          "name": "removeAllListeners",
+          "args": [
+            ""
+          ]
+        },
+        {
+          "name": "eventNames"
+        }
+      ]
+    },
+    {
+      "id": "events-104",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "nonzero",
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "once",
+          "args": [
+            "nonzero",
+            {
+              "$callback": "f1"
+            }
+          ]
+        },
+        {
+          "name": "emit",
+          "args": [
+            "nonzero",
+            3
+          ]
+        },
+        {
+          "name": "eventNames"
+        },
+        {
+          "name": "listeners",
+          "args": [
+            "nonzero"
+          ]
+        },
+        {
+          "name": "removeAllListeners",
+          "args": [
+            "nonzero"
+          ]
+        },
+        {
+          "name": "eventNames"
+        }
+      ]
+    },
+    {
+      "id": "events-105",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "evenodd",
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "once",
+          "args": [
+            "evenodd",
+            {
+              "$callback": "f1"
+            }
+          ]
+        },
+        {
+          "name": "emit",
+          "args": [
+            "evenodd",
+            3
+          ]
+        },
+        {
+          "name": "eventNames"
+        },
+        {
+          "name": "listeners",
+          "args": [
+            "evenodd"
+          ]
+        },
+        {
+          "name": "removeAllListeners",
+          "args": [
+            "evenodd"
+          ]
+        },
+        {
+          "name": "eventNames"
+        }
+      ]
+    },
+    {
+      "id": "events-106",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "BAD",
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "once",
+          "args": [
+            "BAD",
+            {
+              "$callback": "f1"
+            }
+          ]
+        },
+        {
+          "name": "emit",
+          "args": [
+            "BAD",
+            3
+          ]
+        },
+        {
+          "name": "eventNames"
+        },
+        {
+          "name": "listeners",
+          "args": [
+            "BAD"
+          ]
+        },
+        {
+          "name": "removeAllListeners",
+          "args": [
+            "BAD"
+          ]
+        },
+        {
+          "name": "eventNames"
+        }
+      ]
+    },
+    {
+      "id": "events-107",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            [],
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "once",
+          "args": [
+            [],
+            {
+              "$callback": "f1"
+            }
+          ]
+        },
+        {
+          "name": "emit",
+          "args": [
+            [],
+            3
+          ]
+        },
+        {
+          "name": "eventNames"
+        },
+        {
+          "name": "listeners",
+          "args": [
+            []
+          ]
+        },
+        {
+          "name": "removeAllListeners",
+          "args": [
+            []
+          ]
+        },
+        {
+          "name": "eventNames"
+        }
+      ]
+    },
+    {
+      "id": "events-108",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            [
+              1
+            ],
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "once",
+          "args": [
+            [
+              1
+            ],
+            {
+              "$callback": "f1"
+            }
+          ]
+        },
+        {
+          "name": "emit",
+          "args": [
+            [
+              1
+            ],
+            3
+          ]
+        },
+        {
+          "name": "eventNames"
+        },
+        {
+          "name": "listeners",
+          "args": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "name": "removeAllListeners",
+          "args": [
+            [
+              1
+            ]
+          ]
+        },
+        {
+          "name": "eventNames"
+        }
+      ]
+    },
+    {
+      "id": "events-109",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            {},
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "once",
+          "args": [
+            {},
+            {
+              "$callback": "f1"
+            }
+          ]
+        },
+        {
+          "name": "emit",
+          "args": [
+            {},
+            3
+          ]
+        },
+        {
+          "name": "eventNames"
+        },
+        {
+          "name": "listeners",
+          "args": [
+            {}
+          ]
+        },
+        {
+          "name": "removeAllListeners",
+          "args": [
+            {}
+          ]
+        },
+        {
+          "name": "eventNames"
+        }
+      ]
+    },
+    {
+      "id": "events-110",
+      "ops": [
+        {
+          "name": "on"
+        }
+      ]
+    },
+    {
+      "id": "events-111",
+      "ops": [
+        {
+          "name": "once"
+        }
+      ]
+    },
+    {
+      "id": "events-112",
+      "ops": [
+        {
+          "name": "removeListener"
+        }
+      ]
+    },
+    {
+      "id": "events-113",
+      "ops": [
+        {
+          "name": "setMaxListeners"
+        }
+      ]
+    },
+    {
+      "id": "events-114",
+      "ops": [
+        {
+          "name": "emit"
+        }
+      ]
+    },
+    {
+      "id": "events-115",
+      "ops": [
+        {
+          "name": "listenerCount"
+        }
+      ]
+    },
+    {
+      "id": "events-116",
+      "ops": [
+        {
+          "name": "listeners"
+        }
+      ]
+    },
+    {
+      "id": "events-117",
+      "ops": [
+        {
+          "name": "rawListeners"
+        }
+      ]
+    },
+    {
+      "id": "events-118",
+      "ops": [
+        {
+          "name": "removeAllListeners"
+        }
+      ]
+    },
+    {
+      "id": "events-meta",
+      "ops": [
+        {
+          "name": "on",
+          "args": [
+            "newListener",
+            {
+              "$callback": "meta"
+            }
+          ]
+        },
+        {
+          "name": "on",
+          "args": [
+            "removeListener",
+            {
+              "$callback": "meta"
+            }
+          ]
+        },
+        {
+          "name": "once",
+          "args": [
+            "x",
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "on",
+          "args": [
+            "x",
+            {
+              "$callback": "f1"
+            }
+          ]
+        },
+        {
+          "name": "emit",
+          "args": [
+            "x",
+            1
+          ]
+        },
+        {
+          "name": "removeAllListeners"
+        },
+        {
+          "name": "eventNames"
+        }
+      ]
+    },
+    {
+      "id": "events-warning",
+      "ops": [
+        {
+          "name": "setMaxListeners",
+          "args": [
+            1
+          ]
+        },
+        {
+          "name": "on",
+          "args": [
+            "x",
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "on",
+          "args": [
+            "x",
+            {
+              "$callback": "f1"
+            }
+          ]
+        },
+        {
+          "name": "on",
+          "args": [
+            "x",
+            {
+              "$callback": "f2"
+            }
+          ]
+        },
+        {
+          "name": "removeAllListeners"
+        },
+        {
+          "name": "on",
+          "args": [
+            "x",
+            {
+              "$callback": "f0"
+            }
+          ]
+        },
+        {
+          "name": "on",
+          "args": [
+            "x",
+            {
+              "$callback": "f1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-121",
+      "ops": [
+        {
+          "name": "emit",
+          "args": [
+            "error",
+            {
+              "$undefined": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-122",
+      "ops": [
+        {
+          "name": "emit",
+          "args": [
+            "error",
+            "boom"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-123",
+      "ops": [
+        {
+          "name": "emit",
+          "args": [
+            "error",
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-124",
+      "ops": [
+        {
+          "name": "emit",
+          "args": [
+            "error",
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-125",
+      "ops": [
+        {
+          "name": "emit",
+          "args": [
+            "error",
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events-126",
+      "ops": [
+        {
+          "name": "emit",
+          "args": [
+            "error",
+            []
+          ]
+        }
+      ]
+    }
+  ]
+}

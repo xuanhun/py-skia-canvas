@@ -1,0 +1,6131 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "cases": [
+    {
+      "id": "path-use-000",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-001",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$undefined": true
+            }
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-002",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            null
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-003",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            false
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-004",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            true
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-005",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            0
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-006",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            -1
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-007",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            1.25
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-008",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            ""
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-009",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-010",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            "evenodd"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-011",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            "BAD"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-012",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            []
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-013",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            [
+              1
+            ]
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-014",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {}
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-015",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$number": "NaN"
+            }
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-016",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$number": "Infinity"
+            }
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-017",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$undefined": true
+            },
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-018",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            null,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-019",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            false,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-020",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            true,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-021",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            0,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-022",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            -1,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-023",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            1.25,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-024",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            "",
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-025",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            "nonzero",
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-026",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            "evenodd",
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-027",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            "BAD",
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-028",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            [],
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-029",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            [
+              1
+            ],
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-030",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {},
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-031",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$number": "NaN"
+            },
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-032",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$number": "Infinity"
+            },
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-033",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-034",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            {
+              "$undefined": true
+            }
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-035",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            "evenodd"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-036",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            "nonzero",
+            "extra"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-037",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-038",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$undefined": true
+            }
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-039",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            null
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-040",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            false
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-041",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            true
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-042",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            0
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-043",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            -1
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-044",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            1.25
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-045",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            ""
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-046",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-047",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            "evenodd"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-048",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            "BAD"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-049",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            []
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-050",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            [
+              1
+            ]
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-051",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {}
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-052",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$number": "NaN"
+            }
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-053",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$number": "Infinity"
+            }
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-054",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$undefined": true
+            },
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-055",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            null,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-056",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            false,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-057",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            true,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-058",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            0,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-059",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            -1,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-060",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            1.25,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-061",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            "",
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-062",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            "nonzero",
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-063",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            "evenodd",
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-064",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            "BAD",
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-065",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            [],
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-066",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            [
+              1
+            ],
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-067",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {},
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-068",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$number": "NaN"
+            },
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-069",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$number": "Infinity"
+            },
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-070",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-071",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            {
+              "$undefined": true
+            }
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-072",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            "evenodd"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-073",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            "nonzero",
+            "extra"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-074",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-075",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            {
+              "$undefined": true
+            }
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-076",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            null
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-077",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            false
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-078",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            true
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-079",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            0
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-080",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            -1
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-081",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            1.25
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-082",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            ""
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-083",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-084",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            "evenodd"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-085",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            "BAD"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-086",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            []
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-087",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            [
+              1
+            ]
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-088",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            {}
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-089",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            {
+              "$number": "NaN"
+            }
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-090",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            {
+              "$number": "Infinity"
+            }
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-091",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            {
+              "$undefined": true
+            },
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-092",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            null,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-093",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            false,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-094",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            true,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-095",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            0,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-096",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            -1,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-097",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            1.25,
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-098",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            "",
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-099",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            "nonzero",
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-100",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            "evenodd",
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-101",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            "BAD",
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-102",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            [],
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-103",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            [
+              1
+            ],
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-104",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            {},
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-105",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            {
+              "$number": "NaN"
+            },
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-106",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            {
+              "$number": "Infinity"
+            },
+            "nonzero"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-107",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-108",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            {
+              "$undefined": true
+            }
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-109",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            "evenodd"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path-use-110",
+      "group": "completion-path",
+      "width": 64,
+      "height": 48,
+      "mode": "default",
+      "ops": [
+        {
+          "op": "construct",
+          "args": [
+            "M4 4H40V30H4Z"
+          ],
+          "id": "p",
+          "class": "Path2D"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "rect",
+          "args": [
+            8,
+            8,
+            32,
+            24
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            "nonzero",
+            "extra"
+          ],
+          "observeError": "call"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#c04080"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            0,
+            0,
+            15,
+            15
+          ]
+        }
+      ]
+    }
+  ]
+}

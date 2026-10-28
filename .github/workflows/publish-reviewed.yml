@@ -1,0 +1,46 @@
+name: Publish exact reviewed wheels
+on:
+  workflow_dispatch:
+    inputs:
+      candidate_run:
+        description: 'Run containing the reviewed-wheels artifact (already GPU accepted)'
+        required: true
+      manifest_sha256:
+        description: 'SHA256 of the independently reviewed release-manifest.json'
+        required: true
+      destination:
+        description: 'Package index protected environment'
+        required: true
+        type: choice
+        options: [testpypi, pypi]
+permissions:
+  contents: read
+  actions: read
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    environment: ${{ inputs.destination }}
+    permissions:
+      contents: read
+      actions: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: reviewed-wheels
+          path: reviewed
+          run-id: ${{ inputs.candidate_run }}
+          github-token: ${{ github.token }}
+      - name: Verify reviewed bytes
+        env:
+          MANIFEST_SHA: ${{ inputs.manifest_sha256 }}
+        run: |
+          python scripts/verify_release_bundle.py reviewed --manifest-sha256 "$MANIFEST_SHA"
+          mkdir upload
+          cp reviewed/*.whl upload/
+      - uses: pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086 # v1.14.3
+        with:
+          packages-dir: upload/
+          repository-url: ${{ inputs.destination == 'testpypi' && 'https://test.pypi.org/legacy/' || 'https://upload.pypi.org/legacy/' }}

@@ -1,0 +1,921 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "Standalone Path2D typed API and context overload differential cases. Full JS coercion/DOM/roundRect audit remains separate.",
+  "cases": [
+    {
+      "id": "path2d-svg-copy-set",
+      "group": "path2d",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p",
+          "args": [
+            "M10.25 10.75L100.5 15.25Q140.25 70.5 85.75 110.25L20.5 80.75Z"
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "copy",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "p",
+          "name": "d",
+          "value": "M25.5 20.25h100.5v80.25h-100.5Z"
+        },
+        {
+          "op": "get",
+          "target": "copy",
+          "name": "d",
+          "save": "copySvg"
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "bounds",
+          "save": "bounds"
+        },
+        {
+          "op": "set",
+          "target": "p",
+          "name": "d",
+          "value": "bad SVG",
+          "observeError": "badSetter"
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "d",
+          "save": "afterBad"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "copy"
+            },
+            "evenodd"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ce3277"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path2d-constructor-invalid",
+      "group": "path2d",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "empty",
+          "args": []
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "bad",
+          "args": [
+            "bad SVG"
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "other",
+          "args": [
+            false
+          ]
+        },
+        {
+          "op": "get",
+          "target": "empty",
+          "name": "d",
+          "save": "empty"
+        },
+        {
+          "op": "get",
+          "target": "bad",
+          "name": "bounds",
+          "save": "badBounds"
+        },
+        {
+          "op": "get",
+          "target": "other",
+          "name": "edges",
+          "save": "otherEdges"
+        },
+        {
+          "op": "call",
+          "target": "empty",
+          "name": "rect",
+          "args": [
+            5.25,
+            10.75,
+            120.5,
+            85.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "empty"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path2d-primitive-edges",
+      "group": "path2d",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "lineTo",
+          "args": [
+            5.25,
+            20.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "quadraticCurveTo",
+          "args": [
+            45.5,
+            -10.25,
+            80.75,
+            40.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "bezierCurveTo",
+          "args": [
+            120.25,
+            90.5,
+            40.75,
+            120.25,
+            10.5,
+            85.75
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "conicCurveTo",
+          "args": [
+            140.25,
+            120.75,
+            155.5,
+            35.25,
+            0.7
+          ]
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "edges",
+          "save": "edges"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 2.5
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path2d-arcs-ellipses",
+      "group": "path2d",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p",
+          "args": []
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "arc",
+          "args": [
+            45.25,
+            45.5,
+            25.75,
+            -0.3,
+            6.5,
+            true
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "moveTo",
+          "args": [
+            75.5,
+            90.25
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "arcTo",
+          "args": [
+            110.5,
+            10.25,
+            155.75,
+            90.25,
+            20.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "ellipse",
+          "args": [
+            90.25,
+            70.5,
+            40.75,
+            15.25,
+            0.3,
+            0.1,
+            1.4,
+            "true"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "ellipse",
+          "args": [
+            1,
+            2,
+            -3,
+            4,
+            0,
+            0,
+            6.28
+          ],
+          "observeError": "radiusError"
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "edges",
+          "save": "edges"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 2.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path2d-explicit-fill-hit-clip",
+      "group": "path2d",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p",
+          "args": [
+            "M10 10H145V110H10ZM40 35H110V85H40Z"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "translate",
+          "args": [
+            15.25,
+            5.5
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            75,
+            55,
+            "evenodd"
+          ],
+          "save": "hole"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            35,
+            55
+          ],
+          "save": "fillHit"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 6.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInStroke",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            25.25,
+            55
+          ],
+          "save": "strokeHit"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "clip",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            "evenodd"
+          ]
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "fillStyle",
+          "value": "#2878d9"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fillRect",
+          "args": [
+            -30,
+            -30,
+            230,
+            200
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path2d-transformed-add-self",
+      "group": "path2d",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p",
+          "args": [
+            "M10.25 10.75L100.5 15.25Q140.25 70.5 85.75 110.25L20.5 80.75Z"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "addPath",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            [
+              0.5,
+              0.1,
+              -0.1,
+              0.5,
+              55.25,
+              20.75
+            ]
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "other",
+          "args": [
+            "M5 5H45V35H5Z"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "addPath",
+          "args": [
+            {
+              "$ref": "other"
+            }
+          ]
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "d",
+          "save": "svg"
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "bounds",
+          "save": "bounds"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            "evenodd"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path2d-boolean-all",
+      "group": "path2d",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p",
+          "args": [
+            "M10.25 10.75L100.5 15.25Q140.25 70.5 85.75 110.25L20.5 80.75Z"
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "q",
+          "args": [
+            "M50 15H150V100H50Z"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "difference",
+          "args": [
+            {
+              "$ref": "q"
+            }
+          ],
+          "id": "diff"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "intersect",
+          "args": [
+            {
+              "$ref": "q"
+            }
+          ],
+          "id": "inter"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "xor",
+          "args": [
+            {
+              "$ref": "q"
+            }
+          ],
+          "id": "xor"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "complement",
+          "args": [
+            {
+              "$ref": "q"
+            }
+          ],
+          "id": "comp"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "union",
+          "args": [
+            {
+              "$ref": "q"
+            }
+          ],
+          "id": "union"
+        },
+        {
+          "op": "get",
+          "target": "diff",
+          "name": "d",
+          "save": "diff"
+        },
+        {
+          "op": "get",
+          "target": "inter",
+          "name": "d",
+          "save": "inter"
+        },
+        {
+          "op": "get",
+          "target": "xor",
+          "name": "d",
+          "save": "xor"
+        },
+        {
+          "op": "get",
+          "target": "comp",
+          "name": "d",
+          "save": "complement"
+        },
+        {
+          "op": "get",
+          "target": "union",
+          "name": "bounds",
+          "save": "unionBounds"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "xor"
+            },
+            "evenodd"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path2d-interpolation-errors",
+      "group": "path2d",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p",
+          "args": [
+            "M10.25 10.75L100.5 15.25Q140.25 70.5 85.75 110.25L20.5 80.75Z"
+          ]
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "q",
+          "args": [
+            "M30.25 15.75L140.5 25.25Q150.25 90.5 100.75 115.25L40.5 90.75Z"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "interpolate",
+          "args": [
+            {
+              "$ref": "q"
+            },
+            0.25
+          ],
+          "id": "blend"
+        },
+        {
+          "op": "get",
+          "target": "blend",
+          "name": "edges",
+          "save": "edges"
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "bad",
+          "args": [
+            "M0 0L1 1"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "interpolate",
+          "args": [
+            {
+              "$ref": "bad"
+            },
+            0.5
+          ],
+          "observeError": "mismatch"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "blend"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path2d-effects-and-points",
+      "group": "path2d",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p",
+          "args": [
+            "M10.25 10.75L100.5 15.25Q140.25 70.5 85.75 110.25L20.5 80.75Z"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "round",
+          "args": [
+            7.25
+          ],
+          "id": "round"
+        },
+        {
+          "op": "call",
+          "target": "round",
+          "name": "trim",
+          "args": [
+            0.15,
+            0.85
+          ],
+          "id": "trim"
+        },
+        {
+          "op": "call",
+          "target": "trim",
+          "name": "jitter",
+          "args": [
+            5.25,
+            1.75,
+            123
+          ],
+          "id": "jitter"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "points",
+          "args": [
+            17.5
+          ],
+          "save": "points"
+        },
+        {
+          "op": "get",
+          "target": "jitter",
+          "name": "edges",
+          "save": "edges"
+        },
+        {
+          "op": "call",
+          "target": "p",
+          "name": "trim",
+          "args": [
+            -0.25
+          ],
+          "id": "negativeTrim"
+        },
+        {
+          "op": "get",
+          "target": "negativeTrim",
+          "name": "d",
+          "save": "negativeSvg"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "lineWidth",
+          "value": 2.25
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "jitter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "path2d-snapshot-retained",
+      "group": "path2d",
+      "width": 180,
+      "height": 130,
+      "mode": "default",
+      "fontPolicy": "not-requested",
+      "ops": [
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "p",
+          "args": [
+            "M10.25 10.75L100.5 15.25Q140.25 70.5 85.75 110.25L20.5 80.75Z"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "fill",
+          "args": [
+            {
+              "$ref": "p"
+            }
+          ]
+        },
+        {
+          "op": "set",
+          "target": "p",
+          "name": "d",
+          "value": "M0 0"
+        },
+        {
+          "op": "get",
+          "target": "p",
+          "name": "d",
+          "save": "mutated"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "isPointInPath",
+          "args": [
+            {
+              "$ref": "p"
+            },
+            50,
+            50
+          ],
+          "save": "mutatedHit"
+        },
+        {
+          "op": "construct",
+          "class": "Path2D",
+          "id": "q",
+          "args": [
+            "M10.25 10.75L100.5 15.25Q140.25 70.5 85.75 110.25L20.5 80.75Z"
+          ]
+        },
+        {
+          "op": "call",
+          "target": "q",
+          "name": "transform",
+          "args": [
+            [
+              0.8,
+              0.1,
+              -0.15,
+              0.9,
+              20.25,
+              5.5
+            ]
+          ],
+          "id": "t"
+        },
+        {
+          "op": "get",
+          "target": "q",
+          "name": "bounds",
+          "save": "original"
+        },
+        {
+          "op": "get",
+          "target": "t",
+          "name": "bounds",
+          "save": "transformed"
+        },
+        {
+          "op": "set",
+          "target": "ctx",
+          "name": "strokeStyle",
+          "value": "#ce3277"
+        },
+        {
+          "op": "call",
+          "target": "ctx",
+          "name": "stroke",
+          "args": [
+            {
+              "$ref": "t"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
