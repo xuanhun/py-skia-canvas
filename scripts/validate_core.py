@@ -8,6 +8,7 @@ import json
 import re
 from pathlib import Path
 if __package__:
+    from .refresh_reference_index import source_path_key
     from .construction_extraction import core as construction_core,node as construction_node,arguments as argument_declarations
     from .gui_extraction import core_app as gui_core_app, node_app as gui_node_app, documented as gui_documented
     from .export_extraction import core_dispatch as export_dispatch, core_arguments as export_arguments, node_arguments as export_node_arguments, node_dispatch as export_node_dispatch, arguments_block as export_argument_block, dispatch_blocks as export_dispatch_blocks
@@ -23,6 +24,7 @@ if __package__:
     from .g4_extraction import blocks, core_operations, node_operations, wrap_paths
     from .path_extraction import definitions as path_definitions, core_operations as path_core, node_operations as path_node
 else:
+    from refresh_reference_index import source_path_key
     from construction_extraction import core as construction_core,node as construction_node,arguments as argument_declarations
     from gui_extraction import core_app as gui_core_app, node_app as gui_node_app, documented as gui_documented
     from export_extraction import core_dispatch as export_dispatch, core_arguments as export_arguments, node_arguments as export_node_arguments, node_dispatch as export_node_dispatch, arguments_block as export_argument_block, dispatch_blocks as export_dispatch_blocks
@@ -135,7 +137,7 @@ def source_map(root: Path = ROOT) -> dict:
     """
     mappings = []
     sources = [p for p in (root / UPSTREAM).rglob("*") if p.is_file()]
-    for source in sorted(sources):
+    for source in sorted(sources, key=source_path_key):
         relative = source.relative_to(root / UPSTREAM)
         destination = root / "crates/node" / relative
         if destination.is_file():
@@ -166,7 +168,7 @@ def source_map(root: Path = ROOT) -> dict:
         mappings.append((root / "references/math/node-v22.23.2" / filename,
                          root / "crates/python/vendor/v8" / (filename if filename == "LICENSE" else "src/base/" + filename),
                          "retained-language-math-source"))
-    for source in sorted((root/'references/math/node-v22.23.2/numbers/src/base/numbers').iterdir()):
+    for source in sorted((root/'references/math/node-v22.23.2/numbers/src/base/numbers').iterdir(), key=source_path_key):
         mappings.append((source,root/'crates/python/vendor/v8-numbers/src/base/numbers'/source.name,'retained-language-math-source'))
     entries = []
     for source, destination, mode in mappings:
@@ -201,12 +203,12 @@ def source_map(root: Path = ROOT) -> dict:
                               "scripts/gui_extraction.py","crates/canvas-core/src/gui/mod.rs","crates/python/src/gui.rs","python/py_skia_canvas/_gui.py","python/py_skia_canvas/_events.py",
                               "crates/canvas-core/src/gpu/vulkan/engine/initialization.rs","scripts/export_extraction.py","crates/canvas-core/src/canvas/exports.rs","crates/canvas-core/src/canvas/options.rs","crates/python/src/exports.rs","python/py_skia_canvas/_exports.py","crates/canvas-core/src/context/page/audit.rs",
                               "scripts/effects_extraction.py","crates/canvas-core/src/context/effects.rs","crates/canvas-core/src/filter/arguments.rs","crates/python/src/effects.rs","python/py_skia_canvas/_effects.py")]
-    for p in sorted((root/'crates/python/vendor/v8-numbers').rglob('*')):
+    for p in sorted((root/'crates/python/vendor/v8-numbers').rglob('*'), key=source_path_key):
         if p.is_file() and '/src/base/numbers/' not in p.as_posix():new_files.append({'path':p.relative_to(root).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
-    for p in sorted((root/'references/math/node-v22.23.2/numbers').rglob('*')):
+    for p in sorted((root/'references/math/node-v22.23.2/numbers').rglob('*'), key=source_path_key):
         if p.is_file() and '/src/base/numbers/' not in p.as_posix():new_files.append({'path':p.relative_to(root).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
     for base in ('crates/skia-bindings','references/rust-skia-static'):
-        for p in sorted((root/base).rglob('*')):
+        for p in sorted((root/base).rglob('*'), key=source_path_key):
             if p.is_file() and p.relative_to(root/base).parts[0]!='skia':new_files.append({'path':p.relative_to(root).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
     p=root/'scripts/validate_static_skia.py';new_files.append({'path':p.relative_to(root).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
     p=root/'python/py_skia_canvas/_thread_lifetime.py';new_files.append({'path':p.relative_to(root).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})

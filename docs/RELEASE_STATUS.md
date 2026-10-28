@@ -20,10 +20,12 @@ Windows 默认并发 PDF/SVG 文件序列的原版非确定性限制继续保留
 | 门禁 | 当前状态 |
 | --- | --- |
 | 已验收 wheel 字节与来源 | 已完成，本轮复核未修改生产代码 |
-| 源码提交与 GitHub 同步 | 准备中 |
-| GitHub Actions 实际运行 | 待源码同步 |
+| 源码提交与 GitHub 同步 | 已完成首次完整提交 `1caf312`，修复 CI 的提交随后同步 |
+| GitHub Actions 实际运行 | 首次运行发现跨平台路径排序及开发解析器安装缺项；修复后重新验证 |
 | GitHub Release 下载与 SHA 复核 | 待 CI |
 | TestPyPI 发布与独立安装/GPU 检查 | 待该索引的 Trusted Publisher 配置和授权 |
 | PyPI 发布与独立安装/GPU 检查 | 待 TestPyPI 回验及 PyPI Trusted Publisher |
 
 Trusted Publisher 参数为仓库 owner `xuanhun`、仓库 `py-skia-canvas`、workflow `publish-reviewed.yml`；TestPyPI environment 为 `testpypi`，PyPI environment 为 `pypi`，项目名均为 `py-skia-canvas`。两个索引分别配置；无需向聊天或仓库提供 API token。
+
+三个 GitHub 发布 environment 已配置仅允许 `main` 分支。首次 CI 记录为 [40707431974](https://github.com/xuanhun/py-skia-canvas/actions/runs/40707431974)：文件字节和全部指纹值均一致，差异仅在 Windows/Posix 路径排序；校验器现显式采用相同分量排序，未刷新来源 manifest 或 source-map。CI 同时显式安装锁定的 TypeScript 开发解析器，不引入生产运行时依赖。修复前后的独立记录保留在 `test-runs/20261028-ci-source-*`。

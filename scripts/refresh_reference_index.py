@@ -12,11 +12,22 @@ SNAPSHOT = ROOT / "references/upstream/skia-canvas-3.0.8"
 COMMIT = "042312a3f40b660b1d7dc0beba541486171bc5cc"
 
 
+def source_path_key(path: Path) -> tuple:
+    """Return a platform-independent key matching the frozen inventory order.
+
+    Path components are compared case-insensitively, then by original spelling
+    for ties. This retains the Windows-generated manifest order on Linux;
+    file bytes/hashes are never normalized. No I/O, native objects or threads.
+    Source: this project's metadata inventory, not an upstream draw algorithm.
+    """
+    return tuple(part.lower() for part in path.parts), path.parts
+
+
 def build_indexes(root: Path = ROOT) -> tuple[dict, dict]:
     """Return source hashes and native export locations without modifying the snapshot."""
     snapshot = root / SNAPSHOT.relative_to(ROOT)
     files = []
-    for path in sorted(snapshot.rglob("*")):
+    for path in sorted(snapshot.rglob("*"), key=source_path_key):
         if path.is_file():
             data = path.read_bytes()
             files.append({"path": path.relative_to(root).as_posix(),

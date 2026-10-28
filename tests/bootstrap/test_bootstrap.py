@@ -6,13 +6,13 @@ import json
 import sys
 import tempfile
 import unittest
-from pathlib import Path
+from pathlib import Path, PurePosixPath, PureWindowsPath
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 
 from scripts.compare_runs import json_differences, read_artifact, rgba_difference
-from scripts.refresh_reference_index import build_indexes
+from scripts.refresh_reference_index import build_indexes, source_path_key
 from scripts.validate_bootstrap import validate, validate_fixtures
 
 
@@ -24,6 +24,14 @@ class InventoryTests(unittest.TestCase):
 
     def test_inventory_is_deterministic(self):
         self.assertEqual(build_indexes(), build_indexes())
+
+    def test_inventory_order_is_independent_of_host_path_flavor(self):
+        # Directory components precede a similarly named file; case has the
+        # same meaning on both hosts. Keep every existing frozen fingerprint.
+        names = ['src/gpu.rs', 'src/gpu/engine.rs', 'src/Z.rs', 'src/a.rs', 'LICENSE', 'Cargo.toml']
+        expected = ['Cargo.toml', 'LICENSE', 'src/a.rs', 'src/gpu/engine.rs', 'src/gpu.rs', 'src/Z.rs']
+        for flavor in (PurePosixPath, PureWindowsPath):
+            self.assertEqual(expected, [p.as_posix() for p in sorted(map(flavor, names), key=source_path_key)])
 
     def test_native_exports_are_unique_and_locatable(self):
         _, index = build_indexes()
