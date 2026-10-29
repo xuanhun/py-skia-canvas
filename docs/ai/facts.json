@@ -4,6 +4,18 @@
   "distribution": "py-skia-canvas",
   "import": "py_skia_canvas",
   "version": "0.1.0a18",
+  "installation": {
+    "publishedToPyPI": true,
+    "releaseChannel": "alpha",
+    "stableRelease": false,
+    "indexUrl": "https://pypi.org/simple/",
+    "projectUrl": "https://pypi.org/project/py-skia-canvas/0.1.0a18/",
+    "command": "python -m pip install --index-url https://pypi.org/simple/ --only-binary=:all: py-skia-canvas==0.1.0a18",
+    "verifyCommand": "python -c \"import py_skia_canvas as c; print(c.__version__, c.__file__)\"",
+    "requiresPython": ">=3.13,<3.14",
+    "aiEntry": "../../llms.txt",
+    "pypiDescription": "Upload-time README is outdated; existing release metadata does not update when GitHub docs change."
+  },
   "upstream": {
     "package": "skia-canvas",
     "version": "3.0.8",
@@ -19,7 +31,8 @@
     "developLibrary": "development/README.md",
     "developmentWorkflow": "development/WORKFLOW.md",
     "testingAndRelease": "development/TESTING_AND_RELEASE.md",
-    "validation": "VALIDATION.md"
+    "validation": "VALIDATION.md",
+    "installation": "INSTALL.md"
   },
   "defaultLanguage": "zh-CN",
   "languages": {
@@ -34,7 +47,8 @@
         "developLibrary": "development/README.md",
         "developmentWorkflow": "development/WORKFLOW.md",
         "testingAndRelease": "development/TESTING_AND_RELEASE.md",
-        "validation": "VALIDATION.md"
+        "validation": "VALIDATION.md",
+        "installation": "INSTALL.md"
       }
     },
     "en": {
@@ -48,7 +62,8 @@
         "developLibrary": "development/README.en.md",
         "developmentWorkflow": "development/WORKFLOW.en.md",
         "testingAndRelease": "development/TESTING_AND_RELEASE.en.md",
-        "validation": "VALIDATION.en.md"
+        "validation": "VALIDATION.en.md",
+        "installation": "INSTALL.en.md"
       }
     }
   },

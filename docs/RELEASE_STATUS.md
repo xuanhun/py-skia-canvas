@@ -2,6 +2,8 @@
 
 2026-10-29，**py-skia-canvas 0.1.0a18 已发布到正式 PyPI**。GitHub Release、TestPyPI、PyPI 的下载和 Windows/Linux 独立安装门禁均已完成，发布的两个 wheel 与本地 GPU/CPU 验收字节精确相同。
 
+> 安装说明勘误（2026-10-29）：直接读取正式 PyPI JSON API 后确认，`0.1.0a18` 的项目说明仍保存首次上传时的旧 README，含“尚未发布到 PyPI”和仅本地 wheel 安装的过时表述。两个 wheel 实际已发布且 SHA 未变。当前安装入口为 [中文](ai/INSTALL.md) / [English](ai/INSTALL.en.md) / [llms.txt](../llms.txt)。GitHub 文档更新不会修改该版本的 PyPI 说明；PyPI 保留首次上传的版本元数据，详见[官方 JSON API 规则](https://warehouse.pypa.io/api-reference/json/)。后续新发行物须携带修正后的 README；本次文档修正不替换已验收 wheel。
+
 ## 安装与支持范围
 
 ```shell

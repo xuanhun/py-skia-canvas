@@ -2,6 +2,8 @@
 
 [中文](API_REFERENCE.md) | English
 
+Install (CPython 3.13): `python -m pip install --index-url https://pypi.org/simple/ --only-binary=:all: py-skia-canvas==0.1.0a18`. See the [installation guide](../INSTALL.en.md).
+
 For `py-skia-canvas==0.1.0a18`, targeting official Node `skia-canvas@3.0.8`. Use this page to select common signatures and understand data/lifetimes. Consult the [public API ledger](../../public-api-ledger.json), [alpha status](../../alpha-api-status.json), and [Python host profile](../../PYTHON_HOST_PROFILE.md) for special overloads and individual compatibility records. Do not infer this library's API from browser Canvas or other Python drawing libraries.
 
 ## 1. Imports and host conventions

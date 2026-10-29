@@ -48,6 +48,16 @@ def check(root: Path = ROOT) -> dict:
         errors.append('AI facts, pyproject and Python versions differ')
     if set(facts.get('publicExports', [])) != set(exports) or len(facts['publicExports']) != len(exports):
         errors.append('AI facts public exports differ from package __all__')
+    installation = facts.get('installation', {})
+    expected_install = f"python -m pip install --index-url https://pypi.org/simple/ --only-binary=:all: {project['project']['name']}=={version}"
+    if installation.get('command') != expected_install or installation.get('indexUrl') != 'https://pypi.org/simple/':
+        errors.append('Installation facts must provide the pinned production-PyPI command')
+    if installation.get('requiresPython') != project['project']['requires-python']:
+        errors.append('Installation Python requirement differs from pyproject')
+    for entry in ['README.md', 'README.en.md', 'docs/ai/README.md', 'docs/ai/README.en.md', 'docs/ai/INSTALL.md', 'docs/ai/INSTALL.en.md', 'llms.txt']:
+        path = root / entry
+        if not path.is_file() or expected_install not in path.read_text(encoding='utf-8')[:1800]:
+            errors.append(f'Installation command missing near the start of AI entry: {entry}')
 
     languages = facts.get('languages', {})
     if set(languages) != {'zh-CN', 'en'} or facts.get('defaultLanguage') != 'zh-CN':
@@ -66,13 +76,14 @@ def check(root: Path = ROOT) -> dict:
 
     paths = [*facts['routes'].values(), facts['acceptedWheels']['releaseStatus'], facts['host']['profile'],
              facts['examples']['script'], facts['examples']['developmentFixture'], facts['examples']['assetsManifest'],
+             installation.get('aiEntry', '__missing_ai_entry__'),
              facts['development']['instructions'], *facts['development']['requiredFirstReads'],
              facts['development']['uniqueCore'], facts['development']['sourceMap'], facts['development']['readOnlyUpstream']]
     for target in paths:
         if not (base / target).exists():
             errors.append(f'AI facts missing path: {target}')
 
-    files = [*sorted(base.rglob('*.md')), *sorted((root / 'examples').glob('README*.md')), *sorted(root.glob('README*.md'))]
+    files = [*sorted(base.rglob('*.md')), *sorted((root / 'examples').glob('README*.md')), *sorted(root.glob('README*.md')), root / 'llms.txt']
     blocks = {}
     fences = links = 0
     for path in files:
@@ -115,7 +126,7 @@ def check(root: Path = ROOT) -> dict:
                     errors.append(f'{path.relative_to(root)}:{number}: missing link: {target}')
         if inside:
             errors.append(f'{path.relative_to(root)}: unclosed code fence')
-    pairs = [path for path in files if not path.name.endswith('.en.md')]
+    pairs = [path for path in files if path.suffix == '.md' and not path.name.endswith('.en.md')]
     executable = {'python', 'shell', 'powershell', 'bash'}
     for chinese in pairs:
         english = chinese.with_suffix('.en.md')
@@ -175,7 +186,7 @@ def check(root: Path = ROOT) -> dict:
             if f'../assets/{item["path"]}' not in gallery:
                 errors.append(f'Demo image not embedded in {locale} gallery: {item["path"]}')
     return dict(status='AI_DOCS_STRUCTURALLY_VALIDATED' if not errors else 'INCOMPLETE',
-                markdownFiles=len(files), localLinks=links, pythonBlocks=fences,
+                markdownFiles=sum(path.suffix == '.md' for path in files), aiTextEntries=1, localLinks=links, pythonBlocks=fences,
                 publicExports=len(exports), developmentFixtureCases=len(document['cases']),
                 languages=list(languages), translationPairs=len(pairs),
                 demoImages=len(images),

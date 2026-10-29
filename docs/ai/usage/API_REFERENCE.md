@@ -2,6 +2,8 @@
 
 中文 | [English](API_REFERENCE.en.md)
 
+安装（CPython 3.13）：`python -m pip install --index-url https://pypi.org/simple/ --only-binary=:all: py-skia-canvas==0.1.0a18`。详见[安装指南](../INSTALL.md)。
+
 适用 `py-skia-canvas==0.1.0a18`，兼容基线为官方 Node `skia-canvas@3.0.8`。本页用于 AI 选取常用签名、理解数据与生命周期；特殊重载和逐项兼容状态见 [公共 API 清单](../../public-api-ledger.json)、[alpha 状态](../../alpha-api-status.json) 和 [Python 宿主对应](../../PYTHON_HOST_PROFILE.md)。不要根据浏览器 Canvas 或其他 Python 绘图库推测本库接口。
 
 ## 1. 导入与宿主约定

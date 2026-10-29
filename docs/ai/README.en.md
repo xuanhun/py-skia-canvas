@@ -4,6 +4,17 @@
 
 For **py-skia-canvas 0.1.0a18 / official Node skia-canvas 3.0.8**. Publication records are in [RELEASE_STATUS](../RELEASE_STATUS.md). This general-purpose Canvas library supports graphics, images, document pages, and window applications.
 
+## Install from production PyPI
+
+The package is published on [production PyPI](https://pypi.org/project/py-skia-canvas/0.1.0a18/) as alpha prerelease `0.1.0a18`. Use **CPython 3.13** on Windows AMD64 or Linux glibc 2.28+ x86_64:
+
+```shell
+python -m pip install --index-url https://pypi.org/simple/ --only-binary=:all: py-skia-canvas==0.1.0a18
+python -c "import py_skia_canvas as c; print(c.__version__, c.__file__)"
+```
+
+Install `py-skia-canvas`; import `py_skia_canvas`. See the [installation guide](INSTALL.en.md) for full steps and old-page caveats, or [llms.txt](../../llms.txt) for a short AI entry. Package users do not compile Node/Skia.
+
 ## Choose your task
 
 | Task | Reading order | Deliverables |

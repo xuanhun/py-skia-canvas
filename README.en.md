@@ -4,6 +4,19 @@
 
 A standalone Python Canvas library using the original Rust/Skia core from `skia-canvas@3.0.8`, with its default GPU policy preserved. Python wheels require no Node, npm, Neon/N-API, or skia-python.
 
+## Install from production PyPI
+
+Version `0.1.0a18` is published on [production PyPI](https://pypi.org/project/py-skia-canvas/0.1.0a18/) as an alpha prerelease. Requires **CPython 3.13**; supported wheels target Windows AMD64 and Linux glibc 2.28+ x86_64.
+
+```shell
+python -m pip install --index-url https://pypi.org/simple/ --only-binary=:all: py-skia-canvas==0.1.0a18
+python -c "import py_skia_canvas as c; print(c.__version__, c.__file__)"
+```
+
+See [English installation](docs/ai/INSTALL.en.md) / [中文安装说明](docs/ai/INSTALL.md). AI can read [llms.txt](llms.txt) directly. Using the wheel needs no Node/npm or Rust toolchain.
+
+## Capabilities and example
+
 Migrated capabilities include Canvas/Context, Path2D and its extensions, DOM geometry/matrices/CSS transforms, gradients, fonts and text shaping/layout/measurement/decoration, images/pixels/patterns/textures, filters/compositing, multiple pages, synchronous/asynchronous exports, and App/Window. Public names and defaults follow Node; language-specific values use the accepted [Python host profile](docs/PYTHON_HOST_PROFILE.md).
 
 Current version: **0.1.0a18**. Accepted wheels target **CPython 3.13 / Windows AMD64 / Linux glibc 2.28+ x86_64**. [PyPI](https://pypi.org/project/py-skia-canvas/0.1.0a18/), [TestPyPI](https://test.pypi.org/project/py-skia-canvas/0.1.0a18/), and the [GitHub alpha Release](https://github.com/xuanhun/py-skia-canvas/releases/tag/v0.1.0a18) have been published and independently installed and checked on both platforms. Windows Vulkan and Linux Vulkan were accepted separately. macOS Metal source/features remain available, but no macOS release artifact has been accepted. See the [completion report](docs/COMPLETION_REPORT.md) for wheel hashes and scope, and [release status](docs/RELEASE_STATUS.md) for publication records.
@@ -36,13 +49,7 @@ Choose a task at the [AI documentation entry](docs/ai/README.en.md). [Using the 
 
 Also available: [API reference](docs/ai/usage/API_REFERENCE.en.md), [10 runnable demos](examples/README.en.md), [troubleshooting](docs/ai/usage/TROUBLESHOOTING.en.md), and [machine-readable facts](docs/ai/facts.json). See the [documentation validation record](docs/ai/VALIDATION.en.md) for the checks actually performed.
 
-## Installation and builds
-
-Install the accepted alpha wheel from the production index:
-
-```shell
-python -m pip install --only-binary=:all: py-skia-canvas==0.1.0a18
-```
+## Local wheels and source builds
 
 Or install an accepted local wheel:
 

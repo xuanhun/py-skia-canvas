@@ -4,6 +4,17 @@
 
 本文档针对 **py-skia-canvas 0.1.0a18 / 官方 Node skia-canvas 3.0.8**。发行状态见 [RELEASE_STATUS](../RELEASE_STATUS.md)。这是通用 Canvas 库，适用于图形、图片、文档页面和窗口应用。
 
+## 从正式 PyPI 安装
+
+当前包已发布到[正式 PyPI](https://pypi.org/project/py-skia-canvas/0.1.0a18/)，版本为 alpha 预发行版 `0.1.0a18`。使用 **CPython 3.13**，Windows AMD64 或 Linux glibc 2.28+ x86_64：
+
+```shell
+python -m pip install --index-url https://pypi.org/simple/ --only-binary=:all: py-skia-canvas==0.1.0a18
+python -c "import py_skia_canvas as c; print(c.__version__, c.__file__)"
+```
+
+安装名 `py-skia-canvas`，导入名 `py_skia_canvas`。完整步骤与旧页面说明见[安装指南](INSTALL.md)；简短 AI 入口见 [llms.txt](../../llms.txt)。使用包不需要编译 Node/Skia。
+
 ## 先选择任务类型
 
 | 你的任务 | 读取顺序 | 交付物 |

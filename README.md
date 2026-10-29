@@ -4,6 +4,19 @@
 
 独立 Python Canvas 库，复用 `skia-canvas@3.0.8` 的原 Rust/Skia 核心，保留默认 GPU 策略。Python wheel 不需要 Node、npm、Neon/N-API 或 skia-python。
 
+## 从正式 PyPI 安装
+
+当前版本 `0.1.0a18` 已发布到[正式 PyPI](https://pypi.org/project/py-skia-canvas/0.1.0a18/)，属于 alpha 预发行版。需要 **CPython 3.13**；支持 Windows AMD64 和 Linux glibc 2.28+ x86_64。
+
+```shell
+python -m pip install --index-url https://pypi.org/simple/ --only-binary=:all: py-skia-canvas==0.1.0a18
+python -c "import py_skia_canvas as c; print(c.__version__, c.__file__)"
+```
+
+详细步骤见[中文安装说明](docs/ai/INSTALL.md) / [English installation](docs/ai/INSTALL.en.md)。AI 可直接读取 [llms.txt](llms.txt)；使用 wheel 不需要 Node/npm 或 Rust 工具链。
+
+## 能力与示例
+
 已迁移 Canvas/Context、Path2D 与扩展、DOM 几何/矩阵/CSS 变换、渐变、字体与文本排版/测量/装饰、图像/像素/pattern/texture、滤镜/混色、多页、同步/异步导出和 App/Window。公共名称与默认值沿用 Node；语言宿主采用已确认的 [Python 对应方案](docs/PYTHON_HOST_PROFILE.md)。
 
 当前版本 **0.1.0a18**，首批支持 **CPython 3.13 / Windows AMD64 / Linux glibc 2.28+ x86_64**。[PyPI](https://pypi.org/project/py-skia-canvas/0.1.0a18/)、[TestPyPI](https://test.pypi.org/project/py-skia-canvas/0.1.0a18/) 和 [GitHub alpha Release](https://github.com/xuanhun/py-skia-canvas/releases/tag/v0.1.0a18) 均已发布并完成双平台独立安装回验。Windows Vulkan 与 Linux Vulkan 分别验收；macOS Metal 保留源代码和 feature，尚无验收过的发行物。实际 wheel SHA 和检查范围见 [本批交付报告](docs/COMPLETION_REPORT.md)，后续发行进度见 [发布状态](docs/RELEASE_STATUS.md)。
@@ -36,13 +49,7 @@ Canvas、Context、字体与 GPU 资源在创建线程使用；跨线程绘图�
 
 常用 [API 参考](docs/ai/usage/API_REFERENCE.md)、[10 类可运行 demo](examples/README.md)、[排错](docs/ai/usage/TROUBLESHOOTING.md)和[机器可读事实](docs/ai/facts.json)可单独查阅。示例与文档的实际验证范围见 [文档验证记录](docs/ai/VALIDATION.md)。
 
-## 安装与构建
-
-从正式 PyPI 安装已验收的同一 alpha wheel：
-
-```shell
-python -m pip install --only-binary=:all: py-skia-canvas==0.1.0a18
-```
+## 本地 wheel 与源码构建
 
 安装已验收的本地 wheel：
 

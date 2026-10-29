@@ -62,3 +62,11 @@ On the same date, 12 English counterparts were added: repository/AI entry points
 Bilingual validation covers 24 Markdown pages, 12 translation pairs, local links/language entries, matching heading levels, and executable code/image references. Python blocks are compared by AST (allowing translated comments); shell/PowerShell/Bash blocks are compared directly. The 15 original image hashes remain checked. English retains all version, CPU/GPU, host, thread, and publication limitations. Historical source reports retain their original language.
 
 Only documentation and its checker changed. Demos, images, fixtures, production code, and wheel bytes are unchanged. Rendering results above are completed evidence from the preceding batch; translation checks are not a new rendering acceptance run. Fresh Windows/Linux documentation evidence is under `test-runs/20261029-bilingual-docs-1/`.
+
+## Installation discovery correction
+
+Production PyPI JSON for `0.1.0a18` confirmed that its old README still claimed the package was unpublished and only documented local-wheel installation. A dedicated [installation page](INSTALL.en.md) and root [llms.txt](../../llms.txt) now provide the command. Chinese/English repository and AI entries show the explicit production-index command near the beginning; facts.json records it, the Python requirement, and release channel.
+
+Both Windows/Linux wheels were downloaded again from production PyPI without cache; their hashes match existing acceptance exactly. The new complete installation-check Python program ran on each platform's installed wheel with actual GPU and automatic CPU fallback, four successful executions including exact rectangle-pixel assertions. Documentation checks cover 26 Markdown files, 13 translation pairs, and llms.txt, requiring the command within the first 1800 characters of primary entries. Native implementation and wheel bytes are unchanged.
+
+Evidence: `test-runs/20261029-install-discovery-1/`, including actual PyPI JSON, downloaded wheels, program, and logs. Existing PyPI release metadata retains its initial upload description; GitHub updates do not rewrite it. A future release must include the corrected README. No existing wheel was reuploaded or replaced in this documentation correction.

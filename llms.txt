@@ -1,0 +1,38 @@
+# py-skia-canvas
+
+> Standalone Python Canvas library using the original skia-canvas 3.0.8 Rust/Skia core.
+
+## Install / 安装
+
+Published on production PyPI: py-skia-canvas==0.1.0a18 (alpha prerelease).
+已发布到正式 PyPI，当前已验收版本为 0.1.0a18（alpha 预发行版）。
+
+```shell
+python -m pip install --index-url https://pypi.org/simple/ --only-binary=:all: py-skia-canvas==0.1.0a18
+```
+
+Requires CPython 3.13. Accepted wheels: Windows AMD64; Linux glibc 2.28+ x86_64.
+Import: py_skia_canvas. No Node/npm, Rust toolchain, or skia-python runtime dependency.
+Offscreen rendering automatically falls back to CPU without a usable GPU.
+App/Window presentation requires GPU and desktop support.
+
+## Documentation / 文档
+
+- [中文安装说明](docs/ai/INSTALL.md)
+- [English installation](docs/ai/INSTALL.en.md)
+- [中文使用指南](docs/ai/usage/README.md)
+- [English usage guide](docs/ai/usage/README.en.md)
+- [中文 API 参考](docs/ai/usage/API_REFERENCE.md)
+- [English API reference](docs/ai/usage/API_REFERENCE.en.md)
+- [Examples and images](docs/ai/usage/DEMOS.en.md)
+- [Library development](docs/ai/development/README.en.md)
+- [Machine-readable version, installation and compatibility facts](docs/ai/facts.json)
+- [Publication and accepted wheel hashes](docs/RELEASE_STATUS.md)
+- [PyPI project](https://pypi.org/project/py-skia-canvas/0.1.0a18/)
+
+## Historical descriptions
+
+The PyPI 0.1.0a18 description is the original upload-time README. Its claim that
+PyPI publication has not happened is outdated; both wheels are published.
+GitHub documentation updates do not change existing PyPI release metadata.
+Use the explicit pinned installation command and current repository documentation.

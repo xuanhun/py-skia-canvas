@@ -62,3 +62,11 @@ python scripts/validate_ai_docs.py
 双语校验覆盖 24 份 Markdown、12 对译文、全部本地链接与语言入口、相同章节层级，以及两种语言的可执行代码和图片引用。Python 代码按 AST 比较（允许注释翻译），shell/PowerShell/Bash 命令逐块比较，15 张图片继续验证原 SHA。英文文档完整保留版本、CPU/GPU、宿主、线程和发布限制；历史来源报告保留原语言。
 
 本次只改文档与文档校验工具，demo、图片、fixture、生产代码和 wheel 字节未变；上面的渲染结果是已完成的上一批证据，本次不将翻译检查写成新一轮渲染验收。双平台文档检查的新证据保存在 `test-runs/20261029-bilingual-docs-1/`。
+
+## 安装方法可发现性修正
+
+直接查询正式 PyPI 的 `0.1.0a18` JSON 元数据，确认其旧 README 仍称未发布且只有本地 wheel 安装命令。新增[独立安装页](INSTALL.md)和根 [llms.txt](../../llms.txt)，把显式正式索引安装命令放到中英文仓库/AI 入口首段，并将命令、Python 要求与发布渠道写入 facts.json。
+
+从正式索引禁用缓存重新下载 Windows/Linux 两个 wheel，SHA 与既有验收值完全一致。安装页新增的完整 Python 程序在两平台已安装 wheel 上分别运行实际 GPU、无 GPU 自动 CPU 回退，共四次成功，包含精确色块像素断言。文档校验覆盖 26 份 Markdown、13 对译文、llms.txt，并检查安装命令出现在主要入口前 1800 字符内；原生实现和 wheel 未变。
+
+证据：`test-runs/20261029-install-discovery-1/`，包含实际 PyPI JSON、重新下载的 wheel、脚本及运行日志。PyPI 已有版本说明保留首次上传内容，GitHub 文档更新不会改写该说明；后续新发行物须包含修正后的 README。本次没有重新上传或替换既有 wheel。
