@@ -21,6 +21,37 @@
     "testingAndRelease": "development/TESTING_AND_RELEASE.md",
     "validation": "VALIDATION.md"
   },
+  "defaultLanguage": "zh-CN",
+  "languages": {
+    "zh-CN": {
+      "name": "简体中文",
+      "entry": "README.md",
+      "routes": {
+        "useLibrary": "usage/README.md",
+        "api": "usage/API_REFERENCE.md",
+        "demos": "usage/DEMOS.md",
+        "troubleshooting": "usage/TROUBLESHOOTING.md",
+        "developLibrary": "development/README.md",
+        "developmentWorkflow": "development/WORKFLOW.md",
+        "testingAndRelease": "development/TESTING_AND_RELEASE.md",
+        "validation": "VALIDATION.md"
+      }
+    },
+    "en": {
+      "name": "English",
+      "entry": "README.en.md",
+      "routes": {
+        "useLibrary": "usage/README.en.md",
+        "api": "usage/API_REFERENCE.en.md",
+        "demos": "usage/DEMOS.en.md",
+        "troubleshooting": "usage/TROUBLESHOOTING.en.md",
+        "developLibrary": "development/README.en.md",
+        "developmentWorkflow": "development/WORKFLOW.en.md",
+        "testingAndRelease": "development/TESTING_AND_RELEASE.en.md",
+        "validation": "VALIDATION.en.md"
+      }
+    }
+  },
   "acceptedWheels": {
     "python": "CPython 3.13 (cp313)",
     "platforms": ["Windows AMD64", "Linux glibc >= 2.28 x86_64"],

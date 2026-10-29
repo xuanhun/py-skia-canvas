@@ -1,5 +1,7 @@
 # 开发指南：修改 py-skia-canvas 库
 
+中文 | [English](README.en.md)
+
 本目录面向修改 Python/Rust 绑定、诊断兼容问题、构建 wheel 和维护发布流程的 AI。只想用 Canvas 开发应用时，从[使用指南](../usage/README.md)开始。
 
 ## 1. 开始前读什么

@@ -1,5 +1,7 @@
 # 使用排错
 
+中文 | [English](TROUBLESHOOTING.en.md)
+
 记录 `python --version`、包版本与文件路径、操作系统/架构、`canvas.engine`、输入尺寸/格式及异常全文。最小程序优先只画一个不透明矩形，再逐步加入文本、图像、效果和多页。
 
 | 现象 | 排查顺序与处理 |

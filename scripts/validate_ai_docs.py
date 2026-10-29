@@ -1,4 +1,4 @@
-"""Check AI documentation links, Python syntax, versions and demo fixture structure.
+"""Check bilingual AI docs, code consistency, links, versions and demo assets.
 
 This is a source/documentation check, not rendering or release acceptance. It
 loads no native module, creates no Canvas and changes no source/evidence files.
@@ -49,6 +49,21 @@ def check(root: Path = ROOT) -> dict:
     if set(facts.get('publicExports', [])) != set(exports) or len(facts['publicExports']) != len(exports):
         errors.append('AI facts public exports differ from package __all__')
 
+    languages = facts.get('languages', {})
+    if set(languages) != {'zh-CN', 'en'} or facts.get('defaultLanguage') != 'zh-CN':
+        errors.append('AI facts must provide Chinese and English with Chinese as the default')
+    for locale, details in languages.items():
+        if not (base / details['entry']).is_file():
+            errors.append(f'Missing {locale} documentation entry')
+        if set(details['routes']) != set(facts['routes']):
+            errors.append(f'{locale} documentation routes differ from the default route set')
+        for key, target in details['routes'].items():
+            expected = Path(facts['routes'][key])
+            if locale == 'en':
+                expected = expected.with_suffix('.en.md')
+            if target != expected.as_posix() or not (base / target).is_file():
+                errors.append(f'Missing/inconsistent {locale} route: {key} -> {target}')
+
     paths = [*facts['routes'].values(), facts['acceptedWheels']['releaseStatus'], facts['host']['profile'],
              facts['examples']['script'], facts['examples']['developmentFixture'], facts['examples']['assetsManifest'],
              facts['development']['instructions'], *facts['development']['requiredFirstReads'],
@@ -57,7 +72,8 @@ def check(root: Path = ROOT) -> dict:
         if not (base / target).exists():
             errors.append(f'AI facts missing path: {target}')
 
-    files = [*sorted(base.rglob('*.md')), root / 'examples/README.md', root / 'README.md']
+    files = [*sorted(base.rglob('*.md')), *sorted((root / 'examples').glob('README*.md')), *sorted(root.glob('README*.md'))]
+    blocks = {}
     fences = links = 0
     for path in files:
         source = path.read_text(encoding='utf-8')
@@ -65,6 +81,7 @@ def check(root: Path = ROOT) -> dict:
         language = ''
         block = []
         first_line = 0
+        blocks[path] = []
         for number, line in enumerate(source.splitlines(), 1):
             match = re.match(r'^```(\w*)\s*$', line)
             if match:
@@ -74,6 +91,7 @@ def check(root: Path = ROOT) -> dict:
                     block = []
                     first_line = number + 1
                 else:
+                    blocks[path].append((language, '\n'.join(block)))
                     if language == 'python':
                         fences += 1
                         try:
@@ -97,6 +115,35 @@ def check(root: Path = ROOT) -> dict:
                     errors.append(f'{path.relative_to(root)}:{number}: missing link: {target}')
         if inside:
             errors.append(f'{path.relative_to(root)}: unclosed code fence')
+    pairs = [path for path in files if not path.name.endswith('.en.md')]
+    executable = {'python', 'shell', 'powershell', 'bash'}
+    for chinese in pairs:
+        english = chinese.with_suffix('.en.md')
+        if english not in blocks:
+            errors.append(f'Missing English translation: {english.relative_to(root)}')
+            continue
+        zh_text = chinese.read_text(encoding='utf-8')
+        en_text = english.read_text(encoding='utf-8')
+        if f'中文 | [English]({english.name})' not in zh_text or f'[中文]({chinese.name}) | English' not in en_text:
+            errors.append(f'Missing reciprocal language switches: {chinese.relative_to(root)}')
+        zh_code = [(lang, text) for lang, text in blocks[chinese] if lang in executable]
+        en_code = [(lang, text) for lang, text in blocks[english] if lang in executable]
+        if len(zh_code) != len(en_code):
+            errors.append(f'Executable example count differs between languages: {chinese.relative_to(root)}')
+        else:
+            for (zh_lang, zh_source), (en_lang, en_source) in zip(zh_code, en_code):
+                if zh_lang == en_lang == 'python':
+                    try:
+                        same = ast.dump(ast.parse(zh_source)) == ast.dump(ast.parse(en_source))
+                    except SyntaxError:
+                        same = False
+                else:
+                    same = zh_lang == en_lang and zh_source.strip() == en_source.strip()
+                if not same:
+                    errors.append(f'Executable example differs between languages: {chinese.relative_to(root)} ({zh_lang})')
+        for pattern, label in [(r'^#{1,6}(?= )', 'heading structure'), (r'!\[[^\]]*\]\(([^)]+)\)', 'image references')]:
+            if re.findall(pattern, zh_text, re.M) != re.findall(pattern, en_text, re.M):
+                errors.append(f'Translation {label} differs: {chinese.relative_to(root)}')
     demo = root / 'examples/ai_demos.py'
     compile(demo.read_text(encoding='utf-8'), str(demo), 'exec')
     fixture = root / 'examples/development/parity-smoke.json'
@@ -123,12 +170,14 @@ def check(root: Path = ROOT) -> dict:
             errors.append(f'Demo image SHA/size differs: {item["path"]}')
         if not payload.startswith(b'\x89PNG\r\n\x1a\n') or list(struct.unpack('>II', payload[16:24])) != item['pixels']:
             errors.append(f'Demo PNG signature/dimensions differ: {item["path"]}')
-        gallery = (base / 'usage/DEMOS.md').read_text(encoding='utf-8')
-        if f'../assets/{item["path"]}' not in gallery:
-            errors.append(f'Demo image not embedded in gallery: {item["path"]}')
+        for locale, details in languages.items():
+            gallery = (base / details['routes']['demos']).read_text(encoding='utf-8')
+            if f'../assets/{item["path"]}' not in gallery:
+                errors.append(f'Demo image not embedded in {locale} gallery: {item["path"]}')
     return dict(status='AI_DOCS_STRUCTURALLY_VALIDATED' if not errors else 'INCOMPLETE',
                 markdownFiles=len(files), localLinks=links, pythonBlocks=fences,
                 publicExports=len(exports), developmentFixtureCases=len(document['cases']),
+                languages=list(languages), translationPairs=len(pairs),
                 demoImages=len(images),
                 errors=errors, limitation='No renderer, upstream parity, visual or release acceptance is implied.')
 

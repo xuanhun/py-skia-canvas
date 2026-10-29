@@ -1,5 +1,7 @@
 # 可运行示例
 
+中文 | [English](README.en.md)
+
 使用已发布的 `py-skia-canvas==0.1.0a18`，需要 CPython 3.13 和对应平台 wheel。应用示例只依赖标准库与该包，不需要 Node/Rust。
 
 ```shell

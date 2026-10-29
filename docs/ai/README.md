@@ -1,5 +1,7 @@
 # AI 文档入口
 
+中文 | [English](README.en.md)
+
 本文档针对 **py-skia-canvas 0.1.0a18 / 官方 Node skia-canvas 3.0.8**。发行状态见 [RELEASE_STATUS](../RELEASE_STATUS.md)。这是通用 Canvas 库，适用于图形、图片、文档页面和窗口应用。
 
 ## 先选择任务类型
@@ -49,3 +51,5 @@
 ## 阅读资料的优先级
 
 当前发行事实以发布报告、实际安装的固定版本和该版本源码为依据。根目录的实施计划、任务清单、部分函数 docstring 和旧测试说明保留了迁移过程中的历史文字。遇到 `pending`、`initial binding` 或“尚未发布”等旧描述时，交叉核对 [发布状态](../RELEASE_STATUS.md)、[迁移报告](../COMPLETION_REPORT.md)、[宿主对应](../PYTHON_HOST_PROFILE.md) 和 [API 状态清单](../alpha-api-status.json)，再决定是否需要开发。
+
+中文页保留原路径，英文对应页使用 `.en.md`。两种语言共用同一套可运行 demo、图片和机器事实；历史项目报告保留原语言。

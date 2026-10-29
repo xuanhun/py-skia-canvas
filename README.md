@@ -1,5 +1,7 @@
 # py-skia-canvas
 
+中文 | [English](README.en.md)
+
 独立 Python Canvas 库，复用 `skia-canvas@3.0.8` 的原 Rust/Skia 核心，保留默认 GPU 策略。Python wheel 不需要 Node、npm、Neon/N-API 或 skia-python。
 
 已迁移 Canvas/Context、Path2D 与扩展、DOM 几何/矩阵/CSS 变换、渐变、字体与文本排版/测量/装饰、图像/像素/pattern/texture、滤镜/混色、多页、同步/异步导出和 App/Window。公共名称与默认值沿用 Node；语言宿主采用已确认的 [Python 对应方案](docs/PYTHON_HOST_PROFILE.md)。
