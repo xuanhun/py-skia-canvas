@@ -1,6 +1,6 @@
 # 0.1.0a18 发布状态
 
-2026-10-28，用户已授权继续执行源码同步、GitHub Actions、GitHub Release、TestPyPI 及 PyPI 发布流程。GitHub alpha Release 已公开；TestPyPI 未找到匹配的 Trusted Publisher，尚未在包索引上线。既有迁移和 CPU 报告保留其完成当时的历史状态；本文件记录后续发行状态。
+2026-10-29，GitHub alpha Release 和 TestPyPI 已公开，并完成 Windows/Linux 独立安装、精确差分、实际 GPU 及 CPU 回验。正式 PyPI 的两次发布尝试均返回 `invalid-publisher`，仍需核对已添加的 publisher 与实际工作流身份。用户此前已授权完整发布流程；既有迁移和 CPU 报告保留其完成当时的历史状态。
 
 ## 已验收的发行物
 
@@ -25,8 +25,8 @@ Windows 默认并发 PDF/SVG 文件序列的原版非确定性限制继续保留
 | GitHub Release 下载与 SHA 复核 | [v0.1.0a18](https://github.com/xuanhun/py-skia-canvas/releases/tag/v0.1.0a18) 已公开，8 个文件由无认证公开 URL 重新下载并核对精确 SHA |
 | GitHub Release 独立安装回验 | Windows/Linux 各 203 普通及 203 STRICT 差分、12 组实际 GPU 字形/表面观测、118 项 GPU 生命周期、23 项 CPU 测试通过；同一 wheel/native SHA |
 | Actions reviewed-wheels 暂存 | [40709164905](https://github.com/xuanhun/py-skia-canvas/actions/runs/40709164905) 已通过；独立下载 artifact 后再次核对两端 wheel/manifest |
-| TestPyPI 发布与独立安装/GPU 检查 | [40709439674](https://github.com/xuanhun/py-skia-canvas/actions/runs/40709439674) 返回 `invalid-publisher`，未找到匹配的 Trusted Publisher，尚未上传 |
-| PyPI 发布与独立安装/GPU 检查 | 待 TestPyPI 回验及 PyPI Trusted Publisher |
+| TestPyPI 发布与独立安装/GPU 检查 | [40709439674 第二次运行](https://github.com/xuanhun/py-skia-canvas/actions/runs/40709439674/attempts/2) 发布成功；[0.1.0a18](https://test.pypi.org/project/py-skia-canvas/0.1.0a18/) 两端独立安装并通过 203 普通/203 STRICT、12 组实际 GPU 字形观测、118 GPU/23 CPU 生命周期，wheel/native SHA 精确一致 |
+| PyPI 发布与独立安装/GPU 检查 | [40792287866](https://github.com/xuanhun/py-skia-canvas/actions/runs/40792287866) 两次尝试均 `invalid-publisher`，尚未上传；等待核对 PyPI publisher 的 Repository/Workflow/Environment 原文 |
 
 Trusted Publisher 参数为仓库 owner `xuanhun`、仓库 `py-skia-canvas`、workflow `publish-reviewed.yml`；TestPyPI environment 为 `testpypi`，PyPI environment 为 `pypi`，项目名均为 `py-skia-canvas`。两个索引分别配置；无需向聊天或仓库提供 API token。
 
@@ -34,10 +34,12 @@ Trusted Publisher 参数为仓库 owner `xuanhun`、仓库 `py-skia-canvas`、wo
 
 ## 当前授权缺项和安装边界
 
-TestPyPI 返回的是有效 GitHub OIDC 身份未匹配 publisher；GitHub CLI 登录不能代替包索引账号配置。请在 [TestPyPI Publishing](https://test.pypi.org/manage/account/publishing/) 与 [PyPI Publishing](https://pypi.org/manage/account/publishing/) 分别登记上述 Pending Publisher，完成后可重跑失败的 TestPyPI job，再进行独立安装/GPU/CPU 检查，最后发布正式 PyPI。不要把 GitHub Release 或暂存成功写成 PyPI 已上线。
+TestPyPI publisher 已生效，无需重复配置。正式 [PyPI Publishing](https://pypi.org/manage/account/publishing/) 已能添加记录，但目前尚未匹配实际 GitHub OIDC 身份。实际 Repository 为 `py-skia-canvas`，Workflow 为 `publish-reviewed.yml`，Environment 为 `pypi`，Owner 为 `xuanhun`；需核对记录的原始字符。不要把 GitHub Release 或 TestPyPI 成功写成正式 PyPI 已上线。
 
 Windows 未启用长路径支持时，过深的虚拟环境目录会令许可证文件路径超出系统 `MAX_PATH`，pip 明确失败。建议使用较短的环境目录；本轮不改变系统注册表或已验收 wheel 中的许可负载。首次失败见 `20261028-github-installed-1`；后续安装回验分别保留新目录。
 
 公开 URL 安装回验使用当前独立环境指纹。Windows 14 个系统字体文件与前轮清单不同；Linux 指纹未变。原记录完整保留，当前 Node A 与 Python 共同消费新清单，不忽略资源变化。清单与差异见 `20261028-release-environment-*`、`20261028-index-publisher-diagnosis-1`。
 
 GitHub Release 安装回验记录为 `20261028-github-installed-5`，独立复核为 `20261028-github-installed-review-2`。两端均从公开 Release URL 使用 pip 禁用缓存安装到仓库外的新 CPython 3.13 环境，在 `-I`、空 PATH 下检查实际安装的 native，未使用 Node/源码运行时 fallback。公开摘要为 Release 资产 `github-installation-verification-0.1.0a18.json`。这些用例是发行物安装后的独立子集复核，不累计为迁移覆盖的新用例，也不替代 TestPyPI/PyPI 安装门禁。
+
+TestPyPI 回验记录为 `20261029-testpypi-installed-1`，独立复核为 `20261029-testpypi-installed-review-1`，公开摘要为 Release 资产 `testpypi-installation-verification-0.1.0a18.json`。安装直接使用 TestPyPI 索引并禁用 pip 缓存，两端均在新环境验收；正式 PyPI 错误保存在 `20261029-pypi-publish-failure-1` 与 `20261029-index-publication-status-1`。
