@@ -1,5 +1,7 @@
 # 新会话启动指令
 
+> 2026-10-29 最新发行状态：0.1.0a18 已发布至正式 PyPI、TestPyPI 和 GitHub Release，同一 wheel 的双平台独立安装/GPU/CPU 回验已通过。以 [RELEASE_STATUS.md](RELEASE_STATUS.md) 为准；下方未发布/待授权表述为历史记录。
+
 用户已于 2026-10-28 授权继续 alpha 发布流程；后续源码同步、CI、Release、TestPyPI/PyPI 的实际状态以 [RELEASE_STATUS.md](RELEASE_STATUS.md) 为准。下方“外部操作未授权”等表述是历史状态，不能覆盖本次授权。
 
 最新追加要求：纯 CPU 验收见 [CPU_RENDER_REPORT.md](CPU_RENDER_REPORT.md)，其结论与默认 GPU 验收独立。所有原 Canvas 离屏任务已在无 GPU/无 Vulkan 环境测试；生产 wheel 未修改。不要将原版 App/Window 的 GPU 限制写成已支持 CPU 窗口，也不要隐去 Windows 并行矢量导出的继承限制。

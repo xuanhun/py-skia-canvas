@@ -1,5 +1,7 @@
 # API 对齐规则
 
+> 2026-10-29 最新发行状态：0.1.0a18 已发布至正式 PyPI、TestPyPI 和 GitHub Release，同一 wheel 的双平台独立安装/GPU/CPU 回验已通过。以 [RELEASE_STATUS.md](RELEASE_STATUS.md) 为准；下方未发布/待授权表述为历史记录。
+
 > 2026-10-28 本批最新状态：G0–G9 在用户确认的 Python 宿主范围内已迁移并完成 Windows/Linux 本地 alpha 验收。先读 [本批交付报告](COMPLETION_REPORT.md) 和 [发行流程](RELEASE_WORKFLOW.md)；下面保留早期方案/记录，其中“尚待迁移”不覆盖最新报告。外部同步、Actions 实际执行、Release/TestPyPI/PyPI 仍需单独授权与验证。不要重装已可用工具链、重编 Node 或换掉已验收 wheel。
 
 
