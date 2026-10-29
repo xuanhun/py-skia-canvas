@@ -1,0 +1,184 @@
+{
+  "schema": "py-skia-canvas-demo-assets/v1",
+  "version": "0.1.0a18",
+  "asOf": "2026-10-29",
+  "script": "../../../examples/ai_demos.py",
+  "demoSourceSha256": "1e3b6900851f332bda4766633d43df88bb494aca39de86eb262835445717c4bd",
+  "platform": "Windows AMD64",
+  "python": "CPython 3.13",
+  "backend": "GPU Vulkan",
+  "wheel": "py_skia_canvas-0.1.0a18-cp313-cp313-win_amd64.whl",
+  "wheelSha256": "9efce11f1340a9bfbb69387f0757abe1635b3ff45528ce07e69dc30771049b74",
+  "commands": [
+    "python examples/ai_demos.py all --backend gpu --out test-runs/NEW_DEMOS/windows/gpu",
+    "python examples/ai_demos.py window --hidden --backend gpu --out test-runs/NEW_DEMOS/windows/window"
+  ],
+  "fonts": "System fonts; font files are not copied. The text demo may differ in other environments.",
+  "images": [
+    {
+      "path": "hello.png",
+      "demo": "hello",
+      "source": "test-runs/20261029-ai-docs-examples-2/windows/gpu/hello/preview.png",
+      "sha256": "9f550f8877c8dcea58126ba0dece20a8257ac699d24bd3bf71f12f8bfa2011e9",
+      "bytes": 3444,
+      "pixels": [
+        360,
+        180
+      ]
+    },
+    {
+      "path": "paths.png",
+      "demo": "paths",
+      "source": "test-runs/20261029-ai-docs-examples-2/windows/gpu/paths/preview.png",
+      "sha256": "80774d4c538a5e1943c847987d115d2418f78b2e17798e93dcb679bee8d2ea11",
+      "bytes": 7031,
+      "pixels": [
+        520,
+        280
+      ]
+    },
+    {
+      "path": "text.png",
+      "demo": "text",
+      "source": "test-runs/20261029-ai-docs-examples-2/windows/gpu/text/preview.png",
+      "sha256": "6976e39063c0f7776b7b1c05c622a3e3c94a129710a2ef7809d8908ece2ebd69",
+      "bytes": 19770,
+      "pixels": [
+        560,
+        300
+      ]
+    },
+    {
+      "path": "images.png",
+      "demo": "images",
+      "source": "test-runs/20261029-ai-docs-examples-2/windows/gpu/images/preview.png",
+      "sha256": "83d6e0b17f52846d90a66ccd867e5ec48ae51ea7679acf1e88f2c87262a75617",
+      "bytes": 5049,
+      "pixels": [
+        560,
+        280
+      ]
+    },
+    {
+      "path": "effects.png",
+      "demo": "effects",
+      "source": "test-runs/20261029-ai-docs-examples-2/windows/gpu/effects/preview.png",
+      "sha256": "8b42cd394ff02703b21e93a0cc83415edd74658b371cba0060f2beb30a29c451",
+      "bytes": 13078,
+      "pixels": [
+        560,
+        260
+      ]
+    },
+    {
+      "path": "exports.png",
+      "demo": "exports",
+      "source": "test-runs/20261029-ai-docs-examples-2/windows/gpu/exports/scene.png",
+      "sha256": "efccb3fe06e1a96f996498e60040a0232f1c7302b7dd04dfa8e22182f8c7584b",
+      "bytes": 4593,
+      "pixels": [
+        360,
+        180
+      ]
+    },
+    {
+      "path": "page-1.png",
+      "demo": "pages",
+      "source": "test-runs/20261029-ai-docs-examples-2/windows/gpu/pages/page-01.png",
+      "sha256": "5c7c3cff58889df602804986b2f4c72638ad4b3aeb6dd879fee95cbd6e98c9b5",
+      "bytes": 3541,
+      "pixels": [
+        480,
+        240
+      ]
+    },
+    {
+      "path": "page-2.png",
+      "demo": "pages",
+      "source": "test-runs/20261029-ai-docs-examples-2/windows/gpu/pages/page-02.png",
+      "sha256": "aeae0ae6bc19fcaa8fa2891d8a5c442291d0c2d77cad670a237264a0057158ee",
+      "bytes": 3838,
+      "pixels": [
+        480,
+        240
+      ]
+    },
+    {
+      "path": "page-3.png",
+      "demo": "pages",
+      "source": "test-runs/20261029-ai-docs-examples-2/windows/gpu/pages/page-03.png",
+      "sha256": "e7225091998647ee06d1ee7fc80149fc8edb11afd957a7aa41c9ecff694f640a",
+      "bytes": 4046,
+      "pixels": [
+        480,
+        240
+      ]
+    },
+    {
+      "path": "async-before.png",
+      "demo": "async",
+      "source": "test-runs/20261029-ai-docs-examples-2/windows/gpu/async/before.png",
+      "sha256": "37d32bb8ca28076fc3f84d8e313e1ae6cfd5808ebc3b12d19259588df082fdba",
+      "bytes": 483,
+      "pixels": [
+        240,
+        120
+      ]
+    },
+    {
+      "path": "async-after.png",
+      "demo": "async",
+      "source": "test-runs/20261029-ai-docs-examples-2/windows/gpu/async/after.png",
+      "sha256": "03cf3eae2c852ea2fb6a953244c02adffb75e0d0a401f80dcf099f7f126ae3bf",
+      "bytes": 484,
+      "pixels": [
+        240,
+        120
+      ]
+    },
+    {
+      "path": "batch-1.png",
+      "demo": "batch",
+      "source": "test-runs/20261029-ai-docs-examples-2/windows/gpu/batch/job-1.png",
+      "sha256": "128cdb4bcd5ca088ddf19b243484b01f29ed16c8407d26ca6e4f1510c88fea9c",
+      "bytes": 390,
+      "pixels": [
+        160,
+        100
+      ]
+    },
+    {
+      "path": "batch-2.png",
+      "demo": "batch",
+      "source": "test-runs/20261029-ai-docs-examples-2/windows/gpu/batch/job-2.png",
+      "sha256": "9669bd69dc0e033ed354263be5afe564c68fa3e9d5a1014a4030e877d7111ccb",
+      "bytes": 390,
+      "pixels": [
+        160,
+        100
+      ]
+    },
+    {
+      "path": "batch-3.png",
+      "demo": "batch",
+      "source": "test-runs/20261029-ai-docs-examples-2/windows/gpu/batch/job-3.png",
+      "sha256": "970b72db8dbaefa6874c1a2c84fb0e380f35bbd9bef04f1b98026d9b4d426e8f",
+      "bytes": 390,
+      "pixels": [
+        160,
+        100
+      ]
+    },
+    {
+      "path": "window.png",
+      "demo": "window",
+      "source": "test-runs/20261029-ai-docs-examples-2/windows/window/window/preview.png",
+      "sha256": "5691035292c409e1395270d6418ddca70e32bd763e939a7da8090500263cc2e4",
+      "bytes": 3197,
+      "pixels": [
+        480,
+        300
+      ]
+    }
+  ]
+}

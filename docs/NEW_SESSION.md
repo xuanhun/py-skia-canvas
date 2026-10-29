@@ -1,5 +1,7 @@
 # 新会话启动指令
 
+> AI 文档：使用已发布包请读 [使用指南](ai/usage/README.md)；修改库请在完成本文件和 AGENTS 必读项后读 [开发指南](ai/development/README.md)。[示例](../examples/README.md)与[文档验证](ai/VALIDATION.md)独立记录，不替代发行验收。
+
 > 2026-10-29 最新发行状态：0.1.0a18 已发布至正式 PyPI、TestPyPI 和 GitHub Release，同一 wheel 的双平台独立安装/GPU/CPU 回验已通过。以 [RELEASE_STATUS.md](RELEASE_STATUS.md) 为准；下方未发布/待授权表述为历史记录。
 
 用户已于 2026-10-28 授权继续 alpha 发布流程；后续源码同步、CI、Release、TestPyPI/PyPI 的实际状态以 [RELEASE_STATUS.md](RELEASE_STATUS.md) 为准。下方“外部操作未授权”等表述是历史状态，不能覆盖本次授权。

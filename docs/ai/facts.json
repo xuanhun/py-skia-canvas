@@ -1,0 +1,89 @@
+{
+  "schema": "py-skia-canvas-ai-docs/v1",
+  "asOf": "2026-10-29",
+  "distribution": "py-skia-canvas",
+  "import": "py_skia_canvas",
+  "version": "0.1.0a18",
+  "upstream": {
+    "package": "skia-canvas",
+    "version": "3.0.8",
+    "commit": "042312a3f40b660b1d7dc0beba541486171bc5cc",
+    "dailyOracle": "official published Node A",
+    "dailyNodeRebuildRequired": false
+  },
+  "routes": {
+    "useLibrary": "usage/README.md",
+    "api": "usage/API_REFERENCE.md",
+    "demos": "usage/DEMOS.md",
+    "troubleshooting": "usage/TROUBLESHOOTING.md",
+    "developLibrary": "development/README.md",
+    "developmentWorkflow": "development/WORKFLOW.md",
+    "testingAndRelease": "development/TESTING_AND_RELEASE.md",
+    "validation": "VALIDATION.md"
+  },
+  "acceptedWheels": {
+    "python": "CPython 3.13 (cp313)",
+    "platforms": ["Windows AMD64", "Linux glibc >= 2.28 x86_64"],
+    "otherAbiOrPlatformAccepted": false,
+    "runtimeRequiresNode": false,
+    "runtimeRequiresRustToolchain": false,
+    "runtimeRequiresSkiaPython": false,
+    "releaseStatus": "../RELEASE_STATUS.md"
+  },
+  "publicExports": [
+    "Canvas", "CanvasRenderingContext2D", "TextMetrics", "Path2D",
+    "CanvasGradient", "DOMMatrix", "DOMPoint", "DOMRect", "FontLibrary",
+    "Image", "ImageData", "loadImage", "loadImageData",
+    "CanvasPattern", "CanvasTexture", "App", "Window", "undefined"
+  ],
+  "rendering": {
+    "default": "preserve upstream GPU policy; automatic CPU fallback without usable GPU",
+    "explicitCpu": "canvas.gpu = False before drawing",
+    "constructorGpuFalseIsReliableCpuSwitch": false,
+    "cpuOffscreenAndExportsAccepted": true,
+    "cpuWindowPresentationSupported": false,
+    "windowRequires": ["main thread", "usable GPU", "desktop/windowing support"],
+    "contextRotateUnit": "radian",
+    "domMatrixRotateUnit": "degree",
+    "exportPageIndex": "1-based; negative indexes count from end",
+    "nativeObjectThread": "creating thread",
+    "parallelPattern": "create, draw and export within each worker; return bytes or plain copied data"
+  },
+  "host": {
+    "undefined": "exported singleton; distinct from None/null",
+    "encodedImageInput": "await loadImage(source)",
+    "rawPixelInput": "ImageData(raw_bytes, width, height) or await loadImageData(source, width, height)",
+    "exportBytes": "canvas.toBufferSync(format, options) or await canvas.toBuffer(format, options)",
+    "asyncSnapshot": "started/materialized at call time on owner thread",
+    "fontRegistration": "FontLibrary.use(alias, string_path); repeat in each drawing worker",
+    "sharp": "same-name entry raises missing Node Sharp dependency; use bytes with Python tooling",
+    "profile": "../PYTHON_HOST_PROFILE.md"
+  },
+  "knownLimitations": [
+    "Windows default parallel PDF/SVG file sequences inherit upstream nondeterministic glyph/subset loss; explicit RAYON_NUM_THREADS=1 is a separately verified deployment choice.",
+    "System fonts affect output; family existence does not prove glyph coverage. Do not redistribute unlicensed font files.",
+    "Windows deep environment prefixes can exceed MAX_PATH for license payloads when system long paths are disabled; use a short environment prefix.",
+    "JavaScript VM/Proxy/Sharp/Stream identities use the accepted Python host profile, not a Node runtime."
+  ],
+  "examples": {
+    "script": "../../examples/ai_demos.py",
+    "assetsManifest": "assets/manifest.json",
+    "offscreen": ["hello", "paths", "text", "images", "effects", "exports", "pages", "async", "batch"],
+    "window": "window",
+    "newOutputDirectoryRequired": true,
+    "developmentFixture": "../../examples/development/parity-smoke.json"
+  },
+  "development": {
+    "instructions": "../../AGENTS.md",
+    "requiredFirstReads": ["../NEW_SESSION.md", "../IMPLEMENTATION_PLAN.md", "../API_COMPATIBILITY.md", "../TASKS.md"],
+    "uniqueCore": "../../crates/canvas-core",
+    "sourceMap": "../../crates/source-map.json",
+    "readOnlyUpstream": "../../references/upstream",
+    "numericTolerance": 0,
+    "rgbaTolerance": 0,
+    "countRgbDifferencesWhenAlphaZero": true,
+    "newEvidenceDirectory": "test-runs/<new-run-id>/",
+    "releaseRule": "publish exactly the accepted wheel bytes; independently verify Actions, Release, TestPyPI and PyPI",
+    "externalActions": "follow current task authorization; documentation creation alone does not authorize commit/push/publication"
+  }
+}

@@ -28,6 +28,12 @@ Canvas、Context、字体与 GPU 资源在创建线程使用；跨线程绘图�
 
 无可用 GPU 时自动使用 CPU，离屏绘制和全部导出格式已通过双平台 CPU 验收；完全没有 Vulkan 库的容器也已验证。详见 [纯 CPU 报告](docs/CPU_RENDER_REPORT.md)。App/Window 屏幕呈现仍受原版 GPU 后端限制；Windows 并行 PDF/SVG 序列的继承限制也在报告中明确列出。
 
+## AI 使用与开发文档
+
+从 [AI 文档入口](docs/ai/README.md)选择任务类型：[使用库](docs/ai/usage/README.md)介绍安装、绘图流程、字体、图像、多页、异步、CPU 和窗口；[开发库](docs/ai/development/README.md)介绍架构、来源约束、候选构建、精确差分和发布验收。
+
+常用 [API 参考](docs/ai/usage/API_REFERENCE.md)、[10 类可运行 demo](examples/README.md)、[排错](docs/ai/usage/TROUBLESHOOTING.md)和[机器可读事实](docs/ai/facts.json)可单独查阅。示例与文档的实际验证范围见 [文档验证记录](docs/ai/VALIDATION.md)。
+
 ## 安装与构建
 
 从正式 PyPI 安装已验收的同一 alpha wheel：

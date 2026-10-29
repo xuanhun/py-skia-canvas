@@ -1,0 +1,25 @@
+{
+  "schema": "py-skia-canvas-fixtures/v1",
+  "description": "AI development tutorial: deterministic pixels, shared gradient and original missing-argument contract. Same fixture for Node A and installed Python.",
+  "cases": [
+    {
+      "id": "docs-solid", "group": "documentation", "width": 96, "height": 64, "mode": "default",
+      "ops": [
+        {"op": "set", "target": "ctx", "name": "fillStyle", "value": "#2878d9"},
+        {"op": "call", "target": "ctx", "name": "fillRect", "args": [3.25, 4.5, 61.5, 35.25]},
+        {"op": "call", "target": "ctx", "name": "getImageData", "args": [10, 10, 1, 1], "save": "pixel"}
+      ]
+    },
+    {
+      "id": "docs-gradient", "group": "documentation", "width": 96, "height": 64, "mode": "default",
+      "ops": [
+        {"op": "call", "target": "ctx", "name": "createLinearGradient", "args": [0, 0, 96, 0], "id": "gradient"},
+        {"op": "call", "target": "gradient", "name": "addColorStop", "args": [0, "red"]},
+        {"op": "call", "target": "gradient", "name": "addColorStop", "args": [1, "blue"]},
+        {"op": "set", "target": "ctx", "name": "fillStyle", "value": {"$ref": "gradient"}},
+        {"op": "call", "target": "ctx", "name": "fillRect", "args": [0, 0, 96, 64]},
+        {"op": "call", "target": "ctx", "name": "fillRect", "args": [], "observeError": "missingArguments"}
+      ]
+    }
+  ]
+}

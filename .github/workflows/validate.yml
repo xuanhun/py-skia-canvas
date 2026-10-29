@@ -14,6 +14,7 @@ jobs:
       - run: npm ci --prefix tools/api-ledger --ignore-scripts --no-audit --no-fund
       - run: python -m unittest discover -s tests/bootstrap -v
       - run: python scripts/validate_bootstrap.py
+      - run: python scripts/validate_ai_docs.py
       - run: python scripts/validate_core.py
       - run: python scripts/validate_licenses.py
       - run: node scripts/inventory-public-api.mjs --check
